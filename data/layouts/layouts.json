@@ -4660,6 +4660,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/HALLWAY_TO_SECRETARIAT/border.bin",
       "blockdata_filepath": "data/layouts/HALLWAY_TO_SECRETARIAT/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDEKA_INDOOR",
+      "name": "Edeka_Indoor",
+      "width": 34,
+      "height": 16,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Edeka_Indoor/border.bin",
+      "blockdata_filepath": "data/layouts/Edeka_Indoor/map.bin"
     }
   ]
 }
