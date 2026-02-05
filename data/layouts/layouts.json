@@ -4664,7 +4664,7 @@
     {
       "id": "LAYOUT_EDEKA_INDOOR",
       "name": "Edeka_Indoor",
-      "width": 34,
+      "width": 37,
       "height": 16,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Shop",
