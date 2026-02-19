@@ -1248,6 +1248,14 @@
 #define FLAG_CTF_BATTLETENT_LOBBY_FLAG4_DONE                        0x4AA // Flag4 Battle Tent Lobby Event/Terminal
 #define FLAG_CTF_GLITCHHAUS_DOKTOR_AFTER_HIDDEN                     0x4AB // Flag4 Glitchhaus Doktor nach Event
 #define FLAG_ITEM_CLASSROOM_OPENIN_TOP_TM_SECRET_POWER              0x4AC // Flag4 Secret Power TM pickup
+#define FLAG_ROUTE104_GOT_PHONE_CORP_ID                             0x4A5 // Flag3 Phone Corp ID erhalten
+#define FLAG_HIDE_ROUTE104_OFFICER_M                                0x4A6 // FLag3 Officer M auf Route 104
+#define FLAG_HIDE_ROUTE104_OFFICER_F                                0x4A7 // Flag3 Officer F auf Route 104
+#define FLAG_HIDE_ROUTE104_PHONE_CORP_ID                            0x4A8 // Flag3 Phone Corp ID auf Route 104
+#define FLAG_CTF_FLAG3_CORRECT                                      0x4A9 // Flag3 Correct Flag
+#define FLAG_CTF_PETALBURG_HOUSE1_SECRET_PHOTO                      0x4AA // Flag3 Secret Photo Trade in Petalburg House 1 erhalten
+#define FLAG_ZWISCHENSTUECK_GUARD_MOVED                             0x4AB // FLag3 Zwischenstück Guard bewegt
+#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
@@ -1263,15 +1271,25 @@
 #define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
 #define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
 #define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
+#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
+#define FLAG_CTF_CLASSROOM_EARTHMAN_TUBE                            0x4B3 // Flag4 Earthman Tube erhalten
+#define FLAG_LUDWIGSHAFEN_INTRO_DONE                                0x4B4 // Flag4 Ludwigshafen Intro abgespielt
+#define FLAG_CTF_BATTLETENT_LOBBY_FLAG4_DONE                        0x4B5 // Flag4 Battle Tent Lobby Event/Terminal
+#define FLAG_CTF_GLITCHHAUS_DOKTOR_AFTER_HIDDEN                     0x4B6 // Flag4 Glitchhaus Doktor nach Event
+#define FLAG_HIDE_LAGERHALLE_BLACKHANSA_BOSS                        0x4B7 // Flag4 Hide Blackhansa Boss in Lagerhalle besiegt
+#define FLAG_UNUSED_0x4B8                                           0x4B8 // 
+#define FLAG_UNUSED_0x4B9                                           0x4B9 // 
+#define FLAG_UNUSED_0x4BA                                           0x4BA // 
+#define FLAG_LAGERHALLE_BLACKHANSA_DEFEATED                         0x4BB // Flag4 Lagerhalle Blackhansa Boss besiegt
 #define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
-#define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
+#define FLAG_CTF_PETALBURG_HOUSE1_GOT_ZIGZAGOON                     0x4BE // Flag4 Petalburg House1 Zigzagoon erhalten
 #define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag
 #define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag
 #define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
 #define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
 #define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
-#define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag
+#define FLAG_LUDWIGSHAFEN_GOT_HAUNTER_GIFT                          0x4C4 // Flag4 Ludwigshafen Haunter Geschenk erhalten
 #define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag
 #define FLAG_UNUSED_0x4C6                                           0x4C6 // Unused Flag
 #define FLAG_UNUSED_0x4C7                                           0x4C7 // Unused Flag
@@ -1293,28 +1311,28 @@
 #define FLAG_UNUSED_0x4D7                                           0x4D7 // Unused Flag
 #define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
 #define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
-#define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
-#define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
-#define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
-#define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
-#define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
-#define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
-#define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
-#define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
-#define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
-#define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
-#define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
-#define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
-#define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
-#define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
-#define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag
-#define FLAG_UNUSED_0x4E9                                           0x4E9 // Unused Flag
-#define FLAG_UNUSED_0x4EA                                           0x4EA // Unused Flag
-#define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
-#define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
-#define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
-#define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
-#define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
+#define FLAG_STADIUM2_NO_CATCHING                                   0x4DA // Flag 8 Stadium2 No Catching
+#define FLAG_STADIUM2_SCENE_DONE                                    0x4DB // Flag 8 Stadium2 Scene abgeschlossen
+#define FLAG_HIDE_STADIUM2_JESSIE                                   0x4DC // Flag 8 Stadium2 Jessie verstecken
+#define FLAG_HIDE_STADIUM2_BOSS                                     0x4DD // Flag 8 Stadium2 Boss verstecken
+#define FLAG_HIDE_STADIUM2_MISSINGNO                                0x4DE // Flag 8 Stadium2 Missingno verstecken
+#define FLAG_KF_INTRO_DONE                                          0x4DF // Flag 8 Klassenzimmer Intro abgespielt
+#define FLAG_HIDE_KF_JESSIE                                         0x4E0 // Flag 8 Klassenzimmer Jessie verstecken
+#define FLAG_HIDE_KF_JAMES                                          0x4E1 // Flag 8 Klassenzimmer James verstecken
+#define FLAG_HIDE_KF_RANSOM_LETTER_BALL                             0x4E2 // Flag 8 Klassenzimmer Ransom Letter Ball verstecken
+#define FLAG_HIDE_KF_PROFESSOR                                      0x4E3 // Flag 8 Klassenzimmer Professor verstecken
+#define FLAG_HIDE_KF_MEOWTH                                         0x4E4 // Flag 8 Klassenzimmer Meowth verstecken
+#define FLAG_HIDE_KF_ARBOK                                          0x4E5 // Flag 8 Klassenzimmer Arbok verstecken
+#define FLAG_HIDE_KF_WEEZING                                        0x4E6 // Flag 8 Klassenzimmer Weezing verstecken
+#define FLAG_STADIUM2_TERMINAL_SOLVED                               0x4E7 // Flag 8 Stadium2 Terminal gelöst
+#define FLAG_I3C_AND_CAUGHT                                         0x4E8 // Flag for I3C_And caught
+#define CTF_FLAG_ID_BLACKHANSA_FINALE                               0x4E9 // Flag Finale Blackhansa Finale Event/Terminal
+#define FLAG_BLACKHANSA_DITTO_COPIED                                0x4EA // Flag Finale Blackhansa Ditto kopiert
+#define FLAG_BLACKHANSA_INTRO_DONE                                  0x4EB // Flag Finale Blackhansa Intro abgespielt
+#define FLAG_HIDE_BLACKHANSA_BOSS                                   0x4EC // Flag Finale Blackhansa Boss verstecken nach Sieg
+#define FLAG_ENTRYMAPFLAG8_GOT_DITTO                                0x4ED // Flag Finale Ditto erhalten
+#define FLAG_FLAG8_BRIDGE_SET                                       0x4EE // Flag Finale Brücke muss in Savegame gesetzt werden
+#define FLAG_CTF_BLACKHANSA_FINALE_FLAG8_DONE                       0x4EF // Flag Finale Blackhansa Finale Event/Terminal
 
 #define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0
 #define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1
@@ -1323,7 +1341,7 @@
 #define FLAG_DEFEATED_PETALBURG_GYM                                 0x4F4
 #define FLAG_DEFEATED_FORTREE_GYM                                   0x4F5 // CTF Gym 6 besiegt KALI
 #define FLAG_DEFEATED_MOSSDEEP_GYM                                  0x4F6
-#define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7
+#define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7 //CTF Gym 8 besiegt BAMBERGER
 #define FLAG_DEFEATED_METEOR_FALLS_STEVEN                           0x4F8
 
 #define FLAG_UNUSED_0x4F9                                           0x4F9 // Unused Flag

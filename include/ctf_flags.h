@@ -4,7 +4,7 @@
 #include "global.h"
 
 #define CTF_GYM_COUNT 8
-#define CTF_FLAG_COUNT (CTF_GYM_COUNT + 2)
+#define CTF_FLAG_COUNT (CTF_GYM_COUNT + 3)
 
 // Neue Flag-ID (für VAR_0x8000 am Terminal)
 #define CTF_FLAG_TUTORIAL    9
@@ -20,3 +20,4 @@ void Ctf_GetFlagWordUpper(u8 flagId, u8 *dst, u32 dstSize);
 void Ctf_GetFlagSolutionString(u8 flagId, u8 *dst, u32 dstSize);
 
 #endif // GUARD_CTF_FLAGS_H
+
