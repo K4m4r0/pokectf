@@ -1,3 +1,5 @@
+#define CTF_FLAG_ID_ENROLLMENT 12
+
 Administration_Office_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Administration_Office_OnLoad
 	.byte 0
@@ -29,7 +31,7 @@ Administration_Office_EventScript_Terminal::
 	faceplayer
 	goto_if_set FLAG_CTF_ENROLLMENT_TERMINAL_DONE, Administration_Office_Terminal_Already
 	msgbox Administration_Office_Text_TerminalIntro, MSGBOX_DEFAULT
-	setvar VAR_0x8000, 10
+	setvar VAR_0x8000, CTF_FLAG_ID_ENROLLMENT
 	callnative Ctf_FlagTerminal
 	waitstate
 	compare VAR_RESULT, 1

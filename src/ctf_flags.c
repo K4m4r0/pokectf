@@ -6,7 +6,7 @@
 #include "string_util.h"
 #include "constants/characters.h"
 
-#define CTF_STATIC_FLAG_COUNT CTF_FLAG_TUTORIAL
+#define CTF_STATIC_FLAG_COUNT CTF_FLAG_FINAL_CLASSROOM
 
 static const u8 sFlagWords[CTF_STATIC_FLAG_COUNT][PLAYER_NAME_LENGTH + 1] =
 {

@@ -1240,46 +1240,28 @@
 #define FLAG_CLASSROOM_STRENGTH_TOOL_SCENE_DONE                     0x4A2 // Flag3 Powerglove erhalten
 #define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
 #define FLAG_RECEIVED_LOCKPICK_SET                                  0x4A4 // Flag3 Lockpick Set erhalten
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
+#define FLAG_ROUTE104_GOT_PHONE_CORP_ID                             0x4A5 // Flag3 Phone Corp ID erhalten
+#define FLAG_HIDE_ROUTE104_OFFICER_M                                0x4A6 // FLag3 Officer M auf Route 104
+#define FLAG_HIDE_ROUTE104_OFFICER_F                                0x4A7 // Flag3 Officer F auf Route 104
 #define FLAG_CTF_CLASSROOM_EARTHMAN_TUBE                            0x4A8 // Flag4 Lapras Tube erhalten
 #define FLAG_LUDWIGSHAFEN_INTRO_DONE                                0x4A9 // Flag4 Ludwigshafen Intro abgespielt
 #define FLAG_CTF_BATTLETENT_LOBBY_FLAG4_DONE                        0x4AA // Flag4 Battle Tent Lobby Event/Terminal
 #define FLAG_CTF_GLITCHHAUS_DOKTOR_AFTER_HIDDEN                     0x4AB // Flag4 Glitchhaus Doktor nach Event
 #define FLAG_ITEM_CLASSROOM_OPENIN_TOP_TM_SECRET_POWER              0x4AC // Flag4 Secret Power TM pickup
-#define FLAG_ROUTE104_GOT_PHONE_CORP_ID                             0x4A5 // Flag3 Phone Corp ID erhalten
-#define FLAG_HIDE_ROUTE104_OFFICER_M                                0x4A6 // FLag3 Officer M auf Route 104
-#define FLAG_HIDE_ROUTE104_OFFICER_F                                0x4A7 // Flag3 Officer F auf Route 104
-#define FLAG_HIDE_ROUTE104_PHONE_CORP_ID                            0x4A8 // Flag3 Phone Corp ID auf Route 104
-#define FLAG_CTF_FLAG3_CORRECT                                      0x4A9 // Flag3 Correct Flag
-#define FLAG_CTF_PETALBURG_HOUSE1_SECRET_PHOTO                      0x4AA // Flag3 Secret Photo Trade in Petalburg House 1 erhalten
-#define FLAG_ZWISCHENSTUECK_GUARD_MOVED                             0x4AB // FLag3 Zwischenstück Guard bewegt
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
+#define FLAG_HIDE_ROUTE104_PHONE_CORP_ID                            0x4AD // Flag3 Phone Corp ID auf Route 104
+#define FLAG_CTF_FLAG3_CORRECT                                      0x4AE // Flag3 Correct Flag
+#define FLAG_CTF_PETALBURG_HOUSE1_SECRET_PHOTO                      0x4AF // Flag3 Secret Photo Trade in Petalburg House 1 erhalten
+#define FLAG_ZWISCHENSTUECK_GUARD_MOVED                             0x4B0 // Flag3 Zwischenstück Guard bewegt
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
 #define FLAG_CTF_HOUVERT_EXAM_FLASHBACK                             0x4B2 // Houvert exam flashback active
 #define FLAG_CTF_HOUVERT_EXAM_RESUME                                0x4B3 // Resume Houvert exam after registration
 #define FLAG_CTF_HOUVERT_EXAM_COMPLETED                             0x4B4 // Houvert exam cleared
-#define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
-#define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
-#define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag
+#define FLAG_ROUTE104_TRUCK_CUTSCENE_DONE                           0x4B5 // Route 104 truck ambush handled
+#define FLAG_CTF_HOUVERT_HALLWAY_FLASHBACK_DONE                     0x4B6 // Houvert hallway flashback cutscene watched
+#define FLAG_HIDE_LAGERHALLE_BLACKHANSA_BOSS                        0x4B7 // Flag4 Hide Blackhansa Boss in Lagerhalle besiegt
 #define FLAG_UNUSED_0x4B8                                           0x4B8 // Unused Flag
 #define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
 #define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
-#define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
-#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
-#define FLAG_CTF_CLASSROOM_EARTHMAN_TUBE                            0x4B3 // Flag4 Earthman Tube erhalten
-#define FLAG_LUDWIGSHAFEN_INTRO_DONE                                0x4B4 // Flag4 Ludwigshafen Intro abgespielt
-#define FLAG_CTF_BATTLETENT_LOBBY_FLAG4_DONE                        0x4B5 // Flag4 Battle Tent Lobby Event/Terminal
-#define FLAG_CTF_GLITCHHAUS_DOKTOR_AFTER_HIDDEN                     0x4B6 // Flag4 Glitchhaus Doktor nach Event
-#define FLAG_HIDE_LAGERHALLE_BLACKHANSA_BOSS                        0x4B7 // Flag4 Hide Blackhansa Boss in Lagerhalle besiegt
-#define FLAG_UNUSED_0x4B8                                           0x4B8 // 
-#define FLAG_UNUSED_0x4B9                                           0x4B9 // 
-#define FLAG_UNUSED_0x4BA                                           0x4BA // 
 #define FLAG_LAGERHALLE_BLACKHANSA_DEFEATED                         0x4BB // Flag4 Lagerhalle Blackhansa Boss besiegt
 #define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag

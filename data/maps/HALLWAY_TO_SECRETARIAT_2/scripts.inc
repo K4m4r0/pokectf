@@ -16,7 +16,9 @@ HALLWAY_TO_SECRETARIAT_2_OnLoad:
 	end
 
 HALLWAY_TO_SECRETARIAT_2_EventScript_EnableHouvertFlashback::
+	goto_if_set FLAG_CTF_HOUVERT_HALLWAY_FLASHBACK_DONE, HALLWAY_TO_SECRETARIAT_2_EventScript_EnableHouvertFlashbackReturn
 	setvar VAR_TEMP_B, 0
+HALLWAY_TO_SECRETARIAT_2_EventScript_EnableHouvertFlashbackReturn::
 	return
 
 HALLWAY_TO_SECRETARIAT_2_EventScript_StartHouvertFlashback::
@@ -25,6 +27,7 @@ HALLWAY_TO_SECRETARIAT_2_EventScript_StartHouvertFlashback::
 	fadescreenswapbuffers FADE_FROM_BLACK
 	delay 20
 	msgbox HALLWAY_TO_SECRETARIAT_2_Text_PlayerRemembersHallway, MSGBOX_DEFAULT
+	setflag FLAG_CTF_HOUVERT_HALLWAY_FLASHBACK_DONE
 	releaseall
 	end
 

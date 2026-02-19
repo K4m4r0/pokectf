@@ -4,11 +4,11 @@
 #include "global.h"
 
 #define CTF_GYM_COUNT 8
-#define CTF_FLAG_COUNT (CTF_GYM_COUNT + 3)
-
-// Neue Flag-ID (für VAR_0x8000 am Terminal)
-#define CTF_FLAG_TUTORIAL    9
-#define CTF_FLAG_ENROLLMENT 10
+#define CTF_FLAG_TUTORIAL        (CTF_GYM_COUNT + 1)
+#define CTF_FLAG_FINAL_FARMER    (CTF_GYM_COUNT + 2)
+#define CTF_FLAG_FINAL_CLASSROOM (CTF_GYM_COUNT + 3)
+#define CTF_FLAG_ENROLLMENT      (CTF_GYM_COUNT + 4)
+#define CTF_FLAG_COUNT           CTF_FLAG_ENROLLMENT
 
 // Neu: generische Prüfung für 1..CTF_FLAG_COUNT
 bool8 Ctf_IsFlagCorrect(u8 flagId, const u8 *input);
@@ -20,4 +20,3 @@ void Ctf_GetFlagWordUpper(u8 flagId, u8 *dst, u32 dstSize);
 void Ctf_GetFlagSolutionString(u8 flagId, u8 *dst, u32 dstSize);
 
 #endif // GUARD_CTF_FLAGS_H
-
