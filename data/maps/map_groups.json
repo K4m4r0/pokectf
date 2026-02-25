@@ -41,7 +41,8 @@
     "gMapGroup_Flag4",
     "gMapGroup_Flag5",
     "gMapGroup_Flag7",
-    "gMapGroup_Flag8"
+    "gMapGroup_Flag8",
+    "gMapGroup_Postgame"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -637,7 +638,8 @@
     "Museum_Flag1",
     "Museum2_Flag1",
     "SongFlagArena",
-    "Zwischenstueck"
+    "Zwischenstueck",
+    "HallwayHub"
   ],
   "gMapGroup_Hub": [
     "MainHub"
@@ -674,7 +676,8 @@
     "LuTransfer"
   ],
   "gMapGroup_Flag5": [
-    "entryMapFlag5"
+    "entryMapFlag5",
+    "DHBW_Sued"
   ],
   "gMapGroup_Flag7": [
     "entryMapFlag7",
@@ -694,5 +697,9 @@
     "Stadium1",
     "Stadium2",
     "Stadium3"
+  ],
+  "gMapGroup_Postgame": [
+    "RingUnten",
+    "Neckarau"
   ]
 }

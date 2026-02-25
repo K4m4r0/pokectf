@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_SLATEPORT_CITY",
+      "map": "MAP_LUDWIGSHAFEN",
       "offset": 0,
       "direction": "up"
     },
     {
-      "map": "MAP_ROUTE108",
-      "offset": 40,
-      "direction": "left"
+      "map": "MAP_RING_UNTEN",
+      "offset": 43,
+      "direction": "right"
     }
   ],
   "object_events": [

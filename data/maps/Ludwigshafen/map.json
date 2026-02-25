@@ -17,6 +17,11 @@
       "map": "MAP_LU_TRANSFER",
       "offset": 5,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE109",
+      "offset": 0,
+      "direction": "down"
     }
   ],
   "object_events": [

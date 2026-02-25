@@ -1277,3 +1277,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Stadium2/scripts.inc"
 
 	.include "data/maps/Stadium3/scripts.inc"
+
+	.include "data/maps/DHBW_Sued/scripts.inc"
+
+	.include "data/maps/HallwayHub/scripts.inc"
+
+	.include "data/maps/RingUnten/scripts.inc"
+
+	.include "data/maps/Neckarau/scripts.inc"

@@ -4834,7 +4834,7 @@
     {
       "id": "LAYOUT_SECKENHEIMER_LANDSTRASSE",
       "name": "SeckenheimerLandstrasse_Layout",
-      "width": 16,
+      "width": 25,
       "height": 36,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
@@ -4920,6 +4920,46 @@
       "secondary_tileset": "gTileset_PokemonDayCare",
       "border_filepath": "data/layouts/Stadium3/border.bin",
       "blockdata_filepath": "data/layouts/Stadium3/map.bin"
+    },
+    {
+      "id": "LAYOUT_DHBW_SUED",
+      "name": "DHBW_Sued_Layout",
+      "width": 16,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/DHBW_Sued/border.bin",
+      "blockdata_filepath": "data/layouts/DHBW_Sued/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLWAY_HUB",
+      "name": "HallwayHub_Layout",
+      "width": 30,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DHBWFLOORS",
+      "border_filepath": "data/layouts/HallwayHub/border.bin",
+      "blockdata_filepath": "data/layouts/HallwayHub/map.bin"
+    },
+    {
+      "id": "LAYOUT_RING_UNTEN",
+      "name": "RingUnten_Layout",
+      "width": 70,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/RingUnten/border.bin",
+      "blockdata_filepath": "data/layouts/RingUnten/map.bin"
+    },
+    {
+      "id": "LAYOUT_NECKARAU",
+      "name": "Neckarau_Layout",
+      "width": 21,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/Neckarau/border.bin",
+      "blockdata_filepath": "data/layouts/Neckarau/map.bin"
     }
   ]
 }

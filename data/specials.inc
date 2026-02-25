@@ -572,4 +572,6 @@ gSpecials::
 	def_special Special_TakeChosenPartyMon
 	def_special Special_FakeTradeEvolveSelectedToTarget
 	def_special Special_PartyContainsSpecies
-
+	def_special CtfIsMgba
+	def_special CtfMgbaLogHint_Flag5
+	def_special CtfBufferFlagSolution

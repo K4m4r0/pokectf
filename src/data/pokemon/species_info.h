@@ -301,15 +301,15 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 2, SHADOW_SIZE_M)
-        FOOTPRINT(Jolteon)
+        FOOTPRINT(Suneon)
         OVERWORLD(
-            sPicTable_Jolteon,
+            sPicTable_Suneon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Jolteon,
-            gShinyOverworldPalette_Jolteon
+            gOverworldPalette_Suneon,
+            gShinyOverworldPalette_Suneon
         )
         .levelUpLearnset = sSuneonLevelUpLearnset,
         .teachableLearnset = sSuneonTeachableLearnset,
@@ -365,18 +365,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_I3c_And,
         .shinyPalette = gMonShinyPalette_I3c_And,
         .iconSprite = gMonIcon_I3c_And,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 2, SHADOW_SIZE_M)
-        FOOTPRINT(Jolteon)
+        FOOTPRINT(I3c_And)
         OVERWORLD(
-            sPicTable_Jolteon,
+            sPicTable_I3c_And,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Jolteon,
-            gShinyOverworldPalette_Jolteon
+            gOverworldPalette_I3c_And,
+            gShinyOverworldPalette_I3c_And
         )
         .levelUpLearnset = sI3cAndLevelUpLearnset,
         .teachableLearnset = sI3cAndTeachableLearnset,
@@ -434,18 +434,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_I3c_Nand,
         .shinyPalette = gMonShinyPalette_I3c_Nand,
         .iconSprite = gMonIcon_I3c_Nand,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 2, SHADOW_SIZE_M)
-        FOOTPRINT(Jolteon)
+        FOOTPRINT(I3c_Nand)
         OVERWORLD(
-            sPicTable_Jolteon,
+            sPicTable_I3c_Nand,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Jolteon,
-            gShinyOverworldPalette_Jolteon
+            gOverworldPalette_I3c_Nand,
+            gShinyOverworldPalette_I3c_Nand
         )
         .levelUpLearnset = sI3cNandLevelUpLearnset,
         .teachableLearnset = sI3cNandTeachableLearnset,

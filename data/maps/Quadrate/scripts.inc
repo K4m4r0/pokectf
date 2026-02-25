@@ -29,8 +29,8 @@ Quadrate_Train_EventScript_Board::
     goto_if 5, Quadrate_Train_EventScript_WrongSide
 
     msgbox Quadrate_Train_Text_AskTravel, MSGBOX_YESNO
-    compare VAR_RESULT, 0
-    goto_if 5, Quadrate_Train_EventScript_Cancel
+    compare VAR_RESULT, 1
+    goto_if 5, Quadrate_Train_EventScript_Cancel   @ wenn != 1 -> Cancel
     closemessage
 
     @ Einsteigen
