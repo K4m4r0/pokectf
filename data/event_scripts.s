@@ -1285,3 +1285,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RingUnten/scripts.inc"
 
 	.include "data/maps/Neckarau/scripts.inc"
+
+	.include "data/maps/RingUntenE4/scripts.inc"
+
+	.include "data/maps/DiveCellar/scripts.inc"
+
+	.include "data/maps/DiveCellarDive/scripts.inc"
+
+	.include "data/maps/DiveE4Connect/scripts.inc"
+
+	.include "data/maps/KurtHaus/scripts.inc"

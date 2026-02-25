@@ -614,7 +614,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GS_BALL] =
     {
         .name = ITEM_NAME("GS Ball"),
-        .price = 5000,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A rare Ball \n"
             "with unknown\n"
@@ -15717,6 +15717,23 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_Drive,
         .iconPalette = gItemIconPalette_DouseDrive,
     },
+
+    [ITEM_GS_BALL_2] =
+    {
+        .name = ITEM_NAME("GS Ball"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A rare Ball \n"
+            "with unknown\n"
+            "origin."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_GsBall,
+        .iconPalette = gItemIconPalette_GsBall,
+    },
+
 };
 
 #undef ITEM_NAME

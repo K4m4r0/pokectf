@@ -62,7 +62,29 @@
       "flag": "FLAG_DEFEATED_SOOTOPOLIS_GYM"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 25,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY_MOVE_DELETERS_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_1F",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

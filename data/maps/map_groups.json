@@ -682,7 +682,8 @@
   "gMapGroup_Flag7": [
     "entryMapFlag7",
     "Quadrate",
-    "SeckenheimerLandstrasse"
+    "SeckenheimerLandstrasse",
+    "KurtHaus"
   ],
   "gMapGroup_Flag8": [
     "entryMapFlag8",
@@ -700,6 +701,10 @@
   ],
   "gMapGroup_Postgame": [
     "RingUnten",
-    "Neckarau"
+    "Neckarau",
+    "RingUntenE4",
+    "DiveCellar",
+    "DiveCellarDive",
+    "DiveE4Connect"
   ]
 }

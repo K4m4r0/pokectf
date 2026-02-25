@@ -15,17 +15,30 @@
   "connections": [
     {
       "map": "MAP_RING_UNTEN",
-      "offset": 10,
+      "offset": 13,
       "direction": "left"
     },
     {
       "map": "MAP_DHBW_SUED",
       "offset": 2,
       "direction": "up"
+    },
+    {
+      "map": "MAP_RING_UNTEN_E4",
+      "offset": 4,
+      "direction": "right"
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 16,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

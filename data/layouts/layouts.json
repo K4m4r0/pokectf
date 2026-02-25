@@ -4960,6 +4960,56 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/Neckarau/border.bin",
       "blockdata_filepath": "data/layouts/Neckarau/map.bin"
+    },
+    {
+      "id": "LAYOUT_RING_UNTEN_E4",
+      "name": "RingUntenE4_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/RingUntenE4/border.bin",
+      "blockdata_filepath": "data/layouts/RingUntenE4/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVE_CELLAR",
+      "name": "DiveCellar_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SootopolisGym",
+      "border_filepath": "data/layouts/DiveCellar/border.bin",
+      "blockdata_filepath": "data/layouts/DiveCellar/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVE_CELLAR_DIVE",
+      "name": "DiveCellarDive_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DiveCellarDive/border.bin",
+      "blockdata_filepath": "data/layouts/DiveCellarDive/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVE_E4CONNECT",
+      "name": "DiveE4Connect_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DiveE4Connect/border.bin",
+      "blockdata_filepath": "data/layouts/DiveE4Connect/map.bin"
+    },
+    {
+      "id": "LAYOUT_KURT_HAUS",
+      "name": "KurtHaus_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/KurtHaus/border.bin",
+      "blockdata_filepath": "data/layouts/KurtHaus/map.bin"
     }
   ]
 }
