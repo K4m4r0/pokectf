@@ -19,8 +19,15 @@
       "x": 2,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_ENTRY_MAP_FLAG7",
+      "dest_map": "MAP_MAIN_HUB",
       "dest_warp_id": "6"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_LEAFON_EVOLVE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

@@ -21,10 +21,10 @@
       "respawn_y": 7
     },
     {
-      "id": "HEAL_LOCATION_PETALBURG_CITY",
-      "map": "MAP_PETALBURG_CITY",
-      "x": 18,
-      "y": 17,
+      "id": "HEAL_LOCATION_CAFERTERIA",
+      "map": "MAP_CAFERTERIA",
+      "x": 16,
+      "y": 25,
       "respawn_map": "MAP_PETALBURG_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_PETALBURG_NURSE"
     },
@@ -194,6 +194,14 @@
       "y": 20,
       "respawn_map": "MAP_SLATEPORT_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SLATEPORT_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_PETALBURG_CITY",
+      "map": "MAP_PETALBURG_CITY",
+      "x": 18,
+      "y": 17,
+      "respawn_map": "MAP_PETALBURG_CITY_POKEMON_CENTER_1F",
+      "respawn_npc": "LOCALID_PETALBURG_NURSE"
     }
   ]
 }

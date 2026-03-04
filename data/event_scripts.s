@@ -1277,3 +1277,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Stadium2/scripts.inc"
 
 	.include "data/maps/Stadium3/scripts.inc"
+
+	.include "data/maps/Caferteria/scripts.inc"
+
+	.include "data/maps/caferteriainside/scripts.inc"
+
+	.include "data/maps/WayToCaferteria/scripts.inc"
+
+	.include "data/maps/Leafon_Evolve/scripts.inc"
+
+	.include "data/maps/underCaferteria/scripts.inc"

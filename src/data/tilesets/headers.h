@@ -14,6 +14,17 @@ const struct Tileset gTileset_General =
     .callback = InitTilesetAnim_General,
 };
 
+const struct Tileset gTileset_WayToCaferteriaGeneral =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_WayToCaferteriaGeneral,
+    .palettes = gTilesetPalettes_WayToCaferteriaGeneral,
+    .metatiles = gMetatiles_WayToCaferteriaGeneral,
+    .metatileAttributes = gMetatileAttributes_WayToCaferteriaGeneral,
+    .callback = InitTilesetAnim_General,
+};
+
 const struct Tileset gTileset_Petalburg =
 {
     .isCompressed = TRUE,
@@ -34,6 +45,17 @@ const struct Tileset gTileset_Rustboro =
     .metatiles = gMetatiles_Rustboro,
     .metatileAttributes = gMetatileAttributes_Rustboro,
     .callback = InitTilesetAnim_Rustboro,
+};
+
+const struct Tileset gTileset_LeafeonEvolve =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_LeafeonEvolve,
+    .palettes = gTilesetPalettes_LeafeonEvolve,
+    .metatiles = gMetatiles_LeafeonEvolve,
+    .metatileAttributes = gMetatileAttributes_LeafeonEvolve,
+    .callback = InitTilesetAnim_General,
 };
 
 const struct Tileset gTileset_Dewford =
@@ -99,6 +121,17 @@ const struct Tileset gTileset_Fortree =
     .palettes = gTilesetPalettes_Fortree,
     .metatiles = gMetatiles_Fortree,
     .metatileAttributes = gMetatileAttributes_Fortree,
+    .callback = InitTilesetAnim_Fortree,
+};
+
+const struct Tileset gTileset_WayToCaferteria =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_WayToCaferteria,
+    .palettes = gTilesetPalettes_WayToCaferteria,
+    .metatiles = gMetatiles_WayToCaferteria,
+    .metatileAttributes = gMetatileAttributes_WayToCaferteria,
     .callback = InitTilesetAnim_Fortree,
 };
 
@@ -852,10 +885,6 @@ const struct Tileset gTileset_dhbw_gebaeude =
     .metatileAttributes = gMetatileAttributes_dhbw_gebaeude,
     .callback = NULL,
 };
-
-
-
-
 const struct Tileset gTileset_wasserturm =
 {
     .isCompressed = TRUE,
@@ -875,5 +904,27 @@ const struct Tileset gTileset_DHBWFLOORS =
     .palettes = gTilesetPalettes_DHBWFLOORS,
     .metatiles = gMetatiles_DHBWFLOORS,
     .metatileAttributes = gMetatileAttributes_DHBWFLOORS,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_CafeOutside =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_CafeOutside,
+    .palettes = gTilesetPalettes_CafeOutside,
+    .metatiles = gMetatiles_CafeOutside,
+    .metatileAttributes = gMetatileAttributes_CafeOutside,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_caferteria_inside =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_caferteria_inside,
+    .palettes = gTilesetPalettes_caferteria_inside,
+    .metatiles = gMetatiles_caferteria_inside,
+    .metatileAttributes = gMetatileAttributes_caferteria_inside,
     .callback = NULL,
 };

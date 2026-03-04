@@ -175,7 +175,7 @@
       "id": "LAYOUT_ROUTE102",
       "name": "Route102_Layout",
       "width": 50,
-      "height": 20,
+      "height": 24,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route102/border.bin",
@@ -4920,6 +4920,56 @@
       "secondary_tileset": "gTileset_PokemonDayCare",
       "border_filepath": "data/layouts/Stadium3/border.bin",
       "blockdata_filepath": "data/layouts/Stadium3/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAFERTERIA",
+      "name": "Caferteria_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_CafeOutside",
+      "border_filepath": "data/layouts/Caferteria/border.bin",
+      "blockdata_filepath": "data/layouts/Caferteria/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAFERTERIAINSIDE",
+      "name": "caferteriainside_Layout",
+      "width": 64,
+      "height": 39,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_caferteria_inside",
+      "border_filepath": "data/layouts/caferteriainside/border.bin",
+      "blockdata_filepath": "data/layouts/caferteriainside/map.bin"
+    },
+    {
+      "id": "LAYOUT_WAY_TO_CAFERTERIA",
+      "name": "WayToCaferteria_Layout",
+      "width": 66,
+      "height": 50,
+      "primary_tileset": "gTileset_WayToCaferteriaGeneral",
+      "secondary_tileset": "gTileset_WayToCaferteria",
+      "border_filepath": "data/layouts/WayToCaferteria/border.bin",
+      "blockdata_filepath": "data/layouts/WayToCaferteria/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEAFON_EVOLVE",
+      "name": "Leafon_Evolve_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_LeafeonEvolve",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Leafon_Evolve/border.bin",
+      "blockdata_filepath": "data/layouts/Leafon_Evolve/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDER_CAFERTERIA",
+      "name": "underCaferteria_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrickHousePuzzle",
+      "border_filepath": "data/layouts/underCaferteria/border.bin",
+      "blockdata_filepath": "data/layouts/underCaferteria/map.bin"
     }
   ]
 }
