@@ -24,14 +24,14 @@
       "direction": "right"
     },
     {
-      "map": "MAP_SECKENHEIMER_LANDSTRASSE",
-      "offset": 4,
-      "direction": "up"
-    },
-    {
       "map": "MAP_DHBW_SUED",
       "offset": 2,
       "direction": "down"
+    },
+    {
+      "map": "MAP_SECK_LAND2",
+      "offset": 4,
+      "direction": "up"
     }
   ],
   "object_events": [

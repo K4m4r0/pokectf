@@ -15561,7 +15561,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_CUT_TOOL] =
     {
-        .name = ITEM_NAME("Cut Item"),
+        .name = ITEM_NAME("Pruning Shears"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A handy tool that\n"
@@ -15577,7 +15577,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_FLY_TOOL] =
     {
-        .name = ITEM_NAME("Fly Item"),
+        .name = ITEM_NAME("Jetpack"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Allows instant\n"

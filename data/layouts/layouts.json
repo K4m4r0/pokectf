@@ -5010,6 +5010,76 @@
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/KurtHaus/border.bin",
       "blockdata_filepath": "data/layouts/KurtHaus/map.bin"
+    },
+    {
+      "id": "LAYOUT_GIOVANNIS_HOUSE",
+      "name": "GiovannisHouse_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GiovannisHouse/border.bin",
+      "blockdata_filepath": "data/layouts/GiovannisHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAGERHALLE_ARENA",
+      "name": "LagerhalleArena_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/LagerhalleArena/border.bin",
+      "blockdata_filepath": "data/layouts/LagerhalleArena/map.bin"
+    },
+    {
+      "id": "LAYOUT_KLASSENZIMMER5",
+      "name": "Klassenzimmer5_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonSchool",
+      "border_filepath": "data/layouts/Klassenzimmer5/border.bin",
+      "blockdata_filepath": "data/layouts/Klassenzimmer5/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAGROOM5_1",
+      "name": "Flagroom5_1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building_Frlg",
+      "secondary_tileset": "gTileset_PokemonMansion",
+      "border_filepath": "data/layouts/Flagroom5_1/border.bin",
+      "blockdata_filepath": "data/layouts/Flagroom5_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAGROOM5_2",
+      "name": "Flagroom5_2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building_Frlg",
+      "secondary_tileset": "gTileset_PokemonMansion",
+      "border_filepath": "data/layouts/Flagroom5_2/border.bin",
+      "blockdata_filepath": "data/layouts/Flagroom5_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAGROOM5_ARENA",
+      "name": "Flagroom5_Arena_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building_Frlg",
+      "secondary_tileset": "gTileset_PokemonMansion",
+      "border_filepath": "data/layouts/Flagroom5_Arena/border.bin",
+      "blockdata_filepath": "data/layouts/Flagroom5_Arena/map.bin"
+    },
+    {
+      "id": "LAYOUT_SECK_LAND2",
+      "name": "SeckLand2_Layout",
+      "width": 16,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_dhbw_gebaeude",
+      "border_filepath": "data/layouts/SeckLand2/border.bin",
+      "blockdata_filepath": "data/layouts/SeckLand2/map.bin"
     }
   ]
 }

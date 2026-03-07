@@ -664,16 +664,16 @@
 #define FLAG_HH_SEM6_DONE  0x269 // Unused Flag
 #define FLAG_HH_SEM7_DONE  0x26A // Unused Flag
 #define FLAG_HH_SEM8_DONE  0x26B // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
+#define FLAG_RINGUNTENE4_CHATOT_HEARD           0x274 // CTF Chatot 1
+#define FLAG_RINGUNTENE4_DOOR_UNLOCKED          0x275 // CTF Chatot 2
+#define FLAG_ITEM_GIOVANNIS_HOUSE_GS_BALL       0x276 // CTF Giovanni's House GS Ball
+#define FLAG_RINGUNTENE4_CHATOTSPY_HIDDEN       0x277 // CTF Chatot Spy Hidden
+#define FLAG_KLASSENZIMMER5_FIRST_ENTRY         0x278 // CTF Klassenzimmer 5 First Entry
+#define FLAG_KLASSENZIMMER5_GOT_CUT_TOOL        0x279 // CTF Klassenzimmer 5 Got Cut Tool
+#define FLAG_UNUSED         0x27A // schon gesetzt?
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
+#define FLAG_FLAGROOM5_2_CONSOLE_REVEALED       0x27C // CTF Flagroom 5-2 Console Revealed Konsole enthüllt
+#define FLAG_FLAGROOM5_2_FLAG5_UNLOCKED         0x27D // CTF Flagroom 5-2 Flag 5 Unlocked Tür offen
 #define FLAG_UNUSED_0x27E  0x27E // Unused Flag
 #define FLAG_UNUSED_0x27F  0x27F // Unused Flag
 #define FLAG_UNUSED_0x280  0x280 // Unused Flag
@@ -1310,9 +1310,9 @@
 
 #define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0 // CTF Gym 1 Hyvel besiegt
 #define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1 // CFT Gym 2 besiegt Houvert
-#define FLAG_DEFEATED_MAUVILLE_GYM                                  0x4F2
+#define FLAG_DEFEATED_MAUVILLE_GYM                                  0x4F2 // CTF Gym 3 besiegt Wörner
 #define FLAG_DEFEATED_LAVARIDGE_GYM                                 0x4F3
-#define FLAG_DEFEATED_PETALBURG_GYM                                 0x4F4
+#define FLAG_DEFEATED_PETALBURG_GYM                                 0x4F4 // CTF Gym 5 besiegt 
 #define FLAG_DEFEATED_FORTREE_GYM                                   0x4F5 // CTF Gym 6 besiegt KALI
 #define FLAG_DEFEATED_MOSSDEEP_GYM                                  0x4F6
 #define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7 //CTF Gym 8 besiegt BAMBERGER

@@ -222,3 +222,10 @@ const u16 gMetatileAttributes_wasserturm[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_DHBWFLOORS[] = INCBIN_U16("data/tilesets/secondary/dhbwfloors/metatiles.bin");
 const u16 gMetatileAttributes_DHBWFLOORS[] = INCBIN_U16("data/tilesets/secondary/dhbwfloors/metatile_attributes.bin");
+
+const u16 gMetatiles_PokemonMansion[] = INCBIN_U16("data/tilesets/secondary/pokemon_mansion_frlg/metatiles.bin");
+const u16 gMetatileAttributes_PokemonMansion[] = INCBIN_U16("data/tilesets/secondary/pokemon_mansion_frlg/metatile_attributes.bin");
+
+const u16 gMetatiles_Building_Frlg[] = INCBIN_U16("data/tilesets/primary/building_frlg/metatiles.bin");
+const u16 gMetatileAttributes_Building_Frlg[] = INCBIN_U16("data/tilesets/primary/building_frlg/metatile_attributes.bin");
+

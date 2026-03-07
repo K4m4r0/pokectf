@@ -1295,3 +1295,17 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DiveE4Connect/scripts.inc"
 
 	.include "data/maps/KurtHaus/scripts.inc"
+
+	.include "data/maps/GiovannisHouse/scripts.inc"
+
+	.include "data/maps/LagerhalleArena/scripts.inc"
+
+	.include "data/maps/Klassenzimmer5/scripts.inc"
+
+	.include "data/maps/Flagroom5_1/scripts.inc"
+
+	.include "data/maps/Flagroom5_2/scripts.inc"
+
+	.include "data/maps/Flagroom5_Arena/scripts.inc"
+
+	.include "data/maps/SeckLand2/scripts.inc"

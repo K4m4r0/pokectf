@@ -42,7 +42,7 @@ void CtfIsMgba(void)
 
 void CtfMgbaLogHint_Flag5(void)
 {
-    MgbaLogString(2, "[MANTIS] entryMapFlag7: Suche 16-bit 0xBEEF (EWRAM) und patche auf 0x1337.");
+    MgbaLogString(2, "[MANTIS] NOTE: Search for 16-bit 0xBEEF (EWRAM) and patch to 0x1337.");
 }
 
 void CtfBufferFlagSolution(void)

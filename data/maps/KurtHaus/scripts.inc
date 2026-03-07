@@ -28,7 +28,7 @@ KurtHaus_OnTransition::
     goto_if CMP_EQ, KurtHaus_OnTransition_End
 
     lockall
-    turnobject LOCALID_KURT, DIR_DOWN
+    turnobject LOCALID_KURT, DIR_SOUTH
 
     msgbox KurtHaus_Text_CelebiReveal, MSGBOX_DEFAULT
     closemessage
@@ -122,3 +122,4 @@ KurtHaus_Text_Hello:
 KurtHaus_Text_NoRoom:
     .string "Your party and BOXES are full.\n"
     .string "Please make room and come back.$"
+

@@ -853,7 +853,16 @@ const struct Tileset gTileset_dhbw_gebaeude =
     .callback = NULL,
 };
 
-
+const struct Tileset gTileset_PokemonMansion =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PokemonMansion,
+    .palettes = gTilesetPalettes_PokemonMansion,
+    .metatiles = gMetatiles_PokemonMansion,
+    .metatileAttributes = gMetatileAttributes_PokemonMansion,
+    .callback = NULL,
+};
 
 
 const struct Tileset gTileset_wasserturm =
@@ -877,3 +886,15 @@ const struct Tileset gTileset_DHBWFLOORS =
     .metatileAttributes = gMetatileAttributes_DHBWFLOORS,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Building_Frlg =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Building_Frlg,
+    .palettes = gTilesetPalettes_Building_Frlg,
+    .metatiles = gMetatiles_Building_Frlg,
+    .metatileAttributes = gMetatileAttributes_Building_Frlg,
+    .callback = InitTilesetAnim_Building_Frlg,
+};
+

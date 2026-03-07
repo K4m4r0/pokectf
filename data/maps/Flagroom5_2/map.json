@@ -1,0 +1,94 @@
+{
+  "id": "MAP_FLAGROOM5_2",
+  "name": "Flagroom5_2",
+  "layout": "LAYOUT_FLAGROOM5_2",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_FLAG5_TERMINAL",
+      "graphics_id": "OBJ_EVENT_GFX_CTF_TERMINAL",
+      "x": 6,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Flagroom5_2_EventScript_CtfTerminal_Flag5",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_MANTIS_NPC",
+      "graphics_id": "OBJ_EVENT_GFX_MANTIS_SIDE",
+      "x": 8,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Flagroom5_2_EventScript_MantisNPC",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_MANTIS_CONSOLE",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 12,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Flagroom5_2_EventScript_MantisConsole",
+      "flag": "FLAG_TEMP_5"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_FLAGROOM5_1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 15,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_FLAGROOM5_1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_FLAGROOM5_ARENA",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Flagroom5_2_BrailleWall"
+    }
+  ]
+}

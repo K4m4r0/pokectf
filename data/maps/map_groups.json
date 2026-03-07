@@ -665,7 +665,8 @@
     "Blackhansa_Floor2",
     "Klassenzimmer_SoEn",
     "Flag3_CD",
-    "Lagerhalle"
+    "Lagerhalle",
+    "LagerhalleArena"
   ],
   "gMapGroup_Flag4": [
     "entryMapFlag4",
@@ -677,13 +678,18 @@
   ],
   "gMapGroup_Flag5": [
     "entryMapFlag5",
-    "DHBW_Sued"
+    "DHBW_Sued",
+    "Klassenzimmer5",
+    "Flagroom5_1",
+    "Flagroom5_2",
+    "Flagroom5_Arena"
   ],
   "gMapGroup_Flag7": [
     "entryMapFlag7",
     "Quadrate",
     "SeckenheimerLandstrasse",
-    "KurtHaus"
+    "KurtHaus",
+    "SeckLand2"
   ],
   "gMapGroup_Flag8": [
     "entryMapFlag8",
@@ -705,6 +711,7 @@
     "RingUntenE4",
     "DiveCellar",
     "DiveCellarDive",
-    "DiveE4Connect"
+    "DiveE4Connect",
+    "GiovannisHouse"
   ]
 }

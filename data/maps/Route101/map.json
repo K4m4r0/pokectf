@@ -189,6 +189,15 @@
       "var": "VAR_ROUTE101_STATE",
       "var_value": "2",
       "script": "Route101_EventScript_PreventExitNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "2",
+      "script": "Route101_EventScript_PreventExitNorth"
     }
   ],
   "bg_events": [

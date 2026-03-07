@@ -195,7 +195,7 @@ HallwayHub_Scene_Sem5::
     applymovement LOCALID_PLAYER, HallwayHub_Move_Sem5
     waitmovement 0
     releaseall
-    warpsilent MAP_HALLWAY_HUB, 0, 0, 0
+    warpsilent MAP_KLASSENZIMMER5, 1, 0, 0
     end
 
 HallwayHub_Scene_Sem6::
