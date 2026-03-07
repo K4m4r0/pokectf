@@ -268,6 +268,7 @@ HouvertClass_EventScript_HouvertPostBattle::
 	msgbox HouvertClass_Text_HouvertBadgeInfo, MSGBOX_DEFAULT
 	setflag FLAG_BADGE02_GET
 	setflag FLAG_CTF_HOUVERT_EXAM_COMPLETED
+	setflag FLAG_DEFEATED_DEWFORD_GYM
 	waitmovement 0
 	applymovement LOCALID_HOUVERT, HouvertClass_Movement_HouvertReturnToPodium
 	waitmovement 0

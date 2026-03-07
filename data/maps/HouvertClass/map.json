@@ -242,14 +242,14 @@
       "x": 4,
       "y": 20,
       "elevation": 0,
-      "dest_map": "MAP_MAIN_HUB",
+      "dest_map": "MAP_HALLWAY_HUB",
       "dest_warp_id": "1"
     },
     {
       "x": 5,
       "y": 20,
       "elevation": 0,
-      "dest_map": "MAP_MAIN_HUB",
+      "dest_map": "MAP_HALLWAY_HUB",
       "dest_warp_id": "1"
     }
   ],

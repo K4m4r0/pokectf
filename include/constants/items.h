@@ -1039,6 +1039,8 @@
 #define ITEM_GAME_BOY_CART 868
 #define ITEM_CTF_TERMINAL 869
 #define ITEMS_COUNT 870
+#define ITEM_GS_BALL_2 869
+#define ITEMS_COUNT 870
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

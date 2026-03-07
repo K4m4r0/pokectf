@@ -100,7 +100,7 @@
       "x": 26,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_LAGERHALLE",
+      "dest_map": "MAP_LAGERHALLE_ARENA",
       "dest_warp_id": "0"
     }
   ],

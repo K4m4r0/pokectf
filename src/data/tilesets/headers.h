@@ -124,17 +124,6 @@ const struct Tileset gTileset_Fortree =
     .callback = InitTilesetAnim_Fortree,
 };
 
-const struct Tileset gTileset_WayToCaferteria =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_WayToCaferteria,
-    .palettes = gTilesetPalettes_WayToCaferteria,
-    .metatiles = gMetatiles_WayToCaferteria,
-    .metatileAttributes = gMetatileAttributes_WayToCaferteria,
-    .callback = InitTilesetAnim_Fortree,
-};
-
 const struct Tileset gTileset_Lilycove =
 {
     .isCompressed = TRUE,
@@ -885,6 +874,19 @@ const struct Tileset gTileset_dhbw_gebaeude =
     .metatileAttributes = gMetatileAttributes_dhbw_gebaeude,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PokemonMansion =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PokemonMansion,
+    .palettes = gTilesetPalettes_PokemonMansion,
+    .metatiles = gMetatiles_PokemonMansion,
+    .metatileAttributes = gMetatileAttributes_PokemonMansion,
+    .callback = NULL,
+};
+
+
 const struct Tileset gTileset_wasserturm =
 {
     .isCompressed = TRUE,
@@ -928,3 +930,15 @@ const struct Tileset gTileset_caferteria_inside =
     .metatileAttributes = gMetatileAttributes_caferteria_inside,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Building_Frlg =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Building_Frlg,
+    .palettes = gTilesetPalettes_Building_Frlg,
+    .metatiles = gMetatiles_Building_Frlg,
+    .metatileAttributes = gMetatileAttributes_Building_Frlg,
+    .callback = InitTilesetAnim_Building_Frlg,
+};
+

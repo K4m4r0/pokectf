@@ -1,0 +1,41 @@
+{
+  "id": "MAP_DIVE_E4CONNECT",
+  "name": "DiveE4Connect",
+  "layout": "LAYOUT_DIVE_E4CONNECT",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_EVER_GRANDE_CITY",
+      "offset": 0,
+      "direction": "emerge"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 20,
+      "y": 76,
+      "elevation": 0,
+      "dest_map": "MAP_DIVE_CELLAR_DIVE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 76,
+      "elevation": 0,
+      "dest_map": "MAP_DIVE_CELLAR_DIVE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

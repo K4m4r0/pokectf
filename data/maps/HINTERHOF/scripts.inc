@@ -8,20 +8,19 @@ HINTERHOF_EventScript_I3CAndObject::
     lock
     faceplayer
 
-    @ Falls schon gefangen -> sollte eh unsichtbar sein, aber sicher ist sicher
     goto_if_set FLAG_I3C_AND_CAUGHT, I3CAnd_End
 
-	msgbox HINTERHOF_Text_What, MSGBOX_DEFAULT
+    msgbox HINTERHOF_Text_What, MSGBOX_DEFAULT
 
-	playmoncry SPECIES_ELECTRODE, CRY_MODE_ENCOUNTER
-	delay 40
-	waitmoncry
+    playmoncry SPECIES_I3C_AND, CRY_MODE_ENCOUNTER
+    delay 40
+    waitmoncry
 
     setwildbattle SPECIES_I3C_AND, I3C_AND_LEVEL
     specialvar VAR_RESULT, BattleSetup_StartLegendaryBattle
     waitstate
 
-    @ 1 == caught (bei den üblichen Legendary-Specials)
+    @ Wenn gefangen -> Flag setzen (dann ist es dauerhaft weg)
     compare VAR_RESULT, 1
     goto_if_eq I3CAnd_Caught
 

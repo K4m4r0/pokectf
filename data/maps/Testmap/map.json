@@ -24,7 +24,12 @@
       "direction": "right"
     },
     {
-      "map": "MAP_SECKENHEIMER_LANDSTRASSE",
+      "map": "MAP_DHBW_SUED",
+      "offset": 2,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_SECK_LAND2",
       "offset": 4,
       "direction": "up"
     }
@@ -103,8 +108,8 @@
       "x": 12,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_KLASSENZIMMER",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_HALLWAY_HUB",
+      "dest_warp_id": "8"
     },
     {
       "warp_id": "WARP_HINTERHOF_1",

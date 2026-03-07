@@ -1198,28 +1198,6 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/entryMapFlag7/scripts.inc"
 
-	.include "data/maps/Flag7_TrickHouseEntrance/scripts.inc"
-
-	.include "data/maps/Flag7_TrickHouseEnd/scripts.inc"
-
-	.include "data/maps/Flag7_TrickHouseCorridor/scripts.inc"
-
-	.include "data/maps/Flag7_TrickHousePuzzle1/scripts.inc"
-
-	.include "data/maps/Flag7_TrickHousePuzzle2/scripts.inc"
-
-	.include "data/maps/Flag7_TrickHousePuzzle3/scripts.inc"
-
-	.include "data/maps/Flag7_TrickHousePuzzle4/scripts.inc"
-
-	.include "data/maps/Flag7_TrickHousePuzzle5/scripts.inc"
-
-	.include "data/maps/Flag7_TrickHousePuzzle6/scripts.inc"
-
-	.include "data/maps/Flag7_TrickHousePuzzle7/scripts.inc"
-
-	.include "data/maps/Flag7_TrickHousePuzzle8/scripts.inc"
-
 	.include "data/maps/entryMapFlag3/scripts.inc"
 
 	.include "data/maps/entryMapFlag5/scripts.inc"
@@ -1309,3 +1287,35 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Leafon_Evolve/scripts.inc"
 
 	.include "data/maps/underCaferteria/scripts.inc"
+
+	.include "data/maps/DHBW_Sued/scripts.inc"
+
+	.include "data/maps/HallwayHub/scripts.inc"
+
+	.include "data/maps/RingUnten/scripts.inc"
+
+	.include "data/maps/Neckarau/scripts.inc"
+
+	.include "data/maps/RingUntenE4/scripts.inc"
+
+	.include "data/maps/DiveCellar/scripts.inc"
+
+	.include "data/maps/DiveCellarDive/scripts.inc"
+
+	.include "data/maps/DiveE4Connect/scripts.inc"
+
+	.include "data/maps/KurtHaus/scripts.inc"
+
+	.include "data/maps/GiovannisHouse/scripts.inc"
+
+	.include "data/maps/LagerhalleArena/scripts.inc"
+
+	.include "data/maps/Klassenzimmer5/scripts.inc"
+
+	.include "data/maps/Flagroom5_1/scripts.inc"
+
+	.include "data/maps/Flagroom5_2/scripts.inc"
+
+	.include "data/maps/Flagroom5_Arena/scripts.inc"
+
+	.include "data/maps/SeckLand2/scripts.inc"

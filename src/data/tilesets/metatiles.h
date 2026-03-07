@@ -222,11 +222,22 @@ const u16 gMetatileAttributes_Mannheim[] = INCBIN_U16("data/tilesets/primary/man
 
 const u16 gMetatiles_dhbw_gebaeude[] = INCBIN_U16("data/tilesets/secondary/dhbw_gebaeude/metatiles.bin");
 const u16 gMetatileAttributes_dhbw_gebaeude[] = INCBIN_U16("data/tilesets/secondary/dhbw_gebaeude/metatile_attributes.bin");
+
+
+
+
 const u16 gMetatiles_wasserturm[] = INCBIN_U16("data/tilesets/secondary/wasserturm/metatiles.bin");
 const u16 gMetatileAttributes_wasserturm[] = INCBIN_U16("data/tilesets/secondary/wasserturm/metatile_attributes.bin");
 
 const u16 gMetatiles_DHBWFLOORS[] = INCBIN_U16("data/tilesets/secondary/dhbwfloors/metatiles.bin");
 const u16 gMetatileAttributes_DHBWFLOORS[] = INCBIN_U16("data/tilesets/secondary/dhbwfloors/metatile_attributes.bin");
+
+const u16 gMetatiles_PokemonMansion[] = INCBIN_U16("data/tilesets/secondary/pokemon_mansion_frlg/metatiles.bin");
+const u16 gMetatileAttributes_PokemonMansion[] = INCBIN_U16("data/tilesets/secondary/pokemon_mansion_frlg/metatile_attributes.bin");
+
+const u16 gMetatiles_Building_Frlg[] = INCBIN_U16("data/tilesets/primary/building_frlg/metatiles.bin");
+const u16 gMetatileAttributes_Building_Frlg[] = INCBIN_U16("data/tilesets/primary/building_frlg/metatile_attributes.bin");
+
 
 const u16 gMetatiles_CafeOutside[] = INCBIN_U16("data/tilesets/secondary/cafe_outside/metatiles.bin");
 const u16 gMetatileAttributes_CafeOutside[] = INCBIN_U16("data/tilesets/secondary/cafe_outside/metatile_attributes.bin");

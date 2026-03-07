@@ -490,15 +490,7 @@ static const struct SpriteFrameImage sPicTable_MagmaMemberF[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_Sidney[] = {
-    overworld_frame(gObjectEventPic_Sidney, 2, 4, 0),
-    overworld_frame(gObjectEventPic_Sidney, 2, 4, 1),
-    overworld_frame(gObjectEventPic_Sidney, 2, 4, 2),
-    overworld_frame(gObjectEventPic_Sidney, 2, 4, 0),
-    overworld_frame(gObjectEventPic_Sidney, 2, 4, 0),
-    overworld_frame(gObjectEventPic_Sidney, 2, 4, 1),
-    overworld_frame(gObjectEventPic_Sidney, 2, 4, 1),
-    overworld_frame(gObjectEventPic_Sidney, 2, 4, 2),
-    overworld_frame(gObjectEventPic_Sidney, 2, 4, 2),
+    overworld_ascending_frames(gObjectEventPic_Sidney, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_Phoebe[] = {
@@ -1411,4 +1403,28 @@ static const struct SpriteFrameImage sPicTable_TrainLeft[] = {
 
 static const struct SpriteFrameImage sPicTable_TrainRight[] = {
     overworld_ascending_frames(gObjectEventPic_TrainRight, 8, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_MantisFront[] = {
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 1),
+};
+
+static const struct SpriteFrameImage sPicTable_MantisSide[] = {
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Mantis, 4, 4, 3),
 };

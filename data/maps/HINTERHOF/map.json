@@ -29,7 +29,7 @@
     },
     {
       "local_id": "LOCALID_I3C_AND_OBJ",
-      "graphics_id": "OBJ_EVENT_GFX_LOTAD_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(I3C_AND)",
       "x": 7,
       "y": 4,
       "elevation": 0,
@@ -39,7 +39,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "HINTERHOF_EventScript_I3CAndObject",
-      "flag": "0"
+      "flag": "FLAG_I3C_AND_CAUGHT"
     }
   ],
   "warp_events": [

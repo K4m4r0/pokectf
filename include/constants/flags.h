@@ -656,32 +656,24 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
+#define FLAG_HH_SEM1_DONE  0x264 // Unused Flag
+#define FLAG_HH_SEM2_DONE  0x265 // Unused Flag
+#define FLAG_HH_SEM3_DONE  0x266 // Unused Flag
+#define FLAG_HH_SEM4_DONE  0x267 // Unused Flag
+#define FLAG_HH_SEM5_DONE  0x268 // Unused Flag
+#define FLAG_HH_SEM6_DONE  0x269 // Unused Flag
+#define FLAG_HH_SEM7_DONE  0x26A // Unused Flag
+#define FLAG_HH_SEM8_DONE  0x26B // Unused Flag
+#define FLAG_RINGUNTENE4_CHATOT_HEARD           0x274 // CTF Chatot 1
+#define FLAG_RINGUNTENE4_DOOR_UNLOCKED          0x275 // CTF Chatot 2
+#define FLAG_ITEM_GIOVANNIS_HOUSE_GS_BALL       0x276 // CTF Giovanni's House GS Ball
+#define FLAG_RINGUNTENE4_CHATOTSPY_HIDDEN       0x277 // CTF Chatot Spy Hidden
+#define FLAG_KLASSENZIMMER5_FIRST_ENTRY         0x278 // CTF Klassenzimmer 5 First Entry
+#define FLAG_KLASSENZIMMER5_GOT_CUT_TOOL        0x279 // CTF Klassenzimmer 5 Got Cut Tool
+#define FLAG_UNUSED         0x27A // schon gesetzt?
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
+#define FLAG_FLAGROOM5_2_CONSOLE_REVEALED       0x27C // CTF Flagroom 5-2 Console Revealed Konsole enthüllt
+#define FLAG_FLAGROOM5_2_FLAG5_UNLOCKED         0x27D // CTF Flagroom 5-2 Flag 5 Unlocked Tür offen
 #define FLAG_UNUSED_0x27E  0x27E // Unused Flag
 #define FLAG_UNUSED_0x27F  0x27F // Unused Flag
 #define FLAG_UNUSED_0x280  0x280 // Unused Flag
@@ -1186,9 +1178,9 @@
 #define FLAG_ITEM_MOSSDEEP_STEVENS_HOUSE_HM08                       0x46D // Unused Flag, leftover from R/S. HM08 is given to the player directly in Emerald
 #define FLAG_ITEM_ROUTE_119_NUGGET                                  0x46E
 #define FLAG_ITEM_ROUTE_104_POTION                                  0x46F
-#define FLAG_UNUSED_0x470                                           0x470 // Unused Flag
+#define FLAG_KURT_GS_BALL_TURNED_IN                                 0x470 // CTF Event Kurt's GS Ball turned in
 #define FLAG_ITEM_ROUTE_103_PP_UP                                   0x471
-#define FLAG_UNUSED_0x472                                           0x472 // Unused Flag
+#define FLAG_KURT_CELEBI_GIVEN                                      0x472 // CTF Event Kurt's Celebi given
 #define FLAG_ITEM_ROUTE_108_STAR_PIECE                              0x473
 #define FLAG_ITEM_ROUTE_109_POTION                                  0x474
 #define FLAG_ITEM_ROUTE_110_ELIXIR                                  0x475
@@ -1249,7 +1241,7 @@
 #define FLAG_ZWISCHENSTUECK_GUARD_MOVED                             0x4AB // FLag3 Zwischenstück Guard bewegt
 #define FLAG_ITEM_CLASSROOM_OPENIN_TOP_TM_SECRET_POWER              0x4AC // Flag4 Secret Power TM pickup
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
+#define FLAG_HIDE_ENTRYMAPFLAG7_MANTIS_CONSOLE                      0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
 #define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
@@ -1316,11 +1308,11 @@
 #define FLAG_FLAG8_BRIDGE_SET                                       0x4EE // Flag Finale Brücke muss in Savegame gesetzt werden
 #define FLAG_CTF_BLACKHANSA_FINALE_FLAG8_DONE                       0x4EF // Flag Finale Blackhansa Finale Event/Terminal
 
-#define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0
-#define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1
-#define FLAG_DEFEATED_MAUVILLE_GYM                                  0x4F2
+#define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0 // CTF Gym 1 Hyvel besiegt
+#define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1 // CFT Gym 2 besiegt Houvert
+#define FLAG_DEFEATED_MAUVILLE_GYM                                  0x4F2 // CTF Gym 3 besiegt Wörner
 #define FLAG_DEFEATED_LAVARIDGE_GYM                                 0x4F3
-#define FLAG_DEFEATED_PETALBURG_GYM                                 0x4F4
+#define FLAG_DEFEATED_PETALBURG_GYM                                 0x4F4 // CTF Gym 5 besiegt 
 #define FLAG_DEFEATED_FORTREE_GYM                                   0x4F5 // CTF Gym 6 besiegt KALI
 #define FLAG_DEFEATED_MOSSDEEP_GYM                                  0x4F6
 #define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7 //CTF Gym 8 besiegt BAMBERGER
