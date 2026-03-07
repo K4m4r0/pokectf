@@ -1,7 +1,7 @@
 {
   "id": "MAP_FLAG7_TRICK_HOUSE_PUZZLE5",
   "name": "Flag7_TrickHousePuzzle5",
-  "layout": "LAYOUT_ROUTE110_TRICK_HOUSE_PUZZLE5",
+  "layout": "LAYOUT_FLAG7_TRICK_HOUSE_PUZZLE5",
   "music": "MUS_TRICK_HOUSE",
   "region_map_section": "MAPSEC_ROUTE_110",
   "requires_flash": false,
@@ -14,20 +14,6 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
-    {
-      "local_id": "LOCALID_MECHADOLL_1",
-      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 6,
-      "y": 17,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll1",
-      "flag": "0"
-    },
     {
       "local_id": "LOCALID_MECHADOLL_2",
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
@@ -57,6 +43,20 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_MECHADOLL_5",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 10,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll5",
+      "flag": "0"
+    },
+    {
       "local_id": "LOCALID_MECHADOLL_4",
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
       "x": 14,
@@ -71,17 +71,17 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_MECHADOLL_5",
+      "local_id": "LOCALID_MECHADOLL_1",
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 10,
-      "y": 4,
+      "x": 6,
+      "y": 17,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll5",
+      "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll1",
       "flag": "0"
     }
   ],
@@ -90,21 +90,21 @@
       "x": 0,
       "y": 21,
       "elevation": 3,
-      "dest_map": "MAP_FLAG7_TRICK_HOUSE_ENTRANCE",
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE4",
       "dest_warp_id": "2"
     },
     {
       "x": 1,
       "y": 21,
       "elevation": 3,
-      "dest_map": "MAP_FLAG7_TRICK_HOUSE_ENTRANCE",
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE4",
       "dest_warp_id": "2"
     },
     {
       "x": 13,
       "y": 1,
       "elevation": 3,
-      "dest_map": "MAP_FLAG7_TRICK_HOUSE_END",
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE6",
       "dest_warp_id": "0"
     }
   ],

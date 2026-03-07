@@ -15717,6 +15717,22 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_Drive,
         .iconPalette = gItemIconPalette_DouseDrive,
     },
+
+    [ITEM_CTF_TERMINAL] =
+    {
+        .name = ITEM_NAME("CTF Terminal"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "An old CTF\n"
+            "terminal recovered\n"
+            "from Trick House."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_QuestionMark,
+        .iconPalette = gItemIconPalette_QuestionMark,
+    },
 };
 
 #undef ITEM_NAME

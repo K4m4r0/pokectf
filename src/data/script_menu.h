@@ -778,6 +778,53 @@ static const struct MenuAction MultichoiceList_BerryPlot[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_TrickHousePuzzle1_Pass123[] =
+{
+    {COMPOUND_STRING("password123")},
+    {COMPOUND_STRING("Back")},
+};
+
+static const struct MenuAction MultichoiceList_TrickHousePuzzle1_Admin[] =
+{
+    {COMPOUND_STRING("admin")},
+    {COMPOUND_STRING("Back")},
+};
+
+static const struct MenuAction MultichoiceList_TrickHousePuzzle1_Complex[] =
+{
+    {COMPOUND_STRING("8mY1P.C3.V-l")},
+    {COMPOUND_STRING("Back")},
+};
+
+static const struct MenuAction MultichoiceList_TrickHousePuzzle1_Pass123Admin[] =
+{
+    {COMPOUND_STRING("password123")},
+    {COMPOUND_STRING("admin")},
+    {COMPOUND_STRING("Back")},
+};
+
+static const struct MenuAction MultichoiceList_TrickHousePuzzle1_Pass123Complex[] =
+{
+    {COMPOUND_STRING("password123")},
+    {COMPOUND_STRING("8mY1P.C3.V-l")},
+    {COMPOUND_STRING("Back")},
+};
+
+static const struct MenuAction MultichoiceList_TrickHousePuzzle1_AdminComplex[] =
+{
+    {COMPOUND_STRING("admin")},
+    {COMPOUND_STRING("8mY1P.C3.V-l")},
+    {COMPOUND_STRING("Back")},
+};
+
+static const struct MenuAction MultichoiceList_TrickHousePuzzle1_All[] =
+{
+    {COMPOUND_STRING("password123")},
+    {COMPOUND_STRING("admin")},
+    {COMPOUND_STRING("8mY1P.C3.V-l")},
+    {COMPOUND_STRING("Back")},
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -906,6 +953,13 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
+    [MULTI_TRICK_HOUSE_PUZZLE1_PASS123]       = MULTICHOICE(MultichoiceList_TrickHousePuzzle1_Pass123),
+    [MULTI_TRICK_HOUSE_PUZZLE1_ADMIN]         = MULTICHOICE(MultichoiceList_TrickHousePuzzle1_Admin),
+    [MULTI_TRICK_HOUSE_PUZZLE1_COMPLEX]       = MULTICHOICE(MultichoiceList_TrickHousePuzzle1_Complex),
+    [MULTI_TRICK_HOUSE_PUZZLE1_PASS123_ADMIN] = MULTICHOICE(MultichoiceList_TrickHousePuzzle1_Pass123Admin),
+    [MULTI_TRICK_HOUSE_PUZZLE1_PASS123_COMPLEX] = MULTICHOICE(MultichoiceList_TrickHousePuzzle1_Pass123Complex),
+    [MULTI_TRICK_HOUSE_PUZZLE1_ADMIN_COMPLEX]  = MULTICHOICE(MultichoiceList_TrickHousePuzzle1_AdminComplex),
+    [MULTI_TRICK_HOUSE_PUZZLE1_ALL]           = MULTICHOICE(MultichoiceList_TrickHousePuzzle1_All),
 };
 
 const u8 *const gStdStrings[] =

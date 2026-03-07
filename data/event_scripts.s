@@ -1198,6 +1198,28 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/entryMapFlag7/scripts.inc"
 
+	.include "data/maps/Flag7_TrickHouseEntrance/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHouseEnd/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHouseCorridor/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle1/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle2/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle3/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle4/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle5/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle6/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle7/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle8/scripts.inc"
+
 	.include "data/maps/entryMapFlag3/scripts.inc"
 
 	.include "data/maps/entryMapFlag5/scripts.inc"

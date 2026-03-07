@@ -39,6 +39,28 @@ Flag7_TrickHouseEnd_EventScript_SetDoorClosedMetatile::
 	setmetatile 10, 1, METATILE_GenericBuilding_TrickHouse_Door_Closed, TRUE
 	return
 
+Flag7_TrickHouseEnd_EventScript_Terminal::
+	lock
+	faceplayer
+	goto_if_set FLAG_CTF_TRICK_HOUSE_END_TERMINAL, Flag7_TrickHouseEnd_EventScript_TerminalAlreadyTaken
+	msgbox Flag7_TrickHouseEnd_Text_TerminalInspect, MSGBOX_DEFAULT
+	giveitem ITEM_CTF_TERMINAL
+	goto_if_eq VAR_RESULT, FALSE, Flag7_TrickHouseEnd_EventScript_TerminalBagFull
+	setflag FLAG_CTF_TRICK_HOUSE_END_TERMINAL
+	removeobject LOCALID_FLAG7_TRICK_HOUSE_END_TERMINAL
+	release
+	end
+
+Flag7_TrickHouseEnd_EventScript_TerminalBagFull::
+	call Common_EventScript_BagIsFull
+	release
+	end
+
+Flag7_TrickHouseEnd_EventScript_TerminalAlreadyTaken::
+	msgbox Flag7_TrickHouseEnd_Text_TerminalEmpty, MSGBOX_DEFAULT
+	release
+	end
+
 Flag7_TrickHouseEnd_EventScript_TrickMaster::
 	lock
 	faceplayer
@@ -354,3 +376,8 @@ Flag7_TrickHouseEnd_Text_YoureIgnoringMe:
 	.string "Now, now! You're ignoring me now?\n"
 	.string "Now that, I consider heartbreaking!$"
 
+Flag7_TrickHouseEnd_Text_TerminalInspect:
+	.string "It's an old CTF terminal.$"
+
+Flag7_TrickHouseEnd_Text_TerminalEmpty:
+	.string "The terminal is gone.$"

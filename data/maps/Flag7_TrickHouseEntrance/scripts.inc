@@ -562,14 +562,155 @@ Flag7_TrickHousePuzzle_EventScript_Door::
 	end
 
 Flag7_TrickHousePuzzle1_EventScript_Door::
-	goto_if_eq VAR_TRICK_HOUSE_PUZZLE_1_STATE, 0, Flag7_TrickHousePuzzle_EventScript_DoorLocked
-	msgbox Flag7_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
+	goto_if_eq VAR_TRICK_HOUSE_PUZZLE_1_STATE, 2, Flag7_TrickHousePuzzle1_EventScript_DoorAlreadyUnlocked
+	goto Flag7_TrickHousePuzzle1_EventScript_Door_PasswordLoop
+
+Flag7_TrickHousePuzzle1_EventScript_Door_PasswordLoop::
+	call Flag7_TrickHousePuzzle1_EventScript_SelectPassword
+	goto_if_eq VAR_RESULT, 254, Flag7_TrickHousePuzzle1_EventScript_NoPasswordsKnown
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, Flag7_TrickHousePuzzle1_EventScript_PasswordEntryCancelled
+	goto_if_eq VAR_RESULT, 0, Flag7_TrickHousePuzzle1_EventScript_Password123Rejected
+	goto_if_eq VAR_RESULT, 1, Flag7_TrickHousePuzzle1_EventScript_AdminRejected
+	goto_if_eq VAR_RESULT, 2, Flag7_TrickHousePuzzle1_EventScript_PasswordAccepted
+	goto Flag7_TrickHousePuzzle1_EventScript_Door_PasswordLoop
+
+Flag7_TrickHousePuzzle1_EventScript_NoPasswordsKnown::
+	msgbox Flag7_TrickHousePuzzle1_Text_NoPasswordsKnown, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Flag7_TrickHousePuzzle1_EventScript_PasswordEntryCancelled::
+	msgbox Flag7_TrickHousePuzzle1_Text_PasswordEntryCancelled, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Flag7_TrickHousePuzzle1_EventScript_Password123Rejected::
+	msgbox Flag7_TrickHousePuzzle1_Text_Password123Warning, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Flag7_TrickHousePuzzle1_EventScript_AdminRejected::
+	msgbox Flag7_TrickHousePuzzle1_Text_AdminWarning, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Flag7_TrickHousePuzzle1_EventScript_PasswordAccepted::
+	msgbox Flag7_TrickHousePuzzle1_Text_PasswordAccepted, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_1_STATE, 2
 	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, FALSE
 	special DrawWholeMapView
 	releaseall
 	end
+
+Flag7_TrickHousePuzzle1_EventScript_DoorAlreadyUnlocked::
+	msgbox Flag7_TrickHousePuzzle1_Text_DoorAlreadyUnlocked, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Flag7_TrickHousePuzzle1_EventScript_SelectPassword::
+	setvar VAR_0x8004, 0
+	call_if_set FLAG_TEMP_TRICK_HOUSE_PUZZLE1_PASSWORD123, Flag7_TrickHousePuzzle1_EventScript_AddPassword123Bit
+	call_if_set FLAG_TEMP_TRICK_HOUSE_PUZZLE1_ADMIN, Flag7_TrickHousePuzzle1_EventScript_AddPasswordAdminBit
+	call_if_set FLAG_TEMP_TRICK_HOUSE_PUZZLE1_COMPLEX, Flag7_TrickHousePuzzle1_EventScript_AddPasswordComplexBit
+	goto_if_eq VAR_0x8004, 0, Flag7_TrickHousePuzzle1_EventScript_NoPasswordSelectionAvailable
+	msgbox Flag7_TrickHousePuzzle1_Text_PasswordPrompt, MSGBOX_DEFAULT
+	switch VAR_0x8004
+	case 1, Flag7_TrickHousePuzzle1_EventScript_SelectPassword123Only
+	case 2, Flag7_TrickHousePuzzle1_EventScript_SelectAdminOnly
+	case 3, Flag7_TrickHousePuzzle1_EventScript_SelectPassword123Admin
+	case 4, Flag7_TrickHousePuzzle1_EventScript_SelectComplexOnly
+	case 5, Flag7_TrickHousePuzzle1_EventScript_SelectPassword123Complex
+	case 6, Flag7_TrickHousePuzzle1_EventScript_SelectAdminComplex
+	case 7, Flag7_TrickHousePuzzle1_EventScript_SelectAllPasswords
+	end
+	return
+
+Flag7_TrickHousePuzzle1_EventScript_NoPasswordSelectionAvailable::
+	setvar VAR_RESULT, 254
+	return
+
+Flag7_TrickHousePuzzle1_EventScript_AddPassword123Bit::
+	addvar VAR_0x8004, 1
+	return
+
+Flag7_TrickHousePuzzle1_EventScript_AddPasswordAdminBit::
+	addvar VAR_0x8004, 2
+	return
+
+Flag7_TrickHousePuzzle1_EventScript_AddPasswordComplexBit::
+	addvar VAR_0x8004, 4
+	return
+
+Flag7_TrickHousePuzzle1_EventScript_SelectPassword123Only::
+	multichoice 17, 6, MULTI_TRICK_HOUSE_PUZZLE1_PASS123, FALSE
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+	goto_if_eq VAR_RESULT, 1, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuBack
+	goto Flag7_TrickHousePuzzle1_EventScript_SetPasswordResult123
+
+Flag7_TrickHousePuzzle1_EventScript_SelectAdminOnly::
+	multichoice 17, 6, MULTI_TRICK_HOUSE_PUZZLE1_ADMIN, FALSE
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+	goto_if_eq VAR_RESULT, 1, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuBack
+	goto Flag7_TrickHousePuzzle1_EventScript_SetPasswordResultAdmin
+
+Flag7_TrickHousePuzzle1_EventScript_SelectComplexOnly::
+	multichoice 17, 6, MULTI_TRICK_HOUSE_PUZZLE1_COMPLEX, FALSE
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+	goto_if_eq VAR_RESULT, 1, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuBack
+	goto Flag7_TrickHousePuzzle1_EventScript_SetPasswordResultComplex
+
+Flag7_TrickHousePuzzle1_EventScript_SelectPassword123Admin::
+	multichoice 17, 6, MULTI_TRICK_HOUSE_PUZZLE1_PASS123_ADMIN, FALSE
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+	goto_if_eq VAR_RESULT, 0, Flag7_TrickHousePuzzle1_EventScript_SetPasswordResult123
+	goto_if_eq VAR_RESULT, 1, Flag7_TrickHousePuzzle1_EventScript_SetPasswordResultAdmin
+	goto_if_eq VAR_RESULT, 2, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuBack
+	goto Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+
+Flag7_TrickHousePuzzle1_EventScript_SelectPassword123Complex::
+	multichoice 17, 6, MULTI_TRICK_HOUSE_PUZZLE1_PASS123_COMPLEX, FALSE
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+	goto_if_eq VAR_RESULT, 0, Flag7_TrickHousePuzzle1_EventScript_SetPasswordResult123
+	goto_if_eq VAR_RESULT, 1, Flag7_TrickHousePuzzle1_EventScript_SetPasswordResultComplex
+	goto_if_eq VAR_RESULT, 2, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuBack
+	goto Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+
+Flag7_TrickHousePuzzle1_EventScript_SelectAdminComplex::
+	multichoice 17, 6, MULTI_TRICK_HOUSE_PUZZLE1_ADMIN_COMPLEX, FALSE
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+	goto_if_eq VAR_RESULT, 0, Flag7_TrickHousePuzzle1_EventScript_SetPasswordResultAdmin
+	goto_if_eq VAR_RESULT, 1, Flag7_TrickHousePuzzle1_EventScript_SetPasswordResultComplex
+	goto_if_eq VAR_RESULT, 2, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuBack
+	goto Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+
+Flag7_TrickHousePuzzle1_EventScript_SelectAllPasswords::
+	multichoice 17, 6, MULTI_TRICK_HOUSE_PUZZLE1_ALL, FALSE
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+	goto_if_eq VAR_RESULT, 0, Flag7_TrickHousePuzzle1_EventScript_SetPasswordResult123
+	goto_if_eq VAR_RESULT, 1, Flag7_TrickHousePuzzle1_EventScript_SetPasswordResultAdmin
+	goto_if_eq VAR_RESULT, 2, Flag7_TrickHousePuzzle1_EventScript_SetPasswordResultComplex
+	goto_if_eq VAR_RESULT, 3, Flag7_TrickHousePuzzle1_EventScript_PasswordMenuBack
+	goto Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+
+Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn::
+	return
+
+Flag7_TrickHousePuzzle1_EventScript_PasswordMenuBack::
+	setvar VAR_RESULT, MULTI_B_PRESSED
+	goto Flag7_TrickHousePuzzle1_EventScript_PasswordMenuReturn
+
+Flag7_TrickHousePuzzle1_EventScript_SetPasswordResult123::
+	setvar VAR_RESULT, 0
+	return
+
+Flag7_TrickHousePuzzle1_EventScript_SetPasswordResultAdmin::
+	setvar VAR_RESULT, 1
+	return
+
+Flag7_TrickHousePuzzle1_EventScript_SetPasswordResultComplex::
+	setvar VAR_RESULT, 2
+	return
 
 Flag7_TrickHousePuzzle2_EventScript_Door::
 	goto_if_eq VAR_TRICK_HOUSE_PUZZLE_2_STATE, 0, Flag7_TrickHousePuzzle_EventScript_DoorLocked

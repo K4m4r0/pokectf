@@ -272,7 +272,7 @@
 #define VAR_CTF_CLASSROOM_TOP2_VISITS                    0x40FC
 #define VAR_CTF_ADMIN_OFFICE_VISITS                      0x40FD
 #define VAR_KF_STADIUM_SOLVED                            0x40FE // CTF
-#define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
+#define VAR_RYBBEL_TERMINAL_HINT                         0x40FF // Tracks whether Rybbel has given his request
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)

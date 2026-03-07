@@ -1,7 +1,7 @@
 {
   "id": "MAP_FLAG7_TRICK_HOUSE_PUZZLE2",
   "name": "Flag7_TrickHousePuzzle2",
-  "layout": "LAYOUT_ROUTE110_TRICK_HOUSE_PUZZLE2",
+  "layout": "LAYOUT_FLAG7_TRICK_HOUSE_PUZZLE2",
   "music": "MUS_TRICK_HOUSE",
   "region_map_section": "MAPSEC_ROUTE_110",
   "requires_flash": false,
@@ -14,45 +14,6 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
-      "x": 13,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Flag7_TrickHousePuzzle2_EventScript_Ted",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
-      "x": 10,
-      "y": 17,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
-      "script": "Flag7_TrickHousePuzzle2_EventScript_Paul",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
-      "x": 11,
-      "y": 9,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "Flag7_TrickHousePuzzle2_EventScript_Georgia",
-      "flag": "0"
-    },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 8,
@@ -82,24 +43,24 @@
   ],
   "warp_events": [
     {
-      "x": 0,
-      "y": 21,
-      "elevation": 3,
-      "dest_map": "MAP_FLAG7_TRICK_HOUSE_ENTRANCE",
-      "dest_warp_id": "2"
-    },
-    {
       "x": 1,
       "y": 21,
       "elevation": 3,
-      "dest_map": "MAP_FLAG7_TRICK_HOUSE_ENTRANCE",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE1",
+      "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 1,
       "elevation": 3,
-      "dest_map": "MAP_FLAG7_TRICK_HOUSE_END",
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 0,
+      "y": 21,
+      "elevation": 3,
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE1",
       "dest_warp_id": "0"
     }
   ],

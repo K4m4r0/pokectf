@@ -14,7 +14,36 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_CAFERTERIA",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 48,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_CAFERTERIAINSIDE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 32,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_CAFERTERIAINSIDE",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE1",
+      "dest_warp_id": "1"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

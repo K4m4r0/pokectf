@@ -1,7 +1,7 @@
 {
   "id": "MAP_FLAG7_TRICK_HOUSE_CORRIDOR",
   "name": "Flag7_TrickHouseCorridor",
-  "layout": "LAYOUT_ROUTE110_TRICK_HOUSE_CORRIDOR",
+  "layout": "LAYOUT_FLAG7_TRICK_HOUSE_CORRIDOR",
   "music": "MUS_TRICK_HOUSE",
   "region_map_section": "MAPSEC_ROUTE_110",
   "requires_flash": false,

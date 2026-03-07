@@ -1,7 +1,7 @@
 {
   "id": "MAP_FLAG7_TRICK_HOUSE_PUZZLE8",
   "name": "Flag7_TrickHousePuzzle8",
-  "layout": "LAYOUT_ROUTE110_TRICK_HOUSE_PUZZLE8",
+  "layout": "LAYOUT_FLAG7_TRICK_HOUSE_PUZZLE8",
   "music": "MUS_TRICK_HOUSE",
   "region_map_section": "MAPSEC_ROUTE_110",
   "requires_flash": false,
@@ -14,45 +14,6 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
-    {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 1,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Flag7_TrickHousePuzzle8_EventScript_Vincent",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 4,
-      "y": 2,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Flag7_TrickHousePuzzle8_EventScript_Leroy",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
-      "x": 8,
-      "y": 17,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Flag7_TrickHousePuzzle8_EventScript_Keira",
-      "flag": "0"
-    },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 2,
@@ -72,14 +33,14 @@
       "x": 0,
       "y": 21,
       "elevation": 3,
-      "dest_map": "MAP_FLAG7_TRICK_HOUSE_ENTRANCE",
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE7",
       "dest_warp_id": "2"
     },
     {
       "x": 1,
       "y": 21,
       "elevation": 3,
-      "dest_map": "MAP_FLAG7_TRICK_HOUSE_ENTRANCE",
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE7",
       "dest_warp_id": "2"
     },
     {
