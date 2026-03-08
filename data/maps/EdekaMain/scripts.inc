@@ -75,13 +75,13 @@ EdekaMain_Text_ReviveIsFantastic:
 	.string "There is this hipster near the\n"
 	.string "checkout area telling everyone to\p"
 	.string "buy MOO MOO MILK for 33 cents!.\p"
-	.string "Lying piece of s#:§!$"
+	.string "Lying piece of crap!$"
 
 EdekaMain_Text_Nate:
-	.string "\"NATE: Yooo, wssup bro.\p"
+	.string "NATE: Yooo, wssup bro.\p"
 	.string "Check this out. MOO MOO MILK for\n"
 	.string "only 33 cents.\p"
-	.string "GIG, goldmine is goated! \"$"
+	.string "GIG, goldmine is goated!$"
 
 EdekaMain_Text_NetAndDiveBallsUseful:
 	.string "EMPLOYEE: Sorry, we are out of\n"
