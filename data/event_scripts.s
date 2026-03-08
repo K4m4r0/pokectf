@@ -1321,3 +1321,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/EdekaOutdoor/scripts.inc"
 
 	.include "data/maps/ArktosMap/scripts.inc"
+
+	.include "data/maps/FossilHaus/scripts.inc"

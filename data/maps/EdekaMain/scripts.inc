@@ -99,3 +99,4 @@ EdekaMain_Text_BagFull:
 
 EdekaMain_Text_Empty:
     .string "There's nothing else here.$"
+

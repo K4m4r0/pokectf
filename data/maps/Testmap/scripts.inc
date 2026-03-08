@@ -157,3 +157,14 @@ Testmap_Text_WokeUp:
 
 
 
+Testmap_EventScript_SignDev::
+	msgbox Testmap_Text_DevHouse, MSGBOX_SIGN
+	end
+
+Testmap_Text_DevHouse:
+	.string "Developer's House\n"
+	.string "Currently closed$"
+
+
+
+

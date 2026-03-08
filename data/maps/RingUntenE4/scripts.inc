@@ -132,6 +132,27 @@ RingUntenE4_Movement_Chatot_Right3:
     step_end
 
 
+
+@ =========================================================
+@ Schilder
+@ =========================================================
+
+RingUntenE4_EventScript_SignSeaSideRetreat::
+	msgbox RingUntenE4_Text_SeaSideRetreat, MSGBOX_SIGN
+	end
+
+RingUntenE4_EventScript_SignRocketOffice::
+	msgbox RingUntenE4_Text_RocketOffice, MSGBOX_SIGN
+	end
+
+
+RingUntenE4_Text_SeaSideRetreat:
+	.string "Giovanni's Sea Side Retreat$"
+
+RingUntenE4_Text_RocketOffice:
+	.string "Team Rocket Branch Office$"
+    
+
 @ =========================================================
 @ Text
 @ =========================================================

@@ -2,7 +2,7 @@
   "id": "MAP_DIVE_E4CONNECT",
   "name": "DiveE4Connect",
   "layout": "LAYOUT_DIVE_E4CONNECT",
-  "music": "MUS_DUMMY",
+  "music": "MUS_UNDERWATER",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

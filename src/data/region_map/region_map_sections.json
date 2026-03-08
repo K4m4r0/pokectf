@@ -1234,6 +1234,70 @@
     {
       "id": "MAPSEC_DHBW",
       "name": "DHBW"
+    },
+    {
+      "id": "MAPSEC_RHEIN",
+      "name": "RHEIN"
+    },
+    {
+      "id": "MAPSEC_NECKARAU",
+      "name": "NECKARAU"
+    },
+    {
+      "id": "MAPSEC_SMUGGLERS_HIDEOUT",
+      "name": "SMUGGLER'S HIDEOUT"
+    },
+    {
+      "id": "MAPSEC_BLACKHANSA_FACILITY",
+      "name": "BLACKHANSA FACILITY"
+    },
+    {
+      "id": "MAPSEC_BLACKHANSA_WAREHOUSE",
+      "name": "BLACKHANSA WAREHOUSE"
+    },
+    {
+      "id": "MAPSEC_SCIENTIFIC_INSTITUTE",
+      "name": "SCIENTIFIC INSTITUTE"
+    },
+    {
+      "id": "MAPSEC_SECKENHEIMER_LANDSTRASSE",
+      "name": "SECKENHEIMER LANDSTRASSE"
+    },
+    {
+      "id": "MAPSEC_QUADRATE",
+      "name": "QUADRATE"
+    },
+    {
+      "id": "MAPSEC_OLD_VILLA",
+      "name": "OLD VILLA"
+    },
+    {
+      "id": "MAPSEC_WATER_TOWER",
+      "name": "WATER TOWER"
+    },
+    {
+      "id": "MAPSEC_STADIUM",
+      "name": "STADIUM"
+    },
+    {
+      "id": "MAPSEC_NECKAR",
+      "name": "NECKAR"
+    },
+    {
+      "id": "MAPSEC_EDEKA",
+      "name": "EDEKA"
+    },
+    {
+      "id": "MAPSEC_MYSTERIOUS_HOUSE",
+      "name": "MYSTERIOUS HOUSE"
+    },
+    {
+      "id": "MAPSEC_CAVE",
+      "name": "CAVE"
+    },
+    {
+      "id": "MAPSEC_GIOVANNIS_HOUSE",
+      "name": "GIOVANNI'S HOUSE"
     }
   ]
 }

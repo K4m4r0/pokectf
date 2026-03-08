@@ -122,10 +122,9 @@ Ludwigshafen_Text_Both_PleaseHurry:
 
 
 
-    .include "constants/global.inc"
 
 @ =========================================================
-@ 1) Fake-Trade-Evo: Haunter -> Gengar (wählbares Party-Mon)
+@ Fake Trade Evo: generisch für alle Trade-Mons
 @ =========================================================
 Ludwigshafen_EventScript_FakeTradeEvo_HaunterToGengar::
     lock
@@ -142,30 +141,20 @@ Ludwigshafen_TradeEvo_SelectLoop:
     special ChoosePartyMon
     waitstate
 
-    @ Cancel/invalid selection -> VAR_0x8004 >= PARTY_SIZE
+    @ Cancel / invalid
     goto_if_ge VAR_0x8004, PARTY_SIZE, Ludwigshafen_TradeEvo_End
 
-    @ Optional: nicer Text (C-special prüft sowieso nochmal)
-    specialvar VAR_RESULT, ScriptGetPartyMonSpecies
-    goto_if_ne VAR_RESULT, SPECIES_HAUNTER, Ludwigshafen_TradeEvo_WrongMon
+    call Ludwigshafen_TradeEvo_ConfigureSelectedMon
+    compare VAR_RESULT, 1
+    goto_if_ne Ludwigshafen_TradeEvo_WrongMon
 
-    @ ---- Konfiguration für dieses Event (pro Event frei definierbar) ----
-    setvar VAR_0x8005, SPECIES_HAUNTER     @ required/base
-    setvar VAR_0x8006, SPECIES_GENGAR      @ target
-    setvar VAR_0x8007, ITEM_NONE           @ required held item (0/ITEM_NONE = keines)
-    setvar VAR_0x8008, 0                   @ 0 = Everstone blockt, 1 = Everstone ignorieren
-    setvar VAR_0x8009, 0                   @ 0 = Item nicht verbrauchen, 1 = verbrauchen (nur relevant wenn VAR_0x8007 != ITEM_NONE)
-
-    @ Trade-Feeling: Sound + warten (Overworld, aber gelockt)
     playse SE_WARP_IN
     playse SE_WARP_OUT
     waitse
 
-    @ Evolution starten (kein echter Trade; Pokémon bleibt deins)
     special Special_FakeTradeEvolveSelectedToTarget
     waitstate
 
-    @ Resultcodes (VAR_RESULT):
     @ 1 = Evolution gestartet
     @ 2 = falsche Species
     @ 3 = Ei
@@ -183,7 +172,6 @@ Ludwigshafen_TradeEvo_SelectLoop:
     compare VAR_RESULT, 5
     goto_if_eq Ludwigshafen_TradeEvo_NoItem
 
-    @ Fallback (inkl. “falsche Species”)
     goto Ludwigshafen_TradeEvo_WrongMon
 
 Ludwigshafen_TradeEvo_Success:
@@ -209,6 +197,294 @@ Ludwigshafen_TradeEvo_NoItem:
 Ludwigshafen_TradeEvo_End:
     release
     end
+
+
+@ =========================================================
+@ Konfiguration für gewähltes Party-Pokémon
+@ Setzt:
+@ VAR_0x8005 = benötigte Species
+@ VAR_0x8006 = Ziel-Species
+@ VAR_0x8007 = benötigtes Held-Item (ITEM_NONE falls keines)
+@ VAR_0x8008 = Everstone ignorieren? (0 nein)
+@ VAR_0x8009 = Item verbrauchen? (0 nein)
+@ VAR_RESULT = 1 wenn unterstützt, sonst 0
+@ =========================================================
+
+Ludwigshafen_TradeEvo_ConfigureSelectedMon:
+    specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+
+    compare VAR_RESULT, SPECIES_HAUNTER
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Haunter
+
+    compare VAR_RESULT, SPECIES_KADABRA
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Kadabra
+
+    compare VAR_RESULT, SPECIES_MACHOKE
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Machoke
+
+    compare VAR_RESULT, SPECIES_GRAVELER
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Graveler
+
+    compare VAR_RESULT, SPECIES_GRAVELER_ALOLA
+    goto_if_eq Ludwigshafen_TradeEvo_Set_GravelerAlola
+
+    compare VAR_RESULT, SPECIES_ONIX
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Onix
+
+    compare VAR_RESULT, SPECIES_SCYTHER
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Scyther
+
+    compare VAR_RESULT, SPECIES_SEADRA
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Seadra
+
+    compare VAR_RESULT, SPECIES_SLOWPOKE
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Slowpoke
+
+    compare VAR_RESULT, SPECIES_POLIWHIRL
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Poliwhirl
+
+    compare VAR_RESULT, SPECIES_PORYGON
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Porygon
+
+    compare VAR_RESULT, SPECIES_PORYGON2
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Porygon2
+
+    compare VAR_RESULT, SPECIES_RHYDON
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Rhydon
+
+    compare VAR_RESULT, SPECIES_ELECTABUZZ
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Electabuzz
+
+    compare VAR_RESULT, SPECIES_MAGMAR
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Magmar
+
+    compare VAR_RESULT, SPECIES_CLAMPERL
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Clamperl
+
+    compare VAR_RESULT, SPECIES_DUSCLOPS
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Dusclops
+
+    compare VAR_RESULT, SPECIES_BOLDORE
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Boldore
+
+    compare VAR_RESULT, SPECIES_GURDURR
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Gurdurr
+
+    compare VAR_RESULT, SPECIES_KARRABLAST
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Karrablast
+
+    compare VAR_RESULT, SPECIES_SHELMET
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Shelmet
+
+    compare VAR_RESULT, SPECIES_PHANTUMP
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Phantump
+
+    compare VAR_RESULT, SPECIES_SPRITZEE
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Spritzee
+
+    compare VAR_RESULT, SPECIES_SWIRLIX
+    goto_if_eq Ludwigshafen_TradeEvo_Set_Swirlix
+
+    compare VAR_RESULT, SPECIES_PUMPKABOO
+    goto_if_eq Ludwigshafen_TradeEvo_Set_PumpkabooAverage
+
+    compare VAR_RESULT, SPECIES_PUMPKABOO_SMALL
+    goto_if_eq Ludwigshafen_TradeEvo_Set_PumpkabooSmall
+
+    compare VAR_RESULT, SPECIES_PUMPKABOO_LARGE
+    goto_if_eq Ludwigshafen_TradeEvo_Set_PumpkabooLarge
+
+    compare VAR_RESULT, SPECIES_PUMPKABOO_SUPER
+    goto_if_eq Ludwigshafen_TradeEvo_Set_PumpkabooSuper
+
+    setvar VAR_RESULT, 0
+    return
+
+
+Ludwigshafen_TradeEvo_Set_Haunter:
+    setvar VAR_0x8005, SPECIES_HAUNTER
+    setvar VAR_0x8006, SPECIES_GENGAR
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Kadabra:
+    setvar VAR_0x8005, SPECIES_KADABRA
+    setvar VAR_0x8006, SPECIES_ALAKAZAM
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Machoke:
+    setvar VAR_0x8005, SPECIES_MACHOKE
+    setvar VAR_0x8006, SPECIES_MACHAMP
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Graveler:
+    setvar VAR_0x8005, SPECIES_GRAVELER
+    setvar VAR_0x8006, SPECIES_GOLEM
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_GravelerAlola:
+    setvar VAR_0x8005, SPECIES_GRAVELER_ALOLA
+    setvar VAR_0x8006, SPECIES_GOLEM_ALOLA
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Onix:
+    setvar VAR_0x8005, SPECIES_ONIX
+    setvar VAR_0x8006, SPECIES_STEELIX
+    setvar VAR_0x8007, ITEM_METAL_COAT
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Scyther:
+    setvar VAR_0x8005, SPECIES_SCYTHER
+    setvar VAR_0x8006, SPECIES_SCIZOR
+    setvar VAR_0x8007, ITEM_METAL_COAT
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Seadra:
+    setvar VAR_0x8005, SPECIES_SEADRA
+    setvar VAR_0x8006, SPECIES_KINGDRA
+    setvar VAR_0x8007, ITEM_DRAGON_SCALE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Slowpoke:
+    setvar VAR_0x8005, SPECIES_SLOWPOKE
+    setvar VAR_0x8006, SPECIES_SLOWKING
+    setvar VAR_0x8007, ITEM_KINGS_ROCK
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Poliwhirl:
+    setvar VAR_0x8005, SPECIES_POLIWHIRL
+    setvar VAR_0x8006, SPECIES_POLITOED
+    setvar VAR_0x8007, ITEM_KINGS_ROCK
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Porygon:
+    setvar VAR_0x8005, SPECIES_PORYGON
+    setvar VAR_0x8006, SPECIES_PORYGON2
+    setvar VAR_0x8007, ITEM_UPGRADE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Porygon2:
+    setvar VAR_0x8005, SPECIES_PORYGON2
+    setvar VAR_0x8006, SPECIES_PORYGON_Z
+    setvar VAR_0x8007, ITEM_DUBIOUS_DISC
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Rhydon:
+    setvar VAR_0x8005, SPECIES_RHYDON
+    setvar VAR_0x8006, SPECIES_RHYPERIOR
+    setvar VAR_0x8007, ITEM_PROTECTOR
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Electabuzz:
+    setvar VAR_0x8005, SPECIES_ELECTABUZZ
+    setvar VAR_0x8006, SPECIES_ELECTIVIRE
+    setvar VAR_0x8007, ITEM_ELECTIRIZER
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Magmar:
+    setvar VAR_0x8005, SPECIES_MAGMAR
+    setvar VAR_0x8006, SPECIES_MAGMORTAR
+    setvar VAR_0x8007, ITEM_MAGMARIZER
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Clamperl:
+    msgbox Ludwigshafen_Text_TradeEvoClamperlChoice, MSGBOX_YESNO
+    compare VAR_RESULT, YES
+    goto_if_eq Ludwigshafen_TradeEvo_Set_ClamperlHuntail
+
+    setvar VAR_0x8005, SPECIES_CLAMPERL
+    setvar VAR_0x8006, SPECIES_GOREBYSS
+    setvar VAR_0x8007, ITEM_DEEP_SEA_SCALE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_ClamperlHuntail:
+    setvar VAR_0x8005, SPECIES_CLAMPERL
+    setvar VAR_0x8006, SPECIES_HUNTAIL
+    setvar VAR_0x8007, ITEM_DEEP_SEA_TOOTH
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Dusclops:
+    setvar VAR_0x8005, SPECIES_DUSCLOPS
+    setvar VAR_0x8006, SPECIES_DUSKNOIR
+    setvar VAR_0x8007, ITEM_REAPER_CLOTH
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Boldore:
+    setvar VAR_0x8005, SPECIES_BOLDORE
+    setvar VAR_0x8006, SPECIES_GIGALITH
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Gurdurr:
+    setvar VAR_0x8005, SPECIES_GURDURR
+    setvar VAR_0x8006, SPECIES_CONKELDURR
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+@ Partner-Bedingung aus echter Trade-Logik wird hier bewusst ignoriert
+Ludwigshafen_TradeEvo_Set_Karrablast:
+    setvar VAR_0x8005, SPECIES_KARRABLAST
+    setvar VAR_0x8006, SPECIES_ESCAVALIER
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Shelmet:
+    setvar VAR_0x8005, SPECIES_SHELMET
+    setvar VAR_0x8006, SPECIES_ACCELGOR
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Phantump:
+    setvar VAR_0x8005, SPECIES_PHANTUMP
+    setvar VAR_0x8006, SPECIES_TREVENANT
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Spritzee:
+    setvar VAR_0x8005, SPECIES_SPRITZEE
+    setvar VAR_0x8006, SPECIES_AROMATISSE
+    setvar VAR_0x8007, ITEM_SACHET
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_Swirlix:
+    setvar VAR_0x8005, SPECIES_SWIRLIX
+    setvar VAR_0x8006, SPECIES_SLURPUFF
+    setvar VAR_0x8007, ITEM_WHIPPED_DREAM
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_PumpkabooAverage:
+    setvar VAR_0x8005, SPECIES_PUMPKABOO
+    setvar VAR_0x8006, SPECIES_GOURGEIST_AVERAGE
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_PumpkabooSmall:
+    setvar VAR_0x8005, SPECIES_PUMPKABOO_SMALL
+    setvar VAR_0x8006, SPECIES_GOURGEIST_SMALL
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_PumpkabooLarge:
+    setvar VAR_0x8005, SPECIES_PUMPKABOO_LARGE
+    setvar VAR_0x8006, SPECIES_GOURGEIST_LARGE
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_Set_PumpkabooSuper:
+    setvar VAR_0x8005, SPECIES_PUMPKABOO_SUPER
+    setvar VAR_0x8006, SPECIES_GOURGEIST_SUPER
+    setvar VAR_0x8007, ITEM_NONE
+    goto Ludwigshafen_TradeEvo_CommonReturn
+
+Ludwigshafen_TradeEvo_CommonReturn:
+    setvar VAR_0x8008, 0
+    setvar VAR_0x8009, 0
+    setvar VAR_RESULT, 1
+    return
 
 
 @ =========================================================
@@ -243,25 +519,25 @@ Ludwigshafen_GiftHaunter_End:
 
 
 @ =========================================================
-@ Texte (änderbar nach Wunsch)
+@ Texte
 @ =========================================================
 Ludwigshafen_Text_TradeEvoInvite:
-    .string "ILJA: Hey, we're swapping our HAUNTERS\n"
-    .string "so they can evolve into GENGAR.\p"
+    .string "ILJA: Hey, we're swapping our POKéMON\n"
+    .string "so they can evolve.\p"
     .string "RENE: Then we'll swap them back so \n"
     .string "everyone can keep their own.\p"
     .string "ILJA: Want to join us?$"
 
 Ludwigshafen_Text_TradeEvoChoose:
-    .string "Pick the HAUNTER you want to evolve.$"
+    .string "Pick the POKéMON you want to evolve.$"
 
 Ludwigshafen_Text_TradeEvoAfter:
     .string "Nice! That trade vibe did the trick!\n"
-    .string "Your HAUNTER evolved into GENGAR!$"
+    .string "Your POKéMON evolved!$"
     
 Ludwigshafen_Text_TradeEvoWrongMon:
-    .string "That isn't an HAUNTER.\n"
-    .string "Pick a different Pokémon.$"
+    .string "That Pokémon doesn't evolve \n"
+    .string "through trading.$"
 
 Ludwigshafen_Text_TradeEvoIsEgg:
     .string "That's an Egg. That won't work.$"
@@ -273,6 +549,14 @@ Ludwigshafen_Text_TradeEvoEverstone:
 Ludwigshafen_Text_TradeEvoNoItem:
     .string "It needs to hold a specific item\n"
     .string "for this evolution.$"
+
+Ludwigshafen_Text_TradeEvoClamperlChoice:
+    .string "Should CLAMPERL evolve into\n"
+    .string "HUNTAIL?\p"
+    .string "Choose NO for GOREBYSS.$"
+
+
+
 
 
 Ludwigshafen_Text_GiftHaunterOffer:
