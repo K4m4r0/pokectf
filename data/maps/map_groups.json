@@ -42,6 +42,7 @@
     "gMapGroup_Flag5",
     "gMapGroup_Flag7",
     "gMapGroup_Flag8",
+    "gMapGroup_EdekaIndoor",
     "gMapGroup_Postgame",
     "gMapGroup_Flag6"
   ],
@@ -719,5 +720,8 @@
     "Klassenzimmer6",
     "Abstellkammer",
     "Hoehlenhub"
+  ],
+  "gMapGroup_EdekaIndoor": [
+    "EdekaMain"
   ]
 }

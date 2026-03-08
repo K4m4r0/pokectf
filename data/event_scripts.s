@@ -1226,6 +1226,8 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/HALLWAY_TO_SECRETARIAT/scripts.inc"
 
+	.include "data/maps/EdekaMain/scripts.inc"
+
 	.include "data/maps/HALLWAY_TO_SECRETARIAT_2/scripts.inc"
 
 	.include "data/maps/Hallwaycurvedleft/scripts.inc"
