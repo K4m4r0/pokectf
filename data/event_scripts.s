@@ -1309,3 +1309,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Flagroom5_Arena/scripts.inc"
 
 	.include "data/maps/SeckLand2/scripts.inc"
+
+	.include "data/maps/Klassenzimmer6/scripts.inc"
+
+	.include "data/maps/Abstellkammer/scripts.inc"
+
+	.include "data/maps/Hoehlenhub/scripts.inc"

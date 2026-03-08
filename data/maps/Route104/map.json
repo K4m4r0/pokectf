@@ -601,13 +601,6 @@
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "5"
-    },
-    {
-      "x": 23,
-      "y": 66,
-      "elevation": 0,
-      "dest_map": "MAP_FLAG3_CD",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

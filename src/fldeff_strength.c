@@ -13,11 +13,20 @@
 // static functions
 static void FieldCallback_Strength(void);
 static void StartStrengthFieldEffect(void);
+static bool32 IsStrengthObjectInFrontOfPlayer(void);
 
 // text
+static bool32 IsStrengthObjectInFrontOfPlayer(void)
+{
+    return CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_PUSHABLE_BOULDER) == TRUE
+        || CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_MOVING_BOX) == TRUE
+        || CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_CD) == TRUE
+        || CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_BIG_CHARIZARD_DOLL) == TRUE;
+}
+
 bool32 SetUpFieldMove_Strength(void)
 {
-    if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_PUSHABLE_BOULDER) == TRUE)
+    if (IsStrengthObjectInFrontOfPlayer() == TRUE)
     {
         gSpecialVar_Result = GetCursorSelectionMonId();
         gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;

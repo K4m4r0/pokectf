@@ -4947,7 +4947,7 @@
       "width": 70,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/RingUnten/border.bin",
       "blockdata_filepath": "data/layouts/RingUnten/map.bin"
     },
@@ -5080,6 +5080,36 @@
       "secondary_tileset": "gTileset_dhbw_gebaeude",
       "border_filepath": "data/layouts/SeckLand2/border.bin",
       "blockdata_filepath": "data/layouts/SeckLand2/map.bin"
+    },
+    {
+      "id": "LAYOUT_KLASSENZIMMER6",
+      "name": "Klassenzimmer6_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PokemonSchool",
+      "border_filepath": "data/layouts/Klassenzimmer6/border.bin",
+      "blockdata_filepath": "data/layouts/Klassenzimmer6/map.bin"
+    },
+    {
+      "id": "LAYOUT_ABSTELLKAMMER",
+      "name": "Abstellkammer_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_InsideOfTruck",
+      "border_filepath": "data/layouts/Abstellkammer/border.bin",
+      "blockdata_filepath": "data/layouts/Abstellkammer/map.bin"
+    },
+    {
+      "id": "LAYOUT_HOEHLENHUB",
+      "name": "Hoehlenhub_Layout",
+      "width": 20,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/Hoehlenhub/border.bin",
+      "blockdata_filepath": "data/layouts/Hoehlenhub/map.bin"
     }
   ]
 }

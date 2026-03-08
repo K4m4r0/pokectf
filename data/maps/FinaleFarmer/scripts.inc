@@ -6,16 +6,12 @@ FinaleFarmer_EventScript_PhillipBoss::
     faceplayer
     goto_if_set FLAG_BADGE08_GET, FinaleFarmer_AfterScript
 
-
-    @ First textbox: "..."
     msgbox FinaleFarmer_Text_Dots, MSGBOX_DEFAULT
     closemessage
 
-    @ Turn boss to face down (starts face up)
     turnobject LOCALID_FARMER_FINALE, DIR_SOUTH
 
-    @ Optional: branch if special Pokemon in party (Gengar)
-    call FinaleFarmer_CheckPartyForGastlyLine
+    call FinaleFarmer_CheckPartyForI3CLine
     compare VAR_RESULT, 1
     goto_if_eq FinaleFarmer_Intro_Gengar
 
@@ -30,16 +26,17 @@ FinaleFarmer_Intro_Gengar:
 FinaleFarmer_StartBattle:
     closemessage
     setvar VAR_LAST_TALKED, LOCALID_FARMER_FINALE
-
-    @ IMPORTANT: This trainerbattle macro in your repo requires all params.
-    @ Also: keep it on ONE line and use numeric constants (0/1).
     trainerbattle TRAINER_BATTLE_SINGLE, LOCALID_FARMER_FINALE, TRAINER_PHILLIP, FinaleFarmer_Text_Intro, FinaleFarmer_Text_Lose, FinaleFarmer_AfterBattle, 0, 0, 0, 0, 0, FinaleFarmer_Text_AfterBattle, FinaleFarmer_Text_CannotBattle, 0, 1, 0, 0
-
     end
 
 FinaleFarmer_AfterScript:
+    lockall
+    faceplayer
+
+    goto_if_unset FLAG_GOT_DIVE_TOOL_FROM_PHILLIP, FinaleFarmer_GiveDiveToolAfterBattle
+
     msgbox FinaleFarmer_Text_After, MSGBOX_DEFAULT
-    release
+    releaseall
     end
 
 @ =========================================================
@@ -49,35 +46,46 @@ FinaleFarmer_AfterBattle:
     lockall
     faceplayer
     setflag FLAG_BADGE08_GET
+
     msgbox FinaleFarmer_Text_VictorySpeech, MSGBOX_DEFAULT
     closemessage
+
     msgbox FinaleFarmer_Text_BadgeReceived, MSGBOX_DEFAULT
+    closemessage
+
+FinaleFarmer_GiveDiveToolAfterBattle:
+    msgbox FinaleFarmer_Text_DiveToolIntro, MSGBOX_DEFAULT
+    giveitem ITEM_DIVE_TOOL, 1
+    compare VAR_RESULT, FALSE
+    goto_if_eq FinaleFarmer_DiveToolBagFull
+
+    setflag FLAG_GOT_DIVE_TOOL_FROM_PHILLIP
     releaseall
     end
 
+FinaleFarmer_DiveToolBagFull:
+    msgbox FinaleFarmer_Text_DiveToolBagFull, MSGBOX_DEFAULT
+    releaseall
+    end
 
 
 @ =========================================================
 @ Party Check Helper (STUB)
 @ =========================================================
 
-FinaleFarmer_CheckPartyForGastlyLine:
+FinaleFarmer_CheckPartyForI3CLine:
     setvar VAR_RESULT, 0
 
-    setvar VAR_0x8004, SPECIES_GASTLY
+    setvar VAR_0x8004, SPECIES_I3C_AND
     specialvar VAR_0x8005, Special_PartyContainsSpecies
     compare VAR_0x8005, 1
     goto_if_eq .found
 
-    setvar VAR_0x8004, SPECIES_HAUNTER
+    setvar VAR_0x8004, SPECIES_I3C_NAND
     specialvar VAR_0x8005, Special_PartyContainsSpecies
     compare VAR_0x8005, 1
     goto_if_eq .found
 
-    setvar VAR_0x8004, SPECIES_GENGAR
-    specialvar VAR_0x8005, Special_PartyContainsSpecies
-    compare VAR_0x8005, 1
-    goto_if_eq .found
 
     return
 .found:
@@ -110,8 +118,8 @@ FinaleFarmer_Text_Intro:
 FinaleFarmer_Text_Intro_Gengar:
     .string "...\p"
     .string "That presence in your team...\n"
-    .string "A shadow with teeth.\p"
-    .string "A reminder that unseen vectors\n"
+    .string "A symbol with teeth.\p"
+    .string "A reminder that silly vectors\n"
     .string "still strike hardest.\p"
     .string "Good.\n"
     .string "Bring it.\p"
@@ -152,4 +160,15 @@ FinaleFarmer_Text_After:
 
 FinaleFarmer_Text_CannotBattle:
     .string "You have no usable Pokemon.$"
+
+FinaleFarmer_Text_DiveToolIntro:
+    .string "You have found all the flags and\n"
+    .string "successfully completed your studies.\p"
+    .string "You can now explore the rest of the\n"
+    .string "world. This might help you:$"
+
+FinaleFarmer_Text_DiveToolBagFull:
+    .string "Your BAG is full.\n"
+    .string "Come back after making space.$"
+
 

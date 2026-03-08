@@ -674,13 +674,13 @@
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
 #define FLAG_FLAGROOM5_2_CONSOLE_REVEALED       0x27C // CTF Flagroom 5-2 Console Revealed Konsole enthüllt
 #define FLAG_FLAGROOM5_2_FLAG5_UNLOCKED         0x27D // CTF Flagroom 5-2 Flag 5 Unlocked Tür offen
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
-#define FLAG_UNUSED_0x27F  0x27F // Unused Flag
-#define FLAG_UNUSED_0x280  0x280 // Unused Flag
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
-#define FLAG_UNUSED_0x282  0x282 // Unused Flag
-#define FLAG_UNUSED_0x283  0x283 // Unused Flag
-#define FLAG_UNUSED_0x284  0x284 // Unused Flag
+#define FLAG_GOT_DIVE_TOOL_FROM_PHILLIP         0x27E // CTF Got Dive Tool from Phillip
+#define FLAG_HIDDEN_ITEM_LAGERHAUS_AMULET_COIN  0x27F // CTF Hidden Item Lagerhaus Amulet Coin Verstecktes Item Lagerhaus Amulettmünze
+#define FLAG_ABSTELLKAMMER_GOT_BATTERIES        0x280 // CTF Abstellkammer Got Batteries
+#define FLAG_ABSTELLKAMMER_DOLL_AWAY            0x281 // CTF Abstellkammer Doll Away
+#define FLAG_KLASSENZIMMER6_FIRST_ENTRY         0x282 // CTF Klassenzimmer 6 First Entry
+#define FLAG_KLASSENZIMMER6_GOT_STRENGTH_TOOL   0x283 // CTF Klassenzimmer 6 Got Strength Tool
+#define FLAG_KLASSENZIMMER6_LEMMY_MOVED         0x284 // CTF Klassenzimmer 6 Lemmy Moved
 #define FLAG_UNUSED_0x285  0x285 // Unused Flag
 #define FLAG_UNUSED_0x286  0x286 // Unused Flag
 #define FLAG_UNUSED_0x287  0x287 // Unused Flag

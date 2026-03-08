@@ -15673,7 +15673,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_DIVE_TOOL] =
     {
-        .name = ITEM_NAME("Dive Item"),
+        .name = ITEM_NAME("Scuba Gear"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A diving apparatus\n"
@@ -15732,6 +15732,21 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_GsBall,
         .iconPalette = gItemIconPalette_GsBall,
+    },
+
+        [ITEM_BATTERIES] =
+    {
+        .name = ITEM_NAME("Batteries"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A set of fresh\n"
+            "batteries."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CellBattery,
+        .iconPalette = gItemIconPalette_CellBattery,
     },
 
 };

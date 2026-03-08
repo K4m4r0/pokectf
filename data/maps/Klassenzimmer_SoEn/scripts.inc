@@ -97,7 +97,7 @@ Klassenzimmer_SoEn_EventScript_StrengthToolScene_CheckOnce:
     msgbox Klassenzimmer_SoEn_Text_StrengthTool_Blabla, MSGBOX_DEFAULT
     closemessage
 
-    giveitem ITEM_STRENGTH_TOOL, 1
+    giveitem ITEM_TM13, 1
 
     msgbox Klassenzimmer_SoEn_Text_StrengthTool_Thought, MSGBOX_DEFAULT
     closemessage
@@ -194,9 +194,7 @@ Klassenzimmer_SoEn_Text_StrengthTool_Blabla:
     .string "something illegal.$"
 
 Klassenzimmer_SoEn_Text_StrengthTool_Thought:
-    .string "{PLAYER}: <This allows me to move the\n"
-    .string "entrance to this cave on the Rhein-\p"
-    .string "promenade. I should test it immediately!>$"
+    .string "{PLAYER}: Thanks!$"
 
 @ --- Prof Apples Texte ---
 Klassenzimmer_SoEn_Text_ProfApples_BeforeIntro:

@@ -42,7 +42,8 @@
     "gMapGroup_Flag5",
     "gMapGroup_Flag7",
     "gMapGroup_Flag8",
-    "gMapGroup_Postgame"
+    "gMapGroup_Postgame",
+    "gMapGroup_Flag6"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -713,5 +714,10 @@
     "DiveCellarDive",
     "DiveE4Connect",
     "GiovannisHouse"
+  ],
+  "gMapGroup_Flag6": [
+    "Klassenzimmer6",
+    "Abstellkammer",
+    "Hoehlenhub"
   ]
 }
