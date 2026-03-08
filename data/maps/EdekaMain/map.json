@@ -15,21 +15,21 @@
   "connections": null,
   "object_events": [
     {
-      "local_id": "nate",
+      "local_id": "LOCALID_NATE",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 2,
       "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 2,
-      "movement_range_y": 1,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EdekaMain_NPC_Nate_Script",
+      "script": "EdekaMain_EventScript_Nate",
       "flag": "0"
     },
     {
-      "local_id": "karen",
+      "local_id": "LOCALID_KAREN",
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
       "x": 29,
       "y": 5,
@@ -39,11 +39,11 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EdekaMain_NPC_Karen_Script",
+      "script": "EdekaMain_EventScript_Karen",
       "flag": "0"
     },
     {
-      "local_id": "Cashier1",
+      "local_id": "LOCALID_CASHIER1",
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
       "x": 10,
       "y": 5,
@@ -53,11 +53,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EdekaMain_NPC_Cashier_Script",
+      "script": "EdekaMain_EventScript_Employee",
       "flag": "0"
     },
     {
-      "local_id": "Cashier2",
+      "local_id": "LOCALID_CASHIER2",
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
       "x": 9,
       "y": 12,
@@ -67,11 +67,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EdekaMain_EventScript_Clerk",
       "flag": "0"
     },
     {
-      "local_id": "Cashier3",
+      "local_id": "LOCALID_CASHIER3",
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
       "x": 5,
       "y": 12,
@@ -81,20 +81,49 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EdekaMain_EventScript_Clerk",
       "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_ROCK_SMASH_TOOL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 0,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_EDEKAMAIN_GOT_ROCK_SMASH_TOOL"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 24,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_EDEKA_OUTDOOR",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 25,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_EDEKA_OUTDOOR",
+      "dest_warp_id": "4"
+    }
+  ],
   "coord_events": [],
   "bg_events": [
     {
       "type": "hidden_item",
       "x": 0,
-      "y": 13,
+      "y": 12,
       "elevation": 0,
       "item": "ITEM_MOOMOO_MILK",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_EDEKAMAIN_GOT_MOO_MOO_MILK"
     }
   ]
 }

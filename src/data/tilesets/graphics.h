@@ -1758,3 +1758,22 @@ const u16 ALIGNED(4) gTilesetPalettes_Building_Frlg[][16] =
 
 const u32 gTilesetTiles_Building_Frlg[] = INCBIN_U32("data/tilesets/primary/building_frlg/tiles.4bpp.smol");
 
+
+const u16 gTilesetPalettes_Edeka[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/edeka/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Edeka[] = INCBIN_U32("data/tilesets/secondary/edeka/tiles.4bpp.lz");

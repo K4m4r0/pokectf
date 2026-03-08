@@ -23,13 +23,15 @@ Stadium2_OnLoad_End:
 
 Stadium2_OnTransition:
     @ OnTransition nur vorbereiten (kein msgbox / keine Bewegungen)
-    goto_if_set FLAG_STADIUM2_SCENE_DONE, Stadium2_OnTransition_End
+    goto_if_set FLAG_STADIUM2_SCENE_DONE, Stadium2_OnTransition_AlreadyDone
     setvar VAR_TEMP_0, 0
-	turnobject LOCALID_PLAYER, DIR_NORTH
+    turnobject LOCALID_PLAYER, DIR_NORTH
     end
 
-Stadium2_OnTransition_End:
+Stadium2_OnTransition_AlreadyDone:
+    setvar VAR_TEMP_0, 1
     end
+
 
 Stadium2_OnFrame:
     @ Cutscene erst starten, wenn Map sichtbar ist
@@ -41,6 +43,8 @@ Stadium2_OnFrame:
 @ Intro-Cutscene (erste Map-Betretung bis Sieg)
 @ =========================
 Stadium2_EventScript_Intro::
+    goto_if_set FLAG_STADIUM2_SCENE_DONE, Stadium2_EventScript_Intro_End
+
     @ sofort deaktivieren, damit es nicht mehrfach im Frame-Loop triggert
     setvar VAR_TEMP_0, 1
 
@@ -150,7 +154,10 @@ Stadium2_AfterBattle_Won:
     releaseall
     end
 
-
+Stadium2_EventScript_Intro_End:
+    setvar VAR_TEMP_0, 1
+    end
+    
 @ =========================
 @ Terminal (Flag 8)
 @ =========================
@@ -200,6 +207,7 @@ Stadium2_Terminal_Correct:
 @ =========================
 Stadium2_EventScript_Sign::
     msgbox Stadium2_Text_Sign, MSGBOX_DEFAULT
+    closemessage
     end
 
 

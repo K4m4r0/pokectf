@@ -1317,3 +1317,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Abstellkammer/scripts.inc"
 
 	.include "data/maps/Hoehlenhub/scripts.inc"
+
+	.include "data/maps/EdekaOutdoor/scripts.inc"
+
+	.include "data/maps/ArktosMap/scripts.inc"

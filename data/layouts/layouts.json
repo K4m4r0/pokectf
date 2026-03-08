@@ -5120,6 +5120,26 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/Edeka_Indoor/border.bin",
       "blockdata_filepath": "data/layouts/Edeka_Indoor/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDEKA_OUTDOOR",
+      "name": "EdekaOutdoor_Layout",
+      "width": 20,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Edeka",
+      "border_filepath": "data/layouts/EdekaOutdoor/border.bin",
+      "blockdata_filepath": "data/layouts/EdekaOutdoor/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARKTOS_MAP",
+      "name": "ArktosMap_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ArktosMap/border.bin",
+      "blockdata_filepath": "data/layouts/ArktosMap/map.bin"
     }
   ]
 }

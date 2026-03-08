@@ -670,8 +670,8 @@
 #define FLAG_RINGUNTENE4_CHATOTSPY_HIDDEN       0x277 // CTF Chatot Spy Hidden
 #define FLAG_KLASSENZIMMER5_FIRST_ENTRY         0x278 // CTF Klassenzimmer 5 First Entry
 #define FLAG_KLASSENZIMMER5_GOT_CUT_TOOL        0x279 // CTF Klassenzimmer 5 Got Cut Tool
-#define FLAG_UNUSED         0x27A // schon gesetzt?
-#define FLAG_UNUSED_0x27B  0x27B // Unused Flag
+#define FLAG_ARKTOS_MAP_BETRETEN                0x27A // CTF Arktos Map Betreten
+#define FLAG_ARKTOS_CAUGHT                      0x27B // CTF Arktos Caught
 #define FLAG_FLAGROOM5_2_CONSOLE_REVEALED       0x27C // CTF Flagroom 5-2 Console Revealed Konsole enthüllt
 #define FLAG_FLAGROOM5_2_FLAG5_UNLOCKED         0x27D // CTF Flagroom 5-2 Flag 5 Unlocked Tür offen
 #define FLAG_GOT_DIVE_TOOL_FROM_PHILLIP         0x27E // CTF Got Dive Tool from Phillip
@@ -681,8 +681,8 @@
 #define FLAG_KLASSENZIMMER6_FIRST_ENTRY         0x282 // CTF Klassenzimmer 6 First Entry
 #define FLAG_KLASSENZIMMER6_GOT_STRENGTH_TOOL   0x283 // CTF Klassenzimmer 6 Got Strength Tool
 #define FLAG_KLASSENZIMMER6_LEMMY_MOVED         0x284 // CTF Klassenzimmer 6 Lemmy Moved
-#define FLAG_UNUSED_0x285  0x285 // Unused Flag
-#define FLAG_UNUSED_0x286  0x286 // Unused Flag
+#define FLAG_EDEKAMAIN_GOT_ROCK_SMASH_TOOL      0x285 // CTF Edeka Main Got Rock Smash Tool
+#define FLAG_EDEKAMAIN_GOT_MOO_MOO_MILK         0x286 // CTF Edeka Main Got Moo Moo Milk
 #define FLAG_UNUSED_0x287  0x287 // Unused Flag
 #define FLAG_UNUSED_0x288  0x288 // Unused Flag
 #define FLAG_UNUSED_0x289  0x289 // Unused Flag

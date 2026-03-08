@@ -707,6 +707,10 @@
     "Stadium2",
     "Stadium3"
   ],
+  "gMapGroup_EdekaIndoor": [
+    "EdekaMain",
+    "EdekaOutdoor"
+  ],
   "gMapGroup_Postgame": [
     "RingUnten",
     "Neckarau",
@@ -714,14 +718,12 @@
     "DiveCellar",
     "DiveCellarDive",
     "DiveE4Connect",
-    "GiovannisHouse"
+    "GiovannisHouse",
+    "ArktosMap"
   ],
   "gMapGroup_Flag6": [
     "Klassenzimmer6",
     "Abstellkammer",
     "Hoehlenhub"
-  ],
-  "gMapGroup_EdekaIndoor": [
-    "EdekaMain"
   ]
 }

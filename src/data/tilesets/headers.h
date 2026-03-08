@@ -898,3 +898,14 @@ const struct Tileset gTileset_Building_Frlg =
     .callback = InitTilesetAnim_Building_Frlg,
 };
 
+
+const struct Tileset gTileset_Edeka =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Edeka,
+    .palettes = gTilesetPalettes_Edeka,
+    .metatiles = gMetatiles_Edeka,
+    .metatileAttributes = gMetatileAttributes_Edeka,
+    .callback = NULL,
+};
