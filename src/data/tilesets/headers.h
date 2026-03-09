@@ -853,7 +853,16 @@ const struct Tileset gTileset_dhbw_gebaeude =
     .callback = NULL,
 };
 
-
+const struct Tileset gTileset_PokemonMansion =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PokemonMansion,
+    .palettes = gTilesetPalettes_PokemonMansion,
+    .metatiles = gMetatiles_PokemonMansion,
+    .metatileAttributes = gMetatileAttributes_PokemonMansion,
+    .callback = NULL,
+};
 
 
 const struct Tileset gTileset_wasserturm =
@@ -875,5 +884,28 @@ const struct Tileset gTileset_DHBWFLOORS =
     .palettes = gTilesetPalettes_DHBWFLOORS,
     .metatiles = gMetatiles_DHBWFLOORS,
     .metatileAttributes = gMetatileAttributes_DHBWFLOORS,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Building_Frlg =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Building_Frlg,
+    .palettes = gTilesetPalettes_Building_Frlg,
+    .metatiles = gMetatiles_Building_Frlg,
+    .metatileAttributes = gMetatileAttributes_Building_Frlg,
+    .callback = InitTilesetAnim_Building_Frlg,
+};
+
+
+const struct Tileset gTileset_Edeka =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Edeka,
+    .palettes = gTilesetPalettes_Edeka,
+    .metatiles = gMetatiles_Edeka,
+    .metatileAttributes = gMetatileAttributes_Edeka,
     .callback = NULL,
 };

@@ -411,7 +411,10 @@ Museum_Flag1_EventScript_HealGuy::
     end
 
 Museum_Flag1_Girl::
+    lock
+    faceplayer
     msgbox Museum_Flag1_Text_Girl, MSGBOX_DEFAULT
+    closemessage
     release
     end
 

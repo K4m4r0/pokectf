@@ -154,9 +154,9 @@
     },
     {
       "id": "HEAL_LOCATION_PACIFIDLOG_TOWN",
-      "map": "MAP_PACIFIDLOG_TOWN",
-      "x": 8,
-      "y": 16,
+      "map": "MAP_NECKARAU",
+      "x": 5,
+      "y": 9,
       "respawn_map": "MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_PACIFIDLOG_NURSE"
     },
@@ -181,9 +181,9 @@
     },
     {
       "id": "HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST",
-      "map": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
+      "map": "MAP_QUADRATE",
       "x": 3,
-      "y": 52,
+      "y": 17,
       "respawn_map": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_FRONTIER_NURSE"
     },

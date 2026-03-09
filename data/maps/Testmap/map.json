@@ -2,7 +2,7 @@
   "id": "MAP_TESTMAP",
   "name": "Testmap",
   "layout": "LAYOUT_TESTMAP",
-  "music": "MUS_DUMMY",
+  "music": "MUS_SCHOOL",
   "region_map_section": "MAPSEC_DHBW",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -24,7 +24,12 @@
       "direction": "right"
     },
     {
-      "map": "MAP_SECKENHEIMER_LANDSTRASSE",
+      "map": "MAP_DHBW_SUED",
+      "offset": 2,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_SECK_LAND2",
       "offset": 4,
       "direction": "up"
     }
@@ -103,8 +108,8 @@
       "x": 12,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_KLASSENZIMMER",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_HALLWAY_HUB",
+      "dest_warp_id": "8"
     },
     {
       "warp_id": "WARP_HINTERHOF_1",
@@ -128,6 +133,13 @@
       "elevation": 0,
       "dest_map": "MAP_MAIN_HUB",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_LAVARIDGE_TOWN_HERB_SHOP",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -150,5 +162,14 @@
       "script": "Testmap_EventScript_BlockRoute102"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Testmap_EventScript_SignDev"
+    }
+  ]
 }

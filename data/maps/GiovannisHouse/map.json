@@ -1,0 +1,49 @@
+{
+  "id": "MAP_GIOVANNIS_HOUSE",
+  "name": "GiovannisHouse",
+  "layout": "LAYOUT_GIOVANNIS_HOUSE",
+  "music": "MUS_ROUTE104",
+  "region_map_section": "MAPSEC_GIOVANNIS_HOUSE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 2,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_GS_BALL_2",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_GIOVANNIS_HOUSE_GS_BALL"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_RING_UNTEN_E4",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_RING_UNTEN_E4",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

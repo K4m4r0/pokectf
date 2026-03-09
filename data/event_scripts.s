@@ -1226,6 +1226,8 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/HALLWAY_TO_SECRETARIAT/scripts.inc"
 
+	.include "data/maps/EdekaMain/scripts.inc"
+
 	.include "data/maps/HALLWAY_TO_SECRETARIAT_2/scripts.inc"
 
 	.include "data/maps/Hallwaycurvedleft/scripts.inc"
@@ -1277,3 +1279,47 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Stadium2/scripts.inc"
 
 	.include "data/maps/Stadium3/scripts.inc"
+
+	.include "data/maps/DHBW_Sued/scripts.inc"
+
+	.include "data/maps/HallwayHub/scripts.inc"
+
+	.include "data/maps/RingUnten/scripts.inc"
+
+	.include "data/maps/Neckarau/scripts.inc"
+
+	.include "data/maps/RingUntenE4/scripts.inc"
+
+	.include "data/maps/DiveCellar/scripts.inc"
+
+	.include "data/maps/DiveCellarDive/scripts.inc"
+
+	.include "data/maps/DiveE4Connect/scripts.inc"
+
+	.include "data/maps/KurtHaus/scripts.inc"
+
+	.include "data/maps/GiovannisHouse/scripts.inc"
+
+	.include "data/maps/LagerhalleArena/scripts.inc"
+
+	.include "data/maps/Klassenzimmer5/scripts.inc"
+
+	.include "data/maps/Flagroom5_1/scripts.inc"
+
+	.include "data/maps/Flagroom5_2/scripts.inc"
+
+	.include "data/maps/Flagroom5_Arena/scripts.inc"
+
+	.include "data/maps/SeckLand2/scripts.inc"
+
+	.include "data/maps/Klassenzimmer6/scripts.inc"
+
+	.include "data/maps/Abstellkammer/scripts.inc"
+
+	.include "data/maps/Hoehlenhub/scripts.inc"
+
+	.include "data/maps/EdekaOutdoor/scripts.inc"
+
+	.include "data/maps/ArktosMap/scripts.inc"
+
+	.include "data/maps/FossilHaus/scripts.inc"

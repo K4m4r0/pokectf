@@ -47,7 +47,6 @@ Bridgeroom_EventScript_Terminal::
     lock
     faceplayer
 
-    setflag FLAG_FLAG8_BRIDGE_SET
     goto_if_set FLAG_FLAG8_BRIDGE_SET, Bridgeroom_Terminal_FlagSet
 
     msgbox Bridgeroom_Text_Terminal_Intro, MSGBOX_DEFAULT
@@ -64,52 +63,57 @@ Bridgeroom_Terminal_FlagSet:
 
 
 Bridgeroom_Text_HintNPC_1:
-    .string "This plateau used to have a bridge.\n"
-    .string "It only appears if a single story flag\n"
-    .string "inside the save data is set.$"
+	.string "This plateau used to have a\n"
+	.string "bridge. It only appears if a\p"
+	.string "single story flag inside the save\n"
+	.string "data is set.$"
 
 Bridgeroom_Text_HintNPC_2:
-    .string "If you edited the save but nothing changes,\n"
-    .string "you likely patched the wrong save copy,\n"
-    .string "or broke a section checksum.\n"
-    .string "The game will quietly load the other copy.$"
+	.string "If you edited the save but nothing\n"
+	.string "changes, you likely patched the\p"
+	.string "wrong save copy, or broke a\n"
+	.string "section checksum. The game will\p"
+	.string "quietly load the other copy.$"
 
 Bridgeroom_Text_Terminal_Intro:
     .string "BRIDGE CONTROL TERMINAL\n"
-    .string "Access: OFFLINE\n"
+    .string "Access: OFFLINE\p"
     .string "\n"
-    .string "Note: This bridge is not activated in-game.\n"
-    .string "It requires a valid save-state patch.$"
+	.string "NOTE: This bridge is not\p"
+	.string "activated in-game. It requires a\n"
+	.string "valid save-state patch.$"
 
 Bridgeroom_Text_Terminal_SaveBlocks:
-    .string "Gen-III saves keep TWO game-save blocks.\n"
-    .string "Only the one with the higher SAVE INDEX\n"
-    .string "is considered the newest.\n"
-    .string "\n"
-    .string "If your edit is ignored, you may have\n"
-    .string "patched the older block.$"
+	.string "Gen-III saves keep TWO game-save\n"
+	.string "blocks. Only the one with the\p"
+	.string "higher SAVE INDEX is considered\n"
+	.string "the newest. If your edit is\p"
+	.string "ignored, you may have patched the\n"
+	.string "older block.$"
 
 Bridgeroom_Text_Terminal_Sections:
-    .string "Each block is split into 4KB SECTIONS.\n"
-    .string "At the end of every section you can find:\n"
-    .string "- Section ID\n"
+	.string "Each block is split into 4KB\n"
+	.string "SECTIONS. At the end of every\p"
+	.string "section you can find:\n"
+    .string "- Section ID\p"
     .string "- Checksum\n"
-    .string "- Signature (bytes: 25 20 01 08)\n"
+    .string "- Signature (bytes: 25 20 01 08)\p"
     .string "- Save Index\n"
-    .string "\n"
-    .string "Find the right section, then patch safely.$"
+    .string "\p"
+	.string "Find the right section, then patch\n"
+	.string "safely.$"
 
 Bridgeroom_Text_Terminal_Checksum:
-    .string "Warning: Section checksums must match.\n"
-    .string "Changing even one byte without updating\n"
-    .string "the checksum will invalidate that section.\n"
-    .string "\n"
-    .string "Tip: Flags are bit-packed (8 flags per byte).\n"
-    .string "Know your flag ID, then set the correct bit.$"
+	.string "Warning: Section checksums must\n"
+	.string "match. Changing even one byte\p"
+	.string "without updating the checksum will\n"
+	.string "invalidate that section. Tip:\p"
+	.string "Flags are bit-packed (8 flags per\n"
+	.string "byte). Know your flag ID, then set\p"
+	.string "the correct bit.$"
 
 Bridgeroom_Text_Terminal_FlagSet:
     .string "Status: AUTHORIZED\n"
-    .string "Bridge tiles deployed.\n"
-    .string "\n"
-    .string "If you can read this, your patched save\n"
-    .string "was accepted by the game.$"
+    .string "Bridge tiles deployed.\p"
+	.string "If you can read this, your patched\n"
+	.string "save was accepted by the game.$"

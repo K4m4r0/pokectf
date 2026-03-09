@@ -1,0 +1,41 @@
+{
+  "id": "MAP_DIVE_CELLAR_DIVE",
+  "name": "DiveCellarDive",
+  "layout": "LAYOUT_DIVE_CELLAR_DIVE",
+  "music": "MUS_UNDERWATER",
+  "region_map_section": "MAPSEC_MYSTERIOUS_HOUSE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_DIVE_CELLAR",
+      "offset": 0,
+      "direction": "emerge"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_DIVE_E4CONNECT",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_DIVE_E4CONNECT",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

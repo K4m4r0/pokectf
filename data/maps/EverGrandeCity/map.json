@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE128",
       "offset": 40,
       "direction": "left"
+    },
+    {
+      "map": "MAP_DIVE_E4CONNECT",
+      "offset": 0,
+      "direction": "dive"
     }
   ],
   "object_events": [],

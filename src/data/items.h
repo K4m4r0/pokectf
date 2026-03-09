@@ -614,7 +614,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GS_BALL] =
     {
         .name = ITEM_NAME("GS Ball"),
-        .price = 5000,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A rare Ball \n"
             "with unknown\n"
@@ -15561,7 +15561,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_CUT_TOOL] =
     {
-        .name = ITEM_NAME("Cut Item"),
+        .name = ITEM_NAME("Pruning Shears"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A handy tool that\n"
@@ -15577,7 +15577,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_FLY_TOOL] =
     {
-        .name = ITEM_NAME("Fly Item"),
+        .name = ITEM_NAME("Jetpack"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Allows instant\n"
@@ -15673,7 +15673,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_DIVE_TOOL] =
     {
-        .name = ITEM_NAME("Dive Item"),
+        .name = ITEM_NAME("Scuba Gear"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A diving apparatus\n"
@@ -15717,6 +15717,38 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_Drive,
         .iconPalette = gItemIconPalette_DouseDrive,
     },
+
+    [ITEM_GS_BALL_2] =
+    {
+        .name = ITEM_NAME("GS Ball"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A rare Ball \n"
+            "with unknown\n"
+            "origin."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_GsBall,
+        .iconPalette = gItemIconPalette_GsBall,
+    },
+
+        [ITEM_BATTERIES] =
+    {
+        .name = ITEM_NAME("Batteries"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A set of fresh\n"
+            "batteries."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CellBattery,
+        .iconPalette = gItemIconPalette_CellBattery,
+    },
+
 };
 
 #undef ITEM_NAME

@@ -16,12 +16,13 @@ A list of all items from other sources and their creators.
 - **Shadowgate31**: Shadow Lugia
 - **Othienka**: Armored Mewtwo V3
 - **Unknown**: Officer Male and Female
+- **PeteBits28**: Psycho Mantis
 
 ## Trainer / Pokémon Pictures
 
 - **Shadowgate31**: Shadow Lugia
 - **Othienka**: Armored Mewtwo V3
-- **Unknown (Probably someone from Orange Islands Hack)**: Team Rocket
+- **Unknown (Probably someone from Orange Islands Hack)**: Team Rocket Jessie/James/Meowth
 
 ## Tilesets
 

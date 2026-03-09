@@ -74,15 +74,15 @@
       "x": 3,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_QUADRATE",
+      "dest_warp_id": "9"
     },
     {
       "x": 4,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_QUADRATE",
+      "dest_warp_id": "9"
     }
   ],
   "coord_events": [],

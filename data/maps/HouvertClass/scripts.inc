@@ -268,10 +268,17 @@ HouvertClass_EventScript_HouvertPostBattle::
 	msgbox HouvertClass_Text_HouvertBadgeInfo, MSGBOX_DEFAULT
 	setflag FLAG_BADGE02_GET
 	setflag FLAG_CTF_HOUVERT_EXAM_COMPLETED
+	setflag FLAG_DEFEATED_DEWFORD_GYM
 	waitmovement 0
 	applymovement LOCALID_HOUVERT, HouvertClass_Movement_HouvertReturnToPodium
 	waitmovement 0
+
+	msgbox HouvertClass_Text_PlayerNeedsDrink, MSGBOX_DEFAULT
+	closemessage
+
 	releaseall
+	warpsilent MAP_EDEKA_MAIN, 24, 14
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
 HouvertClass_Movement_PlayerApproachFromLeft:
@@ -551,3 +558,9 @@ HouvertClass_Text_RememberIntro:
 
 HouvertClass_Text_RememberPunchline:
 	.string "And yet... I remember you.$"
+
+HouvertClass_Text_PlayerNeedsDrink:
+	.string "<After all this stress, I need to\n"
+	.string "go to EDEKA and get something to\p"
+	.string "drink.>$"
+

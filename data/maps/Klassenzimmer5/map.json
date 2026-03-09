@@ -1,0 +1,50 @@
+{
+  "id": "MAP_KLASSENZIMMER5",
+  "name": "Klassenzimmer5",
+  "layout": "LAYOUT_KLASSENZIMMER5",
+  "music": "MUS_SCHOOL",
+  "region_map_section": "MAPSEC_DHBW",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_CUT_TOOL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 10,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Klassenzimmer5_EventScript_GetCutTool",
+      "flag": "FLAG_KLASSENZIMMER5_GOT_CUT_TOOL"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_HALLWAY_HUB",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 11,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_HALLWAY_HUB",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

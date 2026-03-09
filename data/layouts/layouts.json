@@ -4834,7 +4834,7 @@
     {
       "id": "LAYOUT_SECKENHEIMER_LANDSTRASSE",
       "name": "SeckenheimerLandstrasse_Layout",
-      "width": 16,
+      "width": 25,
       "height": 36,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
@@ -4920,6 +4920,236 @@
       "secondary_tileset": "gTileset_PokemonDayCare",
       "border_filepath": "data/layouts/Stadium3/border.bin",
       "blockdata_filepath": "data/layouts/Stadium3/map.bin"
+    },
+    {
+      "id": "LAYOUT_DHBW_SUED",
+      "name": "DHBW_Sued_Layout",
+      "width": 16,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/DHBW_Sued/border.bin",
+      "blockdata_filepath": "data/layouts/DHBW_Sued/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLWAY_HUB",
+      "name": "HallwayHub_Layout",
+      "width": 30,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DHBWFLOORS",
+      "border_filepath": "data/layouts/HallwayHub/border.bin",
+      "blockdata_filepath": "data/layouts/HallwayHub/map.bin"
+    },
+    {
+      "id": "LAYOUT_RING_UNTEN",
+      "name": "RingUnten_Layout",
+      "width": 70,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/RingUnten/border.bin",
+      "blockdata_filepath": "data/layouts/RingUnten/map.bin"
+    },
+    {
+      "id": "LAYOUT_NECKARAU",
+      "name": "Neckarau_Layout",
+      "width": 21,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/Neckarau/border.bin",
+      "blockdata_filepath": "data/layouts/Neckarau/map.bin"
+    },
+    {
+      "id": "LAYOUT_RING_UNTEN_E4",
+      "name": "RingUntenE4_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/RingUntenE4/border.bin",
+      "blockdata_filepath": "data/layouts/RingUntenE4/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVE_CELLAR",
+      "name": "DiveCellar_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SootopolisGym",
+      "border_filepath": "data/layouts/DiveCellar/border.bin",
+      "blockdata_filepath": "data/layouts/DiveCellar/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVE_CELLAR_DIVE",
+      "name": "DiveCellarDive_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DiveCellarDive/border.bin",
+      "blockdata_filepath": "data/layouts/DiveCellarDive/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVE_E4CONNECT",
+      "name": "DiveE4Connect_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DiveE4Connect/border.bin",
+      "blockdata_filepath": "data/layouts/DiveE4Connect/map.bin"
+    },
+    {
+      "id": "LAYOUT_KURT_HAUS",
+      "name": "KurtHaus_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/KurtHaus/border.bin",
+      "blockdata_filepath": "data/layouts/KurtHaus/map.bin"
+    },
+    {
+      "id": "LAYOUT_GIOVANNIS_HOUSE",
+      "name": "GiovannisHouse_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GiovannisHouse/border.bin",
+      "blockdata_filepath": "data/layouts/GiovannisHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAGERHALLE_ARENA",
+      "name": "LagerhalleArena_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/LagerhalleArena/border.bin",
+      "blockdata_filepath": "data/layouts/LagerhalleArena/map.bin"
+    },
+    {
+      "id": "LAYOUT_KLASSENZIMMER5",
+      "name": "Klassenzimmer5_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonSchool",
+      "border_filepath": "data/layouts/Klassenzimmer5/border.bin",
+      "blockdata_filepath": "data/layouts/Klassenzimmer5/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAGROOM5_1",
+      "name": "Flagroom5_1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building_Frlg",
+      "secondary_tileset": "gTileset_PokemonMansion",
+      "border_filepath": "data/layouts/Flagroom5_1/border.bin",
+      "blockdata_filepath": "data/layouts/Flagroom5_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAGROOM5_2",
+      "name": "Flagroom5_2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building_Frlg",
+      "secondary_tileset": "gTileset_PokemonMansion",
+      "border_filepath": "data/layouts/Flagroom5_2/border.bin",
+      "blockdata_filepath": "data/layouts/Flagroom5_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAGROOM5_ARENA",
+      "name": "Flagroom5_Arena_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building_Frlg",
+      "secondary_tileset": "gTileset_PokemonMansion",
+      "border_filepath": "data/layouts/Flagroom5_Arena/border.bin",
+      "blockdata_filepath": "data/layouts/Flagroom5_Arena/map.bin"
+    },
+    {
+      "id": "LAYOUT_SECK_LAND2",
+      "name": "SeckLand2_Layout",
+      "width": 16,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_dhbw_gebaeude",
+      "border_filepath": "data/layouts/SeckLand2/border.bin",
+      "blockdata_filepath": "data/layouts/SeckLand2/map.bin"
+    },
+    {
+      "id": "LAYOUT_KLASSENZIMMER6",
+      "name": "Klassenzimmer6_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PokemonSchool",
+      "border_filepath": "data/layouts/Klassenzimmer6/border.bin",
+      "blockdata_filepath": "data/layouts/Klassenzimmer6/map.bin"
+    },
+    {
+      "id": "LAYOUT_ABSTELLKAMMER",
+      "name": "Abstellkammer_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_InsideOfTruck",
+      "border_filepath": "data/layouts/Abstellkammer/border.bin",
+      "blockdata_filepath": "data/layouts/Abstellkammer/map.bin"
+    },
+    {
+      "id": "LAYOUT_HOEHLENHUB",
+      "name": "Hoehlenhub_Layout",
+      "width": 20,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/Hoehlenhub/border.bin",
+      "blockdata_filepath": "data/layouts/Hoehlenhub/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDEKA_INDOOR",
+      "name": "Edeka_Indoor",
+      "width": 37,
+      "height": 16,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Edeka_Indoor/border.bin",
+      "blockdata_filepath": "data/layouts/Edeka_Indoor/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDEKA_OUTDOOR",
+      "name": "EdekaOutdoor_Layout",
+      "width": 20,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Edeka",
+      "border_filepath": "data/layouts/EdekaOutdoor/border.bin",
+      "blockdata_filepath": "data/layouts/EdekaOutdoor/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARKTOS_MAP",
+      "name": "ArktosMap_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ArktosMap/border.bin",
+      "blockdata_filepath": "data/layouts/ArktosMap/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOSSIL_HAUS",
+      "name": "FossilHaus_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/FossilHaus/border.bin",
+      "blockdata_filepath": "data/layouts/FossilHaus/map.bin"
     }
   ]
 }

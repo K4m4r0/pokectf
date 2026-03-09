@@ -6729,4 +6729,23 @@ static const struct SpriteFrameImage sPicTable_Pecharunt[] = {
 };
 #endif //P_FAMILY_PECHARUNT
 
+
+#if P_FAMILY_I3C_AND
+static const struct SpriteFrameImage sPicTable_I3c_And[] = {
+    overworld_ascending_frames(gObjectEventPic_I3c_And, 4, 4),
+};
+#endif //P_FAMILY_I3C_AND
+
+#if P_FAMILY_I3C_NAND
+static const struct SpriteFrameImage sPicTable_I3c_Nand[] = {
+    overworld_ascending_frames(gObjectEventPic_I3c_Nand, 4, 4),
+};
+#endif //P_FAMILY_I3C_NAND
+
+#if P_FAMILY_SUNEON
+static const struct SpriteFrameImage sPicTable_Suneon[] = {
+    overworld_ascending_frames(gObjectEventPic_Suneon, 4, 4),
+};
+#endif //P_FAMILY_SUNEON
+
 #endif //OW_POKEMON_OBJECT_EVENTS

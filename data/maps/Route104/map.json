@@ -486,7 +486,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_StrengthBoulder",
-      "flag": "FLAG_SONGFLAGROOM_BETRETEN"
+      "flag": "FLAG_ARKTOS_MAP_BETRETEN"
     },
     {
       "local_id": "LOCALID_TRUCK",
@@ -606,7 +606,7 @@
       "x": 23,
       "y": 66,
       "elevation": 0,
-      "dest_map": "MAP_FLAG3_CD",
+      "dest_map": "MAP_ARKTOS_MAP",
       "dest_warp_id": "0"
     }
   ],

@@ -261,6 +261,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cd;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TrainLeft;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TrainRight;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Houvert;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MantisFront;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MantisSide;
+
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -518,6 +521,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_TRAIN_LEFT] =               &gObjectEventGraphicsInfo_TrainLeft,
     [OBJ_EVENT_GFX_TRAIN_RIGHT] =              &gObjectEventGraphicsInfo_TrainRight,
     [OBJ_EVENT_GFX_HOUVERT] =                  &gObjectEventGraphicsInfo_Houvert,
+    [OBJ_EVENT_GFX_MANTIS_FRONT] =             &gObjectEventGraphicsInfo_MantisFront,
+    [OBJ_EVENT_GFX_MANTIS_SIDE] =              &gObjectEventGraphicsInfo_MantisSide,
 
 
 
