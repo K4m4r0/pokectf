@@ -996,6 +996,18 @@ static const struct SpriteFrameImage sPicTable_RayquazaStill[] = {
     obj_frame_tiles(gObjectEventPic_RayquazaStill),
 };
 
+static const struct SpriteFrameImage sPicTable_GiratinaStill[] = {
+    obj_frame_tiles(gObjectEventPic_GiratinaStill),
+    obj_frame_tiles(gObjectEventPic_GiratinaStill),
+    obj_frame_tiles(gObjectEventPic_GiratinaStill),
+    obj_frame_tiles(gObjectEventPic_GiratinaStill),
+    obj_frame_tiles(gObjectEventPic_GiratinaStill),
+    obj_frame_tiles(gObjectEventPic_GiratinaStill),
+    obj_frame_tiles(gObjectEventPic_GiratinaStill),
+    obj_frame_tiles(gObjectEventPic_GiratinaStill),
+    obj_frame_tiles(gObjectEventPic_GiratinaStill),
+};
+
 static const struct SpriteFrameImage sPicTable_TuberMSwimming[] = {
     overworld_ascending_frames(gObjectEventPic_TuberMSwimming, 2, 2),
 };

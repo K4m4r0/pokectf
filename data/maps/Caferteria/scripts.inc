@@ -14,18 +14,17 @@ Caferteria_EventScript_RybbelSightTrigger::
 	end
 
 Caferteria_EventScript_RybbelConversation::
-	applymovement LOCALID_RYBBEL, Common_Movement_QuestionMark
-	waitmovement 0
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-	setvar VAR_TEMP_2, 0
-	call Caferteria_EventScript_RybbelHandleApproach
-	waitmovement 0
-	faceplayer
+	goto_if_set FLAG_HIDE_RYBBEL, Caferteria_EventScript_RybbelAlreadyGone
 	goto_if_eq VAR_RYBBEL_TERMINAL_HINT, 0, Caferteria_EventScript_RybbelFirstMeeting
-	msgbox Caferteria_Text_RybbelReminder, MSGBOX_DEFAULT
-	goto Caferteria_EventScript_RybbelConversationEnd
+	checkitem ITEM_CTF_TERMINAL
+	goto_if_eq VAR_RESULT, TRUE, Caferteria_EventScript_RybbelHasTerminal
+	goto Caferteria_EventScript_RybbelNeedsTerminal
+
+Caferteria_EventScript_RybbelAlreadyGone::
+	return
 
 Caferteria_EventScript_RybbelFirstMeeting::
+	call Caferteria_EventScript_RybbelConversationSetup
 	msgbox Caferteria_Text_RybbelIntro, MSGBOX_DEFAULT
 	msgbox Caferteria_Text_RybbelTunnels, MSGBOX_DEFAULT
 	msgbox Caferteria_Text_RybbelHistory, MSGBOX_DEFAULT
@@ -34,6 +33,57 @@ Caferteria_EventScript_RybbelFirstMeeting::
 	msgbox Caferteria_Text_RybbelPentester, MSGBOX_DEFAULT
 	setvar VAR_RYBBEL_TERMINAL_HINT, 1
 	goto Caferteria_EventScript_RybbelConversationEnd
+
+Caferteria_EventScript_RybbelHasTerminal::
+	call Caferteria_EventScript_RybbelConversationSetup
+	msgbox Caferteria_Text_RybbelTerminalFound1, MSGBOX_DEFAULT
+	msgbox Caferteria_Text_RybbelTerminalFound2, MSGBOX_DEFAULT
+	msgbox Caferteria_Text_RybbelTerminalFound3, MSGBOX_DEFAULT
+	msgbox Caferteria_Text_RybbelTerminalFound4, MSGBOX_DEFAULT
+	msgbox Caferteria_Text_RybbelTerminalFound5, MSGBOX_DEFAULT
+	msgbox Caferteria_Text_RybbelTerminalFound6, MSGBOX_DEFAULT
+	msgbox Caferteria_Text_RybbelTerminalFound7, MSGBOX_DEFAULT
+	msgbox Caferteria_Text_RybbelTerminalFound8, MSGBOX_DEFAULT
+	msgbox Caferteria_Text_RybbelTerminalFound9, MSGBOX_DEFAULT
+	goto Caferteria_EventScript_RybbelLeave
+
+Caferteria_EventScript_RybbelNeedsTerminal::
+	setvar VAR_TEMP_2, 0
+	faceplayer
+	msgbox Caferteria_Text_RybbelReminder, MSGBOX_DEFAULT
+	goto Caferteria_EventScript_RybbelConversationEnd
+
+Caferteria_EventScript_RybbelConversationSetup::
+	applymovement LOCALID_RYBBEL, Common_Movement_QuestionMark
+	waitmovement 0
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	setvar VAR_TEMP_2, 0
+	call Caferteria_EventScript_RybbelHandleApproach
+	waitmovement 0
+	faceplayer
+	return
+
+Caferteria_EventScript_RybbelLeave::
+	compare VAR_TEMP_2, 0
+	goto_if_ne Caferteria_EventScript_RybbelLeaveStraight
+	compare VAR_TEMP_0, 25
+	goto_if_ne Caferteria_EventScript_RybbelLeaveStraight
+	compare VAR_TEMP_1, 16
+	goto_if_ne Caferteria_EventScript_RybbelLeaveStraight
+	applymovement LOCALID_RYBBEL, Caferteria_Movement_RybbelLeaveFront
+	goto Caferteria_EventScript_RybbelLeaveDespawn
+
+Caferteria_EventScript_RybbelLeaveStraight::
+	applymovement LOCALID_RYBBEL, Caferteria_Movement_RybbelLeaveStraight
+	goto Caferteria_EventScript_RybbelLeaveDespawn
+
+Caferteria_EventScript_RybbelLeaveDespawn::
+	waitmovement 0
+	setflag FLAG_RYBBEL_FOREST_READY
+	clearflag FLAG_HIDE_PETALBURG_WOODS_RYBBEL
+	setflag FLAG_HIDE_RYBBEL
+	removeobject LOCALID_RYBBEL
+	return
 
 Caferteria_EventScript_RybbelConversationEnd::
 	call Caferteria_EventScript_RybbelHandleReturn
@@ -127,7 +177,7 @@ Caferteria_Text_RybbelTunnels:
 
 Caferteria_Text_RybbelHistory:
 	.string "It used to belong to an earlier class.\p"
-	.string "Nobody uses it anymore. Nobody even\nremembers it’s there.$"
+	.string "Nobody uses it anymore. \nNobody even remembers it’s there.$"
 
 Caferteria_Text_RybbelSystems:
 	.string "But systems don’t disappear.\p"
@@ -143,6 +193,46 @@ Caferteria_Text_RybbelPentester:
 
 Caferteria_Text_RybbelReminder:
 	.string "Rybbel: You should get the terminal.$"
+
+Caferteria_Text_RybbelTerminalFound1:
+	.string "Prof. Rybbel: So you actually found it.\p"
+	.string "The old CTF terminal\nbeneath the cafeteria.\p"
+	.string "Not bad.$"
+
+Caferteria_Text_RybbelTerminalFound2:
+	.string " Prof. Rybbel: Most people spend\n their entire day on the surface.\p"
+	.string "Eating, studying, walking around.\p"
+	.string "Never wondering what runs\nbeneath their feet.$"
+
+Caferteria_Text_RybbelTerminalFound3:
+	.string "Prof. Rybbel: Pipes. Power lines.\nNetwork cables.\p"
+	.string "Entire systems\nhidden beneath the surface.$"
+
+Caferteria_Text_RybbelTerminalFound4:
+	.string "Prof. Rybbel: As a physical pentester\nyou already proved something important.\p"
+	.string "You know how to reach places\nothers never even look at.$"
+
+Caferteria_Text_RybbelTerminalFound5:
+	.string "Prof. Rybbel: Good.\p"
+	.string "Because the real challenge\nisn't here.$"
+
+Caferteria_Text_RybbelTerminalFound6:
+	.string "Prof. Rybbel: Take the terminal.\p"
+	.string "And meet me in the forest\nabove Rheinpromenade.$"
+
+Caferteria_Text_RybbelTerminalFound7:
+	.string "Prof. Rybbel: There's a clearing there.\p"
+	.string "Quiet. Isolated.\p"
+	.string "Perfect for what comes next.$"
+
+Caferteria_Text_RybbelTerminalFound8:
+	.string "Prof. Rybbel: Bring the terminal with you.\p"
+	.string "I'll be waiting.$"
+
+Caferteria_Text_RybbelTerminalFound9:
+	.string "Prof. Rybbel: And {PLAYER}…\p"
+	.string "when you get there,\p"
+	.string "try to look beneath the surface.$"
 
 Caferteria_Movement_RybbelStepDown:
 	walk_down
@@ -172,4 +262,30 @@ Caferteria_Movement_RybbelStepUpThrice:
 	walk_up
 	walk_up
 	walk_up
+	step_end
+
+Caferteria_Movement_RybbelLeaveStraight:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+Caferteria_Movement_RybbelLeaveFront:
+	walk_right
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	step_end

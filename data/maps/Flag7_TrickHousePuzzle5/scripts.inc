@@ -24,7 +24,7 @@ Flag7_TrickHousePuzzle5_EventScript_FoundScroll::
 
 Flag7_TrickHousePuzzle5_EventScript_Mechadoll1::
 	lockall
-	applymovement LOCALID_MECHADOLL_1, Common_Movement_FacePlayer
+	applymovement LOCALID_FLAG7_MECHADOLL_1, Common_Movement_FacePlayer
 	waitmovement 0
 	goto_if_eq VAR_TEMP_1, 1, Flag7_TrickHousePuzzle5_EventScript_CorrectGoThrough
 	setvar VAR_TEMP_9, 0
@@ -33,7 +33,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll1::
 
 Flag7_TrickHousePuzzle5_EventScript_Mechadoll2::
 	lockall
-	applymovement LOCALID_MECHADOLL_2, Common_Movement_FacePlayer
+	applymovement LOCALID_FLAG7_MECHADOLL_2, Common_Movement_FacePlayer
 	waitmovement 0
 	goto_if_eq VAR_TEMP_2, 1, Flag7_TrickHousePuzzle5_EventScript_CorrectGoThrough
 	setvar VAR_TEMP_9, 0
@@ -42,7 +42,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll2::
 
 Flag7_TrickHousePuzzle5_EventScript_Mechadoll3::
 	lockall
-	applymovement LOCALID_MECHADOLL_3, Common_Movement_FacePlayer
+	applymovement LOCALID_FLAG7_MECHADOLL_3, Common_Movement_FacePlayer
 	waitmovement 0
 	goto_if_eq VAR_TEMP_3, 1, Flag7_TrickHousePuzzle5_EventScript_CorrectGoThrough
 	setvar VAR_TEMP_9, 0
@@ -51,7 +51,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll3::
 
 Flag7_TrickHousePuzzle5_EventScript_Mechadoll4::
 	lockall
-	applymovement LOCALID_MECHADOLL_4, Common_Movement_FacePlayer
+	applymovement LOCALID_FLAG7_MECHADOLL_4, Common_Movement_FacePlayer
 	waitmovement 0
 	goto_if_eq VAR_TEMP_4, 1, Flag7_TrickHousePuzzle5_EventScript_CorrectGoThrough
 	setvar VAR_TEMP_9, 0
@@ -60,7 +60,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll4::
 
 Flag7_TrickHousePuzzle5_EventScript_Mechadoll5::
 	lockall
-	applymovement LOCALID_MECHADOLL_5, Common_Movement_FacePlayer
+	applymovement LOCALID_FLAG7_MECHADOLL_5, Common_Movement_FacePlayer
 	waitmovement 0
 	goto_if_eq VAR_TEMP_5, 1, Flag7_TrickHousePuzzle5_EventScript_CorrectGoThrough
 	setvar VAR_TEMP_9, 0

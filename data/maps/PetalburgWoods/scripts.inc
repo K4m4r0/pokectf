@@ -1,5 +1,51 @@
 PetalburgWoods_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, PetalburgWoods_OnLoad
 	.byte 0
+
+PetalburgWoods_OnLoad::
+	compare VAR_RYBBEL_FOREST_TRIGGER, 2
+	goto_if_lt PetalburgWoods_OnLoadEnd
+	call PetalburgWoods_EventScript_OpenForestBarrier
+PetalburgWoods_OnLoadEnd::
+	end
+
+PetalburgWoods_EventScript_CheckRybbelForest::
+	goto_if_set FLAG_RYBBEL_FOREST_READY, PetalburgWoods_EventScript_EnableRybbelForestNpc
+	setflag FLAG_HIDE_PETALBURG_WOODS_RYBBEL
+	end
+
+PetalburgWoods_EventScript_EnableRybbelForestNpc::
+	clearflag FLAG_HIDE_PETALBURG_WOODS_RYBBEL
+	setvar VAR_RYBBEL_FOREST_TRIGGER, 1
+	end
+
+PetalburgWoods_EventScript_Rybbel::
+	lock
+	faceplayer
+	msgbox PetalburgWoods_Text_RybbelGreeting, MSGBOX_DEFAULT
+	msgbox PetalburgWoods_Text_RybbelBarrier, MSGBOX_DEFAULT
+	msgbox PetalburgWoods_Text_RybbelProtected, MSGBOX_DEFAULT
+	msgbox PetalburgWoods_Text_RybbelSmile, MSGBOX_DEFAULT
+	msgbox PetalburgWoods_Text_RybbelFalconer, MSGBOX_DEFAULT
+	msgbox PetalburgWoods_Text_RybbelPaths, MSGBOX_DEFAULT
+	msgbox PetalburgWoods_Text_RybbelClearing, MSGBOX_DEFAULT
+	msgbox PetalburgWoods_Text_RybbelHidden, MSGBOX_DEFAULT
+	call PetalburgWoods_EventScript_OpenForestBarrier
+	applymovement 14, PetalburgWoods_Movement_RybbelExitNorth @ LOCALID_PETALBURG_WOODS_RYBBEL
+	waitmovement 0
+	setflag FLAG_HIDE_PETALBURG_WOODS_RYBBEL
+	removeobject 14 @ LOCALID_PETALBURG_WOODS_RYBBEL
+	release
+	end
+
+PetalburgWoods_EventScript_OpenForestBarrier::
+	setmetatile 14, 6, 0x3001, FALSE
+	setmetatile 15, 6, 0x3001, FALSE
+	setmetatile 14, 5, 0x3001, FALSE
+	setmetatile 15, 5, 0x3001, FALSE
+	special DrawWholeMapView
+	setvar VAR_RYBBEL_FOREST_TRIGGER, 2
+	return
 
 PetalburgWoods_EventScript_DevonResearcherLeft::
 	lockall
@@ -269,6 +315,10 @@ PetalburgWoods_EventScript_Sign2::
 	msgbox PetalburgWoods_Text_TrainerTipsPP, MSGBOX_SIGN
 	end
 
+PetalburgWoods_EventScript_SpeciesConservation::
+	msgbox PetalburgWoods_Text_SpeciesConservation, MSGBOX_SIGN
+	end
+
 PetalburgWoods_EventScript_Lyle::
 	trainerbattle_single TRAINER_LYLE, PetalburgWoods_Text_GoBugPokemonTeam, PetalburgWoods_Text_ICouldntWin
 	msgbox PetalburgWoods_Text_ImOutOfPokeBalls, MSGBOX_AUTOCLOSE
@@ -471,3 +521,44 @@ PetalburgWoods_Text_TrainerTipsPP:
 	.string "If a POKéMON runs out of PP, it must be\n"
 	.string "taken to a POKéMON CENTER.$"
 
+PetalburgWoods_Text_SpeciesConservation:
+	.string "Protected Habitat Area\n"
+	.string "Entry restricted.$"
+
+PetalburgWoods_Text_RybbelGreeting:
+	.string "Prof. Rybbel: ah, {PLAYER}.\nYou made it.\p"
+	.string "And you brought the terminal.$"
+
+PetalburgWoods_Text_RybbelBarrier:
+	.string "I suppose you noticed\nthe barrier.\p"
+	.string "This part of the forest\nis protected.$"
+
+PetalburgWoods_Text_RybbelProtected:
+	.string "Rare birds nest here.\p"
+	.string "The university asked people\nto stay away.$"
+
+PetalburgWoods_Text_RybbelSmile:
+	.string "He smiles slightly.$"
+
+PetalburgWoods_Text_RybbelFalconer:
+	.string "Luckily for us…\p"
+	.string "I happen to be a\nhobby falconer.$"
+
+PetalburgWoods_Text_RybbelPaths:
+	.string "I know which paths are safe\nand which ones to avoid.\p"
+	.string "So don't worry.\p"
+	.string "We won't disturb anything.$"
+
+PetalburgWoods_Text_RybbelClearing:
+	.string "Come on.\p"
+	.string "There's a clearing further in.\p"
+	.string "That's where we need to go.$"
+
+PetalburgWoods_Text_RybbelHidden:
+	.string "Some places only reveal\nwhat they hide\p"
+	.string "once you step\nbeneath the surface.$"
+
+PetalburgWoods_Movement_RybbelExitNorth:
+	walk_up
+	walk_up
+	step_end

@@ -1242,7 +1242,7 @@
 #define FLAG_ITEM_CLASSROOM_OPENIN_TOP_TM_SECRET_POWER              0x4AC // Flag4 Secret Power TM pickup
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
 #define FLAG_HIDE_ENTRYMAPFLAG7_MANTIS_CONSOLE                      0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
+#define FLAG_CTF_FLAG7_TERMINAL_DONE                                0x4AF // Flag7 Terminal solved
 #define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
 #define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
@@ -1686,6 +1686,12 @@
 #define FLAG_CTF_SECRETROOM_HINT    FLAG_UNUSED_0x03A
 #define FLAG_CTF_ADMIN_OFFICE_INTRO FLAG_UNUSED_0x03B
 #define FLAG_CTF_TRICK_HOUSE_END_TERMINAL FLAG_UNUSED_0x03C
+#define FLAG_HIDE_RYBBEL            FLAG_UNUSED_0x03D
+#define FLAG_RYBBEL_FOREST_READY    FLAG_UNUSED_0x03E
+#define FLAG_HIDE_PETALBURG_WOODS_RYBBEL FLAG_UNUSED_0x03F
+#define FLAG_HIDE_RYBBEL_PRE_FOREST_TERMINAL FLAG_UNUSED_0x040
+#define FLAG_HIDE_RYBBEL_PRE_FOREST_GIRATINA FLAG_UNUSED_0x041
+#define FLAG_RYBBEL_PRE_FOREST_TERMINAL_PLACED FLAG_UNUSED_0x042
 
 
 // Temp flag aliases

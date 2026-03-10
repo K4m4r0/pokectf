@@ -1319,3 +1319,33 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Flagroom5_Arena/scripts.inc"
 
 	.include "data/maps/SeckLand2/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHouseEntrance/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHouseCorridor/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHouseEnd/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle1/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle2/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle3/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle4/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle5/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle6/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle7/scripts.inc"
+
+	.include "data/maps/Flag7_TrickHousePuzzle8/scripts.inc"
+
+	.include "data/maps/OldaleTown_PokemonCenter_caferteria/scripts.inc"
+
+	.include "data/maps/CafteriaMart/scripts.inc"
+
+	.include "data/maps/RybbelForest/scripts.inc"
+
+	.include "data/maps/RybbelPreForest/scripts.inc"

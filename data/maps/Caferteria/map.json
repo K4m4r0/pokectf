@@ -58,7 +58,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Caferteria_EventScript_Rybbel",
-      "flag": "0"
+      "flag": "FLAG_HIDE_RYBBEL"
     }
   ],
   "warp_events": [
@@ -66,14 +66,14 @@
       "x": 16,
       "y": 24,
       "elevation": 3,
-      "dest_map": "MAP_PETALBURG_CITY_POKEMON_CENTER_1F",
+      "dest_map": "MAP_OLDALE_TOWN_POKEMON_CENTER_CAFERTERIA",
       "dest_warp_id": "0"
     },
     {
       "x": 20,
       "y": 24,
       "elevation": 3,
-      "dest_map": "MAP_PETALBURG_CITY_MART",
+      "dest_map": "MAP_CAFTERIA_MART",
       "dest_warp_id": "0"
     },
     {
@@ -126,6 +126,42 @@
       "elevation": 3,
       "var": "VAR_RYBBEL_TERMINAL_HINT",
       "var_value": "0",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 17,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "1",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 16,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "1",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 18,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "1",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 19,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "1",
       "script": "Caferteria_EventScript_RybbelSightTrigger"
     }
   ],

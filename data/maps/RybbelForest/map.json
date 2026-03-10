@@ -1,0 +1,86 @@
+{
+  "id": "MAP_RYBBEL_FOREST",
+  "name": "RybbelForest",
+  "layout": "LAYOUT_RYBBEL_FOREST",
+  "music": "MUS_RG_LAVENDER",
+  "region_map_section": "MAPSEC_MT_PYRE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 29,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_MAX_POTION",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_MT_PYRE_EXTERIOR_MAX_POTION"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 20,
+      "y": 53,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_SKILL_SWAP",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_MT_PYRE_EXTERIOR_TM_SKILL_SWAP"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 51,
+      "elevation": 3,
+      "dest_map": "MAP_PETALBURG_WOODS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 16,
+      "elevation": 3,
+      "dest_map": "MAP_RYBBEL_PRE_FOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 16,
+      "elevation": 3,
+      "dest_map": "MAP_RYBBEL_PRE_FOREST",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 11,
+      "y": 17,
+      "elevation": 0,
+      "item": "ITEM_ULTRA_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_ULTRA_BALL"
+    },
+    {
+      "type": "hidden_item",
+      "x": 18,
+      "y": 31,
+      "elevation": 0,
+      "item": "ITEM_MAX_ETHER",
+      "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_MAX_ETHER"
+    }
+  ]
+}

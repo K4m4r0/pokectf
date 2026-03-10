@@ -2542,6 +2542,116 @@
       "blockdata_filepath": "data/layouts/Route110_TrickHousePuzzle8/map.bin"
     },
     {
+      "id": "LAYOUT_FLAG7_TRICK_HOUSE_ENTRANCE",
+      "name": "Flag7_TrickHouseEntrance_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Flag7_TrickHouseEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/Flag7_TrickHouseEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAG7_TRICK_HOUSE_END",
+      "name": "Flag7_TrickHouseEnd_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Flag7_TrickHouseEnd/border.bin",
+      "blockdata_filepath": "data/layouts/Flag7_TrickHouseEnd/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAG7_TRICK_HOUSE_CORRIDOR",
+      "name": "Flag7_TrickHouseCorridor_Layout",
+      "width": 15,
+      "height": 24,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Flag7_TrickHouseCorridor/border.bin",
+      "blockdata_filepath": "data/layouts/Flag7_TrickHouseCorridor/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAG7_TRICK_HOUSE_PUZZLE1",
+      "name": "Flag7_TrickHousePuzzle1_Layout",
+      "width": 15,
+      "height": 26,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrickHousePuzzle",
+      "border_filepath": "data/layouts/Flag7_TrickHousePuzzle1/border.bin",
+      "blockdata_filepath": "data/layouts/Flag7_TrickHousePuzzle1/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAG7_TRICK_HOUSE_PUZZLE2",
+      "name": "Flag7_TrickHousePuzzle2_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrickHousePuzzle",
+      "border_filepath": "data/layouts/Flag7_TrickHousePuzzle2/border.bin",
+      "blockdata_filepath": "data/layouts/Flag7_TrickHousePuzzle2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAG7_TRICK_HOUSE_PUZZLE3",
+      "name": "Flag7_TrickHousePuzzle3_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrickHousePuzzle",
+      "border_filepath": "data/layouts/Flag7_TrickHousePuzzle3/border.bin",
+      "blockdata_filepath": "data/layouts/Flag7_TrickHousePuzzle3/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAG7_TRICK_HOUSE_PUZZLE4",
+      "name": "Flag7_TrickHousePuzzle4_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrickHousePuzzle",
+      "border_filepath": "data/layouts/Flag7_TrickHousePuzzle4/border.bin",
+      "blockdata_filepath": "data/layouts/Flag7_TrickHousePuzzle4/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAG7_TRICK_HOUSE_PUZZLE5",
+      "name": "Flag7_TrickHousePuzzle5_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrickHousePuzzle",
+      "border_filepath": "data/layouts/Flag7_TrickHousePuzzle5/border.bin",
+      "blockdata_filepath": "data/layouts/Flag7_TrickHousePuzzle5/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAG7_TRICK_HOUSE_PUZZLE6",
+      "name": "Flag7_TrickHousePuzzle6_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrickHousePuzzle",
+      "border_filepath": "data/layouts/Flag7_TrickHousePuzzle6/border.bin",
+      "blockdata_filepath": "data/layouts/Flag7_TrickHousePuzzle6/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAG7_TRICK_HOUSE_PUZZLE7",
+      "name": "Flag7_TrickHousePuzzle7_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrickHousePuzzle",
+      "border_filepath": "data/layouts/Flag7_TrickHousePuzzle7/border.bin",
+      "blockdata_filepath": "data/layouts/Flag7_TrickHousePuzzle7/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLAG7_TRICK_HOUSE_PUZZLE8",
+      "name": "Flag7_TrickHousePuzzle8_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_TrickHousePuzzle",
+      "border_filepath": "data/layouts/Flag7_TrickHousePuzzle8/border.bin",
+      "blockdata_filepath": "data/layouts/Flag7_TrickHousePuzzle8/map.bin"
+    },
+    {
       "id": "LAYOUT_FORTREE_CITY_DECORATION_SHOP",
       "name": "FortreeCity_DecorationShop_Layout",
       "width": 8,
@@ -5130,6 +5240,46 @@
       "secondary_tileset": "gTileset_TrickHousePuzzle",
       "border_filepath": "data/layouts/underCaferteria/border.bin",
       "blockdata_filepath": "data/layouts/underCaferteria/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLDALE_TOWN_POKEMON_CENTER_CAFERTERIA",
+      "name": "OldaleTown_PokemonCenter_caferteria_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/OldaleTown_PokemonCenter_caferteria/border.bin",
+      "blockdata_filepath": "data/layouts/OldaleTown_PokemonCenter_caferteria/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAFTERIA_MART",
+      "name": "CafteriaMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/CafteriaMart/border.bin",
+      "blockdata_filepath": "data/layouts/CafteriaMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_RYBBEL_FOREST",
+      "name": "RybbelForest_Layout",
+      "width": 42,
+      "height": 61,
+      "primary_tileset": "gTileset_LeafeonEvolve",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/RybbelForest/border.bin",
+      "blockdata_filepath": "data/layouts/RybbelForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_RYBBEL_PRE_FOREST",
+      "name": "RybbelPreForest_Layout",
+      "width": 50,
+      "height": 38,
+      "primary_tileset": "gTileset_LeafeonEvolve",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/RybbelPreForest/border.bin",
+      "blockdata_filepath": "data/layouts/RybbelPreForest/map.bin"
     }
   ]
 }

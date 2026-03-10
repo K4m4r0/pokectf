@@ -162,12 +162,14 @@ const u32 gObjectEventPic_Archie[] = INCBIN_U32("graphics/object_events/pics/peo
 const u32 gObjectEventPic_Maxie[] = INCBIN_U32("graphics/object_events/pics/people/team_magma/maxie.4bpp");
 const u32 gObjectEventPic_Regi[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/regi.4bpp");
 const u32 gObjectEventPic_RayquazaStill[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/rayquaza_still.4bpp");
+const u32 gObjectEventPic_GiratinaStill[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/giratina_still.4bpp");
 const u32 gObjectEventPic_TuberMSwimming[] = INCBIN_U32("graphics/object_events/pics/people/tuber_m_swimming.4bpp");
 const u32 gObjectEventPic_Mom[] = INCBIN_U32("graphics/object_events/pics/people/mom.4bpp");
 const u16 gObjectEventPal_Kyogre[] = INCBIN_U16("graphics/object_events/palettes/kyogre.gbapal");
 const u16 gObjectEventPal_KyogreReflection[] = INCBIN_U16("graphics/object_events/palettes/kyogre_reflection.gbapal");
 const u16 gObjectEventPal_Groudon[] = INCBIN_U16("graphics/object_events/palettes/groudon.gbapal");
 const u16 gObjectEventPal_GroudonReflection[] = INCBIN_U16("graphics/object_events/palettes/groudon_reflection.gbapal");
+const u16 gObjectEventPal_GiratinaStill[] = INCBIN_U16("graphics/object_events/palettes/giratina_still.gbapal");
 const u32 gObjectEventPic_UnusedNatuDoll[] = INCBIN_U32("graphics/object_events/pics/dolls/unused_natu_doll.4bpp");
 const u32 gObjectEventPic_UnusedMagnemiteDoll[] = INCBIN_U32("graphics/object_events/pics/dolls/unused_magnemite_doll.4bpp");
 const u32 gObjectEventPic_UnusedSquirtleDoll[] = INCBIN_U32("graphics/object_events/pics/dolls/unused_squirtle_doll.4bpp");
@@ -505,4 +507,3 @@ const u32 gObjectEventPic_TrainRight[] = INCBIN_U32("graphics/object_events/pics
 
 const u32 gObjectEventPic_Mantis[] = INCBIN_U32("graphics/object_events/pics/people/mantis.4bpp");
 const u16 gObjectEventPal_Mantis[] = INCBIN_U16("graphics/object_events/palettes/mantis.gbapal");
-

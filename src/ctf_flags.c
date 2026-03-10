@@ -7,16 +7,18 @@
 #include "constants/characters.h"
 
 
-static const u8 sFlagWords[][PLAYER_NAME_LENGTH + 1] =
+#define CTF_FLAG_INPUT_LENGTH CODE_NAME_LENGTH
+
+static const u8 sFlagWords[][CTF_FLAG_INPUT_LENGTH + 1] =
 {
-    // ACHTUNG: Die Flags müssen <=7 lang sein!
+    // ACHTUNG: Die Flags müssen <= CODE_NAME_LENGTH lang sein!
     _("ALGEBRA"),   // 1 Gym 1
     _("DOZE"),    // 2 Gym 2
     _("5864"),  // 3 Gym 3
     _("PACKET"),  // 4 Gym 4
     _("STACK"),   // 5 Gym 5
     _("SLEEP"),    // 6 Gym 6
-    _("SHELL"),   // 7 Gym 7
+    _("REV3RSEIT"),   // 7 Gym 7
     _("SMISH"),    // 8 Gym 8
     _("BANG"),   // 9 Tutorial
     _("RKTSNC"), // 10 Finale Farmer
@@ -24,9 +26,19 @@ static const u8 sFlagWords[][PLAYER_NAME_LENGTH + 1] =
 };
 
 #define CTF_STATIC_FLAG_COUNT ARRAY_COUNT(sFlagWords)
-
-#define ENROLLMENT_INPUT_BUFFER  (PLAYER_NAME_LENGTH + 16)
+#define ENROLLMENT_INPUT_BUFFER  (CTF_FLAG_INPUT_LENGTH + 16)
 #define ENROLLMENT_CODE_STR_SIZE 9
+
+__attribute__((used))
+static const char sFlagHint[] = "BENEATH: UkVWM1JTRUlU";
+
+__attribute__((noinline))
+void KeepFlagHintAlive(void)
+{
+    volatile const char *p = sFlagHint;
+    if (p[0] == 0x7f)
+        asm volatile("" ::: "memory");
+}
 
 static u8 CharmapToAscii(u8 c)
 {
@@ -92,7 +104,7 @@ static u8 Ctf_ToUpper(u8 c)
 static void Ctf_Normalize(u8 *dst, const u8 *src)
 {
     u32 i = 0;
-    for (; i < PLAYER_NAME_LENGTH && src[i] != EOS; i++)
+    for (; i < CTF_FLAG_INPUT_LENGTH && src[i] != EOS; i++)
         dst[i] = Ctf_ToUpper(src[i]);
     dst[i] = EOS;
 }
@@ -238,8 +250,8 @@ bool8 Ctf_IsFlagCorrect(u8 flagId, const u8 *input)
     if (flagId > CTF_STATIC_FLAG_COUNT)
         return FALSE;
 
-    u8 normInput[PLAYER_NAME_LENGTH + 1];
-    u8 normExpected[PLAYER_NAME_LENGTH + 1];
+    u8 normInput[CTF_FLAG_INPUT_LENGTH + 1];
+    u8 normExpected[CTF_FLAG_INPUT_LENGTH + 1];
 
     Ctf_Normalize(normInput, input);
     Ctf_Normalize(normExpected, sFlagWords[flagId - 1]);
@@ -270,12 +282,12 @@ void Ctf_GetFlagWordUpper(u8 flagId, u8 *dst, u32 dstSize)
     if (flagId > CTF_STATIC_FLAG_COUNT)
         return;
 
-    // Ziel ist PLAYER_NAME_LENGTH+1 groß, wir schreiben sicherheitshalber begrenzt
+    // Ziel ist CODE_NAME_LENGTH+1 groß, wir schreiben sicherheitshalber begrenzt
     // Normalisierung macht bereits EOS am Ende.
     Ctf_Normalize(dst, sFlagWords[flagId - 1]);
 
     // Falls dstSize kleiner ist, hart terminieren
-    if (dstSize <= PLAYER_NAME_LENGTH)
+    if (dstSize <= CTF_FLAG_INPUT_LENGTH)
         dst[dstSize - 1] = EOS;
 }
 

@@ -1,0 +1,124 @@
+{
+  "id": "MAP_RYBBEL_PRE_FOREST",
+  "name": "RybbelPreForest",
+  "layout": "LAYOUT_RYBBEL_PRE_FOREST",
+  "music": "MUS_RG_LAVENDER",
+  "region_map_section": "MAPSEC_MT_PYRE",
+  "requires_flash": false,
+  "weather": "WEATHER_FOG_HORIZONTAL",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_RYBBEL_PRE_FOREST_GIRATINA",
+      "graphics_id": "OBJ_EVENT_GFX_GIRATINA_STILL",
+      "x": 23,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_RYBBEL_PRE_FOREST_GIRATINA"
+    },
+    {
+      "local_id": "LOCALID_RYBBEL_PRE_FOREST_RYBBEL",
+      "graphics_id": "OBJ_EVENT_GFX_NOLAND",
+      "x": 24,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RybbelPreForest_EventScript_Rybbel",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_RYBBEL_PRE_FOREST_TERMINAL",
+      "graphics_id": "OBJ_EVENT_GFX_CTF_TERMINAL",
+      "x": 23,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RybbelPreForest_EventScript_Terminal",
+      "flag": "FLAG_HIDE_RYBBEL_PRE_FOREST_TERMINAL"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 23,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_RYBBEL_FOREST",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RybbelPreForest_EventScript_Approach"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RybbelPreForest_EventScript_Approach"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RybbelPreForest_EventScript_Approach"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 9,
+      "y": 25,
+      "elevation": 0,
+      "item": "ITEM_ZINC",
+      "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_ZINC"
+    },
+    {
+      "type": "hidden_item",
+      "x": 37,
+      "y": 7,
+      "elevation": 3,
+      "item": "ITEM_RARE_CANDY",
+      "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_RARE_CANDY"
+    },
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RybbelPreForest_EventScript_BeneathSign"
+    }
+  ]
+}

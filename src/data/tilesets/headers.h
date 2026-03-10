@@ -36,6 +36,17 @@ const struct Tileset gTileset_Petalburg =
     .callback = InitTilesetAnim_Petalburg,
 };
 
+const struct Tileset gTileset_WayToCaferteria =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_WayToCaferteria,
+    .palettes = gTilesetPalettes_WayToCaferteria,
+    .metatiles = gMetatiles_WayToCaferteria,
+    .metatileAttributes = gMetatileAttributes_WayToCaferteria,
+    .callback = InitTilesetAnim_Petalburg,
+};
+
 const struct Tileset gTileset_Rustboro =
 {
     .isCompressed = TRUE,
@@ -941,4 +952,3 @@ const struct Tileset gTileset_Building_Frlg =
     .metatileAttributes = gMetatileAttributes_Building_Frlg,
     .callback = InitTilesetAnim_Building_Frlg,
 };
-

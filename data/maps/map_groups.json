@@ -703,10 +703,13 @@
     "Flag7_TrickHousePuzzle5",
     "Flag7_TrickHousePuzzle6",
     "Flag7_TrickHousePuzzle7",
-    "Flag7_TrickHousePuzzle8"
-    "SeckenheimerLandstrasse",
+    "Flag7_TrickHousePuzzle8",
     "KurtHaus",
-    "SeckLand2"
+    "SeckLand2",
+    "OldaleTown_PokemonCenter_caferteria",
+    "CafteriaMart",
+    "RybbelPreForest",
+    "RybbelForest"
   ],
   "gMapGroup_Flag8": [
     "entryMapFlag8",
