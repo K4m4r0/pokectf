@@ -87,8 +87,8 @@
     {
       "local_id": "LOCALID_ROCK_SMASH_TOOL",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 0,
-      "y": 11,
+      "x": 7,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,

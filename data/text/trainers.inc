@@ -4821,8 +4821,9 @@ Lagerhalle_Text_T2_Defeated:
     .string "But don't tell anyone!.$"
 
 Lagerhalle_Text_T2_PostBattle:
-	.string "Something about OPENINGS. But you\n"
-	.string "didn't hear that from me!$"
+	.string "Something about YEARS and\n"
+	.string "OPENINGS. But you didn't hear that\p"
+	.string "from me!$"
 
 Lagerhalle_Text_T3_Intro:
     .string "You cannot defeat BLACKHANSA.$"

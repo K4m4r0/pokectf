@@ -43,5 +43,14 @@
       "script": "Blackhansa_Floor1_EventScript_ReturnToPetalburg"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 19,
+      "y": 9,
+      "elevation": 3,
+      "item": "ITEM_HP_UP",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_HP_UP"
+    }
+  ]
 }

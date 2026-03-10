@@ -25,7 +25,7 @@ Lagerhalle_EventScript_Terminal::
     msgbox Lagerhalle_Text_TerminalPrompt, MSGBOX_DEFAULT
     closemessage
 
-    setvar VAR_0x8000, 6
+    setvar VAR_0x8000, 3
     callnative Ctf_FlagTerminal
     waitstate
 
@@ -81,6 +81,7 @@ Lagerhalle_Text_TerminalCorrect::
 
 Lagerhalle_EventScript_Trash::
     msgbox Lagerhalle_Text_Trash, MSGBOX_DEFAULT
+    release
     end
 
 
@@ -112,8 +113,7 @@ Lagerhalle_EventScript_Trainer3::
 
 
 Lagerhalle_EventScript_BlackhansaTrigger_20_3::
-    checktrainerflag TRAINER_PHIL
-    goto_if_eq VAR_RESULT, 1, Lagerhalle_Blackhansa_End
+    goto_if_set FLAG_LAGERHALLE_BLACKHANSA_DEFEATED, Lagerhalle_Blackhansa_End
     lockall
     msgbox Lagerhalle_Text_Blackhansa_Welcome, MSGBOX_DEFAULT
     applymovement LOCALID_BLACKHANSA_BOSS, Lagerhalle_Movement_Blackhansa_From20_3
@@ -121,8 +121,7 @@ Lagerhalle_EventScript_BlackhansaTrigger_20_3::
     goto Lagerhalle_EventScript_Blackhansa_Battle
 
 Lagerhalle_EventScript_BlackhansaTrigger_20_4::
-    checktrainerflag TRAINER_PHIL
-    goto_if_eq VAR_RESULT, 1, Lagerhalle_Blackhansa_End
+    goto_if_set FLAG_LAGERHALLE_BLACKHANSA_DEFEATED, Lagerhalle_Blackhansa_End
     lockall
     msgbox Lagerhalle_Text_Blackhansa_Welcome, MSGBOX_DEFAULT
     applymovement LOCALID_BLACKHANSA_BOSS, Lagerhalle_Movement_Blackhansa_From20_4
@@ -141,23 +140,15 @@ Lagerhalle_EventScript_Blackhansa_Battle::
 
 
 Lagerhalle_EventScript_Blackhansa_AfterBattle::
-    @ Nur weitermachen, wenn wirklich besiegt
-    checktrainerflag TRAINER_PHIL
-    goto_if_eq VAR_RESULT, 1, Lagerhalle_Blackhansa_AfterBattle_Abort
-
     msgbox Lagerhalle_Text_Blackhansa_PostBattle, MSGBOX_DEFAULT
 
-    setflag FLAG_LAGERHALLE_BLACKHANSA_DEFEATED      @ optional (kannst du behalten)
+    setflag FLAG_LAGERHALLE_BLACKHANSA_DEFEATED
     setflag FLAG_HIDE_LAGERHALLE_BLACKHANSA_BOSS
 
     playse SE_WARP_IN
     removeobject LOCALID_BLACKHANSA_BOSS
     special DrawWholeMapView
 
-    releaseall
-    end
-
-Lagerhalle_Blackhansa_AfterBattle_Abort:
     releaseall
     end
 

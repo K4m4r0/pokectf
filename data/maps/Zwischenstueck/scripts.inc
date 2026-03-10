@@ -4,7 +4,6 @@ Zwischenstueck_MapScripts::
 
 Zwischenstueck_OnTransition:
     call Zwischenstueck_DayCare_OnTransition
-    call Zwischenstueck_Guard_OnTransition
     end
 
 @ -----------------------
@@ -84,8 +83,7 @@ Zwischenstueck_EventScript_PasswordGuard::
     @ Move 1 tile right, then face down
     applymovement LOCALID_PASSWORD_GUARD, Zwischenstueck_Movement_Guard_Right1FaceDown
     waitmovement 0
-
-    @ Make it permanent for future visits
+    copyobjectxytoperm LOCALID_PASSWORD_GUARD
     setflag FLAG_ZWISCHENSTUECK_GUARD_MOVED
 
     release
