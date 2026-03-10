@@ -5280,6 +5280,16 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/RybbelPreForest/border.bin",
       "blockdata_filepath": "data/layouts/RybbelPreForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_KLASSENZIMMER_FLAG7",
+      "name": "Klassenzimmer_Flag7_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonSchool",
+      "border_filepath": "data/layouts/Klassenzimmer_Flag7/border.bin",
+      "blockdata_filepath": "data/layouts/Klassenzimmer_Flag7/map.bin"
     }
   ]
 }

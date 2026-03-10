@@ -1349,3 +1349,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RybbelForest/scripts.inc"
 
 	.include "data/maps/RybbelPreForest/scripts.inc"
+
+	.include "data/maps/Klassenzimmer_Flag7/scripts.inc"
