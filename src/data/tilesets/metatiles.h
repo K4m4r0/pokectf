@@ -1,6 +1,12 @@
 const u16 gMetatiles_General[] = INCBIN_U16("data/tilesets/primary/general/metatiles.bin");
 const u16 gMetatileAttributes_General[] = INCBIN_U16("data/tilesets/primary/general/metatile_attributes.bin");
 
+const u16 gMetatiles_WayToCaferteriaGeneral[] = INCBIN_U16("data/tilesets/primary/way_to_caferteria/metatiles.bin");
+const u16 gMetatileAttributes_WayToCaferteriaGeneral[] = INCBIN_U16("data/tilesets/primary/way_to_caferteria/metatile_attributes.bin");
+
+const u16 gMetatiles_LeafeonEvolve[] = INCBIN_U16("data/tilesets/primary/leafeon_evolve/metatiles.bin");
+const u16 gMetatileAttributes_LeafeonEvolve[] = INCBIN_U16("data/tilesets/primary/leafeon_evolve/metatile_attributes.bin");
+
 const u16 gMetatiles_Petalburg[] = INCBIN_U16("data/tilesets/secondary/petalburg/metatiles.bin");
 const u16 gMetatileAttributes_Petalburg[] = INCBIN_U16("data/tilesets/secondary/petalburg/metatile_attributes.bin");
 
@@ -24,6 +30,9 @@ const u16 gMetatileAttributes_Fallarbor[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_Fortree[] = INCBIN_U16("data/tilesets/secondary/fortree/metatiles.bin");
 const u16 gMetatileAttributes_Fortree[] = INCBIN_U16("data/tilesets/secondary/fortree/metatile_attributes.bin");
+
+const u16 gMetatiles_WayToCaferteria[] = INCBIN_U16("data/tilesets/secondary/way_to_caferteria/metatiles.bin");
+const u16 gMetatileAttributes_WayToCaferteria[] = INCBIN_U16("data/tilesets/secondary/way_to_caferteria/metatile_attributes.bin");
 
 const u16 gMetatiles_Lilycove[] = INCBIN_U16("data/tilesets/secondary/lilycove/metatiles.bin");
 const u16 gMetatileAttributes_Lilycove[] = INCBIN_U16("data/tilesets/secondary/lilycove/metatile_attributes.bin");
@@ -229,6 +238,12 @@ const u16 gMetatileAttributes_PokemonMansion[] = INCBIN_U16("data/tilesets/secon
 const u16 gMetatiles_Building_Frlg[] = INCBIN_U16("data/tilesets/primary/building_frlg/metatiles.bin");
 const u16 gMetatileAttributes_Building_Frlg[] = INCBIN_U16("data/tilesets/primary/building_frlg/metatile_attributes.bin");
 
+
+const u16 gMetatiles_CafeOutside[] = INCBIN_U16("data/tilesets/secondary/cafe_outside/metatiles.bin");
+const u16 gMetatileAttributes_CafeOutside[] = INCBIN_U16("data/tilesets/secondary/cafe_outside/metatile_attributes.bin");
+
+const u16 gMetatiles_caferteria_inside[] = INCBIN_U16("data/tilesets/secondary/caferteria_inside/metatiles.bin");
+const u16 gMetatileAttributes_caferteria_inside[] = INCBIN_U16("data/tilesets/secondary/caferteria_inside/metatile_attributes.bin");
 
 const u16 gMetatiles_Edeka[] = INCBIN_U16("data/tilesets/secondary/edeka/metatiles.bin");
 const u16 gMetatileAttributes_Edeka[] = INCBIN_U16("data/tilesets/secondary/edeka/metatile_attributes.bin");

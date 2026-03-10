@@ -1,5 +1,10 @@
 secreteRoomwithCode_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, secreteRoomwithCode_OnLoad
 	.byte 0
+
+secreteRoomwithCode_OnLoad:
+	setflag FLAG_SECRETARIAT_HIDDEN_DOOR_OPEN
+	end
 
 secreteRoomwithCode_EventScript_ShowHint::
 	lock

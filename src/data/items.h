@@ -15561,7 +15561,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_CUT_TOOL] =
     {
-        .name = ITEM_NAME("Pruning Shears"),
+        .name = ITEM_NAME("Cut Item"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A handy tool that\n"
@@ -15577,7 +15577,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_FLY_TOOL] =
     {
-        .name = ITEM_NAME("Jetpack"),
+        .name = ITEM_NAME("Fly Item"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Allows instant\n"
@@ -15673,7 +15673,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_DIVE_TOOL] =
     {
-        .name = ITEM_NAME("Scuba Gear"),
+        .name = ITEM_NAME("Dive Item"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A diving apparatus\n"
@@ -15734,6 +15734,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_GsBall,
     },
 
+
+    [ITEM_CTF_TERMINAL] =
+    {
+        .name = ITEM_NAME("CTF Terminal"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "An old CTF\n"
+            "terminal recovered\n"
+            "from Trick House."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_QuestionMark,
+        .iconPalette = gItemIconPalette_QuestionMark,
+    },
         [ITEM_BATTERIES] =
     {
         .name = ITEM_NAME("Batteries"),

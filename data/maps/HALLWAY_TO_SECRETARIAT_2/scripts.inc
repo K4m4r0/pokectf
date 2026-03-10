@@ -63,12 +63,12 @@ HALLWAY_TO_SECRETARIAT_2_EventScript_ApplySecretDoorMetatiles::
 	goto HALLWAY_TO_SECRETARIAT_2_EventScript_HideSecretDoor_OnLoad
 
 HALLWAY_TO_SECRETARIAT_2_EventScript_ShowSecretDoor_OnLoad::
-	setmetatile 12, 0, METATILE_DHBWFLOORS_SecretDoor_TopLeft, TRUE
-	setmetatile 13, 0, METATILE_DHBWFLOORS_SecretDoor_TopMid, TRUE
-	setmetatile 14, 0, METATILE_DHBWFLOORS_SecretDoor_TopRight, TRUE
-	setmetatile 12, 1, METATILE_DHBWFLOORS_SecretDoor_BottomLeft, TRUE
-	setmetatile 13, 1, METATILE_DHBWFLOORS_SecretDoor_BottomMid, TRUE
-	setmetatile 14, 1, METATILE_DHBWFLOORS_SecretDoor_BottomRight, TRUE
+	setmetatile 12, 0, METATILE_DHBWFLOORS_SecretDoor_TopLeft, FALSE
+	setmetatile 13, 0, METATILE_DHBWFLOORS_SecretDoor_TopMid, FALSE
+	setmetatile 14, 0, METATILE_DHBWFLOORS_SecretDoor_TopRight, FALSE
+	setmetatile 12, 1, METATILE_DHBWFLOORS_SecretDoor_BottomLeft, FALSE
+	setmetatile 13, 1, METATILE_DHBWFLOORS_SecretDoor_BottomMid, FALSE
+	setmetatile 14, 1, METATILE_DHBWFLOORS_SecretDoor_BottomRight, FALSE
 	return
 
 HALLWAY_TO_SECRETARIAT_2_EventScript_HideSecretDoor_OnLoad::

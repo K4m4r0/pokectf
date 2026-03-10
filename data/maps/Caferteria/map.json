@@ -1,0 +1,169 @@
+{
+  "id": "MAP_CAFERTERIA",
+  "name": "Caferteria",
+  "layout": "LAYOUT_CAFERTERIA",
+  "music": "MUS_PETALBURG",
+  "region_map_section": "MAPSEC_PETALBURG_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_WAY_TO_CAFERTERIA",
+      "offset": 12,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 23,
+      "y": 27,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_MAX_REVIVE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 1,
+      "y": 28,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ETHER",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_PETALBURG_CITY_ETHER"
+    },
+    {
+      "local_id": "LOCALID_RYBBEL",
+      "graphics_id": "OBJ_EVENT_GFX_NOLAND",
+      "x": 25,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Caferteria_EventScript_Rybbel",
+      "flag": "FLAG_HIDE_RYBBEL"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 16,
+      "y": 24,
+      "elevation": 3,
+      "dest_map": "MAP_OLDALE_TOWN_POKEMON_CENTER_CAFERTERIA",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 24,
+      "elevation": 3,
+      "dest_map": "MAP_CAFTERIA_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_CAFERTERIAINSIDE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_CAFERTERIAINSIDE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 17,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "0",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 16,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "0",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 18,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "0",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 19,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "0",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 17,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "1",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 16,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "1",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 18,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "1",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 19,
+      "elevation": 3,
+      "var": "VAR_RYBBEL_TERMINAL_HINT",
+      "var_value": "1",
+      "script": "Caferteria_EventScript_RybbelSightTrigger"
+    }
+  ],
+  "bg_events": []
+}
