@@ -339,13 +339,13 @@ HouvertClass_Text_ProfHouvertComeToFront:
 	.string "I'll draw you a map.$"
 
 HouvertClass_Text_PlayerRight:
-	.string "You: Right...$"
+	.string "{PLAYER} Right...$"
 
 HouvertClass_Text_PlayerThatsIt:
-	.string "You: That's it.$"
+	.string "{PLAYER} That's it.$"
 
 HouvertClass_Text_PlayerCanWrite:
-	.string "You: Now I can actually write the\n"
+	.string "{PLAYER} Now I can actually write the\n"
 	.string "exam.$"
 
 HouvertClass_Text_HouvertTimeUp:
@@ -371,7 +371,7 @@ HouvertClass_Text_HouvertFail:
 	.string "You have failed.$"
 
 HouvertClass_Text_PlayerWhat:
-	.string "You: What? How can you tell already?$"
+	.string "{PLAYER} What? How can you tell already?$"
 
 HouvertClass_Text_HouvertTrivial:
 	.string "DR. PROF. HOUVERT: It is trivial.$"
@@ -434,7 +434,7 @@ HouvertClass_Text_ProfHouvertRegistrationRequest:
 	.string "the top of the page.$"
 
 HouvertClass_Text_PlayerForgotRegistration:
-	.string "You: ...My Registration Number.\p"
+	.string "{PLAYER} ...My Registration Number.\p"
 	.string "Wait.\p"
 	.string "I don't remember it.$"
 
