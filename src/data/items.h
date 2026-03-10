@@ -15708,7 +15708,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "A GameBoy Cartridge\n"
-            "and a note with INSPECT\n"
+            "with NOTE\n"
             "written on it."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
