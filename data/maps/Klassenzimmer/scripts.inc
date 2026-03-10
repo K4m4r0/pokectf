@@ -83,7 +83,7 @@ Klassenzimmer_Text_Museum:
     .string "needs this right now.\p"
     .string "But why not make this our\n"
     .string "opportunity to learn something new.\p"
->   .string "So folks, let's get going.$"
+    .string "So folks, let's get going.$"
 
 Museum_Text_StudentReceivesMon:
     .string "PROF. FARMER: At the beginning of your\n"
