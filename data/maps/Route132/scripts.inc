@@ -17,7 +17,7 @@ Route132_EventScript_Ronald::
 	end
 
 Route132_EventScript_Kiyo::
-	trainerbattle_single TRAINER_KIYO, Route132_Text_KiyoIntro, Route132_Text_KiyoDefeat
+	trainerbattle_single TRAINER_WIWI_M_1, Route132_Text_KiyoIntro, Route132_Text_KiyoDefeat
 	msgbox Route132_Text_KiyoPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -32,12 +32,18 @@ Route132_EventScript_Darcy::
 	end
 
 Route132_EventScript_Jonathan::
-	trainerbattle_single TRAINER_JONATHAN, Route132_Text_JonathanIntro, Route132_Text_JonathanDefeat
+	compare VAR_LAST_TALKED, OBJ_EVENT_WIWI_F_1
+	goto_if_eq Route132_EventScript_WiwiF1
+	trainerbattle_single TRAINER_WIWI_M_3, Route132_Text_JonathanIntro, Route132_Text_JonathanDefeat
 	msgbox Route132_Text_JonathanPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route132_EventScript_WiwiF1::
+	trainerbattle_single TRAINER_WIWI_F_1, Route132_Text_WiwiF1Intro, Route132_Text_WiwiF1Defeat
+	msgbox Route132_Text_WiwiF1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route132_EventScript_Makayla::
 	trainerbattle_single TRAINER_MAKAYLA, Route132_Text_MakaylaIntro, Route132_Text_MakaylaDefeat
 	msgbox Route132_Text_MakaylaPostBattle, MSGBOX_AUTOCLOSE
 	end
-

@@ -12,19 +12,19 @@ Flag7_TrickHousePuzzle4_EventScript_FoundScroll::
 	goto Flag7_TrickHousePuzzle_EventScript_FoundScroll
 	end
 
-Flag7_TrickHousePuzzle4_EventScript_Cora::
-	trainerbattle_single TRAINER_CORA, Flag7_TrickHousePuzzle4_Text_CoraIntro, Flag7_TrickHousePuzzle4_Text_CoraDefeat
-	msgbox Flag7_TrickHousePuzzle4_Text_CoraPostBattle, MSGBOX_AUTOCLOSE
+Flag7_TrickHousePuzzle4_EventScript_Worker::
+	trainerbattle_single TRAINER_YUJI, Flag7_TrickHousePuzzle4_Text_WorkerIntro, Flag7_TrickHousePuzzle4_Text_WorkerDefeat
+	msgbox Flag7_TrickHousePuzzle4_Text_WorkerPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Flag7_TrickHousePuzzle4_EventScript_Yuji::
-	trainerbattle_single TRAINER_YUJI, Flag7_TrickHousePuzzle4_Text_YujiIntro, Flag7_TrickHousePuzzle4_Text_YujiDefeat
-	msgbox Flag7_TrickHousePuzzle4_Text_YujiPostBattle, MSGBOX_AUTOCLOSE
+Flag7_TrickHousePuzzle4_EventScript_Researcher::
+	trainerbattle_single TRAINER_CORA, Flag7_TrickHousePuzzle4_Text_ResearcherIntro, Flag7_TrickHousePuzzle4_Text_ResearcherDefeat
+	msgbox Flag7_TrickHousePuzzle4_Text_ResearcherPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Flag7_TrickHousePuzzle4_EventScript_Paula::
-	trainerbattle_single TRAINER_PAULA, Flag7_TrickHousePuzzle4_Text_PaulaIntro, Flag7_TrickHousePuzzle4_Text_PaulaDefeat
-	msgbox Flag7_TrickHousePuzzle4_Text_PaulaPostBattle, MSGBOX_AUTOCLOSE
+Flag7_TrickHousePuzzle4_EventScript_TunnelDweller::
+	trainerbattle_single TRAINER_PAULA, Flag7_TrickHousePuzzle4_Text_DwellerIntro, Flag7_TrickHousePuzzle4_Text_DwellerDefeat
+	msgbox Flag7_TrickHousePuzzle4_Text_DwellerPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Flag7_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened:
@@ -34,37 +34,47 @@ Flag7_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened:
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 
-Flag7_TrickHousePuzzle4_Text_CoraIntro:
-	.string "It's too much bother to think this out.\n"
-	.string "I only wanted to battle!$"
+Flag7_TrickHousePuzzle4_Text_WorkerIntro:
+	.string "Hm? A student?\p"
+	.string "Haven't seen one down here\n"
+	.string "in quite some time.\p"
+	.string "Most people turn around\n"
+	.string "after the first few tunnels.\p"
+	.string "But if you're still walking...\p"
+	.string "you must be looking for something deeper.$"
 
-Flag7_TrickHousePuzzle4_Text_CoraDefeat:
-	.string "Even though I lost, I still like battling\n"
-	.string "the best!$"
+Flag7_TrickHousePuzzle4_Text_WorkerDefeat:
+	.string "Heh...\n"
+	.string "Guess the next generation's tough.$"
 
-Flag7_TrickHousePuzzle4_Text_CoraPostBattle:
-	.string "Wouldn't you agree? You would go\n"
-	.string "anywhere if TRAINERS were there.$"
+Flag7_TrickHousePuzzle4_Text_WorkerPostBattle:
+	.string "You're cleared to head deeper.\n"
+	.string "Watch your step down there.$"
 
-Flag7_TrickHousePuzzle4_Text_YujiIntro:
-	.string "Heh! Boulders like this, I can brush\n"
-	.string "aside with one finger!$"
+Flag7_TrickHousePuzzle4_Text_ResearcherIntro:
+	.string "Oh... someone finally found this lab.\p"
+	.string "I moved my research down here\n"
+	.string "years ago.\p"
+	.string "No distractions. No administrators.\p"
+	.string "Just data... and POKéMON.$"
 
-Flag7_TrickHousePuzzle4_Text_YujiDefeat:
-	.string "I can push boulders, but I can't solve\n"
-	.string "the puzzle…$"
+Flag7_TrickHousePuzzle4_Text_ResearcherDefeat:
+	.string "Fascinating...$"
 
-Flag7_TrickHousePuzzle4_Text_YujiPostBattle:
-	.string "It's not good enough to be brawny…\n"
-	.string "You have to use your head. Be brainy!$"
+Flag7_TrickHousePuzzle4_Text_ResearcherPostBattle:
+	.string "Your battle strategy was surprisingly\n"
+	.string "efficient. Consider me impressed.$"
 
-Flag7_TrickHousePuzzle4_Text_PaulaIntro:
-	.string "The TRICK HOUSE is getting trickier,\n"
-	.string "isn't it?$"
+Flag7_TrickHousePuzzle4_Text_DwellerIntro:
+	.string "You're getting close.\p"
+	.string "Most people never reach\n"
+	.string "this far beneath the campus.\p"
+	.string "The tunnels go deeper still...\p"
+	.string "But only strong trainers make it past me.$"
 
-Flag7_TrickHousePuzzle4_Text_PaulaDefeat:
-	.string "Aaak!$"
+Flag7_TrickHousePuzzle4_Text_DwellerDefeat:
+	.string "Not bad.$"
 
-Flag7_TrickHousePuzzle4_Text_PaulaPostBattle:
-	.string "Has anyone made it to the end?$"
-
+Flag7_TrickHousePuzzle4_Text_DwellerPostBattle:
+	.string "Maybe you really are ready\n"
+	.string "for what's deeper below.$"

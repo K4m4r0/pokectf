@@ -36,52 +36,68 @@ Flag7_TrickHousePuzzle1_EventScript_FoundScroll::
 	goto Flag7_TrickHousePuzzle_EventScript_FoundScroll
 	end
 
-Flag7_TrickHousePuzzle1_EventScript_Sally::
-	trainerbattle_single TRAINER_SALLY, Flag7_TrickHousePuzzle1_Text_SallyIntro, Flag7_TrickHousePuzzle1_Text_SallyDefeat
-	msgbox Flag7_TrickHousePuzzle1_Text_SallyPostBattle, MSGBOX_AUTOCLOSE
+Flag7_TrickHousePuzzle1_EventScript_Caretaker::
+	trainerbattle_single TRAINER_SALLY, Flag7_TrickHousePuzzle1_Text_CaretakerIntro, Flag7_TrickHousePuzzle1_Text_CaretakerDefeat
+	msgbox Flag7_TrickHousePuzzle1_Text_CaretakerPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Flag7_TrickHousePuzzle1_EventScript_Eddie::
-	trainerbattle_single TRAINER_EDDIE, Flag7_TrickHousePuzzle1_Text_EddieIntro, Flag7_TrickHousePuzzle1_Text_EddieDefeat
-	msgbox Flag7_TrickHousePuzzle1_Text_EddiePostBattle, MSGBOX_AUTOCLOSE
+Flag7_TrickHousePuzzle1_EventScript_PhDStudent::
+	trainerbattle_single TRAINER_ROBIN, Flag7_TrickHousePuzzle1_Text_PhDIntro, Flag7_TrickHousePuzzle1_Text_PhDDefeat
+	msgbox Flag7_TrickHousePuzzle1_Text_PhDPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Flag7_TrickHousePuzzle1_EventScript_Robin::
-	trainerbattle_single TRAINER_ROBIN, Flag7_TrickHousePuzzle1_Text_RobinIntro, Flag7_TrickHousePuzzle1_Text_RobinDefeat
-	msgbox Flag7_TrickHousePuzzle1_Text_RobinPostBattle, MSGBOX_AUTOCLOSE
+Flag7_TrickHousePuzzle1_EventScript_Explorer::
+	trainerbattle_single TRAINER_EDDIE, Flag7_TrickHousePuzzle1_Text_ExplorerIntro, Flag7_TrickHousePuzzle1_Text_ExplorerDefeat
+	msgbox Flag7_TrickHousePuzzle1_Text_ExplorerPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Flag7_TrickHousePuzzle1_Text_SallyIntro:
-	.string "I'll hack and slash my way to victory\n"
-	.string "with the CUT we just learned!$"
+Flag7_TrickHousePuzzle1_Text_CaretakerIntro:
+	.string "Hey!\n"
+	.string "Students aren't supposed\l"
+	.string "to be down here.\p"
+	.string "This level contains\n"
+	.string "pipes, cables...\p"
+	.string "and problems.\p"
+	.string "If you want to continue,\n"
+	.string "you'll have to get past me.$"
 
-Flag7_TrickHousePuzzle1_Text_SallyDefeat:
-	.string "Why are you so serious?$"
+Flag7_TrickHousePuzzle1_Text_CaretakerDefeat:
+	.string "Huh...\n"
+	.string "Maybe I should let you pass.$"
 
-Flag7_TrickHousePuzzle1_Text_SallyPostBattle:
-	.string "I never get tired of hacking\n"
-	.string "and slashing!$"
+Flag7_TrickHousePuzzle1_Text_CaretakerPostBattle:
+	.string "Anyone who beats me probably\n"
+	.string "belongs down here.$"
 
-Flag7_TrickHousePuzzle1_Text_EddieIntro:
-	.string "I wandered into this weird house\n"
-	.string "by accident…$"
+Flag7_TrickHousePuzzle1_Text_PhDIntro:
+	.string "Oh... hi.\p"
+	.string "I moved my research office\n"
+	.string "down here. It's quiet.\p"
+	.string "Also nobody checks\n"
+	.string "if I'm actually working.$"
 
-Flag7_TrickHousePuzzle1_Text_EddieDefeat:
-	.string "And now I've lost…$"
+Flag7_TrickHousePuzzle1_Text_PhDDefeat:
+	.string "Another failed experiment...$"
 
-Flag7_TrickHousePuzzle1_Text_EddiePostBattle:
-	.string "I lost my way, I lost a battle, and I'm\n"
-	.string "now even more lost… I can't get out…$"
+Flag7_TrickHousePuzzle1_Text_PhDPostBattle:
+	.string "I'll just call it\n"
+	.string "Unexpected results.$"
 
-Flag7_TrickHousePuzzle1_Text_RobinIntro:
-	.string "Just who is the TRICK MASTER?$"
+Flag7_TrickHousePuzzle1_Text_ExplorerIntro:
+	.string "This place is amazing.\p"
+	.string "Hidden tunnels beneath\n"
+	.string "the cafeteria!\p"
+	.string "Universities always hide\n"
+	.string "the coolest stuff underground.\p"
+	.string "Want to explore further?\n"
+	.string "Beat me first!$"
 
-Flag7_TrickHousePuzzle1_Text_RobinDefeat:
-	.string "I lost while I was lost in thought!$"
+Flag7_TrickHousePuzzle1_Text_ExplorerDefeat:
+	.string "Nice battle!$"
 
-Flag7_TrickHousePuzzle1_Text_RobinPostBattle:
-	.string "You're strong!\n"
-	.string "Just who are you?$"
+Flag7_TrickHousePuzzle1_Text_ExplorerPostBattle:
+	.string "Guess you're a real\n"
+	.string "underground explorer too.$"
 
 Flag7_TrickHousePuzzle1_Text_SignPassword123:
 	.string "Password: password123$"

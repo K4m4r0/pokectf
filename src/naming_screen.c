@@ -1440,7 +1440,7 @@ static void NamingScreen_CreateCodeIcon(void)
 //--------------------------------------------------
 
 static bool8 KeyboardKeyHandler_Character(u8);
-static void SwapKeyboardToLowerAfterFirstCapitalLetter(void);
+static UNUSED void SwapKeyboardToLowerAfterFirstCapitalLetter(void);
 static bool8 KeyboardKeyHandler_Page(u8);
 static bool8 KeyboardKeyHandler_Backspace(u8);
 static bool8 KeyboardKeyHandler_OK(u8);
@@ -1499,7 +1499,7 @@ static bool8 KeyboardKeyHandler_Character(u8 input)
 }
 
 
-static void SwapKeyboardToLowerAfterFirstCapitalLetter(void)
+static UNUSED void SwapKeyboardToLowerAfterFirstCapitalLetter(void)
 {
     if (AUTO_LOWERCASE_KEYBOARD < GEN_6)
         return;
@@ -2622,5 +2622,4 @@ static const struct SpritePalette sSpritePalettes[] =
     {gNamingScreenMenu_Pal[4], PALTAG_OK_BUTTON},
     {}
 };
-
 

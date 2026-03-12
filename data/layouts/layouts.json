@@ -4944,8 +4944,8 @@
     {
       "id": "LAYOUT_SECKENHEIMER_LANDSTRASSE",
       "name": "SeckenheimerLandstrasse_Layout",
-      "width": 16,
-      "height": 36,
+      "width": 24,
+      "height": 42,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/SeckenheimerLandstrasse/border.bin",
@@ -5360,6 +5360,16 @@
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/FossilHaus/border.bin",
       "blockdata_filepath": "data/layouts/FossilHaus/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUGIA_SPAWN",
+      "name": "LugiaSpawn_Layout",
+      "width": 23,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/LugiaSpawn/border.bin",
+      "blockdata_filepath": "data/layouts/LugiaSpawn/map.bin"
     }
   ]
 }

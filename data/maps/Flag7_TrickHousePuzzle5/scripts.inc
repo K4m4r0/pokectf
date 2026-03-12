@@ -200,6 +200,29 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll4Trigger5::
 	goto Flag7_TrickHousePuzzle5_EventScript_Mechadoll4Activate
 	end
 
+Flag7_TrickHousePuzzle5_EventScript_BeneathNurse::
+	lock
+	faceplayer
+	goto_if_eq VAR_TEMP_B, 1, Flag7_TrickHousePuzzle5_EventScript_BeneathNurseRepeat
+	msgbox Flag7_TrickHousePuzzle5_Text_BeneathNurseIntro, MSGBOX_DEFAULT
+	call Flag7_TrickHousePuzzle5_EventScript_BeneathNurseHeal
+	msgbox Flag7_TrickHousePuzzle5_Text_BeneathNurseAfter, MSGBOX_DEFAULT
+	setvar VAR_TEMP_B, 1
+	release
+	end
+
+Flag7_TrickHousePuzzle5_EventScript_BeneathNurseRepeat::
+	msgbox Flag7_TrickHousePuzzle5_Text_BeneathNurseRepeat, MSGBOX_DEFAULT
+	call Flag7_TrickHousePuzzle5_EventScript_BeneathNurseHeal
+	msgbox Flag7_TrickHousePuzzle5_Text_BeneathNurseAfter, MSGBOX_DEFAULT
+	release
+	end
+
+Flag7_TrickHousePuzzle5_EventScript_BeneathNurseHeal::
+	special HealPlayerParty
+	waitstate
+	return
+
 Flag7_TrickHousePuzzle5_EventScript_Mechadoll5Trigger0::
 	lockall
 	setvar VAR_TEMP_9, 0
@@ -307,7 +330,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll1Quiz1::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll1Quiz1, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL1_Q1, TRUE
 	switch VAR_RESULT
-	case 2, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -331,7 +354,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll2Quiz1::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll2Quiz1, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL2_Q1, TRUE
 	switch VAR_RESULT
-	case 1, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -339,7 +362,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll2Quiz2::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll2Quiz2, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL2_Q2, TRUE
 	switch VAR_RESULT
-	case 2, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -363,7 +386,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll3Quiz2::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll3Quiz2, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL3_Q2, TRUE
 	switch VAR_RESULT
-	case 2, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -371,7 +394,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll3Quiz3::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll3Quiz3, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL3_Q3, TRUE
 	switch VAR_RESULT
-	case 1, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -395,7 +418,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll4Quiz3::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll4Quiz3, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL4_Q3, TRUE
 	switch VAR_RESULT
-	case 1, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -403,7 +426,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll5Quiz1::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll5Quiz1, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL5_Q1, TRUE
 	switch VAR_RESULT
-	case 1, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -419,7 +442,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll5Quiz3::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll5Quiz3, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL5_Q3, TRUE
 	switch VAR_RESULT
-	case 2, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -902,6 +925,29 @@ Flag7_TrickHousePuzzle5_Text_WroteSecretCodeLockOpened:
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 
+Flag7_TrickHousePuzzle5_Text_BeneathNurseIntro:
+	.string "Oh! Hello there!\n"
+	.string "Are you a TRAINER too?\p"
+	.string "I was looking for the POKéMON CENTER...\n"
+	.string "but I think I may have taken a wrong turn.\p"
+	.string "These tunnels all look the same to me.\p"
+	.string "Somehow I ended up beneath the cafeteria.\p"
+	.string "Well... since I'm already here,\n"
+	.string "I decided to help TRAINERS who pass through.\p"
+	.string "Your POKéMON look tired.\n"
+	.string "Let me heal them for you.$"
+
+Flag7_TrickHousePuzzle5_Text_BeneathNurseAfter:
+	.string "There you go!\n"
+	.string "Your POKéMON are back to full health.\p"
+	.string "If you find the way back to the POKéMON CENTER...\n"
+	.string "please let NURSE JOY know where I ended up.$"
+
+Flag7_TrickHousePuzzle5_Text_BeneathNurseRepeat:
+	.string "Lost or not, a NURSE JOY never stops\n"
+	.string "helping TRAINERS!\p"
+	.string "Let me heal your POKéMON.$"
+
 Flag7_TrickHousePuzzle5_Text_Mechadoll1Intro:
 	.string "CLICKETY-CLACK…\n"
 	.string "MECHADOLL 1 AM I!\p"
@@ -911,18 +957,17 @@ Flag7_TrickHousePuzzle5_Text_Mechadoll1Intro:
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll1Quiz1:
 	.string "MECHADOLL 1 QUIZ.\p"
-	.string "One of these POKéMON is not found\n"
-	.string "on ROUTE 110. Which one is it?$"
+	.string "In cybersecurity,\n"
+	.string "what does CTF stand for?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll1Quiz2:
 	.string "MECHADOLL 1 QUIZ.\p"
-	.string "One of these POKéMON is not of the\n"
-	.string "WATER type. Which one is it?$"
+	.string "Which tool is commonly used\n"
+	.string "for reverse engineering binaries?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll1Quiz3:
 	.string "MECHADOLL 1 QUIZ.\p"
-	.string "One of these POKéMON does not use\n"
-	.string "LEECH LIFE. Which one is it?$"
+	.string "What does SQL stand for?$"
 
 Flag7_TrickHousePuzzle5_Text_CorrectGoThrough:
 	.string "CONGRATULATIONS. CORRECT YOU ARE.\n"
@@ -947,18 +992,17 @@ Flag7_TrickHousePuzzle5_Text_Mechadoll2Intro:
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll2Quiz1:
 	.string "MECHADOLL 2 QUIZ.\p"
-	.string "Which of these POKéMON did WALLY\n"
-	.string "borrow from your father?$"
+	.string "Which protocol is used\n"
+	.string "to securely browse websites?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll2Quiz2:
 	.string "MECHADOLL 2 QUIZ.\p"
-	.string "Which of these POKéMON was chasing\n"
-	.string "PROF. BIRCH?$"
+	.string "What kind of attack tries\n"
+	.string "many passwords automatically?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll2Quiz3:
 	.string "MECHADOLL 2 QUIZ.\p"
-	.string "Which of these POKéMON did TEAM AQUA\n"
-	.string "use in PETALBURG FOREST?$"
+	.string "What does VPN stand for?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll3Intro:
 	.string "CLICKETY-CLACK…\n"
@@ -967,18 +1011,17 @@ Flag7_TrickHousePuzzle5_Text_Mechadoll3Intro:
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll3Quiz1:
 	.string "MECHADOLL 3 QUIZ.\p"
-	.string "Which costs more?\n"
-	.string "Three HARBOR MAILS or one BURN HEAL?$"
+	.string "Which device connects\n"
+	.string "different networks together?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll3Quiz2:
 	.string "MECHADOLL 3 QUIZ.\p"
-	.string "Sell one GREAT BALL and buy\n"
-	.string "one POTION. How much money remains?$"
+	.string "Which of these is a\n"
+	.string "strong password practice?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll3Quiz3:
 	.string "MECHADOLL 3 QUIZ.\p"
-	.string "Do one REPEL and SODA POP cost\n"
-	.string "more than one SUPER POTION?$"
+	.string "What does 2FA mean?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll4Intro:
 	.string "CLICKETY-CLACK…\n"
@@ -987,18 +1030,16 @@ Flag7_TrickHousePuzzle5_Text_Mechadoll4Intro:
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll4Quiz1:
 	.string "MECHADOLL 4 QUIZ.\p"
-	.string "In SEASHORE HOUSE, were there more men\n"
-	.string "or women?$"
+	.string "What is phishing?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll4Quiz2:
 	.string "MECHADOLL 4 QUIZ.\p"
-	.string "In LAVARIDGE TOWN, were there more\n"
-	.string "elderly men or elderly women?$"
+	.string "Which port is commonly used\n"
+	.string "for HTTPS?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll4Quiz3:
 	.string "MECHADOLL 4 QUIZ.\p"
-	.string "In the TRAINER'S SCHOOL, how many\n"
-	.string "girl students were there?$"
+	.string "What is malware?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll5Intro:
 	.string "CLICKETY-CLACK…\n"
@@ -1008,15 +1049,14 @@ Flag7_TrickHousePuzzle5_Text_Mechadoll5Intro:
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll5Quiz1:
 	.string "MECHADOLL 5 QUIZ.\p"
-	.string "In SLATEPORT's POKéMON FAN CLUB,\n"
-	.string "how many POKéMON were there?$"
+	.string "What is the goal\n"
+	.string "of encryption?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll5Quiz2:
 	.string "MECHADOLL 5 QUIZ.\p"
-	.string "In FORTREE CITY, how many\n"
-	.string "tree houses were there?$"
+	.string "What does IP stand for?$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll5Quiz3:
 	.string "MECHADOLL 5 QUIZ.\p"
-	.string "On the CYCLING ROAD, how many\n"
-	.string "TRIATHLETES were there?$"
+	.string "In hacking slang,\n"
+	.string "what is a payload?$"

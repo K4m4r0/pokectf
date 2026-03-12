@@ -107,35 +107,49 @@ Flag7_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened:
 	.string "The lock clicked open!$"
 
 Flag7_TrickHousePuzzle2_Text_TedIntro:
-	.string "Which switch closes which hole?$"
+	.string "Oh! A visitor!\p"
+	.string "I followed the coffee machine\n"
+	.string "maintenance pipes down here.\p"
+	.string "They lead straight to the source.\p"
+	.string "Unlimited caffeine.\p"
+	.string "Want to pass?\n"
+	.string "Beat me first.$"
 
 Flag7_TrickHousePuzzle2_Text_TedDefeat:
-	.string "After that battle, I'm even more\n"
-	.string "confused!$"
+	.string "I should probably\n"
+	.string "sleep sometime.$"
 
 Flag7_TrickHousePuzzle2_Text_TedPostBattle:
-	.string "Can I get you to push all the buttons\n"
-	.string "for me?$"
+	.string "Maybe a nap would be more productive\n"
+	.string "than another espresso.$"
 
 Flag7_TrickHousePuzzle2_Text_PaulIntro:
-	.string "Oh! You're on your second TRICK HOUSE\n"
-	.string "challenge!$"
+	.string "Wait...\n"
+	.string "you're not a server.\p"
+	.string "I thought this hallway was part\n"
+	.string "of the data center.\p"
+	.string "Anyway...\p"
+	.string "If you're down here,\n"
+	.string "you must be troubleshooting.$"
 
 Flag7_TrickHousePuzzle2_Text_PaulDefeat:
-	.string "You're good at battling too?$"
+	.string "Huh...\n"
+	.string "Guess you solved it.$"
 
 Flag7_TrickHousePuzzle2_Text_PaulPostBattle:
-	.string "The TRICK MASTER rigged all the tricks\n"
-	.string "in this house all by himself.$"
+	.string "Did you try turning your POKéMON\n"
+	.string "off and on again?$"
 
 Flag7_TrickHousePuzzle2_Text_GeorgiaIntro:
-	.string "I want to make my own GYM one day.\n"
-	.string "So, I'm studying how to set traps.$"
+	.string "I knew it!\p"
+	.string "Hidden tunnels beneath the cafeteria.\p"
+	.string "This is where they keep\n"
+	.string "the real secrets!\p"
+	.string "You work for them, don't you?!$"
 
 Flag7_TrickHousePuzzle2_Text_GeorgiaDefeat:
-	.string "I didn't study battling enough!$"
+	.string "This proves nothing!$"
 
 Flag7_TrickHousePuzzle2_Text_GeorgiaPostBattle:
-	.string "You're strong, aren't you?\n"
-	.string "Maybe even enough to be a GYM LEADER!$"
-
+	.string "The conspiracy goes even deeper!\p"
+	.string "I'll uncover it... eventually.$"

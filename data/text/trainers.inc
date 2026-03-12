@@ -4509,31 +4509,33 @@ Route132_Text_DanaPostBattle:
 	.string "sense of place…$"
 
 Route132_Text_RonaldIntro:
-	.string "Win or lose, you'll never know until\n"
-	.string "you try!$"
+	.string "I just finished my internship\n"
+	.string "at a consulting firm.\p"
+	.string "They told me to always\n"
+	.string "stay competitive.$"
 
 Route132_Text_RonaldDefeat:
-	.string "Waah!\n"
-	.string "I sank in defeat!$"
+	.string "Guess my case study\n"
+	.string "fell apart.$"
 
 Route132_Text_RonaldPostBattle:
-	.string "I never battle when I know I'll win.\n"
-	.string "I like to battle at the razor's edge of\l"
-	.string "victory and defeat!$"
+	.string "Maybe I should put\n"
+	.string "'POKéMON battle experience'\l"
+	.string "on my resume.$"
 
 Route132_Text_KiyoIntro:
-	.string "I contemplate POKéMON 24 hours a day.\n"
-	.string "How could you possibly beat me?$"
+	.string "Hey! Careful where you walk.\n"
+	.string "These shoes cost more than your POKéDEX.\p"
+	.string "I'm studying Business Administration.\p"
+	.string "Maybe you should invest\n"
+	.string "in better POKéMON.$"
 
 Route132_Text_KiyoDefeat:
-	.string "I lose.\n"
-	.string "I will concede defeat.$"
+	.string "Huh?!$"
 
 Route132_Text_KiyoPostBattle:
-	.string "Urggh…\n"
-	.string "You're a POKéMON fanatic, aren't you?\p"
-	.string "You must contemplate POKéMON 24 hours\n"
-	.string "a day, don't you?$"
+	.string "That was... a terrible return\n"
+	.string "on investment.$"
 
 Route132_Text_MakaylaIntro:
 	.string "I'm always with my husband,\n"
@@ -4548,16 +4550,33 @@ Route132_Text_MakaylaPostBattle:
 	.string "He's making me blush!$"
 
 Route132_Text_JonathanIntro:
-	.string "Someone's been watching me intently.\n"
-	.string "Was it you?$"
+	.string "I'm already planning\n"
+	.string "my startup exit.\p"
+	.string "After that I'll probably\n"
+	.string "buy a small island.\p"
+	.string "But first...\n"
+	.string "let's do a quick battle.$"
 
 Route132_Text_JonathanDefeat:
-	.string "Wow!\n"
-	.string "That's pretty strong, all right!$"
+	.string "My exit strategy!$"
 
 Route132_Text_JonathanPostBattle:
-	.string "I can't shake this feeling that\n"
-	.string "someone's watching me.\p"
+	.string "Losing was not part\n"
+	.string "of the business plan.$"
+
+Route132_Text_WiwiF1Intro:
+	.string "Oh, you're battling too?\p"
+	.string "I'm just here for\n"
+	.string "networking opportunities.\p"
+	.string "Let's see if your POKéMON\n"
+	.string "are worth my time.$"
+
+Route132_Text_WiwiF1Defeat:
+	.string "Hmm...$"
+
+Route132_Text_WiwiF1PostBattle:
+	.string "Maybe I should add\n"
+	.string "battle training to my resume.$"
 	.string "I can't concentrate!$"
 
 Route132_Text_PaxtonIntro:
@@ -4586,30 +4605,31 @@ Route132_Text_DarcyPostBattle:
 	.string "old man and challenge that other team.$"
 
 Route133_Text_FranklinIntro:
-	.string "Did the currents carry you here, too?\n"
-	.string "This must have been fated.\l"
-	.string "Let's battle!$"
+	.string "I'm studying Finance.\n"
+	.string "Battles are basically\l"
+	.string "just investment decisions.$"
 
 Route133_Text_FranklinDefeat:
-	.string "Strong!\n"
-	.string "Too much so!$"
+	.string "My projections\n"
+	.string "were way off!$"
 
 Route133_Text_FranklinPostBattle:
-	.string "It's just my luck that a tough TRAINER\n"
-	.string "like you would drift here…\l"
-	.string "I must be cursed…$"
+	.string "That was a terrible\n"
+	.string "return on investment...$"
 
 Route133_Text_DebraIntro:
-	.string "I've led a life of woe and misery…\n"
-	.string "I've been cast away, and this is where\l"
-	.string "I've drifted…$"
+	.string "My parents say networking\n"
+	.string "is everything.\p"
+	.string "So let's... network.$"
 
 Route133_Text_DebraDefeat:
-	.string "Another loss…$"
+	.string "This connection\n"
+	.string "didn't pay off.$"
 
 Route133_Text_DebraPostBattle:
-	.string "A life adrift…\n"
-	.string "I don't want it anymore!$"
+	.string "Hmm...\p"
+	.string "Maybe I should outsource\n"
+	.string "my battling.$"
 
 Route133_Text_LindaIntro:
 	.string "Welcome!\n"
@@ -4636,16 +4656,17 @@ Route133_Text_WarrenPostBattle:
 	.string "I mean, that's obvious!$"
 
 Route133_Text_BeckIntro:
-	.string "I came all the way out here with my\n"
-	.string "BIRD POKéMON.$"
+	.string "I'm currently optimizing\n"
+	.string "my personal portfolio.\p"
+	.string "POKéMON battles are basically\n"
+	.string "just risk management.$"
 
 Route133_Text_BeckDefeat:
-	.string "You…\n"
-	.string "You're stunningly cool!$"
+	.string "My risk model failed?!$"
 
 Route133_Text_BeckPostBattle:
-	.string "I'd like to go back to FORTREE,\n"
-	.string "but I've grown to like this place, too.$"
+	.string "Okay... maybe I should\n"
+	.string "diversify my strategy.$"
 
 Route133_Text_MollieIntro:
 	.string "I must have battled thousands\n"
@@ -4660,15 +4681,18 @@ Route133_Text_MolliePostBattle:
 	.string "become like my husband and me.$"
 
 Route133_Text_ConorIntro:
-	.string "Young people are too happy to go with\n"
-	.string "the flow. They're without direction.$"
+	.string "I'm currently writing\n"
+	.string "my thesis about market dominance.\p"
+	.string "I'll demonstrate it\n"
+	.string "with my POKéMON.$"
 
 Route133_Text_ConorDefeat:
-	.string "You have a firm sense of purpose.$"
+	.string "Looks like my thesis\n"
+	.string "needs more data.$"
 
 Route133_Text_ConorPostBattle:
-	.string "Don't let others lead you astray.\n"
-	.string "Don't lose direction as you grow older.$"
+	.string "This outcome was\n"
+	.string "statistically unlikely...$"
 
 Route134_Text_JackIntro:
 	.string "Even those POKéMON that can swim are\n"
@@ -4849,4 +4873,3 @@ Lagerhalle_Text_Blackhansa_Defeated:
 
 Lagerhalle_Text_Blackhansa_PostBattle:
 	.string "Until next time, sucker!$"
-

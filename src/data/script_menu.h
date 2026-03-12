@@ -105,107 +105,107 @@ static const struct MenuAction MultichoiceList_LevelMode[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q1[] =
 {
-    {COMPOUND_STRING("ODDISH")},
-    {COMPOUND_STRING("POOCHYENA")},
-    {COMPOUND_STRING("TAILLOW")},
+	{COMPOUND_STRING("Capture The Flag")},
+	{COMPOUND_STRING("Control The Firewall")},
+	{COMPOUND_STRING("Computer Test Format")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 {
-    {COMPOUND_STRING("AZURILL")},
-    {COMPOUND_STRING("LOTAD")},
-    {COMPOUND_STRING("WINGULL")},
+	{COMPOUND_STRING("Ghidra")},
+	{COMPOUND_STRING("Photoshop")},
+	{COMPOUND_STRING("Excel")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 {
-    {COMPOUND_STRING("DUSTOX")},
-    {COMPOUND_STRING("ZUBAT")},
-    {COMPOUND_STRING("NINCADA")},
+	{COMPOUND_STRING("Structured Query Language")},
+	{COMPOUND_STRING("Secure Question Layer")},
+	{COMPOUND_STRING("System Query Logic")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 {
-    {COMPOUND_STRING("RALTS")},
-    {COMPOUND_STRING("ZIGZAGOON")},
-    {COMPOUND_STRING("SLAKOTH")},
+	{COMPOUND_STRING("HTTPS")},
+	{COMPOUND_STRING("FTP")},
+	{COMPOUND_STRING("Telnet")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q2[] =
 {
-    {COMPOUND_STRING("POOCHYENA")},
-    {COMPOUND_STRING("SHROOMISH")},
-    {COMPOUND_STRING("ZIGZAGOON")},
+	{COMPOUND_STRING("Brute Force Attack")},
+	{COMPOUND_STRING("Rainbow Attack")},
+	{COMPOUND_STRING("Mirror Attack")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q3[] =
 {
-    {COMPOUND_STRING("POOCHYENA")},
-    {COMPOUND_STRING("ZUBAT")},
-    {COMPOUND_STRING("CARVANHA")},
+	{COMPOUND_STRING("Virtual Private Network")},
+	{COMPOUND_STRING("Verified Public Node")},
+	{COMPOUND_STRING("Variable Packet Network")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q1[] =
 {
-    {COMPOUND_STRING("BURN HEAL")},
-    {COMPOUND_STRING("HARBOR MAIL")},
-    {COMPOUND_STRING("Same price")},
+	{COMPOUND_STRING("Router")},
+	{COMPOUND_STRING("Printer")},
+	{COMPOUND_STRING("Keyboard")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q2[] =
 {
-    {COMPOUND_STRING("¥60")},
-    {COMPOUND_STRING("¥55")},
-    {COMPOUND_STRING("Nothing")},
+	{COMPOUND_STRING("Long and random passwords")},
+	{COMPOUND_STRING("Using 'password123'")},
+	{COMPOUND_STRING("Same password everywhere")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q3[] =
 {
-    {COMPOUND_STRING("They will cost more.")},
-    {COMPOUND_STRING("They will cost less.")},
-    {COMPOUND_STRING("Same price")},
+	{COMPOUND_STRING("Two-Factor Authentication")},
+	{COMPOUND_STRING("Two File Access")},
+	{COMPOUND_STRING("Second Firewall Activation")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll4_Q1[] =
 {
-    {COMPOUND_STRING("Male")},
-    {COMPOUND_STRING("Female")},
-    {COMPOUND_STRING("Neither")},
+	{COMPOUND_STRING("Trick users into revealing data")},
+	{COMPOUND_STRING("Catching fish with malware")},
+	{COMPOUND_STRING("Scanning a network")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll4_Q2[] =
 {
-    {COMPOUND_STRING("Elderly men")},
-    {COMPOUND_STRING("Elderly ladies")},
-    {COMPOUND_STRING("Same number")},
+	{COMPOUND_STRING("443")},
+	{COMPOUND_STRING("80")},
+	{COMPOUND_STRING("21")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll4_Q3[] =
 {
-    {COMPOUND_STRING("None")},
-    {COMPOUND_STRING("1")},
-    {COMPOUND_STRING("2")},
+	{COMPOUND_STRING("Malicious software")},
+	{COMPOUND_STRING("Broken hardware")},
+	{COMPOUND_STRING("Slow internet")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll5_Q1[] =
 {
-    {COMPOUND_STRING("2")},
-    {COMPOUND_STRING("3")},
-    {COMPOUND_STRING("4")},
+	{COMPOUND_STRING("Protect information")},
+	{COMPOUND_STRING("Speed up computers")},
+	{COMPOUND_STRING("Delete files")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll5_Q2[] =
 {
-    {COMPOUND_STRING("6")},
-    {COMPOUND_STRING("7")},
-    {COMPOUND_STRING("8")},
+	{COMPOUND_STRING("Internet Protocol")},
+	{COMPOUND_STRING("Internal Program")},
+	{COMPOUND_STRING("Integrated Port")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll5_Q3[] =
 {
-    {COMPOUND_STRING("6")},
-    {COMPOUND_STRING("7")},
-    {COMPOUND_STRING("8")},
+	{COMPOUND_STRING("Code executed after exploit")},
+	{COMPOUND_STRING("A large download")},
+	{COMPOUND_STRING("A login screen")},
 };
 
 static const struct MenuAction MultichoiceList_VendingMachine[] =

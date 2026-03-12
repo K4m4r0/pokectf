@@ -287,18 +287,18 @@ Flag7_TrickHousePuzzle3_EventScript_FoundScroll::
 	end
 
 Flag7_TrickHousePuzzle3_EventScript_Justin::
-	trainerbattle_single TRAINER_JUSTIN, Flag7_TrickHousePuzzle3_Text_JustinIntro, Flag7_TrickHousePuzzle3_Text_JustinDefeat
-	msgbox Flag7_TrickHousePuzzle3_Text_JustinPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_JUSTIN, Flag7_TrickHousePuzzle3_Text_SecurityIntro, Flag7_TrickHousePuzzle3_Text_SecurityDefeat
+	msgbox Flag7_TrickHousePuzzle3_Text_SecurityPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Flag7_TrickHousePuzzle3_EventScript_Martha::
-	trainerbattle_single TRAINER_MARTHA, Flag7_TrickHousePuzzle3_Text_MarthaIntro, Flag7_TrickHousePuzzle3_Text_MarthaDefeat
-	msgbox Flag7_TrickHousePuzzle3_Text_MarthaPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_MARTHA, Flag7_TrickHousePuzzle3_Text_ExplorerIntro, Flag7_TrickHousePuzzle3_Text_ExplorerDefeat
+	msgbox Flag7_TrickHousePuzzle3_Text_ExplorerPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Flag7_TrickHousePuzzle3_EventScript_Alan::
-	trainerbattle_single TRAINER_ALAN, Flag7_TrickHousePuzzle3_Text_AlanIntro, Flag7_TrickHousePuzzle3_Text_AlanDefeat
-	msgbox Flag7_TrickHousePuzzle3_Text_AlanPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_ALAN, Flag7_TrickHousePuzzle3_Text_TechIntro, Flag7_TrickHousePuzzle3_Text_TechDefeat
+	msgbox Flag7_TrickHousePuzzle3_Text_TechPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Flag7_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened:
@@ -308,38 +308,53 @@ Flag7_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened:
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 
-Flag7_TrickHousePuzzle3_Text_JustinIntro:
-	.string "I keep coming back to this same place!$"
+Flag7_TrickHousePuzzle3_Text_SecurityIntro:
+	.string "Hold it right there.\n"
+	.string "Students aren't supposed to access\l"
+	.string "this maintenance level.\p"
+	.string "I've already escorted three conspiracy\n"
+	.string "theorists out today.\p"
+	.string "If you want to continue...\n"
+	.string "you'll have to go through me.$"
 
-Flag7_TrickHousePuzzle3_Text_JustinDefeat:
-	.string "I'm already having trouble, and then\n"
-	.string "you have to beat me? It's not fair!$"
+Flag7_TrickHousePuzzle3_Text_SecurityDefeat:
+	.string "Huh...\n"
+	.string "You're tougher than most.$"
 
-Flag7_TrickHousePuzzle3_Text_JustinPostBattle:
-	.string "It's full of doors here!\n"
-	.string "It's too small and dark in here! Help!$"
+Flag7_TrickHousePuzzle3_Text_SecurityPostBattle:
+	.string "Anyone who sneaks down here and wins\n"
+	.string "probably knows what they're doing.$"
 
-Flag7_TrickHousePuzzle3_Text_MarthaIntro:
-	.string "I don't know what's going on here.\n"
-	.string "I'm starting to feel sad…$"
+Flag7_TrickHousePuzzle3_Text_ExplorerIntro:
+	.string "Oh! Another explorer!\p"
+	.string "I love places like this.\p"
+	.string "Old tunnels... hidden rooms...\n"
+	.string "forgotten infrastructure.\p"
+	.string "The university has layers\n"
+	.string "most people never see.\p"
+	.string "Want to go deeper?\n"
+	.string "Beat me first.$"
 
-Flag7_TrickHousePuzzle3_Text_MarthaDefeat:
-	.string "You… You're awful!$"
+Flag7_TrickHousePuzzle3_Text_ExplorerDefeat:
+	.string "Nice battle!$"
 
-Flag7_TrickHousePuzzle3_Text_MarthaPostBattle:
-	.string "I know I'm weak!\n"
-	.string "And, I have no sense of direction!$"
+Flag7_TrickHousePuzzle3_Text_ExplorerPostBattle:
+	.string "Guess you're a real underground\n"
+	.string "explorer too.$"
 
-Flag7_TrickHousePuzzle3_Text_AlanIntro:
-	.string "I don't get it. What would anyone want\n"
-	.string "with a house this bizarre?$"
+Flag7_TrickHousePuzzle3_Text_TechIntro:
+	.string "Careful where you step.\n"
+	.string "Half the university's servers run\l"
+	.string "through these tunnels.\p"
+	.string "If something crashes here...\n"
+	.string "the whole campus notices.\p"
+	.string "Let's see if your POKéMON can handle\n"
+	.string "real infrastructure.$"
 
-Flag7_TrickHousePuzzle3_Text_AlanDefeat:
-	.string "I don't get it.\n"
-	.string "How did I lose?$"
+Flag7_TrickHousePuzzle3_Text_TechDefeat:
+	.string "Hm...\n"
+	.string "Looks like your system held up.$"
 
-Flag7_TrickHousePuzzle3_Text_AlanPostBattle:
-	.string "I don't get it.\n"
-	.string "How many traps are in this house?\p"
-	.string "You may be the one to solve that.$"
-
+Flag7_TrickHousePuzzle3_Text_TechPostBattle:
+	.string "Call it a successful stress test.\n"
+	.string "You're cleared to continue.$"
