@@ -1,6 +1,6 @@
 # Credits
 
-A list of all items from other sources and their creators.
+A list of all used items and their creators.
 
 ## Base
 
@@ -12,17 +12,20 @@ A list of all items from other sources and their creators.
 - **Bivornum**: Walking Elite 4   
 - **Unknown (Probably someone from Orange Islands Hack)**: Jessie and James   
 - **Dragoon**: Rotom Items
-- **Reakain**: GB Studio Train Assets 
+- **Reakain**: GB Studio Train Assets (Edited by K4m4r0)
 - **Shadowgate31**: Shadow Lugia
 - **Othienka**: Armored Mewtwo V3
 - **Unknown**: Officer Male and Female
 - **PeteBits28**: Psycho Mantis
+- **K4m4r0**: Suneon, I3C-And, I3C-Nand
+
 
 ## Trainer / Pokémon Pictures
 
 - **Shadowgate31**: Shadow Lugia
 - **Othienka**: Armored Mewtwo V3
 - **Unknown (Probably someone from Orange Islands Hack)**: Team Rocket Jessie/James/Meowth
+- **K4m4r0**: Detective Pikachu (Basemodel: Game Freak), I3C-And, I3C-Nand, Suneon
 
 ## Tilesets
 
