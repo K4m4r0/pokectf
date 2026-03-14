@@ -35922,18 +35922,45 @@ static const u16 sPecharuntTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PECHARUNT
 
-
+#if P_FAMILY_SUNEON
 static const u16 sSuneonTeachableLearnset[] = {
+    MOVE_HIDDEN_POWER,
+    MOVE_FLY,
+    MOVE_TAILWIND,
+    MOVE_SUNNY_DAY,
+    MOVE_SOLAR_BEAM,
 
-   MOVE_HIDDEN_POWER,
-   MOVE_FLY, //x
-   MOVE_TAILWIND, //x
-   MOVE_SUNNY_DAY, //x
-   MOVE_SOLAR_BEAM, //x
-   MOVE_UNAVAILABLE, // This is required to determine where the array ends.
+    // Flying STAB / Utility
+    MOVE_AERIAL_ACE,
+    MOVE_AIR_SLASH,
+    MOVE_ACROBATICS,
+    MOVE_ROOST,
+    MOVE_STEEL_WING,
+
+    // Sun synergy
+    MOVE_WEATHER_BALL,
+    MOVE_HEAT_WAVE,
+    MOVE_MORNING_SUN,
+
+    // General utility
+    MOVE_PROTECT,
+    MOVE_ENDURE,
+    MOVE_REST,
+    MOVE_SLEEP_TALK,
+    MOVE_SUBSTITUTE,
+    MOVE_FACADE,
+
+    // Special coverage / generic strong options
+    MOVE_SWIFT,
+    MOVE_HYPER_BEAM,
+    MOVE_GIGA_IMPACT,
+
+    MOVE_UNAVAILABLE, // This is required to determine where the array ends.
 };
+#endif // P_FAMILY_SUNEON
 
 
+#if P_FAMILY_I3C_AND
 static const u16 sI3cAndTeachableLearnset[] = {
 
    MOVE_HIDDEN_POWER,
@@ -35943,8 +35970,10 @@ static const u16 sI3cAndTeachableLearnset[] = {
    MOVE_SOLAR_BEAM, //x
    MOVE_UNAVAILABLE, // This is required to determine where the array ends.
 };
+#endif //P_FAMILY_I3C_AND
 
 
+#if P_FAMILY_I3C_NAND
 static const u16 sI3cNandTeachableLearnset[] = {
 
    MOVE_HIDDEN_POWER,
@@ -35954,3 +35983,33 @@ static const u16 sI3cNandTeachableLearnset[] = {
    MOVE_SOLAR_BEAM, //x
    MOVE_UNAVAILABLE, // This is required to determine where the array ends.
 };
+#endif //P_FAMILY_I3C_NAND
+
+
+#if P_FAMILY_MISSINGNO
+static const u16 sMissingnoTeachableLearnset[] = {
+    MOVE_BLIZZARD,
+    MOVE_DOUBLE_EDGE,
+    MOVE_ENDURE,
+    MOVE_FACADE,
+    MOVE_FLY,
+    MOVE_GIGA_IMPACT,
+    MOVE_HYPER_BEAM,
+    MOVE_ICE_BEAM,
+    MOVE_PROTECT,
+    MOVE_PSYCHIC,
+    MOVE_RAIN_DANCE,
+    MOVE_REST,
+    MOVE_SHADOW_BALL,
+    MOVE_SLEEP_TALK,
+    MOVE_SUBSTITUTE,
+    MOVE_SURF,
+    MOVE_SWIFT,
+    MOVE_THUNDER,
+    MOVE_THUNDERBOLT,
+    MOVE_TOXIC,
+    MOVE_TRI_ATTACK,
+    MOVE_WATER_PULSE,
+    MOVE_UNAVAILABLE,
+};
+#endif // P_FAMILY_MISSINGNO

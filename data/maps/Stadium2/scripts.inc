@@ -96,15 +96,8 @@ Stadium2_EventScript_Intro::
     playse SE_BALL_OPEN
     dofieldeffectsparkle 7, 6, 2
 
-    @ Unfangbarer Wildkampf via B_FLAG_NO_CATCHING-Config-Flag
-    setflag FLAG_STADIUM2_NO_CATCHING
-    setwildbattle SPECIES_PIKACHU, 1, ITEM_NONE
-    dowildbattle
-    clearflag FLAG_STADIUM2_NO_CATCHING
-
-    @ Nur bei Sieg weitermachen – bei Flucht/Niederlage: event soll beim nächsten Betreten wieder kommen
-    goto_if_eq VAR_RESULT, 1, Stadium2_AfterBattle_Won
-    releaseall
+    @ Automatischer Trainerkampf 
+    trainerbattle_single TRAINER_CHARLIE, Stadium2_Text_CharlieIntro, Stadium2_Text_CharlieDefeated, Stadium2_AfterBattle_Won
     end
 
 
@@ -327,3 +320,12 @@ Stadium2_Text_TerminalAlready:
 Stadium2_Text_TerminalCorrect:
     .string "Access granted.\n"
     .string "Door unlocked.$"
+
+
+Stadium2_Text_CharlieIntro:
+    .string "BOSS: Let's see how you handle\n"
+    .string "a real experiment.$"
+
+Stadium2_Text_CharlieDefeated:
+    .string "BOSS: Impossible...$"
+

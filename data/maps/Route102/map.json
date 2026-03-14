@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_TESTMAP",
-      "offset": 5,
+      "offset": 4,
       "direction": "right"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "map": "MAP_PETALBURG_CITY",
-      "offset": -5,
+      "offset": -6,
       "direction": "left"
     }
   ],
@@ -149,7 +149,44 @@
     }
   ],
   "warp_events": [],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route102_EventScript_BlockCity"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route102_EventScript_BlockCity"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route102_EventScript_BlockCity"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route102_EventScript_BlockCity"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

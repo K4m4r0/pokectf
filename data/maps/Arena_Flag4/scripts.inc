@@ -26,6 +26,7 @@ Arena_Flag4_EventScript_Leader::
 
 	@ Sieg: Badge + Fanfare + TM
 	setflag FLAG_BADGE04_GET
+	setflag FLAG_DEFEATED_LAVARIDGE_GYM
 	setflag FLAG_CTF_GYM4_DEFEATED
 
 	msgbox Arena_Flag4_Text_Win, MSGBOX_DEFAULT

@@ -527,7 +527,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MANTIS_SIDE] =              &gObjectEventGraphicsInfo_MantisSide,
 
 
-
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

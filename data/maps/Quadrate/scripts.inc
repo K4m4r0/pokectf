@@ -93,3 +93,75 @@ Quadrate_Train_Movement_SlideRight20:
     walk_right
     step_end
 
+
+@ =========================================================
+@ Sleeping Snorlax
+@ =========================================================
+
+    .equ RELAXO_LEVEL, 30
+
+Quadrate_EventScript_SleepingRelaxo::
+    lock
+    faceplayer
+
+    goto_if_set FLAG_QUADRATE_RELAXO_GONE, Quadrate_SleepingRelaxo_End
+
+    checkitem ITEM_POKE_FLUTE, 1
+    compare VAR_RESULT, TRUE
+    goto_if_eq Quadrate_SleepingRelaxo_HaveFlute
+
+    msgbox Quadrate_Text_SleepingRelaxo, MSGBOX_DEFAULT
+    release
+    end
+
+Quadrate_SleepingRelaxo_HaveFlute:
+    msgbox Quadrate_Text_SleepingRelaxoFlutePrompt, MSGBOX_YESNO
+    compare VAR_RESULT, 1
+    goto_if 5, Quadrate_SleepingRelaxo_End
+    closemessage
+
+    playfanfare MUS_RG_POKE_FLUTE
+    waitfanfare
+
+    msgbox Quadrate_Text_SleepingRelaxoWokeUp, MSGBOX_DEFAULT
+    closemessage
+
+    setwildbattle SPECIES_SNORLAX, RELAXO_LEVEL, ITEM_NONE
+    specialvar VAR_RESULT, BattleSetup_StartLegendaryBattle
+    waitstate
+
+    @ In vielen Branches gilt:
+    @ 1 = caught
+    @ 4 = defeated / battle won
+    compare VAR_RESULT, 1
+    goto_if_eq Quadrate_SleepingRelaxo_Gone
+    compare VAR_RESULT, 4
+    goto_if_eq Quadrate_SleepingRelaxo_Gone
+
+Quadrate_SleepingRelaxo_End:
+    release
+    end
+
+Quadrate_SleepingRelaxo_Gone:
+    setflag FLAG_QUADRATE_RELAXO_GONE
+    removeobject LOCALID_SLEEPING_RELAXO
+    release
+    end
+
+
+@ =========================================================
+@ Relaxo Text
+@ =========================================================
+
+Quadrate_Text_SleepingRelaxo:
+    .string "A sleeping SNORLAX blocks the way.$"
+
+Quadrate_Text_SleepingRelaxoFlutePrompt:
+    .string "A sleeping SNORLAX blocks the way.\p"
+    .string "Use the POKé FLUTE?$"
+
+Quadrate_Text_SleepingRelaxoWokeUp:
+    .string "The POKé FLUTE woke up the\n"
+    .string "sleeping SNORLAX!$"
+
+

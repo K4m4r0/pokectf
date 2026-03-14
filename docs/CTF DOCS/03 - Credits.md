@@ -17,7 +17,7 @@ A list of all used items and their creators.
 - **Othienka**: Armored Mewtwo V3
 - **Unknown**: Officer Male and Female
 - **PeteBits28**: Psycho Mantis
-- **K4m4r0**: Suneon, I3C-And, I3C-Nand
+- **K4m4r0**: Suneon, I3C-And, I3C-Nand, Missingno.
 
 
 ## Trainer / Pokémon Pictures
@@ -25,12 +25,13 @@ A list of all used items and their creators.
 - **Shadowgate31**: Shadow Lugia
 - **Othienka**: Armored Mewtwo V3
 - **Unknown (Probably someone from Orange Islands Hack)**: Team Rocket Jessie/James/Meowth
-- **K4m4r0**: Detective Pikachu (Basemodel: Game Freak), I3C-And, I3C-Nand, Suneon
+- **K4m4r0**: Detective Pikachu (Basemodel: Game Freak), I3C-And, I3C-Nand, Suneon, Prof. Farmer, Missingno.
 
 ## Tilesets
 
-- XX  
-- XXX  
+- **K4m4r0**: DHBW, Water Tower
+- **DusDD**: Edeka  
+
 
 ## Addons
 

@@ -117,19 +117,19 @@ AquaHideout_B2F_Text_MattPostBattle:
 
 AquaHideout_B2F_Text_Grunt4Intro:
 	.string "Wahahah, I grew weary of waiting!\n"
-	.string "You owe me a battle, too!$"
+	.string "You owe me a battle, fool!$"
 
 AquaHideout_B2F_Text_Grunt4Defeat:
 	.string "Tired of waiting…\n"
 	.string "Lost and dazed…$"
 
 AquaHideout_B2F_Text_Grunt4PostBattle:
-	.string "BOSS…\n"
-	.string "Is this good enough?$"
+	.string "That reminds me… to guard the\n"
+	.string "SERVER.\p"
+	.string "If I fail to guard it, our BOSS will\n"
+	.string "chew me out…$"
 
 AquaHideout_B2F_Text_Grunt6Intro:
-	.string "Warp panels, the HIDEOUT's pride\n"
-	.string "and joy!\p"
 	.string "You're clueless about where you are,\n"
 	.string "aren't you?\p"
 	.string "Fluster and tire out the enemy, then\n"
@@ -140,8 +140,8 @@ AquaHideout_B2F_Text_Grunt6Defeat:
 	.string "You're not tired at all!$"
 
 AquaHideout_B2F_Text_Grunt6PostBattle:
-	.string "That reminds me… I can't remember\n"
-	.string "where I put the MASTER BALL.\p"
+	.string "That reminds me… to guard the\n"
+	.string "SERVER.\p"
 	.string "If I fail to guard it, our BOSS will\n"
 	.string "chew me out…$"
 

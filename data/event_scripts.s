@@ -1367,3 +1367,15 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FossilHaus/scripts.inc"
 
 	.include "data/maps/LugiaSpawn/scripts.inc"
+
+	.include "data/maps/CHLobby/scripts.inc"
+
+	.include "data/maps/CH1/scripts.inc"
+
+	.include "data/maps/CH2/scripts.inc"
+
+	.include "data/maps/CH3/scripts.inc"
+
+	.include "data/maps/Lichtung/scripts.inc"
+
+	.include "data/maps/CH4/scripts.inc"

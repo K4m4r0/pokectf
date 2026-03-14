@@ -1414,3 +1414,18 @@ Route104_Text_BrendanPostBattle:
 	.string "making POKéMON battle.\p"
 	.string "Like MR. BRINEY, it's important to\n"
 	.string "become friends with your POKéMON.$"
+
+
+
+
+Route104_EventScript_Alyx::
+	msgbox Route104_Text_Ravenholm, MSGBOX_DEFAULT
+	release
+	end
+
+
+Route104_Text_Ravenholm:
+	.string "ALYX: That's the old passage to\n"
+	.string "LUDWIGSHAFEN. We don't go there\p"
+	.string "anymore.$"
+

@@ -86,6 +86,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Quadrate_Officer_EventScript_LockedPassage",
       "flag": "FLAG_DEFEATED_PETALBURG_GYM"
+    },
+    {
+      "local_id": "LOCALID_SLEEPING_RELAXO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SNORLAX)",
+      "x": 21,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quadrate_EventScript_SleepingRelaxo",
+      "flag": "FLAG_QUADRATE_RELAXO_GONE"
     }
   ],
   "warp_events": [

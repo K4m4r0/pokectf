@@ -5057,7 +5057,7 @@
       "width": 70,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/RingUnten/border.bin",
       "blockdata_filepath": "data/layouts/RingUnten/map.bin"
     },
@@ -5370,6 +5370,66 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/LugiaSpawn/border.bin",
       "blockdata_filepath": "data/layouts/LugiaSpawn/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHLOBBY",
+      "name": "CHLobby_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Contest",
+      "border_filepath": "data/layouts/CHLobby/border.bin",
+      "blockdata_filepath": "data/layouts/CHLobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_CH1",
+      "name": "CH1_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/CH1/border.bin",
+      "blockdata_filepath": "data/layouts/CH1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CH2",
+      "name": "CH2_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/CH2/border.bin",
+      "blockdata_filepath": "data/layouts/CH2/map.bin"
+    },
+    {
+      "id": "LAYOUT_CH3",
+      "name": "CH3_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/CH3/border.bin",
+      "blockdata_filepath": "data/layouts/CH3/map.bin"
+    },
+    {
+      "id": "LAYOUT_LICHTUNG",
+      "name": "Lichtung_Layout",
+      "width": 26,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Lichtung/border.bin",
+      "blockdata_filepath": "data/layouts/Lichtung/map.bin"
+    },
+    {
+      "id": "LAYOUT_CH4",
+      "name": "CH4_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/CH4/border.bin",
+      "blockdata_filepath": "data/layouts/CH4/map.bin"
     }
   ]
 }

@@ -1667,8 +1667,10 @@
 #define SPECIES_SUNEON                                  1550
 #define SPECIES_I3C_AND                                 1551
 #define SPECIES_I3C_NAND                                1552
+#define SPECIES_PIKACHU_DETECTIVE                       1553
+#define SPECIES_MISSINGNO                               1554
 
-#define SPECIES_EGG                                     (SPECIES_I3C_NAND + 1)
+#define SPECIES_EGG                                     (SPECIES_MISSINGNO + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

@@ -1240,7 +1240,7 @@
 #define FLAG_CTF_PETALBURG_HOUSE1_SECRET_PHOTO                      0x4AA // Flag3 Secret Photo Trade in Petalburg House 1 erhalten
 #define FLAG_ZWISCHENSTUECK_GUARD_MOVED                             0x4AB // FLag3 Zwischenstück Guard bewegt
 #define FLAG_ITEM_CLASSROOM_OPENIN_TOP_TM_SECRET_POWER              0x4AC // Flag4 Secret Power TM pickup
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
+#define FLAG_QUADRATE_RELAXO_GONE                                   0x4AD // CTF Event Quadrate Relaxo verschwunden
 #define FLAG_HIDE_ENTRYMAPFLAG7_MANTIS_CONSOLE                      0x4AE // Unused Flag
 #define FLAG_CTF_FLAG7_TERMINAL_DONE                                0x4AF // Flag7 Terminal solved
 #define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
@@ -1285,7 +1285,7 @@
 #define FLAG_UNUSED_0x4D7                                           0x4D7 // Unused Flag
 #define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
 #define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
-#define FLAG_STADIUM2_NO_CATCHING                                   0x4DA // Flag 8 Stadium2 No Catching
+#define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
 #define FLAG_STADIUM2_SCENE_DONE                                    0x4DB // Flag 8 Stadium2 Scene abgeschlossen
 #define FLAG_HIDE_STADIUM2_JESSIE                                   0x4DC // Flag 8 Stadium2 Jessie verstecken
 #define FLAG_HIDE_STADIUM2_BOSS                                     0x4DD // Flag 8 Stadium2 Boss verstecken
@@ -1311,10 +1311,10 @@
 #define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0 // CTF Gym 1 Hyvel besiegt
 #define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1 // CFT Gym 2 besiegt Houvert
 #define FLAG_DEFEATED_MAUVILLE_GYM                                  0x4F2 // CTF Gym 3 besiegt Wörner
-#define FLAG_DEFEATED_LAVARIDGE_GYM                                 0x4F3
+#define FLAG_DEFEATED_LAVARIDGE_GYM                                 0x4F3 // CTF Gym 4 besiegt 
 #define FLAG_DEFEATED_PETALBURG_GYM                                 0x4F4 // CTF Gym 5 besiegt 
 #define FLAG_DEFEATED_FORTREE_GYM                                   0x4F5 // CTF Gym 6 besiegt KALI
-#define FLAG_DEFEATED_MOSSDEEP_GYM                                  0x4F6
+#define FLAG_DEFEATED_MOSSDEEP_GYM                                  0x4F6 // CTF Gym 7 besiegt Rybbel
 #define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7 //CTF Gym 8 besiegt BAMBERGER
 #define FLAG_DEFEATED_METEOR_FALLS_STEVEN                           0x4F8
 

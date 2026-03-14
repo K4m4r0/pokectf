@@ -223,6 +223,9 @@ static const struct SpriteFrameImage sPicTable_PikachuPhD[] = {
 };
 static const struct SpriteFrameImage sPicTable_PikachuLibre[] = {
     overworld_ascending_frames(gObjectEventPic_PikachuLibre, 4, 4),
+
+static const struct SpriteFrameImage sPicTable_PikachuDetective[] = {
+    overworld_ascending_frames(gObjectEventPic_PikachuDetective, 4, 4),
 };*/
 #endif //P_COSPLAY_PIKACHU_FORMS
 
@@ -6747,5 +6750,11 @@ static const struct SpriteFrameImage sPicTable_Suneon[] = {
     overworld_ascending_frames(gObjectEventPic_Suneon, 4, 4),
 };
 #endif //P_FAMILY_SUNEON
+
+#if P_FAMILY_MISSINGNO
+static const struct SpriteFrameImage sPicTable_Missingno[] = {
+    overworld_ascending_frames(gObjectEventPic_Missingno, 4, 4),
+};
+#endif //P_FAMILY_MISSINGNO
 
 #endif //OW_POKEMON_OBJECT_EVENTS

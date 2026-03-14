@@ -612,9 +612,9 @@ PetalburgCity_Text_LockedDoorMsg:
 
 
 PetalburgCity_Text_WhereIsWally:
-	.string "Where has our WALLY gone?\p"
-	.string "We have to leave for VERDANTURF TOWN\n"
-	.string "very soon…$"
+	.string "Do you see that? The guards always\n"
+	.string "follow the same path. It must be\p"
+	.string "hard to get in there.$"
 
 
 PetalburgCity_Text_WaterReflection:

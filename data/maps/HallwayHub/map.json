@@ -54,21 +54,21 @@
       "x": 21,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_HALLWAY_HUB",
+      "dest_map": "MAP_KLASSENZIMMER6",
       "dest_warp_id": "0"
     },
     {
       "x": 24,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_KLASSENZIMMER_FINALE",
+      "dest_map": "MAP_KLASSENZIMMER_FLAG7",
       "dest_warp_id": "0"
     },
     {
       "x": 29,
       "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_HALLWAY_HUB",
+      "dest_map": "MAP_KLASSENZIMMER_FINALE",
       "dest_warp_id": "0"
     },
     {

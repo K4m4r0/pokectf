@@ -4991,3 +4991,5 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MantisSide = {
     .images = sPicTable_MantisSide,
     .affineAnims = sAffineAnimTable_KyogreGroudon,
 };
+
+

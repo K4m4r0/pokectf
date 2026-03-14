@@ -605,6 +605,6 @@
 #define P_FAMILY_SUNEON                  P_GEN_9_POKEMON
 #define P_FAMILY_I3C_AND                 P_GEN_9_POKEMON
 #define P_FAMILY_I3C_NAND                P_GEN_9_POKEMON
-
+#define P_FAMILY_MISSINGNO               P_GEN_9_POKEMON
 
 #endif // GUARD_CONFIG_SPECIES_ENABLED_H

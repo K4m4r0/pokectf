@@ -116,18 +116,16 @@ AquaHideout_B1F_Text_Grunt2Defeat:
 AquaHideout_B1F_Text_Grunt2PostBattle:
 	.string "Our HIDEOUT's secret?\p"
 	.string "Well, let's just say…\n"
-	.string "There's a submarine at the far end!\p"
-	.string "But, by now…\n"
-	.string "Kekekeke…$"
+	.string "There's interesting DATA here.$"
+
 
 AquaHideout_B1F_Text_Grunt3Intro:
-	.string "Fuel supply loaded A-OK!\n"
-	.string "In-cruise snacks loaded A-OK!\p"
-	.string "Nothing left to do but KO a pesky\n"
-	.string "meddler!$"
+	.string "YOu are not supposed to be\n"
+	.string "here. I'll beat the shit out\p"
+	.string "of you!$"
 
 AquaHideout_B1F_Text_Grunt3Defeat:
-	.string "I took a serious licking!$"
+	.string "I took a serious whooping!$"
 
 AquaHideout_B1F_Text_Grunt3PostBattle:
 	.string "Humph!\n"
@@ -143,8 +141,8 @@ AquaHideout_B1F_Text_Grunt5Defeat:
 	.string "Oh, I lost…$"
 
 AquaHideout_B1F_Text_Grunt5PostBattle:
-	.string "If you scurry too much, other TEAM\n"
-	.string "AQUA members might get you.$"
+	.string "If you scurry too much, other\n"
+	.string "BLACKHANSA members might get you.$"
 
 AquaHideout_B1F_Text_Grunt7Intro:
 	.string "Hey!\n"

@@ -1006,6 +1006,12 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_PikachuLibre[] = INCBIN_U16("graphics/pokemon/pikachu/libre/shiny.gbapal");
     const u8 gMonIcon_PikachuLibre[] = INCBIN_U8("graphics/pokemon/pikachu/libre/icon.4bpp");
 
+    const u32 gMonFrontPic_PikachuDetective[] = INCBIN_U32("graphics/pokemon/pikachu/detective/front.4bpp.smol");
+    const u16 gMonPalette_PikachuDetective[] = INCBIN_U16("graphics/pokemon/pikachu/detective/normal.gbapal");
+    const u32 gMonBackPic_PikachuDetective[] = INCBIN_U32("graphics/pokemon/pikachu/detective/back.4bpp.smol");
+    const u16 gMonShinyPalette_PikachuDetective[] = INCBIN_U16("graphics/pokemon/pikachu/detective/shiny.gbapal");
+    const u8 gMonIcon_PikachuDetective[] = INCBIN_U8("graphics/pokemon/pikachu/detective/icon.4bpp");
+
 #if OW_POKEMON_OBJECT_EVENTS
     // const u32 gObjectEventPic_PikachuCosplay[] = INCBIN_COMP("graphics/pokemon/pikachu/cosplay/overworld.4bpp");
     // const u32 gObjectEventPic_PikachuRockStar[] = INCBIN_COMP("graphics/pokemon/pikachu/rock_star/overworld.4bpp");
@@ -1013,6 +1019,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     // const u32 gObjectEventPic_PikachuPopStar[] = INCBIN_COMP("graphics/pokemon/pikachu/pop_star/overworld.4bpp");
     // const u32 gObjectEventPic_PikachuPhD[] = INCBIN_COMP("graphics/pokemon/pikachu/phd/overworld.4bpp");
     // const u32 gObjectEventPic_PikachuLibre[] = INCBIN_COMP("graphics/pokemon/pikachu/libre/overworld.4bpp");
+    // const u32 gObjectEventPic_PikachuDetective[] = INCBIN_COMP("graphics/pokemon/pikachu/detective/overworld.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_COSPLAY_PIKACHU_FORMS
 
@@ -26844,6 +26851,26 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_I3C_NAND
+
+
+#if P_FAMILY_MISSINGNO
+    const u32 gMonFrontPic_Missingno[] = INCBIN_U32("graphics/pokemon/missingno/anim_front.4bpp.lz");
+    const u16 gMonPalette_Missingno[] = INCBIN_U16("graphics/pokemon/missingno/normal.gbapal");
+    const u32 gMonBackPic_Missingno[] = INCBIN_U32("graphics/pokemon/missingno/back.4bpp.lz");
+    const u16 gMonShinyPalette_Missingno[] = INCBIN_U16("graphics/pokemon/missingno/shiny.gbapal");
+    const u8 gMonIcon_Missingno[] = INCBIN_U8("graphics/pokemon/missingno/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_Missingno[] = INCBIN_U8("graphics/pokemon/missingno/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Missingno[] = INCBIN_COMP("graphics/pokemon/missingno/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Missingno[] = INCBIN_U16("graphics/pokemon/missingno/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Missingno[] = INCBIN_U16("graphics/pokemon/missingno/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+#endif //P_FAMILY_MISSINGNO
+
 
 
 

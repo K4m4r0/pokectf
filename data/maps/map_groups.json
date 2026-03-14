@@ -44,7 +44,8 @@
     "gMapGroup_Flag8",
     "gMapGroup_EdekaIndoor",
     "gMapGroup_Postgame",
-    "gMapGroup_Flag6"
+    "gMapGroup_Flag6",
+    "gMapGroup_ChallengeHouse"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -713,7 +714,8 @@
     "RybbelPreForest",
     "RybbelForest",
     "Klassenzimmer_Flag7",
-    "LugiaSpawn"
+    "LugiaSpawn",
+    "Lichtung"
   ],
   "gMapGroup_Flag8": [
     "entryMapFlag8",
@@ -748,5 +750,12 @@
     "Klassenzimmer6",
     "Abstellkammer",
     "Hoehlenhub"
+  ],
+  "gMapGroup_ChallengeHouse": [
+    "CHLobby",
+    "CH1",
+    "CH2",
+    "CH3",
+    "CH4"
   ]
 }

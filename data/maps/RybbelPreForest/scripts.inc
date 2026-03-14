@@ -149,6 +149,7 @@ RybbelPreForest_EventScript_RybbelBadgeScene::
 	applymovement LOCALID_RYBBEL_PRE_FOREST_RYBBEL, RybbelPreForest_Movement_RybbelFaceUp
 	msgbox RybbelPreForest_Text_RybbelBadgeIntro, MSGBOX_DEFAULT
 	goto_if_set FLAG_BADGE07_GET, RybbelPreForest_EventScript_RybbelBadgeScene_After
+	setflag FLAG_DEFEATED_MOSSDEEP_GYM
 	setflag FLAG_BADGE07_GET
 	playfanfare MUS_OBTAIN_BADGE
 	waitfanfare

@@ -107,3 +107,34 @@ Route102_Text_RouteSignOldale:
 Route102_Text_RouteSignPetalburg:
 	.string "ROUTE 102\n"
 	.string "{LEFT_ARROW} PETALBURG CITY$"
+
+
+
+@ ===========
+@ Roadblock
+@ ===========
+
+Route102_EventScript_BlockCity::
+    goto_if_set FLAG_CTF_CLASSROOM_APPLES_RASPBERRY, Route102_BlockRoute102_End
+
+    lockall
+    msgbox Route102_Text_GoUniversityFirst, MSGBOX_DEFAULT
+    closemessage
+
+    applymovement LOCALID_PLAYER, Route102_Movement_TurnAndStepRight
+    waitmovement 0
+
+    releaseall
+	
+Route102_BlockRoute102_End:
+    end
+
+Route102_Movement_TurnAndStepRight:
+    face_right
+    walk_right
+    step_end
+
+Route102_Text_GoUniversityFirst:
+	.string "I shouldn't go too far. The second\n"
+	.string "semester is starting soon.$"
+

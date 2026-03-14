@@ -38,7 +38,7 @@ Klassenzimmer_EventScript_FirstEntry::
     msgbox Museum_Text_StudentReceivesMon, MSGBOX_DEFAULT
     closemessage
 
-	givemon SPECIES_TAILLOW, 5, ITEM_NONE
+	givemon SPECIES_SNIVY, 5, ITEM_NONE, move1=MOVE_TACKLE, move2=MOVE_GROWL, move3=MOVE_LEER, move4=MOVE_VINE_WHIP
 
 	msgbox Klassenzimmer_Text_Museum, MSGBOX_DEFAULT
 	closemessage
@@ -88,8 +88,8 @@ Klassenzimmer_Text_Museum:
 Museum_Text_StudentReceivesMon:
     .string "PROF. FARMER: At the beginning of your\n"
     .string "studies, each student receives a\p"
-	.string "Taillow, which is intended to support\n"
+	.string "SNIVY, which is intended to support\n"
     .string "you in your learning.\p"
-	.string "Taillow has been added to your Team.$"
+	.string "SNIVY has been added to your Team.$"
 
 
