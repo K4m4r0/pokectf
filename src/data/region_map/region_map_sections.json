@@ -1298,6 +1298,14 @@
     {
       "id": "MAPSEC_GIOVANNIS_HOUSE",
       "name": "GIOVANNI'S HOUSE"
+    },
+    {
+      "id": "MAPSEC_CHALLENGE_HOUSE",
+      "name": "CHALLENGE HOUSE"
+    },
+    {
+      "id": "MAPSEC_CAFETERIA",
+      "name": "CAFETERIA"
     }
   ]
 }

@@ -595,6 +595,8 @@ graphics/object_events/pics/people/officer_m.4bpp: graphics/object_events/pics/p
 graphics/object_events/pics/people/officer_f.4bpp: graphics/object_events/pics/people/officer_f.png
 	tools/gbagfx/gbagfx $< $@ -mwidth 2 -mheight 4
 
+graphics/object_events/pics/people/charmanderswim.4bpp: graphics/object_events/pics/people/charmanderswim.png
+	tools/gbagfx/gbagfx $< $@ -mwidth 2 -mheight 4
 
 graphics/pokemon/%/overworld.4bpp.smol: graphics/pokemon/%/overworld.4bpp
 	tools/compresSmol/compresSmol -w $< $@

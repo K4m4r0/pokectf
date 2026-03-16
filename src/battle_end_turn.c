@@ -11,6 +11,8 @@
 #include "constants/abilities.h"
 #include "constants/items.h"
 #include "constants/moves.h"
+#include "ctf_mewtwo_battle.h"
+
 
 static u32 GetBattlerSideForMessage(u32 side)
 {
@@ -30,6 +32,15 @@ static bool32 HandleEndTurnOrder(u32 battler)
     bool32 effect = FALSE;
 
     gBattleTurnCounter++;
+    {
+        const u8 *script = CtfMewtwoBattle_GetTurnScript();
+        if (script != NULL)
+        {
+            BattleScriptExecute(script);
+            return TRUE;
+        }
+    }
+
     gBattleStruct->eventState.endTurn++;
 
     for (u32 i = 0; i < gBattlersCount; i++)

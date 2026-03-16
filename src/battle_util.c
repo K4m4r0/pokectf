@@ -52,6 +52,8 @@
 #include "constants/trainers.h"
 #include "constants/weather.h"
 #include "constants/pokemon.h"
+#include "ctf_mewtwo_battle.h"
+
 
 /*
 NOTE: The data and functions in this file up until (but not including) sSoundMovesTable
@@ -1934,9 +1936,23 @@ bool32 HandleFaintedMonActions(void)
             do
             {
                 gBattlerFainted = gBattlerTarget = gBattleStruct->eventState.faintedActionBattler;
+
                 if (gBattleMons[gBattleStruct->eventState.faintedActionBattler].hp == 0
-                 && !(gAbsentBattlerFlags & (1u << gBattleStruct->eventState.faintedActionBattler)))
+                && !(gAbsentBattlerFlags & (1u << gBattleStruct->eventState.faintedActionBattler)))
                 {
+
+                    {
+                        const u8 *mewtwoFaintScript = CtfMewtwoBattle_GetPlayerFaintScript(gBattleStruct->eventState.faintedActionBattler);
+                        if (mewtwoFaintScript != NULL)
+                        {
+                            CtfMewtwoBattle_ClearPendingPlayerFaint(gBattleStruct->eventState.faintedActionBattler);
+                            BattleScriptExecute(mewtwoFaintScript);
+                            gBattleStruct->eventState.faintedAction = FAINTED_ACTIONS_HANDLE_NEXT_BATTLER;
+                            return TRUE;
+                        }
+                    }
+
+                    CtfMewtwoBattle_ClearPendingPlayerFaint(gBattleStruct->eventState.faintedActionBattler);
                     BattleScriptExecute(BattleScript_HandleFaintedMon);
                     gBattleStruct->eventState.faintedAction = FAINTED_ACTIONS_HANDLE_NEXT_BATTLER;
                     return TRUE;

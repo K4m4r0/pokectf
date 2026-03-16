@@ -31,24 +31,32 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_DEFEATED_ELITE_4_DRAKE"
     },
     {
-      "local_id": "LOCALID_XX",
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(WEEZING)",
-      "x": 22,
-      "y": 10,
+      "local_id": "LOCALID_LICHTUNG_BULBASAUR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BULBASAUR)",
+      "x": 17,
+      "y": 7,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "Lichtung_EventScript_Bulbasaur",
+      "flag": "FLAG_LICHTUNG_BULBASAUR_CAUGHT"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 22,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_MEWTWO_LAIR",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

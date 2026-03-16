@@ -3,6 +3,8 @@ RingUntenE4_MapScripts::
     map_script MAP_SCRIPT_ON_TRANSITION, RingUntenE4_OnEnter
     .byte 0
 
+    .equ RINGUNTENE4_MEW_LEVEL, 30
+
 RingUntenE4_OnEnter:
     @ Spy-Objekte immer verstecken
     removeobject LOCALID_CHATOTSPY_A
@@ -187,4 +189,94 @@ RingUntenE4_Text_ImitateVoice:
 
 RingUntenE4_Text_DoorAlreadyOpen:
     .string "The door is unlocked.$"
+
+@ =========================================================
+@ Mew Truck Event
+@ =========================================================
+RingUntenE4_EventScript_MewTruck::
+    lockall
+    faceplayer
+
+    goto_if_set FLAG_RINGUNTENE4_MEW_CAUGHT, RingUntenE4_MewTruck_AlreadyDone
+
+    checkitem ITEM_STRENGTH_TOOL, 1
+    compare VAR_RESULT, TRUE
+    goto_if_eq RingUntenE4_MewTruck_MoveTruck
+
+    msgbox RingUntenE4_Text_TruckTooHeavy, MSGBOX_DEFAULT
+    releaseall
+    end
+
+RingUntenE4_MewTruck_MoveTruck:
+    msgbox RingUntenE4_Text_UsedStrengthTool, MSGBOX_DEFAULT
+    closemessage
+
+    applymovement LOCALID_MEWTRUCK, RingUntenE4_Movement_MewTruckLeft2
+    waitmovement 0
+
+    msgbox RingUntenE4_Text_MewAppears, MSGBOX_DEFAULT
+    closemessage
+
+    setwildbattle SPECIES_MEW, RINGUNTENE4_MEW_LEVEL, ITEM_NONE
+    specialvar VAR_RESULT, BattleSetup_StartLegendaryBattle
+    waitstate
+
+    @ B_OUTCOME_CAUGHT = 7
+    compare VAR_RESULT, 7
+    goto_if_eq RingUntenE4_MewTruck_Caught
+
+    @ alles außer Fang -> Truck wieder zurück
+    applymovement LOCALID_MEWTRUCK, RingUntenE4_Movement_MewTruckRight2
+    waitmovement 0
+
+    releaseall
+    end
+
+RingUntenE4_MewTruck_Caught:
+    setflag FLAG_RINGUNTENE4_MEW_CAUGHT
+    copyobjectxytoperm LOCALID_MEWTRUCK
+    msgbox RingUntenE4_Text_MewCaught, MSGBOX_DEFAULT
+    releaseall
+    end
+
+RingUntenE4_MewTruck_AlreadyDone:
+    msgbox RingUntenE4_Text_TruckAlreadyMoved, MSGBOX_DEFAULT
+    releaseall
+    end
+
+
+@ =========================================================
+@ Movements
+@ =========================================================
+RingUntenE4_Movement_MewTruckLeft2:
+    walk_left
+    walk_left
+    step_end
+
+RingUntenE4_Movement_MewTruckRight2:
+    walk_right
+    walk_right
+    step_end
+
+
+@ =========================================================
+@ Text
+@ =========================================================
+RingUntenE4_Text_TruckTooHeavy:
+    .string "The truck is too heavy to move by\n"
+    .string "hand.$"
+
+RingUntenE4_Text_UsedStrengthTool:
+    .string "You used the STRENGTH TOOL.$"
+
+RingUntenE4_Text_MewAppears:
+    .string "Something was hiding under the\n"
+    .string "truck!\p"
+    .string "MEW appeared!$"
+
+RingUntenE4_Text_MewCaught:
+    .string "The truck won't move again.$"
+
+RingUntenE4_Text_TruckAlreadyMoved:
+    .string "The truck won't budge anymore.$"
 

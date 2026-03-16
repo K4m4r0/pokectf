@@ -72,6 +72,8 @@
 #include "load_save.h"
 #include "test/test_runner_battle.h"
 #include "constants/flags.h"
+#include "ctf_mewtwo_battle.h"
+
 
 // Helper for accessing command arguments and advancing gBattlescriptCurrInstr.
 //
@@ -2450,6 +2452,12 @@ static void MoveDamageDataHpUpdate(u32 battler, u32 scriptBattler, const u8 *nex
             {
                 gBattleStruct->moveDamage[battler] = gBattleMons[battler].hp;
                 gBattleMons[battler].hp = 0;
+
+                if (IsOnPlayerSide(battler)
+                && gBattleMons[gBattlerAttacker].species == SPECIES_MEWTWO)
+                {
+                    CtfMewtwoBattle_MarkPlayerMonKOByMewtwo(battler);
+                }
             }
             gProtectStructs[battler].assuranceDoubled = TRUE;
             gProtectStructs[battler].revengeDoubled |= 1u << gBattlerAttacker;

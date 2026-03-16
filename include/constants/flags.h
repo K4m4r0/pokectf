@@ -683,17 +683,17 @@
 #define FLAG_KLASSENZIMMER6_LEMMY_MOVED         0x284 // CTF Klassenzimmer 6 Lemmy Moved
 #define FLAG_EDEKAMAIN_GOT_ROCK_SMASH_TOOL      0x285 // CTF Edeka Main Got Rock Smash Tool
 #define FLAG_EDEKAMAIN_GOT_MOO_MOO_MILK         0x286 // CTF Edeka Main Got Moo Moo Milk
-#define FLAG_UNUSED_0x287  0x287 // Unused Flag
-#define FLAG_UNUSED_0x288  0x288 // Unused Flag
-#define FLAG_UNUSED_0x289  0x289 // Unused Flag
-#define FLAG_UNUSED_0x28A  0x28A // Unused Flag
-#define FLAG_UNUSED_0x28B  0x28B // Unused Flag
-#define FLAG_UNUSED_0x28C  0x28C // Unused Flag
-#define FLAG_UNUSED_0x28D  0x28D // Unused Flag
-#define FLAG_UNUSED_0x28E  0x28E // Unused Flag
-#define FLAG_UNUSED_0x28F  0x28F // Unused Flag
-#define FLAG_UNUSED_0x290  0x290 // Unused Flag
-#define FLAG_UNUSED_0x291  0x291 // Unused Flag
+#define FLAG_MEWTWO_LAIR_MEWTWO_GONE            0x287 // CTF Mewtwo Lair Mewtwo Gone
+#define FLAG_MEWTWO_LAIR_SPECIAL_BATTLE         0x288 // CTF Mewtwo Lair Special Battle
+#define FLAG_LICHTUNG_BULBASAUR_CAUGHT          0x289 // CTF Lichtung Bulbasaur Caught
+#define FLAG_HOTSPRINGS_CHARMANDER_CAUGHT       0x28A // CTF Hot Springs Charmander Caught
+#define FLAG_KLASSENZIMMER_LAST_INTRO_DONE      0x28B // CTF Klassenzimmer Last Intro Done
+#define FLAG_HIDE_KLASSENZIMMER_LAST_WIDEFIELD  0x28C // CTF Hide Klassenzimmer Last Widefield
+#define FLAG_MAPNAME_TO_LAST_OPENED_SCENE_DONE  0x28D // CTF Mapname to Last Opened Scene Done
+#define FLAG_HH_SEM9_DONE                       0x28E // CTF HH Sem 9 Done
+#define FLAG_TESTMAP_FIRST_SEMESTER_SCENE_DONE  0x28F // CTF Testmap First Semester Scene Done
+#define FLAG_NECKARAU_SQUIRTLE_CAUGHT           0x290 // CTF Neckarau Squirtle Caught
+#define FLAG_RINGUNTENE4_MEW_CAUGHT             0x291 // CTF RingUntenE4 Mew Caught
 #define FLAG_UNUSED_0x292  0x292 // Unused Flag
 #define FLAG_UNUSED_0x293  0x293 // Unused Flag
 #define FLAG_UNUSED_0x294  0x294 // Unused Flag

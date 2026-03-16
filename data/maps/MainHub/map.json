@@ -84,6 +84,27 @@
       "elevation": 0,
       "dest_map": "MAP_STADIUM3",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_MEWTWO_LAIR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_HOT_SPRINGS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_KLASSENZIMMER_LAST",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

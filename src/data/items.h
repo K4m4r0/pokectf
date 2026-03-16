@@ -15764,6 +15764,21 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_CellBattery,
         .iconPalette = gItemIconPalette_CellBattery,
     },
+    
+        [ITEM_RNV_TICKET] =
+    {
+        .name = ITEM_NAME("RNV Ticket"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A ticket for the\n"
+            "RNV Tram."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_RainbowPass,
+        .iconPalette = gItemIconPalette_RainbowPass,
+    },
 
 };
 

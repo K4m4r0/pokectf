@@ -1,5 +1,57 @@
 Testmap_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Testmap_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Testmap_OnFrame
 	.byte 0
+
+
+@ =========================================================
+@ First semester reflection scene
+@ =========================================================
+Testmap_OnTransition::
+	goto_if_unset FLAG_DEFEATED_RUSTBORO_GYM, Testmap_OnTransition_End
+	goto_if_set FLAG_TESTMAP_FIRST_SEMESTER_SCENE_DONE, Testmap_OnTransition_End
+
+	setvar VAR_TEMP_0, 1
+	end
+
+Testmap_OnTransition_End::
+	setvar VAR_TEMP_0, 0
+	end
+
+
+Testmap_OnFrame::
+	map_script_2 VAR_TEMP_0, 1, Testmap_EventScript_FirstSemesterScene
+	.2byte 0
+
+
+Testmap_EventScript_FirstSemesterScene::
+	setvar VAR_TEMP_0, 0
+	setflag FLAG_TESTMAP_FIRST_SEMESTER_SCENE_DONE
+
+	lockall
+
+	msgbox Testmap_Text_FirstSemester1, MSGBOX_DEFAULT
+	closemessage
+
+	applymovement LOCALID_PLAYER, Testmap_Movement_FaceLeft
+	waitmovement 0
+	msgbox Testmap_Text_FirstSemester2, MSGBOX_DEFAULT
+	closemessage
+
+	applymovement LOCALID_PLAYER, Testmap_Movement_FaceRight
+	waitmovement 0
+	msgbox Testmap_Text_FirstSemester3, MSGBOX_DEFAULT
+	closemessage
+
+	msgbox Testmap_Text_FirstSemester4, MSGBOX_DEFAULT
+	closemessage
+
+	applymovement LOCALID_PLAYER, Testmap_Movement_FaceDownJump
+	waitmovement 0
+	msgbox Testmap_Text_FirstSemester5, MSGBOX_DEFAULT
+
+	releaseall
+	end
 
 Testmap_EventScript_TutorialNpc::
 	lock
@@ -97,6 +149,19 @@ Testmap_Movement_SleepLeave:
 	walk_fast_right
 	step_end
 
+Testmap_Movement_FaceLeft:
+	face_left
+	step_end
+
+Testmap_Movement_FaceRight:
+	face_right
+	step_end
+
+Testmap_Movement_FaceDownJump:
+	face_down
+	jump_in_place_down
+	step_end
+
 Testmap_EventScript_BlockRoute102::
     goto_if_set FLAG_CTF_GYM1_DEFEATED, Testmap_BlockRoute102_End
 
@@ -156,6 +221,23 @@ Testmap_Text_WokeUp:
 	.string "What was that?!$"
 
 
+Testmap_Text_FirstSemester1:
+	.string "So that was the first semester.$"
+
+Testmap_Text_FirstSemester2:
+	.string "That wasn't so bad.$"
+
+Testmap_Text_FirstSemester3:
+	.string "I could go explore the world a bit\n"
+	.string "and catch a few more POKéMON.$"
+
+Testmap_Text_FirstSemester4:
+	.string "Or I'll go back to university and\n"
+	.string "continue with the next course.$"
+
+Testmap_Text_FirstSemester5:
+	.string "From now on, that's exactly how it\n"
+	.string "works .. did you hear me?!$"
 
 Testmap_EventScript_SignDev::
 	msgbox Testmap_Text_DevHouse, MSGBOX_SIGN

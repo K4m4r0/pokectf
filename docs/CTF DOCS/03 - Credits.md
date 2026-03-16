@@ -17,7 +17,7 @@ A list of all used items and their creators.
 - **Othienka**: Armored Mewtwo V3
 - **Unknown**: Officer Male and Female
 - **PeteBits28**: Psycho Mantis
-- **K4m4r0**: Suneon, I3C-And, I3C-Nand, Missingno.
+- **K4m4r0**: Suneon, I3C-And, I3C-Nand, Missingno., Swimming Charmander
 
 
 ## Trainer / Pokémon Pictures

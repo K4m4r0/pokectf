@@ -845,4 +845,20 @@ extern const u8 BattleScript_SleepTalkAttackstring[];
 extern const u8 BattleScript_NaturePowerAttackstring[];
 extern const u8 BattleScript_PokemonCantUseTheMove[];
 
+extern const u8 BattleScript_MewtwoTurn3[];
+extern const u8 BattleScript_MewtwoTurn5[];
+extern const u8 BattleScript_MewtwoTurn7[];
+extern const u8 BattleScript_MewtwoTurn9[];
+extern const u8 BattleScript_MewtwoTurn12[];
+extern const u8 BattleScript_MewtwoTurn15[];
+extern const u8 BattleScript_MewtwoPathetic[];
+extern const u8 BattleScript_MewtwoPlayerLost[];
+extern const u8 BattleScript_MewtwoPatheticTurn3[];
+extern const u8 BattleScript_MewtwoPatheticTurn5[];
+extern const u8 BattleScript_MewtwoPatheticTurn7[];
+extern const u8 BattleScript_MewtwoPatheticTurn9[];
+extern const u8 BattleScript_MewtwoPatheticTurn12[];
+extern const u8 BattleScript_MewtwoPatheticTurn15[];
+
+
 #endif // GUARD_BATTLE_SCRIPTS_H

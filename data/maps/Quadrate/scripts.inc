@@ -54,7 +54,7 @@ Quadrate_Officer_EventScript_LockedPassage::
     end
 
 Quadrate_Train_Text_AskTravel:
-    .string "Do you want to travel\n"
+    .string "Use RNV TICKET and travel\n"
     .string "to the Water Tower?$"
 
 Quadrate_Train_Text_WrongSide:

@@ -16,7 +16,7 @@
   "object_events": [
     {
       "local_id": "LOCALID_KF_PROFESSOR",
-      "graphics_id": "OBJ_EVENT_GFX_BRAWLY",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
       "x": 9,
       "y": 3,
       "elevation": 0,

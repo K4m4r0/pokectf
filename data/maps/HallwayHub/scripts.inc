@@ -1,8 +1,29 @@
 HallwayHub_MapScripts::
+    map_script MAP_SCRIPT_ON_LOAD, HallwayHub_OnLoad
     map_script MAP_SCRIPT_ON_TRANSITION, HallwayHub_OnTransition
     map_script MAP_SCRIPT_ON_FRAME_TABLE, HallwayHub_OnFrame
     .byte 0
 
+
+
+@ ---------------------------------------------------------
+@ OnLoad: neue Passage nach Sootopolis freischalten
+@ ---------------------------------------------------------
+HallwayHub_OnLoad::
+    goto_if_unset FLAG_DEFEATED_SOOTOPOLIS_GYM, HallwayHub_OnLoad_End
+
+    setmetatile 13, 0, 0x202, TRUE
+    setmetatile 13, 1, 0x20A, TRUE
+    setmetatile 14, 0, 0x203, TRUE
+    setmetatile 14, 1, 0x219, FALSE
+    setmetatile 15, 0, 0x203, TRUE
+    setmetatile 15, 1, 0x219, FALSE
+    setmetatile 16, 0, 0x204, TRUE
+    setmetatile 16, 1, 0x20C, TRUE
+    special DrawWholeMapView
+
+HallwayHub_OnLoad_End:
+    end
 
 @ ---------------------------------------------------------
 @ OnTransition: nur vorbereiten (keine msgbox/lock/movement)
@@ -15,7 +36,10 @@ HallwayHub_OnTransition::
     @ Default: keine Cutscene
     setvar VAR_TEMP_0, 99
 
-    @ Priorität: höchste erreichte Stufe, die noch NICHT abgespielt wurde
+    @ Höchste Priorität: neue Endsemester-Szene nach Sootopolis
+    goto_if_set FLAG_DEFEATED_SOOTOPOLIS_GYM, HallwayHub_Check_Sem9
+
+    @ Danach wie gehabt
     goto_if_set FLAG_DEFEATED_MOSSDEEP_GYM, HallwayHub_Check_Sem8
     goto_if_set FLAG_DEFEATED_FORTREE_GYM,  HallwayHub_Check_Sem7
     goto_if_set FLAG_DEFEATED_PETALBURG_GYM, HallwayHub_Check_Sem6
@@ -24,7 +48,7 @@ HallwayHub_OnTransition::
     goto_if_set FLAG_DEFEATED_DEWFORD_GYM,   HallwayHub_Check_Sem3
     goto_if_set FLAG_DEFEATED_RUSTBORO_GYM,  HallwayHub_Check_Sem2
 
-    @ Intro (ohne Flag-Check) – nur wenn noch nie abgespielt
+    @ Intro – nur wenn noch nie abgespielt
     goto_if_set FLAG_HH_SEM1_DONE, HallwayHub_Transition_End
     setvar VAR_TEMP_0, 1
     end
@@ -64,6 +88,11 @@ HallwayHub_Check_Sem8:
     setvar VAR_TEMP_0, 8
     end
 
+HallwayHub_Check_Sem9:
+    goto_if_set FLAG_HH_SEM9_DONE, HallwayHub_Transition_End
+    setvar VAR_TEMP_0, 9
+    end
+
 HallwayHub_Transition_End:
     end
 
@@ -77,6 +106,7 @@ HallwayHub_OnFrame::
     map_script_2 VAR_TEMP_0, 6, HallwayHub_Scene_Sem6
     map_script_2 VAR_TEMP_0, 7, HallwayHub_Scene_Sem7
     map_script_2 VAR_TEMP_0, 8, HallwayHub_Scene_Sem8
+    map_script_2 VAR_TEMP_0, 9, HallwayHub_Scene_Sem9
     .2byte 0
 
 
@@ -122,6 +152,10 @@ HallwayHub_UpdateStage::
     return
 7:
     setvar VAR_HALLWAYHUB_STAGE, 7
+    goto_if_set FLAG_DEFEATED_SOOTOPOLIS_GYM, 8f
+    return
+8:
+    setvar VAR_HALLWAYHUB_STAGE, 8
     return
 
 
@@ -250,6 +284,29 @@ HallwayHub_Scene_Sem8::
     waitmovement 0
     releaseall
     warpsilent MAP_KLASSENZIMMER_FINALE, 0, 0, 0
+    end
+
+HallwayHub_Scene_Sem9::
+    setvar VAR_TEMP_0, 99
+    setflag FLAG_HH_SEM1_DONE
+    setflag FLAG_HH_SEM2_DONE
+    setflag FLAG_HH_SEM3_DONE
+    setflag FLAG_HH_SEM4_DONE
+    setflag FLAG_HH_SEM5_DONE
+    setflag FLAG_HH_SEM6_DONE
+    setflag FLAG_HH_SEM7_DONE
+    setflag FLAG_HH_SEM8_DONE
+    setflag FLAG_HH_SEM9_DONE
+    setflag FLAG_HIDE_KLASSENZIMMER_LAST_WIDEFIELD
+    lockall
+    msgbox HallwayHub_Text_Sem9, MSGBOX_DEFAULT
+    closemessage
+    applymovement LOCALID_PLAYER, HallwayHub_Move_Sem9
+    waitmovement 0
+    playse SE_DOOR
+    waitse
+    releaseall
+    warpsilent MAP_KLASSENZIMMER_LAST, 0, 0, 0
     end
 
 
@@ -392,6 +449,13 @@ HallwayHub_Move_BumpDown:
     walk_down
     step_end
 
+HallwayHub_Move_Sem9:
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    step_end
+
 
 @ =========================
 @ Texte
@@ -426,3 +490,6 @@ HallwayHub_Text_Sem8:
 HallwayHub_Text_WarpLocked:
     .string "It's not time for this room yet.$"
 
+HallwayHub_Text_Sem9:
+    .string "Huh? Where did that\n"
+    .string "come from?$"

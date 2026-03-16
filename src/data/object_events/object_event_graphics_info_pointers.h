@@ -264,6 +264,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TrainRight;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Houvert;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MantisFront;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MantisSide;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Charmanderswim;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -525,7 +526,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_HOUVERT] =                  &gObjectEventGraphicsInfo_Houvert,
     [OBJ_EVENT_GFX_MANTIS_FRONT] =             &gObjectEventGraphicsInfo_MantisFront,
     [OBJ_EVENT_GFX_MANTIS_SIDE] =              &gObjectEventGraphicsInfo_MantisSide,
-
+    [OBJ_EVENT_GFX_CHARMANDERSWIM] =           &gObjectEventGraphicsInfo_Charmanderswim,
 
 };
 

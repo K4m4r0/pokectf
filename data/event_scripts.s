@@ -1379,3 +1379,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Lichtung/scripts.inc"
 
 	.include "data/maps/CH4/scripts.inc"
+
+	.include "data/maps/MewtwoLair/scripts.inc"
+
+	.include "data/maps/HotSprings/scripts.inc"
+
+	.include "data/maps/Klassenzimmer_Last/scripts.inc"

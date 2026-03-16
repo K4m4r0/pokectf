@@ -507,3 +507,7 @@ const u32 gObjectEventPic_TrainRight[] = INCBIN_U32("graphics/object_events/pics
 
 const u32 gObjectEventPic_Mantis[] = INCBIN_U32("graphics/object_events/pics/people/mantis.4bpp");
 const u16 gObjectEventPal_Mantis[] = INCBIN_U16("graphics/object_events/palettes/mantis.gbapal");
+
+const u32 gObjectEventPic_Charmanderswim[] = INCBIN_U32("graphics/object_events/pics/people/charmanderswim.4bpp");
+const u16 gObjectEventPal_Charmanderswim[] = INCBIN_U16("graphics/object_events/palettes/charmanderswim.gbapal");
+

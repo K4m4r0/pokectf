@@ -5430,6 +5430,36 @@
       "secondary_tileset": "gTileset_BattleDome",
       "border_filepath": "data/layouts/CH4/border.bin",
       "blockdata_filepath": "data/layouts/CH4/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEWTWO_LAIR",
+      "name": "MewtwoLair_Layout",
+      "width": 19,
+      "height": 19,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/MewtwoLair/border.bin",
+      "blockdata_filepath": "data/layouts/MewtwoLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_HOT_SPRINGS",
+      "name": "HotSprings_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/HotSprings/border.bin",
+      "blockdata_filepath": "data/layouts/HotSprings/map.bin"
+    },
+    {
+      "id": "LAYOUT_KLASSENZIMMER_LAST",
+      "name": "Klassenzimmer_Last_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonSchool",
+      "border_filepath": "data/layouts/Klassenzimmer_Last/border.bin",
+      "blockdata_filepath": "data/layouts/Klassenzimmer_Last/map.bin"
     }
   ]
 }

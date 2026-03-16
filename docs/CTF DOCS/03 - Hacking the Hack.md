@@ -13,7 +13,7 @@ In this document, we describe the things that were not generally intended or pro
 - **Function built in that makes opposing Pokémon trainers react** to Pokémon on your own team and changes the text output accordingly (optionally also the battle AI).
 - **mGBA use detection**, a script that checks the use of the mGBA emulator and causes NPCs to react accordingly. When using mGBA, if the player is in a certain location, an output is triggered in the mGBA log file, which gives a hint about a flag.
 - **Edited the Moving Boulder Logic** to move other world objects with strength aswell.
-
+- **Mewtwo talking** betwen rounds infight, acknowledging defeated opposing Pokémon and turn-count.
 
 
 ## Changes to existing functions

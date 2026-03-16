@@ -611,3 +611,78 @@ Ludwigshafen_Text_Debug_IsSet:
     .string "DEBUG: Flag ist gesetzt.\nIch loesche sie jetzt.$"
 
 
+@ =========================================================
+@ Schilder
+@ =========================================================
+
+
+Ludwigshafen_EventScript_ChallengeHouseSign::
+	msgbox Ludwigshafen_Text_ChallengeHouseSign, MSGBOX_SIGN
+	end
+
+Ludwigshafen_Text_ChallengeHouseSign::
+	.string "Challenge House$"
+
+
+
+Ludwigshafen_EventScript_FerrySign::
+	msgbox Ludwigshafen_Text_FerrySign, MSGBOX_SIGN
+	end
+
+Ludwigshafen_Text_FerrySign::
+	.string "Ferry$"
+
+
+
+Ludwigshafen_EventScript_StudiesSign::
+	msgbox Ludwigshafen_Text_StudiesSign, MSGBOX_SIGN
+	end
+
+Ludwigshafen_Text_StudiesSign::
+	.string "Saved Studies$"
+
+
+Ludwigshafen_EventScript_NameRaterSign::
+	msgbox Ludwigshafen_Text_NameRaterSign, MSGBOX_SIGN
+	end
+
+Ludwigshafen_Text_NameRaterSign::
+	.string "Name Rater$"
+
+
+Ludwigshafen_EventScript_FanclubSign::
+	msgbox Ludwigshafen_Text_FanclubSign, MSGBOX_SIGN
+	end
+
+Ludwigshafen_Text_FanclubSign::
+	.string "LUDWIGSHAFEN POKÉMON Fan Club$"
+
+
+Ludwigshafen_EventScript_LUSign::
+	msgbox Ludwigshafen_Text_LUSign, MSGBOX_SIGN
+	end
+
+Ludwigshafen_Text_LUSign::
+	.string "LUDWIGSHAFEN. True LU!$"
+
+Ludwigshafen_EventScript_MarketSign::
+	msgbox Ludwigshafen_Text_MarketSign, MSGBOX_SIGN
+	end
+
+Ludwigshafen_Text_MarketSign::
+	.string "Weekly Farmer's Market$"
+
+Ludwigshafen_EventScript_WharfSign::
+	msgbox Ludwigshafen_Text_WharfSign, MSGBOX_SIGN
+	end
+
+Ludwigshafen_Text_WharfSign::
+	.string "Wharf$"
+
+Ludwigshafen_EventScript_ClosedSign::
+	msgbox Ludwigshafen_Text_ClosedSign, MSGBOX_SIGN
+	end
+
+Ludwigshafen_Text_ClosedSign::
+	.string "Route Closed$"
+

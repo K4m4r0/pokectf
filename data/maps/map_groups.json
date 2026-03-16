@@ -685,7 +685,8 @@
     "Klassenzimmer5",
     "Flagroom5_1",
     "Flagroom5_2",
-    "Flagroom5_Arena"
+    "Flagroom5_Arena",
+    "HotSprings"
   ],
   "gMapGroup_Flag7": [
     "entryMapFlag7",
@@ -729,7 +730,8 @@
     "Neckar",
     "Stadium1",
     "Stadium2",
-    "Stadium3"
+    "Stadium3",
+    "Klassenzimmer_Last"
   ],
   "gMapGroup_EdekaIndoor": [
     "EdekaMain",
@@ -744,7 +746,8 @@
     "DiveE4Connect",
     "GiovannisHouse",
     "ArktosMap",
-    "FossilHaus"
+    "FossilHaus",
+    "MewtwoLair"
   ],
   "gMapGroup_Flag6": [
     "Klassenzimmer6",

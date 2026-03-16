@@ -873,6 +873,15 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_POWERCONSTRUCTPRESENCEOFMANY]         = COMPOUND_STRING("You sense the presence of many!"),
     [STRINGID_POWERCONSTRUCTTRANSFORM]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} transformed into its Complete Forme!"),
     [STRINGID_ABILITYSHIELDPROTECTS]                = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}'s Ability is protected by the effects of its {B_LAST_ITEM}!"),
+    [STRINGID_MEWTWO_TURN3]       = COMPOUND_STRING("MEWTWO: Your strength is real... but still incomplete."),
+    [STRINGID_MEWTWO_TURN5]       = COMPOUND_STRING("MEWTWO: Is this truly the extent of your will?"),
+    [STRINGID_MEWTWO_TURN7]       = COMPOUND_STRING("MEWTWO: You struggle well. Few last this long."),
+    [STRINGID_MEWTWO_TURN9]       = COMPOUND_STRING("MEWTWO: I can see why others spoke of you."),
+    [STRINGID_MEWTWO_TURN12]      = COMPOUND_STRING("MEWTWO: Even now, you still rise. Curious."),
+    [STRINGID_MEWTWO_TURN15]      = COMPOUND_STRING("MEWTWO: Enough. Show me your final resolve."),
+    [STRINGID_MEWTWO_PATHETIC]    = COMPOUND_STRING("MEWTWO: Pathetic..."),
+    [STRINGID_MEWTWO_PLAYER_LOST] = COMPOUND_STRING("MEWTWO: That was to be expected. Farewell."),
+
 };
 
 const u16 gTrainerUsedItemStringIds[] =

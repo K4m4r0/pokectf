@@ -8932,3 +8932,88 @@ BattleScript_SwapToSubstituteContinue:
 	waitanimation
 BattleScript_SwapToSubstituteReturn:
 	return
+
+
+BattleScript_MewtwoTurn3::
+    printstring STRINGID_MEWTWO_TURN3
+    waitmessage B_WAIT_TIME_LONG
+    end2
+
+BattleScript_MewtwoTurn5::
+    printstring STRINGID_MEWTWO_TURN5
+    waitmessage B_WAIT_TIME_LONG
+    end2
+
+BattleScript_MewtwoTurn7::
+    printstring STRINGID_MEWTWO_TURN7
+    waitmessage B_WAIT_TIME_LONG
+    end2
+
+BattleScript_MewtwoTurn9::
+    printstring STRINGID_MEWTWO_TURN9
+    waitmessage B_WAIT_TIME_LONG
+    end2
+
+BattleScript_MewtwoTurn12::
+    printstring STRINGID_MEWTWO_TURN12
+    waitmessage B_WAIT_TIME_LONG
+    end2
+
+BattleScript_MewtwoTurn15::
+    printstring STRINGID_MEWTWO_TURN15
+    waitmessage B_WAIT_TIME_LONG
+    end2
+
+BattleScript_MewtwoPathetic::
+    printstring STRINGID_MEWTWO_PATHETIC
+    waitmessage B_WAIT_TIME_LONG
+    goto BattleScript_HandleFaintedMon
+
+BattleScript_MewtwoPlayerLost::
+    printstring STRINGID_MEWTWO_PLAYER_LOST
+    waitmessage B_WAIT_TIME_LONG
+    end2
+
+BattleScript_MewtwoPatheticTurn3::
+    printstring STRINGID_MEWTWO_PATHETIC
+    waitmessage B_WAIT_TIME_LONG
+    printstring STRINGID_MEWTWO_TURN3
+    waitmessage B_WAIT_TIME_LONG
+    goto BattleScript_HandleFaintedMon
+
+BattleScript_MewtwoPatheticTurn5::
+    printstring STRINGID_MEWTWO_PATHETIC
+    waitmessage B_WAIT_TIME_LONG
+    printstring STRINGID_MEWTWO_TURN5
+    waitmessage B_WAIT_TIME_LONG
+    goto BattleScript_HandleFaintedMon
+
+BattleScript_MewtwoPatheticTurn7::
+    printstring STRINGID_MEWTWO_PATHETIC
+    waitmessage B_WAIT_TIME_LONG
+    printstring STRINGID_MEWTWO_TURN7
+    waitmessage B_WAIT_TIME_LONG
+    goto BattleScript_HandleFaintedMon
+
+BattleScript_MewtwoPatheticTurn9::
+    printstring STRINGID_MEWTWO_PATHETIC
+    waitmessage B_WAIT_TIME_LONG
+    printstring STRINGID_MEWTWO_TURN9
+    waitmessage B_WAIT_TIME_LONG
+    goto BattleScript_HandleFaintedMon
+
+BattleScript_MewtwoPatheticTurn12::
+    printstring STRINGID_MEWTWO_PATHETIC
+    waitmessage B_WAIT_TIME_LONG
+    printstring STRINGID_MEWTWO_TURN12
+    waitmessage B_WAIT_TIME_LONG
+    goto BattleScript_HandleFaintedMon
+
+BattleScript_MewtwoPatheticTurn15::
+    printstring STRINGID_MEWTWO_PATHETIC
+    waitmessage B_WAIT_TIME_LONG
+    printstring STRINGID_MEWTWO_TURN15
+    waitmessage B_WAIT_TIME_LONG
+    goto BattleScript_HandleFaintedMon
+
+

@@ -1440,3 +1440,7 @@ static const struct SpriteFrameImage sPicTable_MantisSide[] = {
     overworld_frame(gObjectEventPic_Mantis, 4, 4, 3),
     overworld_frame(gObjectEventPic_Mantis, 4, 4, 3),
 };
+
+static const struct SpriteFrameImage sPicTable_Charmanderswim[] = {
+    overworld_ascending_frames(gObjectEventPic_Charmanderswim, 2, 4),
+};

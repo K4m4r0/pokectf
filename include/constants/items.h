@@ -1040,7 +1040,8 @@
 #define ITEM_GS_BALL_2 869
 #define ITEM_CTF_TERMINAL 870
 #define ITEM_BATTERIES 871
-#define ITEMS_COUNT 872
+#define ITEM_RNV_TICKET 872
+#define ITEMS_COUNT 873
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
