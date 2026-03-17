@@ -35963,12 +35963,32 @@ static const u16 sSuneonTeachableLearnset[] = {
 #if P_FAMILY_I3C_AND
 static const u16 sI3cAndTeachableLearnset[] = {
 
-   MOVE_HIDDEN_POWER,
-   MOVE_FLY, //x
-   MOVE_TAILWIND, //x
-   MOVE_SUNNY_DAY, //x
-   MOVE_SOLAR_BEAM, //x
-   MOVE_UNAVAILABLE, // This is required to determine where the array ends.
+    MOVE_HIDDEN_POWER,
+
+    // Water STAB / utility
+    MOVE_WATER_PULSE,
+    MOVE_CHILLING_WATER,
+    MOVE_SURF,
+    MOVE_RAIN_DANCE,
+
+    // Ground coverage / control
+    MOVE_DIG,
+    MOVE_BULLDOZE,
+    MOVE_ROCK_TOMB,
+
+    // General utility
+    MOVE_PROTECT,
+    MOVE_ENDURE,
+    MOVE_REST,
+    MOVE_SLEEP_TALK,
+    MOVE_SUBSTITUTE,
+    MOVE_FACADE,
+
+    // Defensive support
+    MOVE_LIGHT_SCREEN,
+    MOVE_REFLECT,
+
+    MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_I3C_AND
 
@@ -35976,12 +35996,40 @@ static const u16 sI3cAndTeachableLearnset[] = {
 #if P_FAMILY_I3C_NAND
 static const u16 sI3cNandTeachableLearnset[] = {
 
-   MOVE_HIDDEN_POWER,
-   MOVE_FLY, //x
-   MOVE_TAILWIND, //x
-   MOVE_SUNNY_DAY, //x
-   MOVE_SOLAR_BEAM, //x
-   MOVE_UNAVAILABLE, // This is required to determine where the array ends.
+    MOVE_HIDDEN_POWER,
+
+    // Water STAB / power
+    MOVE_WATER_PULSE,
+    MOVE_CHILLING_WATER,
+    MOVE_SURF,
+    MOVE_LIQUIDATION,
+    MOVE_RAIN_DANCE,
+
+    // Ground STAB / power
+    MOVE_DIG,
+    MOVE_BULLDOZE,
+    MOVE_STOMPING_TANTRUM,
+    MOVE_EARTHQUAKE,
+
+    // Coverage
+    MOVE_ROCK_TOMB,
+    MOVE_STONE_EDGE,
+    MOVE_ICE_PUNCH,
+    MOVE_ICY_WIND,
+
+    // General utility
+    MOVE_PROTECT,
+    MOVE_ENDURE,
+    MOVE_REST,
+    MOVE_SLEEP_TALK,
+    MOVE_SUBSTITUTE,
+    MOVE_FACADE,
+
+    // Defensive support
+    MOVE_LIGHT_SCREEN,
+    MOVE_REFLECT,
+
+    MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_I3C_NAND
 

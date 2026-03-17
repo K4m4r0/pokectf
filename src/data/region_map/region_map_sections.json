@@ -1306,6 +1306,14 @@
     {
       "id": "MAPSEC_CAFETERIA",
       "name": "CAFETERIA"
+    },
+    {
+      "id": "MAPSEC_LOWERNECKAR",
+      "name": "LOWER NECKAR"
+    },
+    {
+      "id": "MAPSEC_LUISENPARK",
+      "name": "LUISENPARK"
     }
   ]
 }

@@ -37,7 +37,7 @@ Arena_Flag4_EventScript_Leader::
 	waitfanfare
 	closemessage
 
-	giveitem GYM4_TM, 1
+	giveitem ITEM_TM89, 1
 	msgbox Arena_Flag4_Text_TM, MSGBOX_DEFAULT
 
 	release
@@ -56,27 +56,27 @@ Arena_Flag4_After::
 
 
 Arena_Flag4_Text_Intro::
-	.string "LEADER: It's time for your exam.\p"
+	.string "SANTA: It's time for your exam.\p"
 	.string "Show me what you've learned!$"
 
 Arena_Flag4_Text_Defeat::
-	.string "LEADER: Correct... enough.$"
+	.string "SANTA: Correct... enough.$"
 
 Arena_Flag4_Text_Lost::
-	.string "LEADER: Not bad, but you need\n"
+	.string "SANTA: Not bad, but you need\n"
 	.string "to try again.$"
 
 Arena_Flag4_Text_Win::
-	.string "LEADER: Excellent!\n"
+	.string "SANTA: Excellent!\n"
 	.string "You proved yourself worthy.\p"
-	.string "Take this, the FOURTH BADGE.$"
+	.string "Take this, the SCRUM BADGE.$"
 
 Arena_Flag4_Text_ReceivedBadge::
-	.string "You received the BADGE!$"
+	.string "You received the SCRUM BADGE!$"
 
 Arena_Flag4_Text_TM::
-	.string "TM01 contains FOCUS PUNCH.$"
+	.string "TM89 contains U-TURN.$"
 
 Arena_Flag4_Text_After::
-	.string "LEADER: Our proof is complete.\n"
+	.string "SANTA: Our proof is complete.\n"
 	.string "Keep studying.$"

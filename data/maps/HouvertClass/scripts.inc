@@ -269,6 +269,7 @@ HouvertClass_EventScript_HouvertPostBattle::
 	setflag FLAG_BADGE02_GET
 	setflag FLAG_CTF_HOUVERT_EXAM_COMPLETED
 	setflag FLAG_DEFEATED_DEWFORD_GYM
+	giveitem ITEM_TM24, 1
 	waitmovement 0
 	applymovement LOCALID_HOUVERT, HouvertClass_Movement_HouvertReturnToPodium
 	waitmovement 0
@@ -333,7 +334,7 @@ HouvertClass_Movement_walkDeskAndBack:
 	step_end
 
 HouvertClass_Text_ProfHouvertComeToFront:
-	.string "DR. PROF. HOUVERT: Approach the\n"
+	.string "PROF. HOUVERT: Approach the\n"
 	.string "front like everyone else.\p"
 	.string "If you need directions again,\n"
 	.string "I'll draw you a map.$"
@@ -349,17 +350,17 @@ HouvertClass_Text_PlayerCanWrite:
 	.string "exam.$"
 
 HouvertClass_Text_HouvertTimeUp:
-	.string "DR. PROF. HOUVERT: Time is up.$"
+	.string "PROF. HOUVERT: Time is up.$"
 
 HouvertClass_Text_HouvertPensDown:
-	.string "DR. PROF. HOUVERT: Pens down.$"
+	.string "PROF. HOUVERT: Pens down.$"
 
 HouvertClass_Text_HouvertPassPapers:
-	.string "DR. PROF. HOUVERT: Pass your papers\n"
+	.string "PROF. HOUVERT: Pass your papers\n"
 	.string "forward.$"
 
 HouvertClass_Text_HouvertBadgeReward:
-	.string "DR. PROF. HOUVERT: You may claim the\n"
+	.string "PROF. HOUVERT: You may claim the\n"
 	.string "second badge.$"
 
 HouvertClass_Text_HouvertBadgeInfo:
@@ -367,68 +368,68 @@ HouvertClass_Text_HouvertBadgeInfo:
 	.string "Keep it safe.$"
 
 HouvertClass_Text_HouvertFail:
-	.string "DR. PROF. HOUVERT: Hmm...\p"
+	.string "PROF. HOUVERT: Hmm...\p"
 	.string "You have failed.$"
 
 HouvertClass_Text_PlayerWhat:
 	.string "{PLAYER}: What? How can you tell already?$"
 
 HouvertClass_Text_HouvertTrivial:
-	.string "DR. PROF. HOUVERT: It is trivial.$"
+	.string "PROF. HOUVERT: It is trivial.$"
 
 HouvertClass_Text_HouvertCritique:
-	.string "DR. PROF. HOUVERT: Your reasoning lacks\n"
+	.string "PROF. HOUVERT: Your reasoning lacks\n"
 	.string "structure.\p"
 	.string "Your execution lacks precision.\p"
 	.string "Your result lacks merit.$"
 
 HouvertClass_Text_HouvertHowever:
-	.string "DR. PROF. HOUVERT: However.\p"
+	.string "PROF. HOUVERT: However.\p"
 	.string "This is the DHBW.\p"
 	.string "To pass this semester...\n"
 	.string "You will defeat me in battle.$"
 
 HouvertClass_Text_HouvertBattleChallenge:
-	.string "DR. PROF. HOUVERT: Let us proceed.$"
+	.string "PROF. HOUVERT: Let us proceed.$"
 
 HouvertClass_Text_HouvertBattleIntro:
-	.string "DR. PROF. HOUVERT: Let us see if you\n"
+	.string "PROF. HOUVERT: Let us see if you\n"
 	.string "perform better under pressure.$"
 
 HouvertClass_Text_HouvertBattleDefeat:
-	.string "DR. PROF. HOUVERT: Hm.\p"
+	.string "PROF. HOUVERT: Hm.\p"
 	.string "Acceptable.\p"
 	.string "Very well.\p"
 	.string "You pass.$"
 
 HouvertClass_Text_HouvertPassConfirmation:
-	.string "DR. PROF. HOUVERT: Very well. You\n"
+	.string "PROF. HOUVERT: Very well. You\n"
 	.string "have passed this examination.$"
 
 HouvertClass_Text_HouvertAfterPass:
-	.string "DR. PROF. HOUVERT: Tomorrow I captain\n"
+	.string "PROF. HOUVERT: Tomorrow I captain\n"
 	.string "Germany's national squad.\p"
 	.string "We'll defend the table football title\n"
 	.string "with the same edge you showed today.$"
 
 HouvertClass_Text_ProfHouvertArrival:
-	.string "DR. PROF. HOUVERT: Good. You're\n"
+	.string "PROF. HOUVERT: Good. You're\n"
 	.string "the last one.\p"
 	.string "If I were that late, I'd never reach\n"
 	.string "AlpCity in winter.$"
 
 HouvertClass_Text_ProfHouvertSitDown:
-	.string "DR. PROF. HOUVERT: Sit down.\p"
+	.string "PROF. HOUVERT: Sit down.\p"
 	.string "We are about to begin.$"
 
 HouvertClass_Text_ProfHouvertExamRules:
-	.string "DR. PROF. HOUVERT: This is a\n"
+	.string "PROF. HOUVERT: This is a\n"
 	.string "written examination.\p"
 	.string "No talking. No devices. No\n"
 	.string "excuses.$"
 
 HouvertClass_Text_ProfHouvertRegistrationRequest:
-	.string "DR. PROF. HOUVERT: Before we\n"
+	.string "PROF. HOUVERT: Before we\n"
 	.string "start...\p"
 	.string "Write your Registration Number at\n"
 	.string "the top of the page.$"
@@ -439,10 +440,10 @@ HouvertClass_Text_PlayerForgotRegistration:
 	.string "I don't remember it.$"
 
 HouvertClass_Text_ProfHouvertWell:
-	.string "DR. PROF. HOUVERT: Well?$"
+	.string "PROF. HOUVERT: Well?$"
 
 HouvertClass_Text_ProfHouvertTrivialExam:
-	.string "DR. PROF. HOUVERT: You do not have\n"
+	.string "PROF. HOUVERT: You do not have\n"
 	.string "all day.\p"
 	.string "Even though the exam is quite\n"
 	.string "trivial.$"

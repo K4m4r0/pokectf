@@ -123,29 +123,29 @@ BlackhansaFinale_Movement_BossSlideLeft3_FaceDown:
 @ Texte
 @ ----------------
 BlackhansaFinale_Text_Intro:
-    .string "You've come a long way, kid.\n"
+    .string "BOSS: You've come a long way, kid.\n"
     .string "But this is where it ends.\p"
     .string "Only my POKéMON knows the final flag,\n"
     .string "and it will never tell it to you.\p"
     .string "Now get ready to be destroyed.$"
 
 BlackhansaFinale_Text_PreBattle:
-    .string "Prepare to be destroyed!$"
+    .string "BOSS: Prepare to be destroyed!$"
 
 BlackhansaFinale_Text_Defeat:
-    .string "No..$"
+    .string "BOSS: No..$"
 
 BlackhansaFinale_Text_NoCopyWin:
-    .string "You can't defeat us!$"
+    .string "BOSS: You can't defeat us!$"
 
 BlackhansaFinale_Text_That1:
-    .string "That...$"
+    .string "BOSS: That...$"
 
 BlackhansaFinale_Text_That2:
     .string "that...$"
 
 BlackhansaFinale_Text_That3:
-    .string " can't be. Defeated by a child...\n"
+    .string "can't be. Defeated by a child...\n"
     .string "everything gone...$"
 
 

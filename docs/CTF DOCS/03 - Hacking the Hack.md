@@ -25,7 +25,7 @@ In this document, we describe the things that were not generally intended or pro
 
 ## List of added characters with image sprites and new dialogue:
     - PROF FARMER
-    - PROF HYVL
+    - PROF HYVEL
     - PROF HOUVERT
     - TEAM ROCKET
     - OFFICER F/M

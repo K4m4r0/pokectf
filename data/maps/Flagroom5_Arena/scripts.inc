@@ -24,6 +24,7 @@ Flagroom5_Arena_EventScript_AfterWin::
     msgbox Flagroom5_Arena_Text_GaveBadge, MSGBOX_DEFAULT
     waitfanfare
     closemessage
+    giveitem ITEM_TM57, 1
 
     goto Flagroom5_Arena_End
 
@@ -37,24 +38,24 @@ Flagroom5_Arena_End::
 
 
 Flagroom5_Arena_Text_Intro:
-    .string "So you found my secret hideout.\n"
+    .string "JUDGE: So you found my secret hideout.\n"
     .string "Let's see if you can successfully\p"
     .string "complete the semester.$"
 
 Flagroom5_Arena_Text_BattleIntro:
-    .string "Let's begin.$"
+    .string "JUDGE: Let's begin.$"
 
 Flagroom5_Arena_Text_Defeat:
-    .string "Impressive...$"
+    .string "JUDGE: Impressive...$"
 
 Flagroom5_Arena_Text_Won:
-    .string "Well done!\n"
+    .string "JUDGE: Well done!\n"
     .string "You passed the exam.$"
 
 Flagroom5_Arena_Text_GaveBadge:
-    .string "Congratulations!\n"
-    .string "You've earned the fifth BADGE.$"
+    .string "JUDGE: Congratulations!\n"
+    .string "You've earned the HAWAII BADGE.$"
 
 Flagroom5_Arena_Text_AfterBadge:
-    .string "Keep it up, {PLAYER}.$"
+    .string "JUDGE: Keep it up, {PLAYER}.$"
 

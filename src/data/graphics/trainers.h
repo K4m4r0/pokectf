@@ -302,6 +302,23 @@ const u16 gTrainerPalette_Oraggle[] = INCBIN_U16("graphics/trainers/palettes/ora
 const u32 gTrainerFrontPic_Houvert[] = INCBIN_U32("graphics/trainers/front_pics/houvert.4bpp.smol");
 const u16 gTrainerPalette_Houvert[] = INCBIN_U16("graphics/trainers/palettes/houvert.gbapal");
 
+const u32 gTrainerFrontPic_Hyvel[] = INCBIN_U32("graphics/trainers/front_pics/hyvel.4bpp.smol");
+const u16 gTrainerPalette_Hyvel[] = INCBIN_U16("graphics/trainers/palettes/hyvel.gbapal");
+
+const u32 gTrainerFrontPic_Judge[] = INCBIN_U32("graphics/trainers/front_pics/judge.4bpp.smol");
+const u16 gTrainerPalette_Judge[] = INCBIN_U16("graphics/trainers/palettes/judge.gbapal");
+
+const u32 gTrainerFrontPic_Santa[] = INCBIN_U32("graphics/trainers/front_pics/santa.4bpp.smol");
+const u16 gTrainerPalette_Santa[] = INCBIN_U16("graphics/trainers/palettes/santa.gbapal");
+
+const u32 gTrainerFrontPic_Woerner[] = INCBIN_U32("graphics/trainers/front_pics/woerner.4bpp.smol");
+const u16 gTrainerPalette_Woerner[] = INCBIN_U16("graphics/trainers/palettes/woerner.gbapal");
+
+const u32 gTrainerFrontPic_Kali[] = INCBIN_U32("graphics/trainers/front_pics/kali.4bpp.smol");
+const u16 gTrainerPalette_Kali[] = INCBIN_U16("graphics/trainers/palettes/kali.gbapal");
+
+const u32 gTrainerFrontPic_Farmer[] = INCBIN_U32("graphics/trainers/front_pics/farmer.4bpp.smol");
+const u16 gTrainerPalette_Farmer[] = INCBIN_U16("graphics/trainers/palettes/farmer.gbapal");
 
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
@@ -417,6 +434,12 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_ROCKET, gTrainerFrontPic_Rocket, gTrainerPalette_Rocket),
     TRAINER_SPRITE(TRAINER_PIC_ORAGGLE, gTrainerFrontPic_Oraggle, gTrainerPalette_Oraggle),
     TRAINER_SPRITE(TRAINER_PIC_HOUVERT, gTrainerFrontPic_Houvert, gTrainerPalette_Houvert),
+    TRAINER_SPRITE(TRAINER_PIC_HYVEL, gTrainerFrontPic_Hyvel, gTrainerPalette_Hyvel),
+    TRAINER_SPRITE(TRAINER_PIC_JUDGE, gTrainerFrontPic_Judge, gTrainerPalette_Judge),
+    TRAINER_SPRITE(TRAINER_PIC_SANTA, gTrainerFrontPic_Santa, gTrainerPalette_Santa),
+    TRAINER_SPRITE(TRAINER_PIC_WOERNER, gTrainerFrontPic_Woerner, gTrainerPalette_Woerner),
+    TRAINER_SPRITE(TRAINER_PIC_KALI, gTrainerFrontPic_Kali, gTrainerPalette_Kali),  
+    TRAINER_SPRITE(TRAINER_PIC_FARMER, gTrainerFrontPic_Farmer, gTrainerPalette_Farmer),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

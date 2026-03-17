@@ -38,7 +38,7 @@ Museum2_Flag1_EventScript_Hevl::
 	waitfanfare
 	closemessage
 
-	giveitem HEVL_TM, 1
+	giveitem ITEM_TM16, 1
 	msgbox Museum2_Flag1_Text_TM, MSGBOX_DEFAULT
 
 	release
@@ -57,21 +57,21 @@ Museum2_Flag1_After::
 
 
 Museum2_Flag1_Text_Intro::
-	.string "PROF. HYVL: You saved the MATHALYZER \n"
+	.string "PROF. HYVEL: You saved the MATHALYZER \n"
 	.string "and thus ensured our mathematical\p"
 	.string "superiority.\p"
 	.string "You can now take your exam with\n"
 	.string "me to prove yourself worthy.$"
 
 Museum2_Flag1_Text_Defeat::
-	.string "PROF. HYVL: Correct... enough.$"
+	.string "PROF. HYVEL: Correct... enough.$"
 
 Museum2_Flag1_Text_Lost::
-	.string "PROF. HYVL: Not bad, but you need\n"
+	.string "PROF. HYVEL: Not bad, but you need\n"
 	.string "to try again.$"
 
 Museum2_Flag1_Text_Win::
-	.string "PROF. HYVL: Excellent!\n"
+	.string "PROF. HYVEL: Excellent!\n"
 	.string "You proved yourself worthy.\p"
 	.string "Take this, the FIRST BADGE.$"
 
@@ -82,6 +82,6 @@ Museum2_Flag1_Text_TM::
 	.string "TM01 contains FOCUS PUNCH.$"
 
 Museum2_Flag1_Text_After::
-	.string "PROF. HYVL: Our proof is complete.\n"
+	.string "PROF. HYVEL: Our proof is complete.\n"
 	.string "Keep studying.$"
 

@@ -31,6 +31,7 @@ LagerhalleArena_EventScript_Woerner_AfterWin::
     msgbox LagerhalleArena_Text_Woerner_GaveBadge, MSGBOX_DEFAULT
     waitfanfare
     closemessage
+    giveitem ITEM_TM91, 1
 
     goto LagerhalleArena_End
 

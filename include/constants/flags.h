@@ -1311,8 +1311,8 @@
 #define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0 // CTF Gym 1 Hyvel besiegt
 #define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1 // CFT Gym 2 besiegt Houvert
 #define FLAG_DEFEATED_MAUVILLE_GYM                                  0x4F2 // CTF Gym 3 besiegt Wörner
-#define FLAG_DEFEATED_LAVARIDGE_GYM                                 0x4F3 // CTF Gym 4 besiegt 
-#define FLAG_DEFEATED_PETALBURG_GYM                                 0x4F4 // CTF Gym 5 besiegt 
+#define FLAG_DEFEATED_LAVARIDGE_GYM                                 0x4F3 // CTF Gym 4 besiegt Santa
+#define FLAG_DEFEATED_PETALBURG_GYM                                 0x4F4 // CTF Gym 5 besiegt Judge
 #define FLAG_DEFEATED_FORTREE_GYM                                   0x4F5 // CTF Gym 6 besiegt KALI
 #define FLAG_DEFEATED_MOSSDEEP_GYM                                  0x4F6 // CTF Gym 7 besiegt Rybbel
 #define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7 //CTF Gym 8 besiegt BAMBERGER

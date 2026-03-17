@@ -16,7 +16,7 @@
   "object_events": [
     {
       "local_id": "LOCALID_S_BAMBERGER",
-      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M",
       "x": 5,
       "y": 6,
       "elevation": 0,

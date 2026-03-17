@@ -16,7 +16,7 @@
   "object_events": [
     {
       "local_id": "LOCALID_SANTA",
-      "graphics_id": "OBJ_EVENT_GFX_BRAWLY",
+      "graphics_id": "OBJ_EVENT_GFX_MAUVILLE_OLD_MAN_UNUSED2",
       "x": 5,
       "y": 4,
       "elevation": 0,

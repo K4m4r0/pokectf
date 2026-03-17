@@ -153,6 +153,7 @@ RybbelPreForest_EventScript_RybbelBadgeScene::
 	setflag FLAG_BADGE07_GET
 	playfanfare MUS_OBTAIN_BADGE
 	waitfanfare
+	giveitem ITEM_TM40, 1
 RybbelPreForest_EventScript_RybbelBadgeScene_After::
 	msgbox RybbelPreForest_Text_RybbelBadgeAfter, MSGBOX_DEFAULT
 	applymovement LOCALID_RYBBEL_PRE_FOREST_RYBBEL, RybbelPreForest_Movement_RybbelExitDown
@@ -319,7 +320,7 @@ RybbelPreForest_Movement_RybbelExitDown:
 	step_end
 
 RybbelPreForest_Text_RybbelPlace:
-	.string "Prof. Rybbel: This is the place.$"
+	.string "PROF. RYBBEL: This is the place.$"
 
 RybbelPreForest_Text_RybbelQuiet:
 	.string "Quiet.\nFar away from the campus.$"
@@ -357,7 +358,7 @@ RybbelPreForest_Text_RybbelTurnOn:
 	.string "Let's see\nwhat lies beneath.$"
 
 RybbelPreForest_Text_RybbelLookBeneath:
-	.string "Prof. Rybbel: Look beneath.$"
+	.string "PROF. RYBBEL: Look beneath.$"
 
 RybbelPreForest_Text_TerminalPrompt:
 	.string "Enter the Flag.$"
@@ -375,7 +376,7 @@ RybbelPreForest_Text_BeneathSign:
 	.string "BENEATH: UkVWM1JTRUlU$"
 
 RybbelPreForest_Text_RybbelInteresting:
-	.string "Prof. Rybbel: ...Interesting.\p"
+	.string "PROF. RYBBEL: ...Interesting.\p"
 	.string "So you actually managed\nto see beneath the system.$"
 
 RybbelPreForest_Text_Vortex:
@@ -383,34 +384,34 @@ RybbelPreForest_Text_Vortex:
 	.string "The air becomes cold.$"
 
 RybbelPreForest_Text_RybbelGiratina:
-	.string "Prof. Rybbel: Giratina...\p"
+	.string "PROF. RYBBEL: Giratina...\p"
 	.string "The ruler of the world beneath ours.\p"
 	.string "Seems like your little\nexperiment woke it up.$"
 
 RybbelPreForest_Text_RybbelQuestion:
-	.string "Prof. Rybbel: Tell me, {PLAYER}.\p"
+	.string "PROF. RYBBEL: Tell me, {PLAYER}.\p"
 	.string "Who deserves the chance\nto face a being like that?\p"
 	.string "The one who discovered it?\p"
 	.string "Or the one who understands it?$"
 
 RybbelPreForest_Text_RybbelBattleSetup:
-	.string "Prof. Rybbel: Let's settle this properly.\p"
+	.string "PROF. RYBBEL: Let's settle this properly.\p"
 	.string "A POKéMON battle.\p"
 	.string "Show me what you learned\nbeneath the surface.$"
 
 RybbelPreForest_Text_RybbelBattleIntro:
-	.string "Prof. Rybbel: No notes. No safety nets.\p"
+	.string "PROF. RYBBEL: No notes. No safety nets.\p"
 	.string "Only analysis.$"
 
 RybbelPreForest_Text_RybbelBattleDefeat:
-	.string "Prof. Rybbel: Hah... You overwhelmed me.$"
+	.string "PROF. RYBBEL: Hah... You overwhelmed me.$"
 
 RybbelPreForest_Text_RybbelPostBattle:
-	.string "Prof. Rybbel: Good.\p"
+	.string "PROF. RYBBEL: Good.\p"
 	.string "You earned the right to face whatever\nlies beneath.$"
 
 RybbelPreForest_Text_RybbelBadgeIntro:
-	.string "Prof. Rybbel: Haha… impressive.\p"
+	.string "PROF. RYBBEL: Haha… impressive.\p"
 	.string "I knew you had potential.\p"
 	.string "First you reached\nbeneath the system…\p"
 	.string "and now you proved it\nin battle as well.\p"
@@ -418,7 +419,7 @@ RybbelPreForest_Text_RybbelBadgeIntro:
 	.string "But you… you looked\nbeneath the surface.\p"
 	.string "A challenge like this deserves\nmore than just words.\p"
 	.string "As professor of cybersecurity…\p"
-	.string "This is the Beneath Badge.\p"
+	.string "This is the BENEATH BADGE.\p"
 	.string "It is given to trainers who know how\nto uncover hidden layers.$"
 
 RybbelPreForest_Text_RybbelBadgeAfter:
@@ -429,5 +430,5 @@ RybbelPreForest_Text_RybbelBadgeAfter:
 
 
 RybbelPreForest_Text_RybbelPostPrompt:
-	.string "Prof. Rybbel: You earned your chance.\p"
+	.string "PROF. RYBBEL: You earned your chance.\p"
 	.string "Step forward and face what's waiting.$"

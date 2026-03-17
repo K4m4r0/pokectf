@@ -15561,7 +15561,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_CUT_TOOL] =
     {
-        .name = ITEM_NAME("Cut Item"),
+        .name = ITEM_NAME("Hedge Clippers"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A handy tool that\n"
@@ -15641,7 +15641,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_ROCK_SMASH_TOOL] =
     {
-        .name = ITEM_NAME("Rock Smash Item"),
+        .name = ITEM_NAME("Pickaxe"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A sturdy tool for\n"
@@ -15657,7 +15657,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_WATERFALL_TOOL] =
     {
-        .name = ITEM_NAME("Waterfall Item"),
+        .name = ITEM_NAME("Outboard Motor"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Enables climbing\n"
@@ -15673,10 +15673,10 @@ const struct Item gItemsInfo[] =
 
     [ITEM_DIVE_TOOL] =
     {
-        .name = ITEM_NAME("Dive Item"),
+        .name = ITEM_NAME("Scuba Gear"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A diving apparatus\n"
+            "Diving Equipment\n"
             "for exploring the\n"
             "ocean floor."),
         .importance = 1,
@@ -15698,8 +15698,8 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseCB_SecretPhoto,   // <-- unser Viewer-Callback
-        .iconPic = gItemIcon_TownMap,            // Platzhalter (erstmal)
-        .iconPalette = gItemIconPalette_TownMap, // Platzhalter (erstmal)
+        .iconPic = gItemIcon_TownMap,            
+        .iconPalette = gItemIconPalette_TownMap, 
     },
 
     [ITEM_GAME_BOY_CART] =

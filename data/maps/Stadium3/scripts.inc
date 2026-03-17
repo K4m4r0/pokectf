@@ -32,7 +32,7 @@ Stadium3_EventScript_Takao_AfterBattle::
     closemessage
 
     @ TM Reward (leicht änderbar)
-    giveitem ITEM_TM01, 1
+    giveitem ITEM_TM46, 1
     goto_if_eq VAR_RESULT, 0, Stadium3_Takao_BagFull
 
     msgbox Stadium3_Text_TMReceived, MSGBOX_DEFAULT
@@ -73,10 +73,12 @@ Stadium3_Text_TakaoDefeated::
     .string "Impressive. You passed.$"
 
 Stadium3_Text_Reward::
-    .string "You earned the 8th Badge!$"
+    .string "You earned the FORENSICS Badge!$"
 
 Stadium3_Text_TMReceived::
-    .string "And take this TM.$"
+    .string "And take this TM. \n"
+    .string "It contains the move THIEF!\p"
+    .string "Number 46, get it?$"
 
 Stadium3_Text_BagFull::
     .string "Your Bag is full.$"

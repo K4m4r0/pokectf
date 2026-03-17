@@ -15,7 +15,8 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "local_id": "LOCALID_PROF_JUDGE",
+      "graphics_id": "OBJ_EVENT_GFX_BRAWLY",
       "x": 7,
       "y": 14,
       "elevation": 0,

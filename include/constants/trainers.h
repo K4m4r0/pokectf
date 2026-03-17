@@ -113,9 +113,15 @@
 #define TRAINER_PIC_ROCKET                93
 #define TRAINER_PIC_ORAGGLE               94
 #define TRAINER_PIC_HOUVERT               95
+#define TRAINER_PIC_HYVEL                 96
+#define TRAINER_PIC_JUDGE                 97
+#define TRAINER_PIC_SANTA                 98
+#define TRAINER_PIC_WOERNER               99
+#define TRAINER_PIC_KALI                  100
+#define TRAINER_PIC_FARMER                101
 
 //Count immer Erhöhen!
-#define TRAINER_PIC_COUNT                 96
+#define TRAINER_PIC_COUNT                 102
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

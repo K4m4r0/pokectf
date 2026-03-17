@@ -101,7 +101,7 @@ FinaleFarmer_Text_Dots:
     .string "...$"
 
 FinaleFarmer_Text_Intro:
-    .string "You made it.\n"
+    .string "PROF. FARMER: You made it.\n"
     .string "Not by luck, by method.\p"
     .string "By curiosity sharpened into skill.\n"
     .string "This is the final lab.\p"
@@ -116,7 +116,7 @@ FinaleFarmer_Text_Intro:
     .string "Show me your proof.$"
 
 FinaleFarmer_Text_Intro_Gengar:
-    .string "...\p"
+    .string "PROF. FARMER: ...\p"
     .string "That presence in your team...\n"
     .string "A symbol with teeth.\p"
     .string "A reminder that silly vectors\n"
@@ -126,17 +126,17 @@ FinaleFarmer_Text_Intro_Gengar:
     .string "Let's see if your defenses hold.$"
 
 FinaleFarmer_Text_Lose:
-    .string "A system can be restarted.\n"
+    .string "PROF. FARMER: A system can be restarted.\n"
     .string "A mind can be rebuilt.\p"
     .string "Return when you're ready.$"
 
 FinaleFarmer_Text_AfterBattle:
-    .string "Impressive.\n"
+    .string "PROF. FARMER: Impressive.\n"
     .string "You didn't just win,\p"
     .string "you validated your approach.$"
 
 FinaleFarmer_Text_VictorySpeech:
-    .string "That's it.\n"
+    .string "PROF. FARMER: That's it.\n"
     .string "No shortcuts.\p"
     .string "No exploits without ethics.\p"
     .string "You demonstrated analysis,\n"
@@ -146,7 +146,7 @@ FinaleFarmer_Text_VictorySpeech:
     .string "From student to specialist.$"
 
 FinaleFarmer_Text_BadgeReceived:
-    .string "You received the\n"
+    .string "PROF. FARMER: You received the\n"
     .string "DIGITAL TECHNOLOGY BADGE!\p"
     .string "This badge marks the completion\n"
     .string "of the program.\p"
@@ -154,21 +154,21 @@ FinaleFarmer_Text_BadgeReceived:
     .string "earned, not given.$"
 
 FinaleFarmer_Text_After:
-    .string "You've earned it.\n"
+    .string "PROF. FARMER: You've earned it.\n"
     .string "Carry that badge like a key\n"
     .string "and like a responsibility.$"
 
 FinaleFarmer_Text_CannotBattle:
-    .string "You have no usable Pokemon.$"
+    .string "PROF. FARMER: You have no usable Pokemon.$"
 
 FinaleFarmer_Text_DiveToolIntro:
-    .string "You have found all the flags and\n"
+    .string "PROF. FARMER: You have found all the flags and\n"
     .string "successfully completed your studies.\p"
     .string "You can now explore the rest of the\n"
     .string "world. This might help you:$"
 
 FinaleFarmer_Text_DiveToolBagFull:
-    .string "Your BAG is full.\n"
+    .string "PROF. FARMER: Your BAG is full.\n"
     .string "Come back after making space.$"
 
 
