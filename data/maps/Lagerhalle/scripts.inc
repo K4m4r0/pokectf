@@ -4,6 +4,7 @@ Lagerhalle_MapScripts::
 
 
 Lagerhalle_OnLoad:
+    setflag FLAG_ZWISCHENSTUECK_PASSWORT_GESAGT
     goto_if_unset FLAG_CTF_FLAG3_CORRECT, Lagerhalle_OnLoad_End
 
     setmetatile 25, 1, 0x2CB, FALSE
@@ -71,7 +72,7 @@ Lagerhalle_Text_TerminalAlreadyOpen::
 
 Lagerhalle_Text_TerminalCorrect::
     .string "Access granted. \n"
-    .string "Rock removed.$"
+    .string "Door opened.$"
 
 
 

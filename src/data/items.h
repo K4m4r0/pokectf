@@ -9355,14 +9355,14 @@ const struct Item gItemsInfo[] =
 
     [ITEM_EXP_SHARE] =
     {
-        .name = ITEM_NAME("Exp. Share"),
+        .name = ITEM_NAME("Op Exp. Share"),
         .holdEffect = HOLD_EFFECT_EXP_SHARE,
         #if I_EXP_SHARE_ITEM >= GEN_6
             .price = 0,
             .importance = 1,
             .description = COMPOUND_STRING(
                 "This device gives\n"
-                "exp. to other\n"
+                "exp. to all\n"
                 "party members."),
             .pocket = POCKET_KEY_ITEMS,
         #else

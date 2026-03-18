@@ -1,44 +1,41 @@
 HINTERHOF_MapScripts::
 	.byte 0
 
-@ Optional einstellbar
-#define I3C_AND_LEVEL 20
-
+@ =========================================================
+@ Wildes I3C_AND
+@ =========================================================
 HINTERHOF_EventScript_I3CAndObject::
-    lock
-    faceplayer
+	lockall
+	faceplayer
 
-    goto_if_set FLAG_I3C_AND_CAUGHT, I3CAnd_End
+	goto_if_set FLAG_I3C_AND_CAUGHT, HINTERHOF_I3CAnd_End
 
-    msgbox HINTERHOF_Text_What, MSGBOX_DEFAULT
+	msgbox HINTERHOF_Text_What, MSGBOX_DEFAULT
+	closemessage
 
-    playmoncry SPECIES_I3C_AND, CRY_MODE_ENCOUNTER
-    delay 40
-    waitmoncry
+	setwildbattle SPECIES_I3C_AND, 25, ITEM_SOFT_SAND
+	specialvar VAR_RESULT, BattleSetup_StartLegendaryBattle
+	waitstate
 
-    setwildbattle SPECIES_I3C_AND, I3C_AND_LEVEL
-    specialvar VAR_RESULT, BattleSetup_StartLegendaryBattle
-    waitstate
+	@ B_OUTCOME_CAUGHT = 7
+	compare VAR_RESULT, 7
+	goto_if_eq HINTERHOF_I3CAnd_Caught
 
-    @ Wenn gefangen -> Flag setzen (dann ist es dauerhaft weg)
-    compare VAR_RESULT, 1
-    goto_if_eq I3CAnd_Caught
+	releaseall
+	end
 
-I3CAnd_End:
-    release
-    end
+HINTERHOF_I3CAnd_Caught:
+	setflag FLAG_I3C_AND_CAUGHT
+	removeobject LOCALID_I3C_AND_OBJ
+	releaseall
+	end
 
-I3CAnd_Caught:
-    setflag FLAG_I3C_AND_CAUGHT
-    removeobject LOCALID_I3C_AND_OBJ
-    release
-    end
+HINTERHOF_I3CAnd_End:
+	releaseall
+	end
 
 
 HINTERHOF_Text_What:
-	.string "My name is STEVEN.\p"
-	.string "I'm interested in rare stones,\n"
-	.string "so I travel here and there.\p"
-	.string "Oh?\n"
-	.string "A LETTER for me?$"
-
+	.string "This poor POKéMON was just thrown\n"
+	.string "in the trash. Oh crap, it's\p"
+	.string "attacking!$"

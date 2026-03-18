@@ -185,7 +185,7 @@ Klassenzimmer_SoEn_Text_Story:
     .string "are using a Raspberry Pi. We will\p"
     .string "use it to program a small script\n"
     .string "that allows us to record data. The\p"
-    .string "best script wins a Powerglove!$"
+    .string "best script wins a Prize!$"
 
 Klassenzimmer_SoEn_Text_StrengthTool_Blabla:
     .string "APPLES: Excellent work {PLAYER}.\n"

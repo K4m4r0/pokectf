@@ -51,3 +51,32 @@ WasserturmLobby_Text_NurseHealed:
 WasserturmLobby_Text_NurseDecline:
     .string "We hope to see you again!$"
 
+
+
+
+
+WasserturmLobby_EventScript_SetBridgeFlag::
+    lock
+    faceplayer
+
+    goto_if_set FLAG_FLAG8_BRIDGE_SET, WasserturmLobby_BridgeFlag_Already
+
+    setflag FLAG_FLAG8_BRIDGE_SET
+    msgbox WasserturmLobby_Text_BridgeFlagSet, MSGBOX_DEFAULT
+    release
+    end
+
+WasserturmLobby_BridgeFlag_Already:
+    msgbox WasserturmLobby_Text_BridgeFlagAlready, MSGBOX_DEFAULT
+    release
+    end
+
+
+WasserturmLobby_Text_BridgeFlagSet:
+    .string "DEBUG: Bridge flag set.\n"
+    .string "Return to the bridge room.$"
+
+WasserturmLobby_Text_BridgeFlagAlready:
+    .string "DEBUG: Bridge flag is already set.$"
+
+

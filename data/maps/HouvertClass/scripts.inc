@@ -387,7 +387,7 @@ HouvertClass_Text_HouvertHowever:
 	.string "PROF. HOUVERT: However.\p"
 	.string "This is the DHBW.\p"
 	.string "To pass this semester...\n"
-	.string "You will defeat me in battle.$"
+	.string "You have to defeat me in battle.$"
 
 HouvertClass_Text_HouvertBattleChallenge:
 	.string "PROF. HOUVERT: Let us proceed.$"

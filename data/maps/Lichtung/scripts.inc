@@ -1,7 +1,7 @@
 Lichtung_MapScripts::
     .byte 0
 
-    .equ LICHTUNG_BULBASAUR_LEVEL, 15
+    .equ LICHTUNG_BULBASAUR_LEVEL, 30
 
 
 @ =========================================================

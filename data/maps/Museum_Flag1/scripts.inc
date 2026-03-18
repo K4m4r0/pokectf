@@ -536,22 +536,22 @@ Museum_Flag1_Text_Girl:
 
 
 Museum_Flag1_Text_Sign_M:
-	.string "O$"
+	.string "M$"
 
 Museum_Flag1_Text_Sign_X:
-	.string "Z$"
+	.string "X$"
 
 Museum_Flag1_Text_Sign_S:
-	.string "F$"
+	.string "S$"
 
 Museum_Flag1_Text_Sign_Q:
-	.string "U$"
+	.string "Q$"
 
 Museum_Flag1_Text_Sign_N:
-	.string "P$"
+	.string "N$"
 
 Museum_Flag1_Text_Sign_D:
-	.string "S$"
+	.string "D$"
 
 Museum_Flag1_Text_Roman:
     .string "The only picture that TEAM ROCKET\n"

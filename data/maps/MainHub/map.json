@@ -105,6 +105,13 @@
       "elevation": 0,
       "dest_map": "MAP_KLASSENZIMMER_LAST",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_DEBUG",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

@@ -3,7 +3,7 @@ RingUntenE4_MapScripts::
     map_script MAP_SCRIPT_ON_TRANSITION, RingUntenE4_OnEnter
     .byte 0
 
-    .equ RINGUNTENE4_MEW_LEVEL, 30
+    .equ RINGUNTENE4_MEW_LEVEL, 40
 
 RingUntenE4_OnEnter:
     @ Spy-Objekte immer verstecken

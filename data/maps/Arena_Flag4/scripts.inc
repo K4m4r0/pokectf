@@ -28,6 +28,7 @@ Arena_Flag4_EventScript_Leader::
 	setflag FLAG_BADGE04_GET
 	setflag FLAG_DEFEATED_LAVARIDGE_GYM
 	setflag FLAG_CTF_GYM4_DEFEATED
+	setflag FLAG_LUDWIGSHAFEN_REGEN
 
 	msgbox Arena_Flag4_Text_Win, MSGBOX_DEFAULT
 	closemessage
@@ -56,18 +57,18 @@ Arena_Flag4_After::
 
 
 Arena_Flag4_Text_Intro::
-	.string "SANTA: It's time for your exam.\p"
+	.string "PROF. SANTA: It's time for your exam.\p"
 	.string "Show me what you've learned!$"
 
 Arena_Flag4_Text_Defeat::
-	.string "SANTA: Correct... enough.$"
+	.string "PROF. SANTA: Correct... enough.$"
 
 Arena_Flag4_Text_Lost::
-	.string "SANTA: Not bad, but you need\n"
+	.string "PROF. SANTA: Not bad, but you need\n"
 	.string "to try again.$"
 
 Arena_Flag4_Text_Win::
-	.string "SANTA: Excellent!\n"
+	.string "PROF. SANTA: Excellent!\n"
 	.string "You proved yourself worthy.\p"
 	.string "Take this, the SCRUM BADGE.$"
 
@@ -78,5 +79,5 @@ Arena_Flag4_Text_TM::
 	.string "TM89 contains U-TURN.$"
 
 Arena_Flag4_Text_After::
-	.string "SANTA: Our proof is complete.\n"
+	.string "PROF. SANTA: Our proof is complete.\n"
 	.string "Keep studying.$"

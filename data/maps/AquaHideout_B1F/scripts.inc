@@ -120,7 +120,7 @@ AquaHideout_B1F_Text_Grunt2PostBattle:
 
 
 AquaHideout_B1F_Text_Grunt3Intro:
-	.string "YOu are not supposed to be\n"
+	.string "You are not supposed to be\n"
 	.string "here. I'll beat the shit out\p"
 	.string "of you!$"
 

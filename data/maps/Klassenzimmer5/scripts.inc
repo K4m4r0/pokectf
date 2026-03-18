@@ -1,24 +1,29 @@
 Klassenzimmer5_MapScripts::
-    map_script MAP_SCRIPT_ON_TRANSITION, Klassenzimmer5_OnTransition
-    .byte 0
+	map_script MAP_SCRIPT_ON_TRANSITION, Klassenzimmer5_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Klassenzimmer5_OnFrame
+	.byte 0
 
-    .equ CMP_EQ, 1
-    .equ CMP_NE, 5
-
-@ =========================================================
-@ First entry text (once)
-@ =========================================================
 Klassenzimmer5_OnTransition::
-    checkflag FLAG_KLASSENZIMMER5_FIRST_ENTRY
-    compare VAR_RESULT, 1
-    goto_if CMP_EQ, Klassenzimmer5_OnTransition_End
+	goto_if_set FLAG_KLASSENZIMMER5_FIRST_ENTRY, Klassenzimmer5_OnTransition_End
+	setvar VAR_TEMP_0, 0
+	end
 
-    setflag FLAG_KLASSENZIMMER5_FIRST_ENTRY
-    lockall
-    msgbox Klassenzimmer5_Text_FirstEntry, MSGBOX_DEFAULT
-    releaseall
 Klassenzimmer5_OnTransition_End::
-    end
+	setvar VAR_TEMP_0, 1
+	end
+
+Klassenzimmer5_OnFrame::
+	map_script_2 VAR_TEMP_0, 0, Klassenzimmer5_EventScript_FirstEntry
+	.2byte 0
+
+Klassenzimmer5_EventScript_FirstEntry::
+	setvar VAR_TEMP_0, 1
+	setflag FLAG_KLASSENZIMMER5_FIRST_ENTRY
+
+	lockall
+	msgbox Klassenzimmer5_Text_FirstEntry, MSGBOX_DEFAULT
+	releaseall
+	end
 
 @ =========================================================
 @ Cut Tool pickup

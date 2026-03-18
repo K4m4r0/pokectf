@@ -1,6 +1,47 @@
 Ludwigshafen_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, Ludwigshafen_OnTransition
     .byte 0
 
+Ludwigshafen_OnTransition::
+    goto_if_set FLAG_LUDWIGSHAFEN_REGEN, Ludwigshafen_OnTransition_Rain
+
+    resetweather
+    doweather
+    end
+
+Ludwigshafen_OnTransition_Rain:
+    setweather WEATHER_RAIN
+    @ wenn du es heftiger willst, stattdessen:
+    @ setweather WEATHER_DOWNPOUR
+    doweather
+    end
+
+
+Ludwigshafen_EventScript_StormBlock::
+    goto_if_unset FLAG_LUDWIGSHAFEN_REGEN, Ludwigshafen_StormBlock_End
+
+    lockall
+    msgbox Ludwigshafen_Text_StormBlock, MSGBOX_DEFAULT
+    closemessage
+
+    applymovement LOCALID_PLAYER, Ludwigshafen_Movement_StormPushBack
+    waitmovement 0
+
+    releaseall
+    end
+
+Ludwigshafen_StormBlock_End:
+    end
+
+Ludwigshafen_Movement_StormPushBack:
+    walk_left
+    walk_left
+    step_end
+
+Ludwigshafen_Text_StormBlock:
+    .string "The storm is way too strong.\n"
+    .string "I can't go back that way.$"
+    
 
 @ Trigger: beim Drauftreten wird das Intro einmalig abgespielt
 Ludwigshafen_EventScript_IntroTrigger::

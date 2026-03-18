@@ -15676,11 +15676,11 @@ Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Arbok
-Level: 4
+Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Weezing
-Level: 4
+Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -15691,7 +15691,6 @@ Class: Professor
 Pic: Hyvel
 Gender: Male
 Music: Male
-Items: Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -15699,13 +15698,18 @@ Plusle
 Level: 5
 Shiny: Yes
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Play Nice
+- Thunder Wave
 
 
 Minun
 Level: 5
 Shiny: Yes
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
+- Tackle
+- Play Nice
+- Thunder Wave
 
 SPECIES_UNOWN_H
 Level: 4
@@ -15840,7 +15844,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Blackhansa
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -15848,16 +15852,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Zubat
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Carvanha
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Blackhansa
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -15865,17 +15869,17 @@ Double Battle: No
 AI: Check Bad Move
 
 Carvanha
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Zubat
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Blackhansa
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
@@ -15883,29 +15887,29 @@ Double Battle: No
 AI: Check Bad Move
 
 Zubat
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Carvanha
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
+Class: Blackhansa
+Pic: Aqua Grunt F
+Gender: Female
 Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Carvanha
-Level: 8
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -15929,11 +15933,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Bagon
-Level: 9
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dragon Breath
 - Headbutt
@@ -15950,11 +15954,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Zubat
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wingull
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HUGH ===
@@ -15967,11 +15971,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Carvanha
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wingull
-Level: 9
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -15985,11 +15989,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Swellow
-Level: 9
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Electrike
-Level: 10
+Level: 12
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Quick Attack
 - Roar
@@ -16007,15 +16011,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Magnemite
-Level: 8
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Baltoy
-Level: 9
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Klang
-Level: 9
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -17139,6 +17143,12 @@ Level: 32
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 
+
+/*-------------------------------------*/
+/*-----------WayToCafeteria----------------*/
+/*-----------schon vorher bekämpfbar----------*/
+
+
 === TRAINER_WIWI_M_2 ===
 Name: JULIAN
 Class: Rich Boy
@@ -17149,11 +17159,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Meowth-Alola
-Level: 32
+Level: 12
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Trubbish
-Level: 32
+Level: 12
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_WIWI_M_3 ===
@@ -17166,11 +17176,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Yungoos
-Level: 32
+Level: 12
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Persian-Alola
-Level: 33
+Level: 12
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 
@@ -17185,11 +17195,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Meowth
-Level: 31
+Level: 12
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Smeargle
-Level: 32
+Level: 12
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_WIWI_F_1 ===
@@ -17202,11 +17212,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Minccino
-Level: 31
+Level: 12
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Furfrou
-Level: 32
+Level: 12
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 

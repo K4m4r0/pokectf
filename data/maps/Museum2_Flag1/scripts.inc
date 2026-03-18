@@ -28,6 +28,7 @@ Museum2_Flag1_EventScript_Hevl::
 	setflag FLAG_BADGE01_GET
 	setflag FLAG_CTF_GYM1_DEFEATED
 	setflag FLAG_DEFEATED_RUSTBORO_GYM
+	clearflag FLAG_EXP_SHARE_GUY
 	removeobject LOCALID_BLOCKER
 
 	msgbox Museum2_Flag1_Text_Win, MSGBOX_DEFAULT

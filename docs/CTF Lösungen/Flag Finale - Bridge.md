@@ -3,16 +3,20 @@
 Goal: Make the bridge appear in **Bridgeroom** by setting the save flag  
 `FLAG_FLAG8_BRIDGE_SET` with ID **0x4EE**.
 
-Your ROM checks this flag on **map load**. If it’s set, the map script places the bridge metatiles and redraws the map after checking the terminal.  
-So the correct workflow is: **edit save → fix checksum → load save → bridge appears instantly**.
+Important: This solution might only work with a .sav file made by the mGBA Emulator. Here the flag is **not** located at the “vanilla” offset you might expect from `offsetof(SaveBlock1, flags)`. The save layout includes an additional shifting/indirection, so you must use the **verified on-save location** below (or use the provided patcher).
+
+Also note: The bridge tiles are maybe only **materialized when you interact with the sign** in Bridgeroom.
+
+Workflow: **edit save → fix checksum → load save → read sign → bridge appears**.
 
 ---
 
 ## What you need
 
-- Your emulator `.sav` file (**make a backup**)
+- Your emulator save file (`.sav` or `.srm`) (**make a backup**)
 - A hex editor (HxD / ImHex / 010 Editor / etc.)
 - A way to compute a 16-bit checksum (a small script/tool is easiest)
+- (Recommended) The provided GUI patcher: `bridge_patcher_current_build_gui.py`
 
 ---
 
@@ -20,8 +24,8 @@ So the correct workflow is: **edit save → fix checksum → load save → bridg
 
 1. Stand in **Bridgeroom** where the missing bridge should be.
 2. Save the game normally (no save states).
-3. Close the emulator completely (so it flushes the `.sav`).
-4. Copy the `.sav` file and keep a backup (e.g. `save_before_bridge.sav`).
+3. Close the emulator completely (so it flushes the save file).
+4. Copy the save file and keep a backup (e.g. `save_before_bridge.sav`).
 
 ---
 
@@ -41,58 +45,27 @@ Only sectors with the correct **signature** and **checksum** are considered vali
 
 ---
 
-## Step 2 — Key facts for THIS ROM (no guessing required)
+## Step 2 — Key facts for THIS ROM (current build)
 
-From the project build:
+For the current build, the **verified** location of `FLAG_FLAG8_BRIDGE_SET (0x4EE)` is:
 
-- `offsetof(struct SaveBlock1, flags) = 0x1348`
-- Sector data size = `0xF80` (3968 bytes)
-- SaveBlock1 is split across sector IDs **1..4**
-- Therefore:
+- Sector **ID = 2**
+- Byte offset inside sector data: **0x38D**
+- Bit mask: **0x40**
 
-**Flags begin in sector ID `2`**  
-because `1 + (0x1348 // 0xF80) = 2`
+So the patch is:
 
-**Flags begin at offset `0x3C8` within that sector’s data**  
-because `0x1348 % 0xF80 = 0x3C8`
+- `sector2.data[0x38D] |= 0x40`
 
-So:
-- Find sector **ID = 2**
-- The first flag byte is at sector data offset **0x3C8**
+Do this in **Slot 0** and **Slot 1** for maximum reliability.
 
 ---
 
-## Step 3 — Compute which bit to set for flag 0x4EE
+## Step 3 — Find sector ID 2 in the save file (rotation-safe)
 
-Flags are bit-packed: **8 flags per byte**.
-
-Flag ID: `0x4EE`
-
-- `byte_index = 0x4EE // 8 = 0x9D`
-- `bit_index  = 0x4EE % 8 = 6`
-- `mask       = 1 << 6 = 0x40`
-
-So you must set:
-- `flags[0x9D] |= 0x40`
-
-Because flags start at `0x3C8` in sector ID 2, the target byte in that sector is:
-
-- `0x3C8 + 0x9D = 0x465`
-
-✅ **Target location inside sector ID 2:** `data[0x465]`  
-✅ **Operation:** `data[0x465] = data[0x465] | 0x40`
-
----
-
-## Step 4 — Find sector ID 2 in the save file (rotation-safe)
-
-The save writes sectors in a rotated order, so you must identify the sector by its footer ID.
-
-### Slot layout in the .sav file
+### Slot layout in the save file
 - Slot 0 sectors are at file offsets: `0x00000 .. 0x0DFFF`
 - Slot 1 sectors are at file offsets: `0x0E000 .. 0x1BFFF`
-
-Each sector is 0x1000 bytes, so in a hex editor you can scan sector-by-sector.
 
 ### How to locate a valid sector
 For any sector base offset `S`:
@@ -101,17 +74,16 @@ For any sector base offset `S`:
 2. Read sector ID at `S + 0x0FF4` (little-endian u16)
 3. You want the one where sector ID == `0x0002`
 
-Do this in **Slot 0** and also in **Slot 1**.
-(You can patch both slots to avoid worrying about which one is currently active.)
+Do this for **Slot 0** and **Slot 1**.
 
 ---
 
-## Step 5 — Patch the byte (set the flag)
+## Step 4 — Patch the byte (set the flag)
 
 For each slot where you found a valid sector with ID `2`:
 
 1. Go to sector base `S`
-2. Go to `S + 0x465`
+2. Go to `S + 0x38D`
 3. Read the current byte
 4. Set bit 6 by OR-ing with `0x40`
 
@@ -121,15 +93,15 @@ Examples:
 
 ---
 
-## Step 6 — Recalculate and write the sector checksum (mandatory)
+## Step 5 — Recalculate and write the sector checksum (mandatory)
 
 If you don’t update the checksum, the sector becomes invalid and the game may load the other slot.
 
-### 6.1 Checksum algorithm (exactly as the ROM does it)
+### 5.1 Checksum algorithm (exactly as the ROM does it)
 
 Checksum is computed over the sector’s **data region** only.
 
-For sector ID 2 (this part of SaveBlock1), the size is the full `0xF80` bytes.
+For sector ID 2 (SaveBlock1 chunk), the size is the full `0xF80` bytes.
 
 Algorithm:
 1. Interpret the first `0xF80` bytes as little-endian 32-bit words
@@ -137,7 +109,7 @@ Algorithm:
 3. Final checksum (u16) is:
    - `checksum = (sum + (sum >> 16)) & 0xFFFF`
 
-### 6.2 Where to write it
+### 5.2 Where to write it
 Write the resulting u16 (little-endian) to:
 - `S + 0x0FF6`
 
@@ -145,38 +117,28 @@ Do this for each slot you patched.
 
 ---
 
-## Step 7 — Trigger the bridge in-game (required)
+## Step 6 — Trigger the bridge in-game (maybe)
 
-Even after the flag is set correctly in the save file, the bridge tiles are **materialized when you interact with the terminal** in Bridgeroom.
+The bridge tiles are sometimes only materialized when you interact with the sign in Bridgeroom.
 
 1. Load the patched save.
 2. Enter **Bridgeroom**.
-3. Talk to the **terminal**.
-4. If the terminal shows **AUTHORIZED**, the bridge will appear immediately.
+3. Read to the **sign**.
+4. If the sign shows **AUTHORIZED**, the bridge will appear immediately.
 
-If it still shows **OFFLINE**, the save edit was not applied to the file the emulator is using, or the sector checksum was not updated correctly.
-
+If it still shows **OFFLINE**, you likely patched the wrong file (or the emulator overwrote it after patching).
 
 ---
 
 
-
-## Quick reference (everything you need in one place)
+## Quick reference (current build)
 
 - Flag ID: `0x4EE`
-- Sector ID containing flags start: `2`
-- Flags start within that sector’s data: `0x3C8`
-- Flag 0x4EE:
-  - byte index = `0x9D`
-  - bit = `6`
-  - mask = `0x40`
-- Target byte within sector ID 2:
-  - `0x3C8 + 0x9D = 0x465`
+- Sector ID: `2`
+- Target offset: `data[0x38D]`
 - Patch:
-  - `data[0x465] |= 0x40`
+  - `data[0x38D] |= 0x40`
 - Update checksum at:
   - `sector_base + 0x0FF6`
-  - checksum computed over `0xF80` bytes using:
+  - checksum computed over `0xF80` bytes with:
     - `checksum = (sum32 + (sum32 >> 16)) & 0xFFFF`
-
----

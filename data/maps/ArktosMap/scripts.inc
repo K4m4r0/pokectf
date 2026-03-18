@@ -2,7 +2,7 @@ ArktosMap_MapScripts::
     map_script MAP_SCRIPT_ON_TRANSITION, ArktosMap_OnTransition
     .byte 0
 
-    .equ ARTICUNO_LEVEL, 50
+    .equ ARTICUNO_LEVEL, 30
 
 
 @ =========================================================

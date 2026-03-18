@@ -4,25 +4,15 @@ Klassenzimmer_Last_MapScripts::
     map_script MAP_SCRIPT_ON_FRAME_TABLE, Klassenzimmer_Last_OnFrame
     .byte 0
 
-
-@ =========================================================
-@ OnLoad
-@ =========================================================
 Klassenzimmer_Last_OnLoad:
     goto_if_set FLAG_KLASSENZIMMER_LAST_INTRO_DONE, Klassenzimmer_Last_OnLoad_ShowWidefield
-
     setflag FLAG_HIDE_KLASSENZIMMER_LAST_WIDEFIELD
-    removeobject LOCALID_WIDEFIELD
     end
 
 Klassenzimmer_Last_OnLoad_ShowWidefield:
     clearflag FLAG_HIDE_KLASSENZIMMER_LAST_WIDEFIELD
     end
 
-
-@ =========================================================
-@ OnTransition / OnFrame
-@ =========================================================
 Klassenzimmer_Last_OnTransition:
     goto_if_set FLAG_KLASSENZIMMER_LAST_INTRO_DONE, Klassenzimmer_Last_OnTransition_AlreadyDone
     setvar VAR_TEMP_0, 0
@@ -36,10 +26,6 @@ Klassenzimmer_Last_OnFrame:
     map_script_2 VAR_TEMP_0, 0, Klassenzimmer_Last_EventScript_FirstEntry
     .2byte 0
 
-
-@ =========================================================
-@ First entry cutscene
-@ =========================================================
 Klassenzimmer_Last_EventScript_FirstEntry::
     setvar VAR_TEMP_0, 1
     setflag FLAG_KLASSENZIMMER_LAST_INTRO_DONE
@@ -52,21 +38,27 @@ Klassenzimmer_Last_EventScript_FirstEntry::
     clearflag FLAG_HIDE_KLASSENZIMMER_LAST_WIDEFIELD
     addobject LOCALID_WIDEFIELD
 
-    msgbox Klassenzimmer_Last_Text_WidefieldGreeting, MSGBOX_DEFAULT
-    closemessage
-
     applymovement LOCALID_WIDEFIELD, Klassenzimmer_Last_Movement_WidefieldEnter
     waitmovement 0
     copyobjectxytoperm LOCALID_WIDEFIELD
 
-    msgbox Klassenzimmer_Last_Text_WidefieldSpeech, MSGBOX_DEFAULT
+    msgbox Klassenzimmer_Last_Text_WidefieldGreeting, MSGBOX_DEFAULT
     closemessage
 
+    msgbox Klassenzimmer_Last_Text_WidefieldSpeech, MSGBOX_DEFAULT
+    compare VAR_RESULT, FALSE
+
     giveitem ITEM_RNV_TICKET, 1
+    compare VAR_RESULT, FALSE
+    goto_if_eq Klassenzimmer_Last_BagFull
 
     releaseall
     end
 
+Klassenzimmer_Last_BagFull::
+    msgbox Klassenzimmer_Last_Text_BagFull, MSGBOX_DEFAULT
+    releaseall
+    end
 
 @ =========================================================
 @ Widefield talk
@@ -85,6 +77,7 @@ Klassenzimmer_Last_EventScript_WidefieldTalk::
 Klassenzimmer_Last_Movement_PlayerIntro:
     walk_up
     walk_up
+    walk_up  
     walk_left
     walk_left
     face_up
@@ -124,3 +117,5 @@ Klassenzimmer_Last_Text_WidefieldAfter:
     .string "WIDEFIELD: Good luck on your\n"
     .string "final exam!$"
 
+Klassenzimmer_Last_Text_BagFull:
+    .string "Your BAG is full.$"

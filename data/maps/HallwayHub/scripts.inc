@@ -5,9 +5,8 @@ HallwayHub_MapScripts::
     .byte 0
 
 
-
 @ ---------------------------------------------------------
-@ OnLoad: neue Passage nach Sootopolis freischalten
+@ OnLoad: neue Passage oben nach dem Sootopolis-Abschnitt freischalten
 @ ---------------------------------------------------------
 HallwayHub_OnLoad::
     goto_if_unset FLAG_DEFEATED_SOOTOPOLIS_GYM, HallwayHub_OnLoad_End
@@ -25,10 +24,11 @@ HallwayHub_OnLoad::
 HallwayHub_OnLoad_End:
     end
 
+
 @ ---------------------------------------------------------
-@ OnTransition: nur vorbereiten (keine msgbox/lock/movement)
+@ OnTransition:
 @ - Progress-Var aktualisieren
-@ - welche (einmalige) Cutscene als nächstes laufen soll in VAR_TEMP_0 schreiben
+@ - welche einmalige Cutscene als nächstes laufen soll in VAR_TEMP_0 schreiben
 @ ---------------------------------------------------------
 HallwayHub_OnTransition::
     call HallwayHub_UpdateStage
@@ -39,14 +39,14 @@ HallwayHub_OnTransition::
     @ Höchste Priorität: neue Endsemester-Szene nach Sootopolis
     goto_if_set FLAG_DEFEATED_SOOTOPOLIS_GYM, HallwayHub_Check_Sem9
 
-    @ Danach wie gehabt
-    goto_if_set FLAG_DEFEATED_MOSSDEEP_GYM, HallwayHub_Check_Sem8
-    goto_if_set FLAG_DEFEATED_FORTREE_GYM,  HallwayHub_Check_Sem7
-    goto_if_set FLAG_DEFEATED_PETALBURG_GYM, HallwayHub_Check_Sem6
-    goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, HallwayHub_Check_Sem5
-    goto_if_set FLAG_DEFEATED_MAUVILLE_GYM,  HallwayHub_Check_Sem4
-    goto_if_set FLAG_DEFEATED_DEWFORD_GYM,   HallwayHub_Check_Sem3
-    goto_if_set FLAG_DEFEATED_RUSTBORO_GYM,  HallwayHub_Check_Sem2
+    @ Danach regulär weiter
+    goto_if_set FLAG_DEFEATED_MOSSDEEP_GYM,   HallwayHub_Check_Sem8
+    goto_if_set FLAG_DEFEATED_FORTREE_GYM,    HallwayHub_Check_Sem7
+    goto_if_set FLAG_DEFEATED_PETALBURG_GYM,  HallwayHub_Check_Sem6
+    goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM,  HallwayHub_Check_Sem5
+    goto_if_set FLAG_DEFEATED_MAUVILLE_GYM,   HallwayHub_Check_Sem4
+    goto_if_set FLAG_DEFEATED_DEWFORD_GYM,    HallwayHub_Check_Sem3
+    goto_if_set FLAG_DEFEATED_RUSTBORO_GYM,   HallwayHub_Check_Sem2
 
     @ Intro – nur wenn noch nie abgespielt
     goto_if_set FLAG_HH_SEM1_DONE, HallwayHub_Transition_End
@@ -111,7 +111,7 @@ HallwayHub_OnFrame::
 
 
 @ ---------------------------------------------------------
-@ Stage-Var setzen (0..7), damit du Warps per Coord-Events sperren kannst
+@ Stage-Var setzen (0..8), damit du Warps per Coord-Events sperren kannst
 @ 0 = nur Intro-Warp (x0,y4)
 @ 1 = Rustboro frei (x5,y1)
 @ 2 = Dewford frei (x8,y1)
@@ -119,7 +119,8 @@ HallwayHub_OnFrame::
 @ 4 = Lavaridge frei (x18,y1)
 @ 5 = Petalburg frei (x21,y1)
 @ 6 = Fortree frei (x24,y1)
-@ 7 = Mossdeep frei (falls eigener Warp, sonst nur Text/Scene)
+@ 7 = Mossdeep / Finale frei (x29,y4)
+@ 8 = obere Passage frei (x14,y1 / x15,y1)
 @ ---------------------------------------------------------
 HallwayHub_UpdateStage::
     setvar VAR_HALLWAYHUB_STAGE, 0
@@ -172,6 +173,7 @@ HallwayHub_Scene_Sem1::
     waitmovement 0
     releaseall
     warpsilent MAP_KLASSENZIMMER, 1, 0, 0
+    waitstate
     end
 
 HallwayHub_Scene_Sem2::
@@ -185,6 +187,7 @@ HallwayHub_Scene_Sem2::
     waitmovement 0
     releaseall
     warpsilent MAP_HOUVERT_CLASS, 1, 0, 0
+    waitstate
     end
 
 HallwayHub_Scene_Sem3::
@@ -199,6 +202,7 @@ HallwayHub_Scene_Sem3::
     waitmovement 0
     releaseall
     warpsilent MAP_KLASSENZIMMER_SO_EN, 1, 0, 0
+    waitstate
     end
 
 HallwayHub_Scene_Sem4::
@@ -214,6 +218,7 @@ HallwayHub_Scene_Sem4::
     waitmovement 0
     releaseall
     warpsilent MAP_KLASSENZIMMER_4, 1, 0, 0
+    waitstate
     end
 
 HallwayHub_Scene_Sem5::
@@ -229,7 +234,8 @@ HallwayHub_Scene_Sem5::
     applymovement LOCALID_PLAYER, HallwayHub_Move_Sem5
     waitmovement 0
     releaseall
-    warpsilent MAP_KLASSENZIMMER5, 1, 0, 0
+    warpsilent MAP_KLASSENZIMMER5, 0, 0, 0
+    waitstate
     end
 
 HallwayHub_Scene_Sem6::
@@ -246,7 +252,8 @@ HallwayHub_Scene_Sem6::
     applymovement LOCALID_PLAYER, HallwayHub_Move_Sem6
     waitmovement 0
     releaseall
-    warpsilent MAP_HALLWAY_HUB, 0, 0, 0
+    warpsilent MAP_KLASSENZIMMER6, 0, 0, 0
+    waitstate
     end
 
 HallwayHub_Scene_Sem7::
@@ -264,7 +271,8 @@ HallwayHub_Scene_Sem7::
     applymovement LOCALID_PLAYER, HallwayHub_Move_Sem7
     waitmovement 0
     releaseall
-    warpsilent MAP_KLASSENZIMMER_FINALE, 0, 0, 0
+    warpsilent MAP_KLASSENZIMMER_FLAG7, 0, 0, 0
+    waitstate
     end
 
 HallwayHub_Scene_Sem8::
@@ -284,6 +292,7 @@ HallwayHub_Scene_Sem8::
     waitmovement 0
     releaseall
     warpsilent MAP_KLASSENZIMMER_FINALE, 0, 0, 0
+    waitstate
     end
 
 HallwayHub_Scene_Sem9::
@@ -307,11 +316,12 @@ HallwayHub_Scene_Sem9::
     waitse
     releaseall
     warpsilent MAP_KLASSENZIMMER_LAST, 0, 0, 0
+    waitstate
     end
 
 
 @ =========================
-@ Warp-Blocker (für Coord-Events auf den Warp-Kacheln)
+@ Warp-Blocker (für Coord-Events vor den Warp-Kacheln)
 @ =========================
 HallwayHub_EventScript_WarpBlocked::
     lock
@@ -328,7 +338,7 @@ HallwayHub_EventScript_WarpBlocked::
 @ =========================
 HallwayHub_Move_Sem1:
     walk_up
-    walk_left  @ x14
+    walk_left
     walk_left
     walk_left
     walk_left
@@ -346,7 +356,7 @@ HallwayHub_Move_Sem1:
 
 HallwayHub_Move_Sem2:
     walk_up
-    walk_left @ 9x links
+    walk_left
     walk_left
     walk_left
     walk_left
@@ -362,7 +372,6 @@ HallwayHub_Move_Sem2:
 
 HallwayHub_Move_Sem3:
     walk_up
-    walk_left @ 6x links
     walk_left
     walk_left
     walk_left
@@ -375,7 +384,7 @@ HallwayHub_Move_Sem3:
 
 HallwayHub_Move_Sem4:
     walk_up
-    walk_left @ 3x links
+    walk_left
     walk_left
     walk_left
     walk_up
@@ -385,7 +394,7 @@ HallwayHub_Move_Sem4:
 
 HallwayHub_Move_Sem5:
     walk_up
-    walk_right @ 4x rechts
+    walk_right
     walk_right
     walk_right
     walk_right
@@ -396,7 +405,7 @@ HallwayHub_Move_Sem5:
 
 HallwayHub_Move_Sem6:
     walk_up
-    walk_right @ 7x rechts
+    walk_right
     walk_right
     walk_right
     walk_right
@@ -410,7 +419,7 @@ HallwayHub_Move_Sem6:
 
 HallwayHub_Move_Sem7:
     walk_up
-    walk_right @ 10x rechts
+    walk_right
     walk_right
     walk_right
     walk_right
@@ -424,11 +433,9 @@ HallwayHub_Move_Sem7:
     walk_up
     walk_up
     step_end
-
 
 HallwayHub_Move_Sem8:
     walk_up
-    walk_right @ 15x rechts
     walk_right
     walk_right
     walk_right
@@ -443,10 +450,7 @@ HallwayHub_Move_Sem8:
     walk_right
     walk_right
     walk_right
-    step_end
-
-HallwayHub_Move_BumpDown:
-    walk_down
+    walk_right
     step_end
 
 HallwayHub_Move_Sem9:
@@ -456,13 +460,17 @@ HallwayHub_Move_Sem9:
     walk_up
     step_end
 
+HallwayHub_Move_BumpDown:
+    walk_down
+    step_end
+
 
 @ =========================
 @ Texte
 @ =========================
 HallwayHub_Text_Sem1:
     .string "So this is my new university.\n"
-    .string "I'll head over to the room \p"
+    .string "I'll head over to the room\p"
     .string "they mentioned.$"
 
 HallwayHub_Text_Sem2:
@@ -481,15 +489,15 @@ HallwayHub_Text_Sem6:
     .string "Sixth semester, let's go.$"
 
 HallwayHub_Text_Sem7:
-    .string "BoopBoop$"
+    .string "Final lecture it is!$"
 
 HallwayHub_Text_Sem8:
     .string "Hopefully, I'll finally get\n"
     .string "my diploma now.$"
 
-HallwayHub_Text_WarpLocked:
-    .string "It's not time for this room yet.$"
-
 HallwayHub_Text_Sem9:
     .string "Huh? Where did that\n"
     .string "come from?$"
+
+HallwayHub_Text_WarpLocked:
+    .string "It's not time for this room yet.$"

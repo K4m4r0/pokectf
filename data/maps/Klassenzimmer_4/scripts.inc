@@ -55,7 +55,6 @@ Klassenzimmer_4_Movement_PlayerToSeat:
 	walk_up
 	walk_left
 	walk_left
-	walk_left
 	face_up
 	step_end
 

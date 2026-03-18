@@ -117,3 +117,21 @@ Bridgeroom_Text_Terminal_FlagSet:
     .string "Bridge tiles deployed.\p"
 	.string "If you can read this, your patched\n"
 	.string "save was accepted by the game.$"
+
+
+
+Bridgeroom_EventScript_PatchHintNote::
+    lock
+    faceplayer
+    msgbox Bridgeroom_Text_PatchHint, MSGBOX_DEFAULT
+    release
+    end
+
+
+Bridgeroom_Text_PatchHint:
+    .string "DIAGNOSTIC NOTE:\p"
+    .string "Look for SECTION ID 2 in your save.\n"
+    .string "Patch byte 0x38D (inside section data)\n"
+    .string "and set bit 0x40.\p"
+    .string "Then update the section checksum.$"
+

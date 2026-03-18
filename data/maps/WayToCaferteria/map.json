@@ -3,9 +3,9 @@
   "name": "WayToCaferteria",
   "layout": "LAYOUT_WAY_TO_CAFERTERIA",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_CAFETERIA_PATH",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_RAIN",
   "map_type": "MAP_TYPE_NONE",
   "allow_cycling": false,
   "allow_escaping": false,
@@ -148,7 +148,7 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route132_EventScript_Jonathan",
+      "script": "Route132_EventScript_WiwiF1",
       "flag": "0"
     },
     {

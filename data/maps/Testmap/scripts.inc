@@ -150,6 +150,7 @@ Testmap_Movement_SleepLeave:
 	step_end
 
 Testmap_Movement_FaceLeft:
+	walk_down
 	face_left
 	step_end
 
@@ -249,4 +250,48 @@ Testmap_Text_DevHouse:
 
 
 
+@ ================================
+@ EXP SHARE GUY
+@ ================================
+
+
+Testmap_EventScript_ExpShareGuy::
+	lock
+	faceplayer
+	goto_if_set FLAG_ITEM_EXP_SHARE_GUY_RECEIVED, Testmap_ExpShareGuy_After
+
+	msgbox Testmap_Text_ExpShareGuy_First, MSGBOX_DEFAULT
+	giveitem ITEM_EXP_SHARE
+	compare VAR_RESULT, FALSE
+	goto_if_eq Testmap_ExpShareGuy_BagFull
+
+	setflag FLAG_ITEM_EXP_SHARE_GUY_RECEIVED
+	release
+	end
+
+Testmap_ExpShareGuy_After:
+	msgbox Testmap_Text_ExpShareGuy_After, MSGBOX_DEFAULT
+	release
+	end
+
+Testmap_ExpShareGuy_BagFull:
+	msgbox Testmap_Text_ExpShareGuy_BagFull, MSGBOX_DEFAULT
+	release
+	end
+
+
+Testmap_Text_ExpShareGuy_First:
+	.string "Hey, you're the guy who woke me up,\n"
+	.string "right?\p"
+	.string "Thanks for that, otherwise I would've\n"
+	.string "slept through the whole day.\p"
+	.string "Here, take this. I tripped over it\n"
+	.string "earlier.$"
+
+Testmap_Text_ExpShareGuy_After:
+	.string "Hey, how's it going?$"
+
+Testmap_Text_ExpShareGuy_BagFull:
+	.string "Whoa, your BAG is full.\n"
+	.string "Come back after making some space.$"
 

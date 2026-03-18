@@ -1385,3 +1385,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/HotSprings/scripts.inc"
 
 	.include "data/maps/Klassenzimmer_Last/scripts.inc"
+
+	.include "data/maps/Debug/scripts.inc"

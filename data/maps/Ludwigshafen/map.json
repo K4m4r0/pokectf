@@ -91,6 +91,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Ludwigshafen_EventScript_GiftHaunter",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 11,
+      "y": 37,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_REAPER_CLOTH",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_LU_REAPER_CLOTH"
     }
   ],
   "warp_events": [
@@ -190,6 +203,42 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "Ludwigshafen_EventScript_IntroTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "Ludwigshafen_EventScript_StormBlock"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "Ludwigshafen_EventScript_StormBlock"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "Ludwigshafen_EventScript_StormBlock"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "Ludwigshafen_EventScript_StormBlock"
     }
   ],
   "bg_events": [

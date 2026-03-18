@@ -1,7 +1,10 @@
 Neckarau_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Neckarau_OnTransition
 	.byte 0
 
-	.equ NECKARAU_SQUIRTLE_LEVEL, 15
+Neckarau_OnTransition::
+	clearflag FLAG_LUDWIGSHAFEN_REGEN
+	end
 
 
 @ =========================================================
@@ -16,7 +19,7 @@ Neckarau_EventScript_Squirtle::
 	msgbox Neckarau_Text_SquirtleCry, MSGBOX_DEFAULT
 	closemessage
 
-	setwildbattle SPECIES_SQUIRTLE, NECKARAU_SQUIRTLE_LEVEL, ITEM_NONE
+	setwildbattle SPECIES_SQUIRTLE, 30, ITEM_EVIOLITE
 	specialvar VAR_RESULT, BattleSetup_StartLegendaryBattle
 	waitstate
 

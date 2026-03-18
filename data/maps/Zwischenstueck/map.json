@@ -22,6 +22,11 @@
       "map": "MAP_TESTMAP",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_DEBUG",
+      "offset": 0,
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -37,7 +42,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Zwischenstueck_EventScript_PasswordGuard",
-      "flag": "0"
+      "flag": "FLAG_ZWISCHENSTUECK_PASSWORT_GESAGT"
     },
     {
       "local_id": "LOCALID_DAYCARE_MAN",

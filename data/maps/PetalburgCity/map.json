@@ -122,8 +122,8 @@
     {
       "local_id": "LOCALID_PETALBURG_SCOTT",
       "graphics_id": "OBJ_EVENT_GFX_SCOTT",
-      "x": 10,
-      "y": 12,
+      "x": 29,
+      "y": 29,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -227,8 +227,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 2,
-      "y": 10,
+      "x": 0,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_SCOTT_PETALBURG_ENCOUNTER",
       "var_value": "0",
@@ -281,8 +281,8 @@
     },
     {
       "type": "trigger",
-      "x": 2,
-      "y": 13,
+      "x": 3,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_SCOTT_PETALBURG_ENCOUNTER",
       "var_value": "0",
@@ -291,7 +291,7 @@
     {
       "type": "trigger",
       "x": 2,
-      "y": 12,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_SCOTT_PETALBURG_ENCOUNTER",
       "var_value": "0",
@@ -299,8 +299,8 @@
     },
     {
       "type": "trigger",
-      "x": 2,
-      "y": 11,
+      "x": 1,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_SCOTT_PETALBURG_ENCOUNTER",
       "var_value": "0",

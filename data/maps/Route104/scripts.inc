@@ -1229,8 +1229,8 @@ Route104_Text_DriverDead:
 	.string "call the Police!$"
 
 Route104_Text_OfficerTalk:
-    .string "blablaba\n"
-	.string "afasfsafasf$"
+    .string "OFFICER: Thanks for calling us\n"
+	.string "right away....$"
 
 Route104_Text_PhoneFoundIntro:
     .string "{PLAYER}: Hmm, they must have left this here.$"

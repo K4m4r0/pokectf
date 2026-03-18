@@ -694,13 +694,13 @@
 #define FLAG_TESTMAP_FIRST_SEMESTER_SCENE_DONE  0x28F // CTF Testmap First Semester Scene Done
 #define FLAG_NECKARAU_SQUIRTLE_CAUGHT           0x290 // CTF Neckarau Squirtle Caught
 #define FLAG_RINGUNTENE4_MEW_CAUGHT             0x291 // CTF RingUntenE4 Mew Caught
-#define FLAG_UNUSED_0x292  0x292 // Unused Flag
-#define FLAG_UNUSED_0x293  0x293 // Unused Flag
-#define FLAG_UNUSED_0x294  0x294 // Unused Flag
-#define FLAG_UNUSED_0x295  0x295 // Unused Flag
-#define FLAG_UNUSED_0x296  0x296 // Unused Flag
-#define FLAG_UNUSED_0x297  0x297 // Unused Flag
-#define FLAG_UNUSED_0x298  0x298 // Unused Flag
+#define FLAG_ITEM_LU_REAPER_CLOTH               0x292 // CTF Item Lu Reaper Cloth
+#define FLAG_ITEM_BHL_EVIOLITE                  0x293 // CTF Item BHL Eviolite
+#define FLAG_EXP_SHARE_GUY                      0x294 // CTF Exp Share Guy
+#define FLAG_ITEM_EXP_SHARE_GUY_RECEIVED        0x295 // Unused Flag
+#define FLAG_GEN6_EXP_SHARE_ACTIVE              0x296 // Unused Flag
+#define FLAG_ZWISCHENSTUECK_PASSWORT_GESAGT     0x297 // Unused Flag
+#define FLAG_LUDWIGSHAFEN_REGEN                 0x298 // Unused Flag
 #define FLAG_UNUSED_0x299  0x299 // Unused Flag
 #define FLAG_UNUSED_0x29A  0x29A // Unused Flag
 #define FLAG_UNUSED_0x29B  0x29B // Unused Flag

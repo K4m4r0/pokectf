@@ -1257,7 +1257,7 @@
     },
     {
       "id": "MAPSEC_SCIENTIFIC_INSTITUTE",
-      "name": "SCIENTIFIC INSTITUTE"
+      "name": "SCIENTIFIC INST."
     },
     {
       "id": "MAPSEC_SECKENHEIMER_LANDSTRASSE",
@@ -1314,6 +1314,10 @@
     {
       "id": "MAPSEC_LUISENPARK",
       "name": "LUISENPARK"
+    },
+    {
+      "id": "MAPSEC_CAFETERIA_PATH",
+      "name": "CAFETERIA PATH"
     }
   ]
 }
