@@ -330,7 +330,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll1Quiz1::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll1Quiz1, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL1_Q1, TRUE
 	switch VAR_RESULT
-	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 1, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -338,7 +338,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll1Quiz2::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll1Quiz2, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL1_Q2, TRUE
 	switch VAR_RESULT
-	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 2, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -354,7 +354,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll2Quiz1::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll2Quiz1, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL2_Q1, TRUE
 	switch VAR_RESULT
-	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 1, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -362,7 +362,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll2Quiz2::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll2Quiz2, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL2_Q2, TRUE
 	switch VAR_RESULT
-	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 2, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -378,7 +378,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll3Quiz1::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll3Quiz1, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL3_Q1, TRUE
 	switch VAR_RESULT
-	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 1, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -386,7 +386,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll3Quiz2::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll3Quiz2, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL3_Q2, TRUE
 	switch VAR_RESULT
-	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 2, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -402,7 +402,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll4Quiz1::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll4Quiz1, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL4_Q1, TRUE
 	switch VAR_RESULT
-	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 1, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -410,7 +410,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll4Quiz2::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll4Quiz2, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL4_Q2, TRUE
 	switch VAR_RESULT
-	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 2, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -426,7 +426,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll5Quiz1::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll5Quiz1, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL5_Q1, TRUE
 	switch VAR_RESULT
-	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 1, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
@@ -434,7 +434,7 @@ Flag7_TrickHousePuzzle5_EventScript_Mechadoll5Quiz2::
 	msgbox Flag7_TrickHousePuzzle5_Text_Mechadoll5Quiz2, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTI_MECHADOLL5_Q2, TRUE
 	switch VAR_RESULT
-	case 0, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
+	case 2, Flag7_TrickHousePuzzle5_EventScript_CorrectAnswer
 	goto Flag7_TrickHousePuzzle5_EventScript_IncorrectAnswer
 	end
 
