@@ -468,7 +468,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggCycles = 120,
         .friendship = 0,
         .growthRate = GROWTH_ERRATIC,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_UNDISCOVERED),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_DOWNLOAD, ABILITY_CURSED_BODY },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Missingno"),
@@ -490,10 +490,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 6),
-            ANIMCMD_FRAME(1, 6),
-            ANIMCMD_FRAME(0, 6),
-            ANIMCMD_FRAME(2, 6)
+            ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .frontAnimDelay = 10,
