@@ -5012,3 +5012,98 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Charmanderswim = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rotomventilator = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ROTOM,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, // 16x32, 1 Frame
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_3,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_Rotomventilator,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rotomwasher = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ROTOM,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, // 16x32, 1 Frame
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_3,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_Rotomwasher,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rotomheater = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ROTOM,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, // 16x32, 1 Frame
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_3,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_Rotomheater,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rotommow = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ROTOM,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, // 16x32, 1 Frame
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_3,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_Rotommow,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rotomfrost = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ROTOM,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, // 16x32, 1 Frame
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_3,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_Rotomfrost,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};

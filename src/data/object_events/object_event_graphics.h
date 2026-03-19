@@ -511,3 +511,10 @@ const u16 gObjectEventPal_Mantis[] = INCBIN_U16("graphics/object_events/palettes
 const u32 gObjectEventPic_Charmanderswim[] = INCBIN_U32("graphics/object_events/pics/people/charmanderswim.4bpp");
 const u16 gObjectEventPal_Charmanderswim[] = INCBIN_U16("graphics/object_events/palettes/charmanderswim.gbapal");
 
+const u32 gObjectEventPic_Rotomheater[] = INCBIN_U32("graphics/object_events/pics/misc/rotomheater.4bpp");
+const u32 gObjectEventPic_Rotomventilator[] = INCBIN_U32("graphics/object_events/pics/misc/rotomventilator.4bpp");
+const u32 gObjectEventPic_Rotomfrost[] = INCBIN_U32("graphics/object_events/pics/misc/rotomfrost.4bpp");
+const u32 gObjectEventPic_Rotomwasher[] = INCBIN_U32("graphics/object_events/pics/misc/rotomwasher.4bpp");
+const u32 gObjectEventPic_Rotommow[] = INCBIN_U32("graphics/object_events/pics/misc/rotommow.4bpp");
+const u16 gObjectEventPal_Rotom[] = INCBIN_U16("graphics/object_events/palettes/rotom.gbapal");
+

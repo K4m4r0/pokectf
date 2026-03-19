@@ -727,7 +727,7 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome:
 	.string "Or maybe that kid's scrabbling around\n"
 	.string "in tall grass again somewhere…\p"
 	.string "But don't forget: If you\n"
-	.string "or your POKéMON get tired,\n"
+	.string "or your POKéMON get tired,\p"
 	.string "you should get some rest at home.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex:

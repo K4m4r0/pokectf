@@ -217,6 +217,9 @@ $(OBJEVENTGFXDIR)/people/judge.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/santa.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/people/rybbel.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
 $(OBJEVENTGFXDIR)/people/woerner.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 

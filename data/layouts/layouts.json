@@ -5470,6 +5470,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Debug/border.bin",
       "blockdata_filepath": "data/layouts/Debug/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROTOM_HAUS",
+      "name": "RotomHaus_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/RotomHaus/border.bin",
+      "blockdata_filepath": "data/layouts/RotomHaus/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROTOM_HAUS2",
+      "name": "RotomHaus2_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/RotomHaus2/border.bin",
+      "blockdata_filepath": "data/layouts/RotomHaus2/map.bin"
     }
   ]
 }

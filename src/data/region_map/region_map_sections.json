@@ -474,7 +474,7 @@
     },
     {
       "id": "MAPSEC_PETALBURG_WOODS",
-      "name": "PETALBURG WOODS",
+      "name": "MULBERRY ISLAND",
       "x": 0,
       "y": 8,
       "width": 1,
@@ -1318,6 +1318,10 @@
     {
       "id": "MAPSEC_CAFETERIA_PATH",
       "name": "CAFETERIA PATH"
+    },
+    {
+      "id": "MAPSEC_ROTOM_HOUSE",
+      "name": "ROTOM HOUSE"
     }
   ]
 }

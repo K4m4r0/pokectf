@@ -576,7 +576,7 @@
       "x": 17,
       "y": 50,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE104_MR_BRINEYS_HOUSE",
+      "dest_map": "MAP_ROTOM_HAUS",
       "dest_warp_id": "0"
     },
     {
@@ -639,8 +639,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 17,
-      "y": 51,
+      "x": 30,
+      "y": 88,
       "elevation": 3,
       "var": "VAR_ROUTE104_STATE",
       "var_value": "1",

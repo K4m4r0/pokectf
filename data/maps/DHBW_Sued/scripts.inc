@@ -8,12 +8,15 @@ DHBW_Sued_EventScript_Sign::
 
 
 DHBW_Sued_Text_TownSign::
-	.string "Left: EDEKA\n"
-	.string "Down: NECKARAU$"
+	.string "{LEFT_ARROW}EDEKA\n"
+	.string "{DOWN_ARROW} NECKARAU$"
 
 
 DHBW_Sued_EventScript_Girl::
+	lockall
+	faceplayer
 	msgbox DHBW_Sued_Text_Girl, MSGBOX_SIGN
+	releaseall
 	end
 
 DHBW_Sued_Text_Girl::

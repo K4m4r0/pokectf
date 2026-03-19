@@ -701,8 +701,8 @@
 #define FLAG_GEN6_EXP_SHARE_ACTIVE              0x296 // Unused Flag
 #define FLAG_ZWISCHENSTUECK_PASSWORT_GESAGT     0x297 // Unused Flag
 #define FLAG_LUDWIGSHAFEN_REGEN                 0x298 // Unused Flag
-#define FLAG_UNUSED_0x299  0x299 // Unused Flag
-#define FLAG_UNUSED_0x29A  0x29A // Unused Flag
+#define FLAG_LUDWIGSHAFEN_GOT_ITEMFINDER        0x299 // Unused Flag
+#define FLAG_ROTOMHAUS2_GOT_ROTOM_GIFT          0x29A // CTF RotomHaus 2 Got Rotom Gift
 #define FLAG_UNUSED_0x29B  0x29B // Unused Flag
 #define FLAG_UNUSED_0x29C  0x29C // Unused Flag
 #define FLAG_UNUSED_0x29D  0x29D // Unused Flag

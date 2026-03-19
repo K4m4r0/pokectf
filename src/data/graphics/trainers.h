@@ -320,6 +320,9 @@ const u16 gTrainerPalette_Kali[] = INCBIN_U16("graphics/trainers/palettes/kali.g
 const u32 gTrainerFrontPic_Farmer[] = INCBIN_U32("graphics/trainers/front_pics/farmer.4bpp.smol");
 const u16 gTrainerPalette_Farmer[] = INCBIN_U16("graphics/trainers/palettes/farmer.gbapal");
 
+const u32 gTrainerFrontPic_Rybbel[] = INCBIN_U32("graphics/trainers/front_pics/rybbel.4bpp.smol");
+const u16 gTrainerPalette_Rybbel[] = INCBIN_U16("graphics/trainers/palettes/rybbel.gbapal");
+
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
 // gTrainerFrontPic/gTrainerPalette pointers, (e.g "gTrainerFrontPic_Hiker" and "gTrainerPalette_Hiker").
@@ -440,6 +443,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_WOERNER, gTrainerFrontPic_Woerner, gTrainerPalette_Woerner),
     TRAINER_SPRITE(TRAINER_PIC_KALI, gTrainerFrontPic_Kali, gTrainerPalette_Kali),  
     TRAINER_SPRITE(TRAINER_PIC_FARMER, gTrainerFrontPic_Farmer, gTrainerPalette_Farmer),
+    TRAINER_SPRITE(TRAINER_PIC_RYBBEL, gTrainerFrontPic_Rybbel, gTrainerPalette_Rybbel),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

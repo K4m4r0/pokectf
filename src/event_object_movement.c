@@ -540,6 +540,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Mantis,                OBJ_EVENT_PAL_TAG_MANTIS},
     {gObjectEventPal_GiratinaStill,         OBJ_EVENT_PAL_TAG_GIRATINA_STILL},
     {gObjectEventPal_Charmanderswim,        OBJ_EVENT_PAL_TAG_CHARMANDERSWIM},
+    {gObjectEventPal_Rotom,                 OBJ_EVENT_PAL_TAG_ROTOM},
+
 
 #if OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},

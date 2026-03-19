@@ -575,3 +575,4 @@ gSpecials::
 	def_special CtfIsMgba
 	def_special CtfMgbaLogHint_Flag5
 	def_special CtfBufferFlagSolution
+	def_special Special_RotomHouseChangeSelectedPartyRotomForm

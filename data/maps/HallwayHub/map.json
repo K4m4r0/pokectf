@@ -110,7 +110,6 @@
       "var_value": "0",
       "script": "HallwayHub_EventScript_WarpBlocked"
     },
-
     {
       "type": "trigger",
       "x": 8,
@@ -129,7 +128,6 @@
       "var_value": "1",
       "script": "HallwayHub_EventScript_WarpBlocked"
     },
-
     {
       "type": "trigger",
       "x": 11,
@@ -157,7 +155,6 @@
       "var_value": "2",
       "script": "HallwayHub_EventScript_WarpBlocked"
     },
-
     {
       "type": "trigger",
       "x": 18,
@@ -194,7 +191,6 @@
       "var_value": "3",
       "script": "HallwayHub_EventScript_WarpBlocked"
     },
-
     {
       "type": "trigger",
       "x": 21,
@@ -240,7 +236,6 @@
       "var_value": "4",
       "script": "HallwayHub_EventScript_WarpBlocked"
     },
-
     {
       "type": "trigger",
       "x": 24,
@@ -295,7 +290,6 @@
       "var_value": "5",
       "script": "HallwayHub_EventScript_WarpBlocked"
     },
-
     {
       "type": "trigger",
       "x": 28,

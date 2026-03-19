@@ -377,6 +377,7 @@ HallwayHub_Move_Sem3:
     walk_left
     walk_left
     walk_left
+    walk_left
     walk_up
     walk_up
     walk_up

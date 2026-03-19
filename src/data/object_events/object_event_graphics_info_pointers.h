@@ -265,6 +265,11 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Houvert;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MantisFront;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MantisSide;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Charmanderswim;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rotomheater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rotomwasher;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rotomfrost;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rotommow;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rotomventilator;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -527,7 +532,11 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MANTIS_FRONT] =             &gObjectEventGraphicsInfo_MantisFront,
     [OBJ_EVENT_GFX_MANTIS_SIDE] =              &gObjectEventGraphicsInfo_MantisSide,
     [OBJ_EVENT_GFX_CHARMANDERSWIM] =           &gObjectEventGraphicsInfo_Charmanderswim,
-
+    [OBJ_EVENT_GFX_ROTOMHEATER] =              &gObjectEventGraphicsInfo_Rotomheater,
+    [OBJ_EVENT_GFX_ROTOMWASHER] =              &gObjectEventGraphicsInfo_Rotomwasher,
+    [OBJ_EVENT_GFX_ROTOMFROST] =               &gObjectEventGraphicsInfo_Rotomfrost,
+    [OBJ_EVENT_GFX_ROTOMMOW] =                 &gObjectEventGraphicsInfo_Rotommow,
+    [OBJ_EVENT_GFX_ROTOMVENTILATOR] =          &gObjectEventGraphicsInfo_Rotomventilator,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

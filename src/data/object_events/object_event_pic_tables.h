@@ -1444,3 +1444,23 @@ static const struct SpriteFrameImage sPicTable_MantisSide[] = {
 static const struct SpriteFrameImage sPicTable_Charmanderswim[] = {
     overworld_ascending_frames(gObjectEventPic_Charmanderswim, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_Rotomwasher[] = {
+    overworld_frame(gObjectEventPic_Rotomwasher, 2, 4, 0),
+};
+
+static const struct SpriteFrameImage sPicTable_Rotomventilator[] = {
+    overworld_frame(gObjectEventPic_Rotomventilator, 2, 4, 0),
+};
+
+static const struct SpriteFrameImage sPicTable_Rotomheater[] = {
+    overworld_frame(gObjectEventPic_Rotomheater, 2, 4, 0),
+};
+
+static const struct SpriteFrameImage sPicTable_Rotomfrost[] = {
+    overworld_frame(gObjectEventPic_Rotomfrost, 2, 4, 0),
+};
+
+static const struct SpriteFrameImage sPicTable_Rotommow[] = {
+    overworld_frame(gObjectEventPic_Rotommow, 2, 4, 0),
+};  

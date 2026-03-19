@@ -1,19 +1,12 @@
 RingUntenE4_MapScripts::
-    map_script MAP_SCRIPT_ON_LOAD,       RingUntenE4_OnEnter
-    map_script MAP_SCRIPT_ON_TRANSITION, RingUntenE4_OnEnter
+    map_script MAP_SCRIPT_ON_TRANSITION, RingUntenE4_OnTransition
     .byte 0
 
     .equ RINGUNTENE4_MEW_LEVEL, 40
 
-RingUntenE4_OnEnter:
-    @ Spy-Objekte immer verstecken
-    removeobject LOCALID_CHATOTSPY_A
-    removeobject LOCALID_CHATOTSPY_B
-
-    @ Door blocker permanent entfernen, falls unlocked
-    goto_if_unset FLAG_RINGUNTENE4_DOOR_UNLOCKED, .LEnd
-    removeobject LOCALID_VOICE_DOOR_BLOCKER
-.LEnd:
+RingUntenE4_OnTransition::
+    @ CHATOT-Spione beim normalen Mapbetreten immer verstecken
+    setflag FLAG_RINGUNTENE4_CHATOTSPY_HIDDEN
     end
 
 
@@ -279,4 +272,19 @@ RingUntenE4_Text_MewCaught:
 
 RingUntenE4_Text_TruckAlreadyMoved:
     .string "The truck won't budge anymore.$"
+
+
+
+
+
+RingUntenE4_EventScript_BeautifulHere::
+    lock
+    faceplayer
+    msgbox RingUntenE4_Text_BeautifulHere, MSGBOX_DEFAULT
+    release
+    end
+
+RingUntenE4_Text_BeautifulHere:
+    .string "Isn't it beautiful here?$"
+
 

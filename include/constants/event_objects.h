@@ -266,13 +266,18 @@
 #define OBJ_EVENT_GFX_MANTIS_SIDE                257
 #define OBJ_EVENT_GFX_GIRATINA_STILL             258
 #define OBJ_EVENT_GFX_CHARMANDERSWIM             259 
+#define OBJ_EVENT_GFX_ROTOMVENTILATOR            260
+#define OBJ_EVENT_GFX_ROTOMHEATER                261
+#define OBJ_EVENT_GFX_ROTOMWASHER                262
+#define OBJ_EVENT_GFX_ROTOMFROST                 263
+#define OBJ_EVENT_GFX_ROTOMMOW                   264 
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
 
 // Muss immer unter allem Neuen stehen und Wert muss dann erhöht werden.
-#define NUM_OBJ_EVENT_GFX                        260
+#define NUM_OBJ_EVENT_GFX                        265
 
 
 
@@ -379,7 +384,8 @@
 #define OBJ_EVENT_PAL_TAG_HOUVERT                 0x112E
 #define OBJ_EVENT_PAL_TAG_MANTIS                  0x112F
 #define OBJ_EVENT_PAL_TAG_GIRATINA_STILL          0x1130
-#define OBJ_EVENT_PAL_TAG_CHARMANDERSWIM          0x1131    
+#define OBJ_EVENT_PAL_TAG_CHARMANDERSWIM          0x1131   
+#define OBJ_EVENT_PAL_TAG_ROTOM                   0x1132
 
 
 // Moved from src/event_object_movement.c so that they're accesible from other files.

@@ -288,7 +288,7 @@ Route103_EventScript_Isabelle::
 
 Route103_Text_MayRoute103Pokemon:
 	.string "MAY: Let's see… The POKéMON found\n"
-	.string "on ROUTE 103 include…$"
+	.string "on here include…$"
 
 Route103_Text_MayLetsBattle:
 	.string "Oh, hi, {PLAYER}{KUN}!\p"
@@ -320,7 +320,7 @@ Route103_Text_MayTimeToHeadBack:
 
 Route103_Text_BrendanRoute103Pokemon:
 	.string "BRENDAN: Okay, so it's this one and\n"
-	.string "that one that live on ROUTE 103…$"
+	.string "that one that live here…$"
 
 Route103_Text_BrendanLetsBattle:
 	.string "Hey, it's {PLAYER}!\p"
@@ -354,10 +354,10 @@ Route103_Text_ShouldHaveBroughtPotion:
 
 Route103_Text_ShortcutToOldale:
 	.string "If you cross the sea from here,\n"
-	.string "it'll be a shortcut to OLDALE TOWN.\p"
+	.string "it'll be a shortcut to NEUOSTHEIM.\p"
 	.string "Fufufu, that's useful, isn't it?$"
 
 Route103_Text_RouteSign:
-	.string "ROUTE 103\n"
-	.string "{DOWN_ARROW} OLDALE TOWN$"
+	.string "LOWER NECKAR\n"
+	.string "{DOWN_ARROW} NEUOSTHEIM$"
 

@@ -248,7 +248,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     },
     */
 
-        [SPECIES_SUNEON] =
+    [SPECIES_SUNEON] =
     {
         .baseHP        = 65,
         .baseAttack    = 65,
@@ -315,7 +315,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .teachableLearnset = sSuneonTeachableLearnset,
     },
 
-        [SPECIES_I3C_AND] =
+    [SPECIES_I3C_AND] =
     {
         .baseHP        = 65,
         .baseAttack    = 65,
@@ -384,7 +384,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     },
 
 
-        [SPECIES_I3C_NAND] =
+    [SPECIES_I3C_NAND] =
     {
         .baseHP        = 65,
         .baseAttack    = 65,
@@ -449,6 +449,77 @@ const struct SpeciesInfo gSpeciesInfo[] =
         )
         .levelUpLearnset = sI3cNandLevelUpLearnset,
         .teachableLearnset = sI3cNandTeachableLearnset,
+    },
+
+
+    [SPECIES_MISSINGNO] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 95,
+        .baseDefense   = 60,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_GHOST),
+        .catchRate = 3,
+        .expYield = 210,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_ERRATIC,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_UNDISCOVERED),
+        .abilities = { ABILITY_DOWNLOAD, ABILITY_CURSED_BODY },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Missingno"),
+        .cryId = CRY_PORYGON,
+        .natDexNum = NATIONAL_DEX_MISSINGNO,
+        .categoryName = _("Prototype"),
+        .height = 30,
+        .weight = 1590,
+        .description = COMPOUND_STRING(
+            "It was reportedly planned as an early\n"
+            "experiment in POKéMON data creation.\n"
+            "Its unstable body now flickers between\n"
+            "valid and corrupted states."),
+        .pokemonScale = 356,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Missingno,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 6),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 6),
+            ANIMCMD_FRAME(2, 6)
+        ),
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimDelay = 10,
+        .enemyMonElevation = 8,
+        .backPic = gMonBackPic_Missingno,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_Missingno,
+        .shinyPalette = gMonShinyPalette_Missingno,
+        .iconSprite = gMonIcon_Missingno,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 2, SHADOW_SIZE_M)
+        FOOTPRINT(Missingno)
+        OVERWORLD(
+            sPicTable_Missingno,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Missingno,
+            gShinyOverworldPalette_Missingno
+        )
+        .levelUpLearnset = sMissingnoLevelUpLearnset,
+        .teachableLearnset = sMissingnoTeachableLearnset,
     },
 
 

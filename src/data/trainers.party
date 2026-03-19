@@ -10227,30 +10227,7 @@ Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
-=== TRAINER_LYLE ===
-Name: LYLE
-Class: Bug Catcher
-Pic: Bug Catcher
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSE ===
 Name: JOSE
@@ -10316,22 +10293,7 @@ Ninjask
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JAMES_1 ===
-Name: JAMES
-Class: Bug Catcher
-Pic: Bug Catcher
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
 
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -15672,15 +15634,15 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Meowth
-Level: 4
+Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Arbok
-Level: 3
+Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Weezing
-Level: 3
+Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -15852,11 +15814,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Zubat
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Carvanha
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
@@ -15869,11 +15831,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Carvanha
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Zubat
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -15887,11 +15849,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Zubat
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Carvanha
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -15905,11 +15867,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Carvanha
-Level: 9
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -15933,11 +15895,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 10
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Bagon
-Level: 11
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dragon Breath
 - Headbutt
@@ -15954,11 +15916,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Zubat
-Level: 10
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wingull
-Level: 10
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HUGH ===
@@ -15971,11 +15933,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Carvanha
-Level: 10
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wingull
-Level: 11
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -15989,11 +15951,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Swellow
-Level: 11
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Electrike
-Level: 12
+Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Quick Attack
 - Roar
@@ -16044,11 +16006,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Skitty
-Level: 10
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Zigzagoon @ Nugget
-Level: 11
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -16062,12 +16024,63 @@ Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon
-Level: 10
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Seedot
-Level: 11
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+/*-------------------------------------------*/
+/*-----------Petalburg Woods ----------------*/
+/*-------------------------------------------*/
+
+
+=== TRAINER_LYLE ===
+Name: LYLE
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Wurmple
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wurmple
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wurmple
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wurmple
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_JAMES_1 ===
+Name: JAMES
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Nincada
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Nincada
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 
 
@@ -16087,11 +16100,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Goldeen
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Marill
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -16105,7 +16118,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Sandshrew
-Level: 12
+Level: 13
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Dig
 - Slash
@@ -16113,7 +16126,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Poison Sting
 
 Sandslash
-Level: 13
+Level: 14
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Dig
 - Slash
@@ -16131,11 +16144,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Tentacool
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Carvanha
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -16149,11 +16162,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Horsea
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tentacool
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -16167,11 +16180,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Sandshrew
-Level: 12
+Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Sandshrew
-Level: 12
+Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 
@@ -16185,11 +16198,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Taillow
-Level: 12
+Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Wingull
-Level: 13
+Level: 14
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 
@@ -16203,11 +16216,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wailmer
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -17222,6 +17235,14 @@ IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 
 
+
+
+
+
+
+
+
+
 /*-------------------------------------*/
 /*-----------Flag 7 Rybbel----------------*/
 /*-------------------------------------*/
@@ -17229,7 +17250,7 @@ IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 === TRAINER_RYBBEL_FOREST ===
 Name: RYBBEL
 Class: Professor
-Pic: Factory Head Noland
+Pic: Rybbel
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -17506,7 +17527,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Manectric
-Level: 42
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - MOVE_TERMINAL_FLAG
 - Roar

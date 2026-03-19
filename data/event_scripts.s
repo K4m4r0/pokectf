@@ -1387,3 +1387,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Klassenzimmer_Last/scripts.inc"
 
 	.include "data/maps/Debug/scripts.inc"
+
+	.include "data/maps/RotomHaus/scripts.inc"
+
+	.include "data/maps/RotomHaus2/scripts.inc"

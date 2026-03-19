@@ -727,3 +727,108 @@ Ludwigshafen_EventScript_ClosedSign::
 Ludwigshafen_Text_ClosedSign::
 	.string "Route Closed$"
 
+
+
+
+@ ==================================
+@ ITEMFINDE Event 
+@ ==================================
+
+
+Ludwigshafen_EventScript_InfernandoItemfinder::
+    lock
+    faceplayer
+    goto_if_set FLAG_LUDWIGSHAFEN_GOT_ITEMFINDER, Ludwigshafen_Infernando_After
+
+    msgbox Ludwigshafen_Text_InfernandoItemfinder_Intro, MSGBOX_DEFAULT
+    giveitem ITEM_ITEMFINDER, 1
+    compare VAR_RESULT, FALSE
+    goto_if_eq Ludwigshafen_Infernando_BagFull
+
+    setflag FLAG_LUDWIGSHAFEN_GOT_ITEMFINDER
+    msgbox Ludwigshafen_Text_InfernandoItemfinder_AfterGive, MSGBOX_DEFAULT
+    release
+    end
+
+Ludwigshafen_Infernando_BagFull::
+    msgbox Ludwigshafen_Text_InfernandoItemfinder_BagFull, MSGBOX_DEFAULT
+    release
+    end
+
+Ludwigshafen_Infernando_After::
+    msgbox Ludwigshafen_Text_InfernandoItemfinder_Repeat, MSGBOX_DEFAULT
+    release
+    end
+
+
+Ludwigshafen_Text_InfernandoItemfinder_Intro:
+    .string "INFERNANDO: Hey, take this.\p"
+    .string "It's an ITEMFINDER.\p"
+    .string "Super useful if you like searching\n"
+    .string "for hidden stuff.\p"
+    .string "And who knows...\n"
+    .string "maybe you'll even find some nice\p"
+    .string "BOTTLE CAPS with it.$"
+
+Ludwigshafen_Text_InfernandoItemfinder_AfterGive:
+    .string "INFERNANDO: Try it near suspicious\n"
+    .string "spots. People lose valuable things\p"
+    .string "all the time.$"
+
+Ludwigshafen_Text_InfernandoItemfinder_BagFull:
+    .string "INFERNANDO: Your BAG is full.\n"
+    .string "Come back after making some space.$"
+
+Ludwigshafen_Text_InfernandoItemfinder_Repeat:
+    .string "INFERNANDO: The ITEMFINDER should help\n"
+    .string "you sniff out hidden treasures.$"
+
+
+@ =========================================================
+@ Soda Vendor 
+@ =========================================================
+
+Ludwigshafen_EventScript_KioskSeller::
+    lock
+    faceplayer
+    msgbox Ludwigshafen_Text_KioskSeller_Greeting, MSGBOX_YESNO
+    compare VAR_RESULT, NO
+    goto_if_eq Ludwigshafen_KioskSeller_NoThanks
+
+    pokemart Ludwigshafen_KioskSeller_Items
+    msgbox Ludwigshafen_Text_KioskSeller_After, MSGBOX_DEFAULT
+    release
+    end
+
+Ludwigshafen_KioskSeller_NoThanks:
+    msgbox Ludwigshafen_Text_KioskSeller_NoThanks, MSGBOX_DEFAULT
+    release
+    end
+
+
+Ludwigshafen_KioskSeller_Items:
+    .2byte ITEM_FRESH_WATER
+    .2byte ITEM_SODA_POP
+    .2byte ITEM_LEMONADE
+    .2byte ITEM_MOOMOO_MILK
+    .2byte ITEM_LAVA_COOKIE
+    .2byte ITEM_RAGE_CANDY_BAR
+    .2byte ITEM_NONE
+
+
+Ludwigshafen_Text_KioskSeller_Greeting:
+    .string "Oh, hello there!\p"
+    .string "Long day already?\p"
+    .string "I've got cold drinks and a few sweet\n"
+    .string "snacks if you need a little break.\p"
+    .string "Would you like to take a look?$"
+
+Ludwigshafen_Text_KioskSeller_After:
+    .string "Take care, okay?\p"
+    .string "A good drink and something sweet can\n"
+    .string "fix more than people think.$"
+
+Ludwigshafen_Text_KioskSeller_NoThanks:
+    .string "Alright, dear.\p"
+    .string "Come back anytime if you get thirsty.$"
+

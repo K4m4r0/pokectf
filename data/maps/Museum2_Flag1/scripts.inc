@@ -80,7 +80,7 @@ Museum2_Flag1_Text_ReceivedBadge::
 	.string "You received the MATHS BADGE!$"
 
 Museum2_Flag1_Text_TM::
-	.string "TM01 contains FOCUS PUNCH.$"
+	.string "TM16 contains LIGHT SCREEN.$"
 
 Museum2_Flag1_Text_After::
 	.string "PROF. HYVEL: Our proof is complete.\n"

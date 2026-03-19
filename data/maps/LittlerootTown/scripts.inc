@@ -944,11 +944,11 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
 	.string "BELLA: You're always on the go…\n"
-	.string "…\l"
+	.string "…\p"
 	.string "The apartment feels\n"
 	.string "a bit empty without you.\p"
 	.string "See you around,\n"
-	.string "when you've got the time!\p"
+	.string "when you've got the time!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
 	.string "Oh and one last thing!\n"
