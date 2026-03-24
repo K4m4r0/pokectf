@@ -104,7 +104,7 @@
     {
       "id": "LAYOUT_OLDALE_TOWN",
       "name": "OldaleTown_Layout",
-      "width": 20,
+      "width": 28,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
@@ -5034,7 +5034,7 @@
     {
       "id": "LAYOUT_DHBW_SUED",
       "name": "DHBW_Sued_Layout",
-      "width": 16,
+      "width": 24,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
@@ -5344,7 +5344,7 @@
     {
       "id": "LAYOUT_ARKTOS_MAP",
       "name": "ArktosMap_Layout",
-      "width": 11,
+      "width": 12,
       "height": 10,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Cave",
@@ -5490,6 +5490,96 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/RotomHaus2/border.bin",
       "blockdata_filepath": "data/layouts/RotomHaus2/map.bin"
+    },
+    {
+      "id": "LAYOUT_CH6",
+      "name": "CH6_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/CH6/border.bin",
+      "blockdata_filepath": "data/layouts/CH6/map.bin"
+    },
+    {
+      "id": "LAYOUT_CH5",
+      "name": "CH5_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/CH5/border.bin",
+      "blockdata_filepath": "data/layouts/CH5/map.bin"
+    },
+    {
+      "id": "LAYOUT_CH7",
+      "name": "CH7_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/CH7/border.bin",
+      "blockdata_filepath": "data/layouts/CH7/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHPRIZE",
+      "name": "CHPrize_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_CableClub",
+      "border_filepath": "data/layouts/CHPrize/border.bin",
+      "blockdata_filepath": "data/layouts/CHPrize/map.bin"
+    },
+    {
+      "id": "LAYOUT_RING_VERBINDUNG",
+      "name": "RingVerbindung_Layout",
+      "width": 24,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/RingVerbindung/border.bin",
+      "blockdata_filepath": "data/layouts/RingVerbindung/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUBIOUS_HAUS",
+      "name": "DubiousHaus_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/DubiousHaus/border.bin",
+      "blockdata_filepath": "data/layouts/DubiousHaus/map.bin"
+    },
+    {
+      "id": "LAYOUT_LU_TUNNEL",
+      "name": "LuTunnel_Layout",
+      "width": 50,
+      "height": 9,
+      "primary_tileset": "gTileset_Building_Frlg",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/LuTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/LuTunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_CTF_VENDOR_MAP",
+      "name": "CtfVendorMap_Layout",
+      "width": 11,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/CtfVendorMap/border.bin",
+      "blockdata_filepath": "data/layouts/CtfVendorMap/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTERIE_HAUS",
+      "name": "BatterieHaus_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BatterieHaus/border.bin",
+      "blockdata_filepath": "data/layouts/BatterieHaus/map.bin"
     }
   ]
 }

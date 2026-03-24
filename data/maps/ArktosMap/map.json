@@ -17,7 +17,7 @@
     {
       "local_id": "LOCALID_ARKTOS",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARTICUNO)",
-      "x": 5,
+      "x": 6,
       "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -31,13 +31,46 @@
   ],
   "warp_events": [
     {
-      "x": 5,
+      "x": 6,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_ROUTE104",
       "dest_warp_id": "8"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_LU_TUNNEL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_LU_TUNNEL",
+      "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ArktosMap_EventScript_DarknessBlock"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ArktosMap_EventScript_DarknessBlock"
+    }
+  ],
   "bg_events": []
 }

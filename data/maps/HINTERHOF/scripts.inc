@@ -39,3 +39,4 @@ HINTERHOF_Text_What:
 	.string "This poor POKéMON was just thrown\n"
 	.string "in the trash. Oh crap, it's\p"
 	.string "attacking!$"
+

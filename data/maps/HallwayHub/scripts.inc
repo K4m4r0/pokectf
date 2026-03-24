@@ -490,7 +490,7 @@ HallwayHub_Text_Sem6:
     .string "Sixth semester, let's go.$"
 
 HallwayHub_Text_Sem7:
-    .string "Final lecture it is!$"
+    .string "Another lecture it is!$"
 
 HallwayHub_Text_Sem8:
     .string "Hopefully, I'll finally get\n"
@@ -502,3 +502,4 @@ HallwayHub_Text_Sem9:
 
 HallwayHub_Text_WarpLocked:
     .string "It's not time for this room yet.$"
+

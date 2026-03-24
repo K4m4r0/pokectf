@@ -1391,3 +1391,21 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RotomHaus/scripts.inc"
 
 	.include "data/maps/RotomHaus2/scripts.inc"
+
+	.include "data/maps/CH5/scripts.inc"
+
+	.include "data/maps/CH7/scripts.inc"
+
+	.include "data/maps/CH6/scripts.inc"
+
+	.include "data/maps/CHPrize/scripts.inc"
+
+	.include "data/maps/RingVerbindung/scripts.inc"
+
+	.include "data/maps/DubiousHaus/scripts.inc"
+
+	.include "data/maps/LuTunnel/scripts.inc"
+
+	.include "data/maps/CtfVendorMap/scripts.inc"
+
+	.include "data/maps/BatterieHaus/scripts.inc"

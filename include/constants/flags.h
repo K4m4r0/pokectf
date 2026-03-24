@@ -703,14 +703,14 @@
 #define FLAG_LUDWIGSHAFEN_REGEN                 0x298 // Unused Flag
 #define FLAG_LUDWIGSHAFEN_GOT_ITEMFINDER        0x299 // Unused Flag
 #define FLAG_ROTOMHAUS2_GOT_ROTOM_GIFT          0x29A // CTF RotomHaus 2 Got Rotom Gift
-#define FLAG_UNUSED_0x29B  0x29B // Unused Flag
-#define FLAG_UNUSED_0x29C  0x29C // Unused Flag
-#define FLAG_UNUSED_0x29D  0x29D // Unused Flag
-#define FLAG_UNUSED_0x29E  0x29E // Unused Flag
-#define FLAG_UNUSED_0x29F  0x29F // Unused Flag
-#define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag
-#define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
-#define FLAG_UNUSED_0x2A2  0x2A2 // Unused Flag
+#define FLAG_CH_PRIZE_RECEIVED                  0x29B // CTF Challenge Prize Received
+#define FLAG_DUBIOUS_HAUS_GOT_DUBIOUS_DISC      0x29C // Unused Flag
+#define FLAG_CTF_VENDOR_UNLOCKED                0x29D // CTF Vendor Unlocked
+#define FLAG_LUTUNNEL_KABUTOPS_CAUGHT           0x29E // CTF Lu Tunnel Kabutops Caught
+#define FLAG_LUTUNNEL_JAW_FOSSIL_TAKEN          0x29F // CTF Lu Tunnel Jaw Fossil Taken
+#define FLAG_LUTUNNEL_HELIX_FOSSIL_TAKEN        0x2A0 // CTF Lu Tunnel Helix Fossil Taken
+#define FLAG_LUTUNNEL_BETRETEN                  0x2A1 // Unused Flag
+#define FLAG_BATTERIEHAUS_GOT_FLASH_TOOL        0x2A2 // Unused Flag
 #define FLAG_UNUSED_0x2A3  0x2A3 // Unused Flag
 #define FLAG_UNUSED_0x2A4  0x2A4 // Unused Flag
 #define FLAG_UNUSED_0x2A5  0x2A5 // Unused Flag

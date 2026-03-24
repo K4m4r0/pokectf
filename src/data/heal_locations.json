@@ -25,8 +25,8 @@
       "map": "MAP_CAFERTERIA",
       "x": 16,
       "y": 25,
-      "respawn_map": "MAP_PETALBURG_CITY_POKEMON_CENTER_1F",
-      "respawn_npc": "LOCALID_PETALBURG_NURSE"
+      "respawn_map": "MAP_OLDALE_TOWN_POKEMON_CENTER_CAFERTERIA",
+      "respawn_npc": "LOCALID_CAFETERIA_NURSE"
     },
     {
       "id": "HEAL_LOCATION_SLATEPORT_CITY",

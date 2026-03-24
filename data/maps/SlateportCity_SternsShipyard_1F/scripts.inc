@@ -139,3 +139,15 @@ SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily:
 	.string "I get seasick real easily.\n"
 	.string "So I get to help out here instead.$"
 
+
+
+
+SlateportCity_SternsShipyard_1F_EventScript_Lady::
+	msgbox SlateportCity_SternsShipyard_1F_Text_Tunnel, MSGBOX_NPC
+	end
+
+SlateportCity_SternsShipyard_1F_Text_Tunnel:
+	.string "Welcome to the Old Rhine Tunnel.\n"
+	.string "Unfortunately, access is currently\p"
+	.string "closed. But feel free to look\n"
+	.string "around.$"

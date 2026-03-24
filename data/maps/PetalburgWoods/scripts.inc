@@ -315,6 +315,10 @@ PetalburgWoods_EventScript_Sign2::
 	msgbox PetalburgWoods_Text_TrainerTipsPP, MSGBOX_SIGN
 	end
 
+PetalburgWoods_EventScript_RybbelSign::
+	msgbox PetalburgWoods_Text_RybbelSign, MSGBOX_SIGN
+	end
+
 PetalburgWoods_EventScript_SpeciesConservation::
 	msgbox PetalburgWoods_Text_SpeciesConservation, MSGBOX_SIGN
 	end
@@ -376,7 +380,7 @@ PetalburgWoods_Text_HaveYouSeenShroomish:
 
 PetalburgWoods_Text_IWasGoingToAmbushYou:
 	.string "I was going to ambush you, but you\n"
-	.string "had to dawdle in PETALBURG WOODS\l"
+	.string "had to dawdle in MULBERRY ISLAND\l"
 	.string "forever, didn't you?\p"
 	.string "I got sick of waiting, so here I am!$"
 
@@ -562,3 +566,8 @@ PetalburgWoods_Movement_RybbelExitNorth:
 	walk_up
 	walk_up
 	step_end
+
+
+PetalburgWoods_Text_RybbelSign:
+	.string "MULBERRY ISLAND HILLS$"
+

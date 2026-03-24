@@ -4,7 +4,7 @@ BlackhansaFinale_MapScripts::
 
 BlackhansaFinale_OnLoad:
     goto_if_unset FLAG_CTF_BLACKHANSA_FINALE_FLAG8_DONE, BlackhansaFinale_OnLoad_End
-    call BlackhansaFinale_EventScript_ApplyFlag8Tiles
+    call BlackhansaFinale_EventScript_ApplyFlag10Tiles
 BlackhansaFinale_OnLoad_End:
     end
 
@@ -23,12 +23,10 @@ BlackhansaFinale_EventScript_IntroTrigger::
     applymovement LOCALID_PLAYER, BlackhansaFinale_Movement_PlayerForward7
     waitmovement 0
 
-    @ <<< Das hier ist der wichtige Teil >>>
     turnobject LOCALID_PLAYER, DIR_NORTH
 
     setflag FLAG_BLACKHANSA_INTRO_DONE
     goto BlackhansaFinale_EventScript_StartBattle
-
 
 
 @ ---------------------------------------------------------
@@ -46,7 +44,6 @@ BlackhansaFinale_EventScript_BossTalk::
 @ ---------------------------------------------------------
 BlackhansaFinale_EventScript_StartBattle::
     cleartrainerflag TRAINER_MARLEY
-
     trainerbattle_single TRAINER_MARLEY, BlackhansaFinale_Text_PreBattle, BlackhansaFinale_Text_Defeat, BlackhansaFinale_EventScript_AfterWin
     goto BlackhansaFinale_End
 
@@ -95,7 +92,7 @@ BlackhansaFinale_End::
 
 
 @ ----------------
-@ Bewegungen
+@ Movements
 @ ----------------
 BlackhansaFinale_Movement_PlayerForward7:
     walk_up
@@ -120,7 +117,7 @@ BlackhansaFinale_Movement_BossSlideLeft3_FaceDown:
 
 
 @ ----------------
-@ Texte
+@ Boss texts
 @ ----------------
 BlackhansaFinale_Text_Intro:
     .string "BOSS: You've come a long way, kid.\n"
@@ -150,10 +147,12 @@ BlackhansaFinale_Text_That3:
 
 
 @ =========================================================
-@ CTF Terminal (Flag 8) - BlackhansaFinale
+@ CTF Terminal (Flag 10) - BlackhansaFinale
+@ Note: internal solved flag name stays the same to avoid
+@ breaking existing references.
 @ =========================================================
 
-BlackhansaFinale_EventScript_CtfTerminal_Flag8::
+BlackhansaFinale_EventScript_CtfTerminal_Flag10::
     lock
     faceplayer
 
@@ -166,17 +165,21 @@ BlackhansaFinale_EventScript_CtfTerminal_Flag8::
     callnative Ctf_FlagTerminal
     waitstate
 
-    compare VAR_RESULT, TRUE
-    goto_if_eq BlackhansaFinale_Terminal_Correct
+    goto_if_eq VAR_RESULT, 1, BlackhansaFinale_Terminal_Correct
+    goto BlackhansaFinale_Terminal_Wrong
 
+BlackhansaFinale_Terminal_Wrong:
     msgbox BlackhansaFinale_Text_TerminalWrong, MSGBOX_DEFAULT
     release
     end
 
 BlackhansaFinale_Terminal_Correct:
-    setflag FLAG_CTF_BLACKHANSA_FINALE_FLAG8_DONE
-    call BlackhansaFinale_EventScript_ApplyFlag8Tiles
     msgbox BlackhansaFinale_Text_TerminalCorrect, MSGBOX_DEFAULT
+    closemessage
+
+    setflag FLAG_CTF_BLACKHANSA_FINALE_FLAG8_DONE
+    call BlackhansaFinale_EventScript_ApplyFlag10Tiles
+
     release
     end
 
@@ -187,27 +190,28 @@ BlackhansaFinale_Terminal_AlreadySolved:
 
 
 @ =========================================================
-@ Tile Swap (instant sichtbar + begehbar)
+@ Tile Swap (instant visible + walkable)
 @ =========================================================
 
-BlackhansaFinale_EventScript_ApplyFlag8Tiles::
+BlackhansaFinale_EventScript_ApplyFlag10Tiles::
     setmetatile 7, 1, 0x24E, FALSE
     special DrawWholeMapView
     return
 
 
 @ =========================================================
-@ Terminal Texte
+@ Terminal texts
 @ =========================================================
 
 BlackhansaFinale_Text_TerminalPrompt:
-    .string "Bitte Flag 8 eingeben.$"
+    .string "Enter the Final Flag.$"
 
 BlackhansaFinale_Text_TerminalWrong:
-    .string "Falsche Eingabe.$"
+    .string "ACCESS DENIED.$"
 
 BlackhansaFinale_Text_TerminalCorrect:
-    .string "Zugriff gewährt.$"
+    .string "Access granted.$"
 
 BlackhansaFinale_Text_TerminalAlreadySolved:
-    .string "Terminal ist bereits freigeschaltet.$"
+    .string "The terminal is already unlocked.$"
+

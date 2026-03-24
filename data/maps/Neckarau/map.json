@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_RING_UNTEN",
-      "offset": 13,
-      "direction": "left"
+      "map": "MAP_DHBW_SUED",
+      "offset": -2,
+      "direction": "up"
     },
     {
-      "map": "MAP_DHBW_SUED",
-      "offset": 2,
-      "direction": "up"
+      "map": "MAP_RING_VERBINDUNG",
+      "offset": 12,
+      "direction": "left"
     },
     {
       "map": "MAP_RING_UNTEN_E4",
@@ -78,6 +78,13 @@
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_FOSSIL_HAUS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_DUBIOUS_HAUS",
       "dest_warp_id": "0"
     }
   ],

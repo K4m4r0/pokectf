@@ -73,7 +73,7 @@
     {
       "local_id": "LOCALID_FLAG7_MECHADOLL_1",
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 6,
+      "x": 5,
       "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -83,20 +83,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll1",
       "flag": "0"
-    },
-    {
-      "local_id": "LOCAL_BENEATH_SISTER_JOY",
-      "graphics_id": "OBJ_EVENT_GFX_NURSE",
-      "x": 11,
-      "y": 7,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
     }
   ],
   "warp_events": [
@@ -104,34 +90,25 @@
       "x": 0,
       "y": 21,
       "elevation": 3,
-      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE4",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE1",
+      "dest_warp_id": "0"
     },
     {
       "x": 1,
       "y": 21,
       "elevation": 3,
-      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE4",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE1",
+      "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 1,
       "elevation": 3,
-      "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE6",
+      "dest_map": "MAP_FLAG7_TRICK_HOUSE_END",
       "dest_warp_id": "0"
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 5,
-      "y": 17,
-      "elevation": 3,
-      "var": "VAR_TEMP_1",
-      "var_value": "0",
-      "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll1Trigger0"
-    },
     {
       "type": "trigger",
       "x": 4,
@@ -257,24 +234,6 @@
       "var": "VAR_TEMP_2",
       "var_value": "0",
       "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll2Trigger3"
-    },
-    {
-      "type": "trigger",
-      "x": 5,
-      "y": 7,
-      "elevation": 3,
-      "var": "VAR_TEMP_2",
-      "var_value": "0",
-      "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll2Trigger4"
-    },
-    {
-      "type": "trigger",
-      "x": 6,
-      "y": 7,
-      "elevation": 3,
-      "var": "VAR_TEMP_2",
-      "var_value": "0",
-      "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll2Trigger5"
     },
     {
       "type": "trigger",

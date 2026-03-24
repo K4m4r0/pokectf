@@ -642,7 +642,8 @@
     "Museum2_Flag1",
     "SongFlagArena",
     "Zwischenstueck",
-    "HallwayHub"
+    "HallwayHub",
+    "CtfVendorMap"
   ],
   "gMapGroup_Hub": [
     "MainHub"
@@ -750,7 +751,11 @@
     "MewtwoLair",
     "Debug",
     "RotomHaus",
-    "RotomHaus2"
+    "RotomHaus2",
+    "RingVerbindung",
+    "DubiousHaus",
+    "LuTunnel",
+    "BatterieHaus"
   ],
   "gMapGroup_Flag6": [
     "Klassenzimmer6",
@@ -762,6 +767,10 @@
     "CH1",
     "CH2",
     "CH3",
-    "CH4"
+    "CH4",
+    "CH5",
+    "CH6",
+    "CH7",
+    "CHPrize"
   ]
 }

@@ -5,23 +5,34 @@ RybbelPreForest_MapScripts::
 	.byte 0
 
 RybbelPreForest_OnLoad::
- 	goto_if_set FLAG_DEFEATED_GIRATINA, RybbelPreForest_OnLoadGiratinaDefeated
+	goto_if_set FLAG_DEFEATED_GIRATINA, RybbelPreForest_OnLoadGiratinaDefeated
 	goto_if_set FLAG_RYBBEL_GIRATINA_REVEALED, RybbelPreForest_OnLoadGiratinaShown
 	setflag FLAG_HIDE_RYBBEL_PRE_FOREST_GIRATINA
 	goto RybbelPreForest_OnLoadCheckTerminal
+
 RybbelPreForest_OnLoadGiratinaDefeated::
 	setflag FLAG_HIDE_RYBBEL_PRE_FOREST_GIRATINA
 	goto RybbelPreForest_OnLoadCheckTerminal
+
 RybbelPreForest_OnLoadGiratinaShown::
 	clearflag FLAG_HIDE_RYBBEL_PRE_FOREST_GIRATINA
+
 RybbelPreForest_OnLoadCheckTerminal::
+	goto_if_set FLAG_CTF_FLAG7_TERMINAL_DONE, RybbelPreForest_OnLoadHideTerminal
 	goto_if_set FLAG_RYBBEL_PRE_FOREST_TERMINAL_PLACED, RybbelPreForest_OnLoadTerminalPlaced
 	setflag FLAG_HIDE_RYBBEL_PRE_FOREST_TERMINAL
 	goto RybbelPreForest_OnLoadEnd
+
 RybbelPreForest_OnLoadTerminalPlaced::
 	clearflag FLAG_HIDE_RYBBEL_PRE_FOREST_TERMINAL
+	goto RybbelPreForest_OnLoadEnd
+
+RybbelPreForest_OnLoadHideTerminal::
+	setflag FLAG_HIDE_RYBBEL_PRE_FOREST_TERMINAL
+
 RybbelPreForest_OnLoadEnd::
 	end
+
 
 RybbelPreForest_EventScript_Approach::
 	goto_if_set FLAG_RYBBEL_PRE_FOREST_TERMINAL_PLACED, RybbelPreForest_EventScript_ApproachEnd
@@ -32,8 +43,10 @@ RybbelPreForest_EventScript_Approach::
 	call RybbelPreForest_EventScript_RunScene
 	releaseall
 	end
+
 RybbelPreForest_EventScript_ApproachEnd::
 	end
+
 
 RybbelPreForest_EventScript_Rybbel::
 	lock
@@ -51,31 +64,46 @@ RybbelPreForest_EventScript_RybbelRepeat::
 	msgbox RybbelPreForest_Text_RybbelLookBeneath, MSGBOX_DEFAULT
 	release
 	end
+
 RybbelPreForest_EventScript_RybbelRepeatPost::
 	msgbox RybbelPreForest_Text_RybbelPostPrompt, MSGBOX_DEFAULT
 	release
 	end
 
+
+@ =========================================================
+@ Terminal (Flag 7)
+@ =========================================================
 RybbelPreForest_EventScript_Terminal::
 	lock
 	faceplayer
+
 	goto_if_set FLAG_CTF_FLAG7_TERMINAL_DONE, RybbelPreForest_EventScript_TerminalAlreadySolved
+
 	msgbox RybbelPreForest_Text_TerminalPrompt, MSGBOX_DEFAULT
 	closemessage
+
 	setvar VAR_0x8000, CTF_FLAG_ID_FLAG7
 	callnative Ctf_FlagTerminal
 	waitstate
-	applymovement LOCALID_RYBBEL_PRE_FOREST_RYBBEL, RybbelPreForest_Movement_RybbelFaceUp
-	compare VAR_RESULT, TRUE
-	goto_if_eq RybbelPreForest_EventScript_TerminalSuccess
+
+	goto_if_eq VAR_RESULT, 1, RybbelPreForest_EventScript_TerminalSuccess
+	goto RybbelPreForest_EventScript_TerminalWrong
+
+RybbelPreForest_EventScript_TerminalWrong:
 	msgbox RybbelPreForest_Text_TerminalWrong, MSGBOX_DEFAULT
 	release
 	end
 
 RybbelPreForest_EventScript_TerminalSuccess:
-	setflag FLAG_CTF_FLAG7_TERMINAL_DONE
 	msgbox RybbelPreForest_Text_TerminalSuccess, MSGBOX_DEFAULT
 	closemessage
+
+	setflag FLAG_CTF_FLAG7_TERMINAL_DONE
+
+	applymovement LOCALID_RYBBEL_PRE_FOREST_RYBBEL, RybbelPreForest_Movement_RybbelFaceUp
+	waitmovement 0
+
 	call RybbelPreForest_EventScript_Awakening
 	release
 	end
@@ -90,18 +118,18 @@ RybbelPreForest_EventScript_Giratina::
 	goto_if_set FLAG_DEFEATED_GIRATINA, RybbelPreForest_EventScript_GiratinaGone
 	goto_if_set FLAG_RYBBEL_GIRATINA_REVEALED, RybbelPreForest_EventScript_GiratinaBegin
 	msgbox RybbelPreForest_Text_RybbelLookBeneath, MSGBOX_DEFAULT
-	return
+	end
 
 RybbelPreForest_EventScript_GiratinaBegin::
 	lockall
-	setwildbattle SPECIES_GIRATINA_ORIGIN, 70, ITEM_NONE
+	setwildbattle SPECIES_GIRATINA_ORIGIN, 40, ITEM_NONE
 	special BattleSetup_StartScriptedWildBattle
 	waitstate
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, RybbelPreForest_EventScript_GiratinaDefeated
 	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, RybbelPreForest_EventScript_GiratinaDefeated
 	releaseall
-	return
+	end
 
 RybbelPreForest_EventScript_GiratinaDefeated::
 	setflag FLAG_DEFEATED_GIRATINA
@@ -109,14 +137,16 @@ RybbelPreForest_EventScript_GiratinaDefeated::
 	clearflag FLAG_RYBBEL_GIRATINA_REVEALED
 	removeobject LOCALID_RYBBEL_PRE_FOREST_GIRATINA
 	call RybbelPreForest_EventScript_RybbelBadgeScene
-	return
+	end
 
 RybbelPreForest_EventScript_GiratinaGone::
-	return
+	end
+
 
 RybbelPreForest_EventScript_BeneathSign::
 	msgbox RybbelPreForest_Text_BeneathSign, MSGBOX_SIGN
 	end
+
 
 RybbelPreForest_EventScript_Awakening::
 	msgbox RybbelPreForest_Text_RybbelInteresting, MSGBOX_DEFAULT
@@ -134,6 +164,7 @@ RybbelPreForest_EventScript_Awakening::
 	msgbox RybbelPreForest_Text_RybbelQuestion, MSGBOX_DEFAULT
 	applymovement LOCALID_RYBBEL_PRE_FOREST_RYBBEL, RybbelPreForest_Movement_RybbelStepForward
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerFaceDown
+	waitmovement 0
 	msgbox RybbelPreForest_Text_RybbelBattleSetup, MSGBOX_DEFAULT
 	trainerbattle_single TRAINER_RYBBEL_FOREST, RybbelPreForest_Text_RybbelBattleIntro, RybbelPreForest_Text_RybbelBattleDefeat, RybbelPreForest_EventScript_PostBattle
 	return
@@ -147,6 +178,7 @@ RybbelPreForest_EventScript_RybbelBadgeScene::
 	call RybbelPreForest_EventScript_MovePlayerToApproach
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerFaceDown
 	applymovement LOCALID_RYBBEL_PRE_FOREST_RYBBEL, RybbelPreForest_Movement_RybbelFaceUp
+	waitmovement 0
 	msgbox RybbelPreForest_Text_RybbelBadgeIntro, MSGBOX_DEFAULT
 	goto_if_set FLAG_BADGE07_GET, RybbelPreForest_EventScript_RybbelBadgeScene_After
 	setflag FLAG_DEFEATED_MOSSDEEP_GYM
@@ -154,6 +186,7 @@ RybbelPreForest_EventScript_RybbelBadgeScene::
 	playfanfare MUS_OBTAIN_BADGE
 	waitfanfare
 	giveitem ITEM_TM40, 1
+
 RybbelPreForest_EventScript_RybbelBadgeScene_After::
 	msgbox RybbelPreForest_Text_RybbelBadgeAfter, MSGBOX_DEFAULT
 	applymovement LOCALID_RYBBEL_PRE_FOREST_RYBBEL, RybbelPreForest_Movement_RybbelExitDown
@@ -162,6 +195,7 @@ RybbelPreForest_EventScript_RybbelBadgeScene_After::
 	setflag FLAG_HIDE_RYBBEL_PRE_FOREST_RYBBEL
 	releaseall
 	return
+
 
 RybbelPreForest_EventScript_RunScene::
 	msgbox RybbelPreForest_Text_RybbelPlace, MSGBOX_DEFAULT
@@ -176,39 +210,48 @@ RybbelPreForest_EventScript_RunScene::
 	msgbox RybbelPreForest_Text_RybbelGood, MSGBOX_DEFAULT
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerFaceDown
 	applymovement LOCALID_RYBBEL_PRE_FOREST_RYBBEL, RybbelPreForest_Movement_RybbelFaceUp
+	waitmovement 0
 	msgbox RybbelPreForest_Text_RybbelAnalysisA, MSGBOX_DEFAULT
 	msgbox RybbelPreForest_Text_RybbelAnalysisB, MSGBOX_DEFAULT
 	msgbox RybbelPreForest_Text_RybbelAnalysisC, MSGBOX_DEFAULT
 	msgbox RybbelPreForest_Text_RybbelTurnOn, MSGBOX_DEFAULT
 	return
 
+
 RybbelPreForest_EventScript_MovePlayerToApproach::
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerFaceDown
+	waitmovement 0
+
 RybbelPreForest_MoveApproachHorizontalLoop::
 	compare VAR_TEMP_0, 23
 	goto_if_eq RybbelPreForest_MoveApproachVertical
 	goto_if_lt RybbelPreForest_MoveApproachNeedRight
+
 RybbelPreForest_MoveApproachNeedLeft:
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerStepLeft
 	waitmovement 0
 	subvar VAR_TEMP_0, 1
 	goto RybbelPreForest_MoveApproachHorizontalLoop
+
 RybbelPreForest_MoveApproachNeedRight:
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerStepRight
 	waitmovement 0
 	addvar VAR_TEMP_0, 1
 	goto RybbelPreForest_MoveApproachHorizontalLoop
 
+
 RybbelPreForest_MoveApproachVertical:
 	compare VAR_TEMP_1, 7
 	goto_if_eq RybbelPreForest_MoveApproachDone
 	goto_if_lt RybbelPreForest_MoveApproachNeedDown
+
 RybbelPreForest_MoveApproachNeedUp:
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerStepUp
 	waitmovement 0
 	subvar VAR_TEMP_1, 1
 	goto RybbelPreForest_MoveApproachVertical
+
 RybbelPreForest_MoveApproachNeedDown:
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerStepDown
 	waitmovement 0
@@ -220,32 +263,39 @@ RybbelPreForest_MoveApproachDone:
 	waitmovement 0
 	return
 
+
 RybbelPreForest_EventScript_MovePlayerToCenter::
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+
 RybbelPreForest_MovePlayerHorizontalLoop::
 	compare VAR_TEMP_0, 23
 	goto_if_eq RybbelPreForest_MovePlayerVertical
 	goto_if_lt RybbelPreForest_MovePlayerHorizontalNeedRight
+
 RybbelPreForest_MovePlayerHorizontalNeedLeft:
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerStepLeft
 	waitmovement 0
 	subvar VAR_TEMP_0, 1
 	goto RybbelPreForest_MovePlayerHorizontalLoop
+
 RybbelPreForest_MovePlayerHorizontalNeedRight:
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerStepRight
 	waitmovement 0
 	addvar VAR_TEMP_0, 1
 	goto RybbelPreForest_MovePlayerHorizontalLoop
 
+
 RybbelPreForest_MovePlayerVertical:
 	compare VAR_TEMP_1, 5
 	goto_if_eq RybbelPreForest_MovePlayerDone
 	goto_if_lt RybbelPreForest_MovePlayerVerticalNeedDown
+
 RybbelPreForest_MovePlayerVerticalNeedUp:
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerStepUp
 	waitmovement 0
 	subvar VAR_TEMP_1, 1
 	goto RybbelPreForest_MovePlayerVertical
+
 RybbelPreForest_MovePlayerVerticalNeedDown:
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerStepDown
 	waitmovement 0
@@ -256,6 +306,7 @@ RybbelPreForest_MovePlayerDone:
 	applymovement LOCALID_PLAYER, RybbelPreForest_Movement_PlayerFaceDown
 	waitmovement 0
 	return
+
 
 RybbelPreForest_Movement_PlayerStepLeft:
 	walk_left
@@ -318,6 +369,7 @@ RybbelPreForest_Movement_RybbelExitDown:
 	walk_down
 	walk_down
 	step_end
+
 
 RybbelPreForest_Text_RybbelPlace:
 	.string "PROF. RYBBEL: This is the place.$"
@@ -428,7 +480,7 @@ RybbelPreForest_Text_RybbelBadgeAfter:
 	.string "the surface only shows you half the story.\p"
 	.string "You've earned it.$"
 
-
 RybbelPreForest_Text_RybbelPostPrompt:
 	.string "PROF. RYBBEL: You earned your chance.\p"
 	.string "Step forward and face what's waiting.$"
+

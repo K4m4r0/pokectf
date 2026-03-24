@@ -42,6 +42,20 @@
       "elevation": 0,
       "dest_map": "MAP_FLAG7_TRICK_HOUSE_PUZZLE1",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 4,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_CAFERTERIA",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 2,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_CAFERTERIA",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [],

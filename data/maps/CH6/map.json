@@ -1,0 +1,57 @@
+{
+  "id": "MAP_CH6",
+  "name": "CH6",
+  "layout": "LAYOUT_CH6",
+  "music": "MUS_CONTEST",
+  "region_map_section": "MAPSEC_CHALLENGE_HOUSE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_FRONTIER",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_GEORGIA",
+      "graphics_id": "OBJ_EVENT_GFX_TUBER_M",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CH6_EventScript_Georgia",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_CH5",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_CH5",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_CH7",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

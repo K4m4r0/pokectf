@@ -71,3 +71,4 @@ RotomHaus2_Text_RotomGift:
 RotomHaus2_Text_AfterGift:
 	.string "I hope ROTOM is doing well.\p"
 	.string "And thanks again for the LEMONADE!$"
+

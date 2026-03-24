@@ -19,15 +19,15 @@
       "direction": "left"
     },
     {
-      "map": "MAP_NECKARAU",
-      "offset": -13,
+      "map": "MAP_RING_VERBINDUNG",
+      "offset": 0,
       "direction": "right"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 16,
+      "x": 46,
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -56,9 +56,9 @@
       "x": 9,
       "y": 14,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
+      "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
       "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route108_EventScript_Matthew",
@@ -66,10 +66,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 26,
-      "y": 12,
+      "x": 27,
+      "y": 4,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -145,11 +145,25 @@
   ],
   "warp_events": [
     {
-      "x": 16,
+      "x": 46,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_HOEHLENHUB",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_RING_UNTEN",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 20,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_RING_UNTEN",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

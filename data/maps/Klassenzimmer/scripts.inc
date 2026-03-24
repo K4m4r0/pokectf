@@ -4,23 +4,22 @@ Klassenzimmer_MapScripts::
 	.byte 0
 
 Klassenzimmer_OnTransition:
-	@ OnTransition nur vorbereiten, keine msgbox/Bewegung hier!
-	goto_if_set FLAG_CTF_CLASSROOM_INTRO_DONE, Klassenzimmer_OnTransition_End
+	goto_if_set FLAG_CTF_CLASSROOM_INTRO_DONE, Klassenzimmer_OnTransition_AlreadyDone
 	setvar VAR_TEMP_0, 0
 	end
 
-Klassenzimmer_OnTransition_End:
+Klassenzimmer_OnTransition_AlreadyDone:
+	setvar VAR_TEMP_0, 1
 	end
 
 Klassenzimmer_OnFrame:
-	@ Cutscene läuft erst im Frame-Loop, wenn Map sichtbar ist
 	map_script_2 VAR_TEMP_0, 0, Klassenzimmer_EventScript_FirstEntry
 	.2byte 0
 
 
-@ Erstes Betreten des Klassenzimmers
 Klassenzimmer_EventScript_FirstEntry::
-	@ sofort "deaktivieren", damit es nicht mehrfach triggert
+	goto_if_set FLAG_CTF_CLASSROOM_INTRO_DONE, Klassenzimmer_FirstEntry_End
+
 	setvar VAR_TEMP_0, 1
 	setflag FLAG_CTF_CLASSROOM_INTRO_DONE
 
@@ -35,28 +34,26 @@ Klassenzimmer_EventScript_FirstEntry::
 	applymovement LOCALID_PLAYER, Klassenzimmer_Movement_PlayerToSeat
 	waitmovement 0
 
-    msgbox Museum_Text_StudentReceivesMon, MSGBOX_DEFAULT
-    closemessage
+	msgbox Museum_Text_StudentReceivesMon, MSGBOX_DEFAULT
+	closemessage
 
 	givemon SPECIES_SNEASEL, 5, ITEM_RAZOR_CLAW, move1=MOVE_SCRATCH, move2=MOVE_TAUNT, move3=MOVE_LEER, move4=MOVE_THIEF, nature=NATURE_JOLLY, abilityNum=126
 
 	msgbox Klassenzimmer_Text_Museum, MSGBOX_DEFAULT
 	closemessage
 
-	@ Museum-Cutscene beim Ankommen starten lassen
 	setflag FLAG_CTF_MUSEUM_SCENE_PENDING
-
-	@ Rocket + Schülerin beim Laden verstecken
 	setflag FLAG_HIDE_MUSEUM_FLAG1_JESSIE
 	setflag FLAG_HIDE_MUSEUM_FLAG1_JAMES
 	setflag FLAG_HIDE_MUSEUM_FLAG1_STUDENT
 
-	@ Script freigeben bevor Warp
 	releaseall
-
-	@ Warp per Koordinate
 	warpsilent MAP_MUSEUM_FLAG1, 255, 13, 4
-	turnobject LOCALID_PLAYER, DIR_EAST
+	waitstate
+	end
+
+Klassenzimmer_FirstEntry_End:
+	setvar VAR_TEMP_0, 1
 	end
 
 
@@ -88,8 +85,8 @@ Klassenzimmer_Text_Museum:
 Museum_Text_StudentReceivesMon:
     .string "PROF. FARMER: At the beginning of your\n"
     .string "studies, each student receives a\p"
-	.string "SNIVY, which is intended to support\n"
+	.string "SNEASEL, which is intended to support\n"
     .string "you in your learning.\p"
-	.string "SNIVY has been added to your Team.$"
+	.string "SNEASEL has been added to your Team.$"
 
 

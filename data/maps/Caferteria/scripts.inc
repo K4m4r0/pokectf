@@ -176,8 +176,10 @@ Caferteria_Text_RybbelTunnels:
 	.string "And somewhere down there…\nthere’s an old CTF terminal.$"
 
 Caferteria_Text_RybbelHistory:
-	.string "It used to belong to an earlier class.\p"
-	.string "Nobody uses it anymore. \nNobody even remembers it’s there.$"
+	.string "This originally belonged to an\n"
+	.string "older class\p"
+	.string "Nobody uses it anymore. Nobody\n"
+	.string "even remembers it is there.$"
 
 Caferteria_Text_RybbelSystems:
 	.string "But systems don’t disappear.\p"

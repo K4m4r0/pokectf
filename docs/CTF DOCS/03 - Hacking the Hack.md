@@ -1,6 +1,6 @@
 # Pokémon Capture the Flag – Hacking the Hack
 
-In this document, we describe the things that were not generally intended or provided by the decompilation and ROM hack and were programmed by ourselves. We do not go into things that the hack generally offers but have been misused and modified.
+In this document, we describe the things that were not generally intended or provided by the decompilation and ROM hack and were programmed by ourselves.
 
 ## Implemented additions and changes
 
@@ -9,69 +9,52 @@ In this document, we describe the things that were not generally intended or pro
 - **Installation of a method to link items with 256-color images** and display them.
 - **Function installed to hide an image in the code of the ROM hack** in order to perform steganography.
 - **Function built in that securely stores predefined words** in the hex output of savegames.
+- **Function installed that unlocks hidden in-game content via an external file check** in mGBA and permanently stores the result through an in-game flag.
+- **Implementation of a function that protects in-game strings from compression** and allows them to be read from the .gba file (e.g., using grep)
+- **mGBA use detection**, a script that checks the use of the mGBA emulator and causes NPCs to react accordingly. When using mGBA, if the player is in a certain location, an output is triggered in the mGBA log file, which gives a hint about a flag.
 - **Fake trade events built in** to evolve Pokémon that would otherwise only evolve through physical trading with another person.
 - **Function built in that makes opposing Pokémon trainers react** to Pokémon on your own team and changes the text output accordingly (optionally also the battle AI).
-- **mGBA use detection**, a script that checks the use of the mGBA emulator and causes NPCs to react accordingly. When using mGBA, if the player is in a certain location, an output is triggered in the mGBA log file, which gives a hint about a flag.
-- **Edited the Moving Boulder Logic** to move other world objects with strength aswell.
 - **Mewtwo talking** betwen rounds infight, acknowledging defeated opposing Pokémon and turn-count.
+- **Implementation of a feature that allows ROTOM to change forms** by interacting with overworld objects.
 
 
 ## Changes to existing functions
 
 - **Move Relearner** no longer requires a Heart Scale.
+- **Edited the Moving Boulder Logic** to move other world objects with strength aswell.
 
 
 
+## Supporting programs
 
-## List of added characters with image sprites and new dialogue:
-    - PROF FARMER
-    - PROF HYVEL
-    - PROF HOUVERT
-    - TEAM ROCKET
-    - OFFICER F/M
-    - TRAIN
-    - CD Symbol
-    - $ Symbol
+- **Flag 2 -- University ID number calculator.py:** A script for solving the riddle of the second flag without requiring manual calculation or custom programming. Simply enter the player name and Trainer ID.
+- **Flag 8 -- Bridge Cheat.py:** A script that patches the save file to activate the bridge for the final flag, removing the need to set the flag manually.
+- **emerald_conversations.py:** A script that automatically converts text into the string format used for NPC dialogue in the game.
+- **species_template.py:** A script that lists all assigned Pokémon species as wild encounters across existing maps in order to detect missing species.
+- **ctf_vendor_unlock.lua:** supports the reading of special files with mGBA, to unlock ingame content.
 
 
+## List of added graphics made by us
 
-# Chronologically accurate list of perceived game changes (frontend)
-## on game start
-### pre-menu
-- changed the "press start" screen to porygon and the projects caption
+- PROF FARMER
+- PROF HYVL
+- PROF HOUVERT
+- PROF KALI
+- PROF JUDGE
+- PROF SANTA
+- PROF WÖRNER
+- PROF RYBBEL
+- RNV Train
+- CD Symbol
+- $_ Symbol
+- Flag Terminal
+- Swimming Charmander
+- Detective Pikachu
+- DHBW Building
+- Edeka Building
+- Water Tower Building
+- I3C-AND
+- I3C-NAND
+- Suneon
+- Missingno.
 
-### pre-game
-- changed the sprite to PROF FARMER
-- changed dialogue to CTF and added terminal image
-### game entrance
-- changed dialoge of BELLA
-- changed location description to JUNGBUSCH
-
-## game intro
-### inside player's home
-- changed notebook description for correct controls
-- changed BELLA's dialogue
-### inside RIVAL's home
-### fight against BUM
-- replaced PROF BIRCH with BUM, dialogue, sprite and game logic
-- changed starters
-- changed PROF BIRCH dialogue in lab to fit new narrative
-### travel to RIVAL
-- changed BELLA dialogue after defeating BUM
-- changed location description, signs and NPC dialogue to NEUOSTHEIM
-- changed RIVAL dialogue to fit new narrative
-### start CTF journey
-- changed PROF BIRCH and BELLA dialogue
-- added completely new areas west of NEUOSTHEIM
-
-## CTF
-### flag 0
-### flag 1
-### flag 2
-### flag 3
-### flag 4
-### flag 5
-### flag 6
-### flag 7
-### flag 8
-### flag final

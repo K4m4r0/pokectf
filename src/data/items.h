@@ -15625,7 +15625,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_FLASH_TOOL] =
     {
-        .name = ITEM_NAME("Flash Item"),
+        .name = ITEM_NAME("Flashlight"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A bright light\n"

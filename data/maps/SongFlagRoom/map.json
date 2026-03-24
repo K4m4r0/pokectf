@@ -41,7 +41,7 @@
       "flag": "FLAG_CTF_SONGROOM_ROCK_REMOVED"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_BALL_CUSHION",
       "x": 10,
       "y": 4,
       "elevation": 0,

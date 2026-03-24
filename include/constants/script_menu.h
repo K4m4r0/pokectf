@@ -130,6 +130,7 @@
 #define MULTI_TRICK_HOUSE_PUZZLE1_PASS123_COMPLEX 119
 #define MULTI_TRICK_HOUSE_PUZZLE1_ADMIN_COMPLEX  120
 #define MULTI_TRICK_HOUSE_PUZZLE1_ALL            121
+#define MULTI_CTF_VENDOR_MENU                    122
 
 // Lilycove SS Tidal Multichoice Selections
 #define SSTIDAL_SELECTION_SLATEPORT        0

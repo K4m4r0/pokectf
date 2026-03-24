@@ -21,13 +21,43 @@ enum
 
 void Special_FakeTradeEvolveSelectedToTarget(void)
 {
-    // Diese Werte kommen aus dem Script (VAR_0x8004..VAR_0x8009)
-    u16 slot              = VarGet(VAR_0x8004); // von ChoosePartyMon gesetzt
+    u16 slot            = VarGet(VAR_0x8004);
+    u16 targetSpecies   = VarGet(VAR_0x8006);
+    bool8 consumeItem   = (VarGet(VAR_0x8009) != 0);
+
+    struct Pokemon *mon;
+    u16 heldItem;
+
+    VarSet(VAR_RESULT, 0);
+
+    if (slot >= PARTY_SIZE)
+        return;
+
+    mon = &gPlayerParty[slot];
+
+    if (consumeItem)
+    {
+        u16 none = ITEM_NONE;
+        heldItem = GetMonData(mon, MON_DATA_HELD_ITEM);
+        if (heldItem != ITEM_NONE)
+            SetMonData(mon, MON_DATA_HELD_ITEM, &none);
+    }
+
+    ScriptContext_Enable();
+    gCB2_AfterEvolution = CB2_ReturnToFieldContinueScript;
+    BeginEvolutionScene(mon, targetSpecies, FALSE, slot);
+
+    VarSet(VAR_RESULT, FAKE_TRADE_OK);
+}
+
+
+
+void Special_FakeTradeCanSelectedToTarget(void)
+{
+    u16 slot              = VarGet(VAR_0x8004);
     u16 requiredSpecies   = VarGet(VAR_0x8005);
-    u16 targetSpecies     = VarGet(VAR_0x8006);
-    u16 requiredItem      = VarGet(VAR_0x8007); // 0/ITEM_NONE = keiner
+    u16 requiredItem      = VarGet(VAR_0x8007);
     bool8 ignoreEverstone = (VarGet(VAR_0x8008) != 0);
-    bool8 consumeItem     = (VarGet(VAR_0x8009) != 0);
 
     struct Pokemon *mon;
     u16 species;
@@ -36,7 +66,10 @@ void Special_FakeTradeEvolveSelectedToTarget(void)
     VarSet(VAR_RESULT, 0);
 
     if (slot >= PARTY_SIZE)
+    {
+        VarSet(VAR_RESULT, FAKE_TRADE_WRONG_SPECIES);
         return;
+    }
 
     mon = &gPlayerParty[slot];
 
@@ -61,27 +94,11 @@ void Special_FakeTradeEvolveSelectedToTarget(void)
         return;
     }
 
-    if (requiredItem != ITEM_NONE && requiredItem != 0)
+    if (requiredItem != ITEM_NONE && requiredItem != 0 && heldItem != requiredItem)
     {
-        if (heldItem != requiredItem)
-        {
-            VarSet(VAR_RESULT, FAKE_TRADE_MISSING_HELD_ITEM);
-            return;
-        }
-
-        if (consumeItem)
-        {
-            u16 none = ITEM_NONE;
-            SetMonData(mon, MON_DATA_HELD_ITEM, &none);
-        }
+        VarSet(VAR_RESULT, FAKE_TRADE_MISSING_HELD_ITEM);
+        return;
     }
-
-    // Script soll "warten", bis die Evolution fertig ist
-    ScriptContext_Enable(); // in deiner Version statt ScriptContext2_Enable()
-    gCB2_AfterEvolution = CB2_ReturnToFieldContinueScript;
-
-    // Evolution starten (wie Trade-Evo Feeling; canStop = FALSE)
-    BeginEvolutionScene(mon, targetSpecies, FALSE, slot);
 
     VarSet(VAR_RESULT, FAKE_TRADE_OK);
 }

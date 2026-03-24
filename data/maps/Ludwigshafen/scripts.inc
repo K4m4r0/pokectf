@@ -75,6 +75,7 @@ Ludwigshafen_EventScript_IntroTrigger::
     msgbox Ludwigshafen_Text_Both_Glitchy, MSGBOX_DEFAULT
 
     setflag FLAG_LUDWIGSHAFEN_INTRO_DONE
+    goto Ludwigshafen_Intro_Done
 
 Ludwigshafen_Movement_FaceRight:
     face_right
@@ -189,20 +190,10 @@ Ludwigshafen_TradeEvo_SelectLoop:
     compare VAR_RESULT, 1
     goto_if_ne Ludwigshafen_TradeEvo_WrongMon
 
-    playse SE_WARP_IN
-    playse SE_WARP_OUT
-    waitse
+    specialvar VAR_RESULT, Special_FakeTradeCanSelectedToTarget
 
-    special Special_FakeTradeEvolveSelectedToTarget
-    waitstate
-
-    @ 1 = Evolution gestartet
-    @ 2 = falsche Species
-    @ 3 = Ei
-    @ 4 = Everstone blockt
-    @ 5 = benötigtes Held-Item fehlt
     compare VAR_RESULT, 1
-    goto_if_eq Ludwigshafen_TradeEvo_Success
+    goto_if_eq Ludwigshafen_TradeEvo_DoEvolution
 
     compare VAR_RESULT, 3
     goto_if_eq Ludwigshafen_TradeEvo_IsEgg
@@ -214,6 +205,16 @@ Ludwigshafen_TradeEvo_SelectLoop:
     goto_if_eq Ludwigshafen_TradeEvo_NoItem
 
     goto Ludwigshafen_TradeEvo_WrongMon
+
+Ludwigshafen_TradeEvo_DoEvolution:
+    playse SE_WARP_IN
+    playse SE_WARP_OUT
+    waitse
+
+    special Special_FakeTradeEvolveSelectedToTarget
+    waitstate
+    goto Ludwigshafen_TradeEvo_Success
+
 
 Ludwigshafen_TradeEvo_Success:
     msgbox Ludwigshafen_Text_TradeEvoAfter, MSGBOX_DEFAULT
@@ -718,7 +719,7 @@ Ludwigshafen_EventScript_WharfSign::
 	end
 
 Ludwigshafen_Text_WharfSign::
-	.string "Wharf$"
+	.string "Rhine Tunnel$"
 
 Ludwigshafen_EventScript_ClosedSign::
 	msgbox Ludwigshafen_Text_ClosedSign, MSGBOX_SIGN

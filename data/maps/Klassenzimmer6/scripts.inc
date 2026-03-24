@@ -96,7 +96,7 @@ Klassenzimmer6_LemmyTalk_WrongBatteries::
 @ Trigger: blocked until Fortree Gym defeated
 @ =========================================================
 Klassenzimmer6_EventScript_FindBatteriesFirst::
-    goto_if_set FLAG_DEFEATED_FORTREE_GYM, Klassenzimmer6_FindBatteriesFirst_End
+    goto_if_set FLAG_BADGE08_GET, Klassenzimmer6_FindBatteriesFirst_End
 
     lockall
     msgbox Klassenzimmer6_Text_FindBatteriesFirst, MSGBOX_DEFAULT

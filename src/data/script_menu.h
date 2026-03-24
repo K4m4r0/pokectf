@@ -1,4 +1,15 @@
 // multichoice lists
+
+static const u8 sText_CtfVendorChoiceRareCandy[] = _("100x RARE CANDY");
+static const u8 sText_CtfVendorChoiceCancel[]    = _("Cancel");
+
+static const struct MenuAction MultichoiceList_CtfVendorMenu[] =
+{
+    {sText_CtfVendorChoiceRareCandy},
+    {sText_CtfVendorChoiceCancel},
+};
+
+
 static const struct MenuAction MultichoiceList_BrineyOnDewford[] =
 {
     {COMPOUND_STRING("PETALBURG")},
@@ -960,6 +971,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_TRICK_HOUSE_PUZZLE1_PASS123_COMPLEX] = MULTICHOICE(MultichoiceList_TrickHousePuzzle1_Pass123Complex),
     [MULTI_TRICK_HOUSE_PUZZLE1_ADMIN_COMPLEX]  = MULTICHOICE(MultichoiceList_TrickHousePuzzle1_AdminComplex),
     [MULTI_TRICK_HOUSE_PUZZLE1_ALL]           = MULTICHOICE(MultichoiceList_TrickHousePuzzle1_All),
+    [MULTI_CTF_VENDOR_MENU] = MULTICHOICE(MultichoiceList_CtfVendorMenu),
 };
 
 const u8 *const gStdStrings[] =
@@ -1066,3 +1078,4 @@ static const u8 *const sWirelessOptions_NoRecordMixBerryCrush[] =
     CableClub_Text_YouMayBattleHere,
     CableClub_Text_CancelSelectedItem,
 };
+
