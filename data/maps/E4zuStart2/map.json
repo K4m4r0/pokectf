@@ -1,0 +1,31 @@
+{
+  "id": "MAP_E4ZU_START2",
+  "name": "E4zuStart2",
+  "layout": "LAYOUT_E4ZU_START2",
+  "music": "MUS_ROUTE113",
+  "region_map_section": "MAPSEC_RHEIN",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY_CLOUDS",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_E4ZU_START1",
+      "offset": 40,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_LITTLEROOT_TOWN",
+      "offset": 5,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

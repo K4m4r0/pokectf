@@ -395,3 +395,30 @@ OldaleTown_Text_TownSign:
 	.string "NEUOSTHEIM: Access to the Neckar\n"
 	.string "River and the City Airport.$"
 
+OldaleTown_EventScript_Zigzagoon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
+	msgbox OldaleTown_Text_Zigzagoon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+
+OldaleTown_Text_Zigzagoon:
+	.string "ZIGZAGOON: Zagooo!$"
+
+
+OldaleTown_EventScript_SesameHint::
+	lock
+	faceplayer
+	msgbox OldaleTown_Text_SesameHint, MSGBOX_DEFAULT
+	release
+	end
+
+
+OldaleTown_Text_SesameHint:
+	.string "That nutcase wanted me to provide\n"
+	.string "a text file containing some kind\p"
+	.string "of oilseeds.$"

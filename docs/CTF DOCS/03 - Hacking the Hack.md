@@ -22,6 +22,8 @@ In this document, we describe the things that were not generally intended or pro
 
 - **Move Relearner** no longer requires a Heart Scale.
 - **Edited the Moving Boulder Logic** to move other world objects with strength aswell.
+- **Modification of the QoL Field Moves**, to no longer use Pokémon, but solely items instead.
+
 
 
 

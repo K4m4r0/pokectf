@@ -168,12 +168,15 @@ Caferteria_EventScript_RybbelReturnThreeSteps::
 	return
 
 Caferteria_Text_RybbelIntro:
-	.string "Rybbel: Good you came!\p"
-	.string "BENEATH this cafeteria…\nthere’s an old service level.$"
+	.string "PROF. RYBBEL: Good you came!\p"
+	.string "BENEATH this cafeteria…\n"
+	.string "there’s an old service level.$"
 
 Caferteria_Text_RybbelTunnels:
-	.string "Maintenance tunnels. Pipes. Power lines.\p"
-	.string "And somewhere down there…\nthere’s an old CTF terminal.$"
+	.string "Maintenance tunnels. Pipes. Power\n"
+	.string "lines.\p"
+	.string "And somewhere down there… there’s\n"
+	.string "an old CTF terminal.$"
 
 Caferteria_Text_RybbelHistory:
 	.string "This originally belonged to an\n"
@@ -194,45 +197,57 @@ Caferteria_Text_RybbelPentester:
 	.string "I’m sure you’ll manage.$"
 
 Caferteria_Text_RybbelReminder:
-	.string "Rybbel: You should get the terminal.$"
+	.string "PROF. RYBBEL: You should get the\n"
+	.string "terminal.$"
 
 Caferteria_Text_RybbelTerminalFound1:
-	.string "Prof. Rybbel: So you actually found it.\p"
-	.string "The old CTF terminal\nbeneath the cafeteria.\p"
+	.string "PROF. RYBBEL: So you actually\n"
+	.string "found it.\p"
+	.string "The old CTF terminal beneath the\n"
+	.string "cafeteria.\p"
 	.string "Not bad.$"
 
 Caferteria_Text_RybbelTerminalFound2:
-	.string " Prof. Rybbel: Most people spend\n their entire day on the surface.\p"
+	.string "PROF. RYBBEL: Most people spend\n"
+	.string "their entire day on the surface.\p"
 	.string "Eating, studying, walking around.\p"
-	.string "Never wondering what runs\nbeneath their feet.$"
+	.string "Never wondering what runs beneath\n"
+	.string "their feet.$"
 
 Caferteria_Text_RybbelTerminalFound3:
-	.string "Prof. Rybbel: Pipes. Power lines.\nNetwork cables.\p"
-	.string "Entire systems\nhidden beneath the surface.$"
+	.string "PROF. RYBBEL: Pipes. Power lines.\n"
+	.string "Network cables.\p"
+	.string "Entire systems hidden beneath the\n"
+	.string "surface.$"
 
 Caferteria_Text_RybbelTerminalFound4:
-	.string "Prof. Rybbel: As a physical pentester\nyou already proved something important.\p"
-	.string "You know how to reach places\nothers never even look at.$"
+	.string "PROF.RYBBEL: As a physical\n"
+	.string "pentester you already proved\p"
+	.string "something important.\p"
+	.string "You know how to reach places\n"
+	.string "others never even look at.$"
 
 Caferteria_Text_RybbelTerminalFound5:
-	.string "Prof. Rybbel: Good.\p"
-	.string "Because the real challenge\nisn't here.$"
+	.string "PROF. RYBBEL: Good.\p"
+	.string "Because the real challenge isn't\n"
+	.string "here.$"
 
 Caferteria_Text_RybbelTerminalFound6:
-	.string "Prof. Rybbel: Take the terminal.\p"
-	.string "And meet me in the forest\nabove Rheinpromenade.$"
+	.string "PROF. RYBBEL: Take the terminal.\p"
+	.string "And meet me in the forest above\n"
+	.string "Rheinpromenade.$"
 
 Caferteria_Text_RybbelTerminalFound7:
-	.string "Prof. Rybbel: There's a clearing there.\p"
+	.string "PROF. RYBBEL: There's a clearing there.\p"
 	.string "Quiet. Isolated.\p"
 	.string "Perfect for what comes next.$"
 
 Caferteria_Text_RybbelTerminalFound8:
-	.string "Prof. Rybbel: Bring the terminal with you.\p"
+	.string "PROF. RYBBEL: Bring the terminal with you.\p"
 	.string "I'll be waiting.$"
 
 Caferteria_Text_RybbelTerminalFound9:
-	.string "Prof. Rybbel: And {PLAYER}…\p"
+	.string "PROF. RYBBEL: And {PLAYER}…\p"
 	.string "when you get there,\p"
 	.string "try to look beneath the surface.$"
 

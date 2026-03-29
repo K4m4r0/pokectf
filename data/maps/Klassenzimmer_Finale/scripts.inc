@@ -369,8 +369,8 @@ Klassenzimmer_Finale_Text_ClueAlreadySolved::
 
 Klassenzimmer_Finale_Text_ClueCorrect::
     .string "ADRIA: That's it. You have to surf\n"
-    .string "down the Neckar on Route 101, to \p"
-    .string "reach it.\p"
+    .string "down the Neckar on the Lower Neckar\p"
+    .string "Route, to reach it.\p"
     .string "Here take this, you will need this\n"
     .string "to get over the waterfall.$"
 

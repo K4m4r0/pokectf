@@ -2322,19 +2322,20 @@ static u16 GetKeyItemForFieldMove(u16 move)
 bool8 ScrCmd_checkfieldmove(struct ScriptContext *ctx)
 {
     enum FieldMove fieldMove = ScriptReadByte(ctx);
+    bool32 doUnlockedCheck UNUSED = ScriptReadByte(ctx);
     u16 move = FieldMove_GetMoveId(fieldMove);
     u16 keyItem = GetKeyItemForFieldMove(move);
 
-    // Nur Item-Logik: wenn das Tool-Item vorhanden ist -> nutzbar.
     if (keyItem != ITEM_NONE && CheckBagHasItem(keyItem, 1))
     {
-        gSpecialVar_Result = PARTY_SIZE + 1; // "Item-Use"
+        gSpecialVar_Result = PARTY_SIZE + 1;
         SetFieldMoveSource(FIELD_MOVE_SOURCE_ITEM);
-        return FALSE; // Script läuft weiter
+    }
+    else
+    {
+        gSpecialVar_Result = PARTY_SIZE;
     }
 
-    // Kein Item -> nicht nutzbar
-    gSpecialVar_Result = PARTY_SIZE;
     return FALSE;
 }
 

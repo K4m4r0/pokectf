@@ -45,7 +45,7 @@
     {
       "local_id": "LOCALID_FLAG7_MECHADOLL_5",
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 10,
+      "x": 8,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -279,13 +279,40 @@
       "var": "VAR_TEMP_4",
       "var_value": "0",
       "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll4Trigger4"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_TEMP_5",
+      "var_value": "0",
+      "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll5Trigger0"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_TEMP_5",
+      "var_value": "0",
+      "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll5Trigger0"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_TEMP_5",
+      "var_value": "0",
+      "script": "Flag7_TrickHousePuzzle5_EventScript_Mechadoll5Trigger0"
     }
   ],
   "bg_events": [
     {
       "type": "sign",
       "x": 11,
-      "y": 21,
+      "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Flag7_TrickHousePuzzle5_EventScript_Scroll"

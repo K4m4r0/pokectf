@@ -68,7 +68,7 @@ CtfVendor_LockedText:
     .string "Hey kid, there you are again.\p"
     .string "Do you like your POKéMON?\p"
     .string "To get access to the rest of my\n"
-    .string "products, you have to store the\n"
+    .string "products, you have to store the\p"
     .string "code word correctly.$"
 
 CtfVendor_UnlockedText:

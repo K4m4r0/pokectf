@@ -60,7 +60,7 @@ Klassenzimmer_4_Movement_PlayerToSeat:
 
 
 Klassenzimmer_4_Text_StudentReceivesTube:
-	.string "You received a SURFBOARD!$"
+	.string "{PLAYER}: <That is generous!>$"
 
 
 Klassenzimmer_4_Text_ComeIn:

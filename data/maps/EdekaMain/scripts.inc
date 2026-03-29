@@ -92,7 +92,7 @@ EdekaMain_Text_NetAndDiveBallsUseful:
 @ Text
 @ =========================================================
 EdekaMain_Text_FoundRockSmashTool:
-    .string "You found the ROCK SMASH TOOL!$"
+    .string "What ist this?!$"
 
 EdekaMain_Text_BagFull:
     .string "Your BAG is full.$"

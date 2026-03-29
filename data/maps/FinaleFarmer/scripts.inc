@@ -155,15 +155,15 @@ FinaleFarmer_Text_BadgeReceived:
 
 FinaleFarmer_Text_After:
     .string "PROF. FARMER: You've earned it.\n"
-    .string "Carry that badge like a key\n"
+    .string "Carry that badge like a key\p"
     .string "and like a responsibility.$"
 
 FinaleFarmer_Text_CannotBattle:
     .string "PROF. FARMER: You have no usable Pokemon.$"
 
 FinaleFarmer_Text_DiveToolIntro:
-    .string "PROF. FARMER: You have found all the flags and\n"
-    .string "successfully completed your studies.\p"
+    .string "PROF. FARMER: You have found all the flags\n"
+    .string "and successfully completed your studies.\p"
     .string "You can now explore the rest of the\n"
     .string "world. This might help you:$"
 

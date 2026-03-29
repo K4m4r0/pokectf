@@ -952,7 +952,7 @@ Flag7_TrickHousePuzzle5_Text_Mechadoll1Intro:
 	.string "CLICKETY-CLACK…\n"
 	.string "MECHADOLL 1 AM I!\p"
 	.string "IF YOU ANSWER QUIZZES CORRECTLY,\n"
-	.string "THEN YOU WILL GO TO MECHADOLL 5.\l"
+	.string "THEN YOU WILL GO TO MECHADOLL 5.\p"
 	.string "THEN YOU CAN OBTAIN THE SECRET CODE.$"
 
 Flag7_TrickHousePuzzle5_Text_Mechadoll1Quiz1:

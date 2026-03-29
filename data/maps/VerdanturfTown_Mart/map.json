@@ -73,15 +73,15 @@
       "x": 3,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_VERDANTURF_TOWN",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_WALDHOF",
+      "dest_warp_id": "2"
     },
     {
       "x": 4,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_VERDANTURF_TOWN",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_WALDHOF",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [],

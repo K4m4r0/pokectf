@@ -755,7 +755,9 @@
     "RingVerbindung",
     "DubiousHaus",
     "LuTunnel",
-    "BatterieHaus"
+    "BatterieHaus",
+    "E4zuStart1",
+    "E4zuStart2"
   ],
   "gMapGroup_Flag6": [
     "Klassenzimmer6",

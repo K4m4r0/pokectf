@@ -14,6 +14,7 @@ VerdanturfTown_Mart_EventScript_Clerk::
 	.align 2
 VerdanturfTown_Mart_Pokemart:
 	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_NEST_BALL
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
@@ -46,13 +47,13 @@ VerdanturfTown_Mart_Text_XSpecialIsCrucial:
 
 VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent:
 	.string "They don't seem to sell any winning\n"
-	.string "strategy guides for the BATTLE TENT…\p"
+	.string "strategy guides for the STADIUM…\p"
 	.string "It seems one must rely on one's\n"
 	.string "own wits after all…$"
 
 VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon:
 	.string "The NEST BALL works better on\n"
 	.string "weakened POKéMON.\p"
-	.string "VERDANTURF is the only place you can\n"
+	.string "This market is the only place you can\n"
 	.string "buy it.$"
 
