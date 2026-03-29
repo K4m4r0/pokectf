@@ -1409,3 +1409,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CtfVendorMap/scripts.inc"
 
 	.include "data/maps/BatterieHaus/scripts.inc"
+
+	.include "data/maps/E4zuStart1/scripts.inc"
+
+	.include "data/maps/E4zuStart2/scripts.inc"

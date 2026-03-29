@@ -288,3 +288,14 @@ RingUntenE4_Text_BeautifulHere:
     .string "Isn't it beautiful here?$"
 
 
+RingUntenE4_EventScript_Swim::
+    lock
+    faceplayer
+    msgbox RingUntenE4_Text_Swim, MSGBOX_DEFAULT
+    release
+    end
+
+RingUntenE4_Text_Swim:
+	.string "The water is so clear and\n"
+	.string "inviting! I wish I could swim all\p"
+	.string "day long.$"

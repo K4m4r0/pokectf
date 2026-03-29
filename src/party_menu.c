@@ -2912,29 +2912,25 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         {
             u16 moveId = FieldMove_GetMoveId(i);
 
-            // Case 1: Fly and Flash - show if learnable and badge obtained
+            // Fly and Flash sollen ebenfalls item-only sein
             if (moveId == MOVE_FLY || moveId == MOVE_FLASH)
             {
-                if (IsFieldMoveUnlocked(i) && CanLearnTeachableMove(species, moveId))
-                {
-                    AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, i + MENU_FIELD_MOVES);
-                }
+                // Do nothing
             }
-            // Case 2: Item-based field moves - excluded from party menu
+            // Alle item-basierten Field Moves aus dem Party-Menü ausblenden
             else if (IsFieldMoveExcludedFromPartyMenu(moveId))
             {
-                // Do nothing, effectively removing them from the menu.
+                // Do nothing
             }
-            // Case 3: All other field moves (Dig, Soft-Boiled, etc.)
+            // Alle anderen normalen Field Moves wie bisher über bekannte Moves
             else
             {
-                // Use the original logic: check if the Pokémon knows the move.
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
                     if (GetMonData(&mons[slotId], MON_DATA_MOVE1 + j) == moveId)
                     {
                         AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, i + MENU_FIELD_MOVES);
-                        break; // Move found, stop checking this Pokémon's moves
+                        break;
                     }
                 }
             }

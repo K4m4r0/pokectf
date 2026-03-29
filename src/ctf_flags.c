@@ -21,8 +21,9 @@ static const u8 sFlagWords[][CTF_FLAG_INPUT_LENGTH + 1] =
     _("REV3RSEIT"),   // 7 Gym 7
     _("SMISH"),    // 8 Gym 8
     _("BANG"),   // 9 Tutorial
-    _("RKTSNC"), // 10 Finale Farmer
+    _("RKTSNC"), // 10 ID für Berechnung Enrollment Code (nicht in sFlagWords, da dynamisch)
     _("STADIUM"), // 11 Klassenzimmer Finale
+    _("RKTSNC"), // 12 Finale Farmer
 };
 
 #define CTF_STATIC_FLAG_COUNT ARRAY_COUNT(sFlagWords)

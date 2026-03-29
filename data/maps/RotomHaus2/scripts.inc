@@ -29,11 +29,22 @@ RotomHaus2_LemonadeForRotom_HasLemonade:
 	msgbox RotomHaus2_Text_LemonadeThanks, MSGBOX_DEFAULT
 	closemessage
 
-	givemon SPECIES_ROTOM, 20, ITEM_NONE
+	getpartysize
+	compare VAR_RESULT, PARTY_SIZE
+	goto_if_eq RotomHaus2_LemonadeForRotom_PartyFull
 
+	givemon SPECIES_ROTOM, 20, ITEM_NONE
 	setflag FLAG_ROTOMHAUS2_GOT_ROTOM_GIFT
 
 	msgbox RotomHaus2_Text_RotomGift, MSGBOX_DEFAULT
+	release
+	end
+
+RotomHaus2_LemonadeForRotom_PartyFull:
+	givemon SPECIES_ROTOM, 20, ITEM_NONE
+	setflag FLAG_ROTOMHAUS2_GOT_ROTOM_GIFT
+
+	msgbox RotomHaus2_Text_RotomGiftBox, MSGBOX_DEFAULT
 	release
 	end
 
@@ -67,6 +78,11 @@ RotomHaus2_Text_RotomGift:
 	.string "Here, please take this ROTOM.\p"
 	.string "It can be a little mischievous,\n"
 	.string "but I'm sure it'll like you.$"
+
+RotomHaus2_Text_RotomGiftBox:
+	.string "Here, please take this ROTOM.\p"
+	.string "Your party is full, so it was sent\n"
+	.string "to a PC Box.$"
 
 RotomHaus2_Text_AfterGift:
 	.string "I hope ROTOM is doing well.\p"

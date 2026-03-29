@@ -161,7 +161,7 @@ BlackhansaFinale_EventScript_CtfTerminal_Flag10::
     msgbox BlackhansaFinale_Text_TerminalPrompt, MSGBOX_DEFAULT
     closemessage
 
-    setvar VAR_0x8000, 10
+    setvar VAR_0x8000, 12
     callnative Ctf_FlagTerminal
     waitstate
 

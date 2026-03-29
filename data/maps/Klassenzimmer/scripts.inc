@@ -72,15 +72,17 @@ Klassenzimmer_Text_Welcome:
 	.string "we waited especially for you.$"
 
 Klassenzimmer_Text_Museum:
-	.string "PROF. FARMER: Today we will\n"
-	.string "visit the museum...\p"
-	.string "Yesterday, our temporary collection\n"
-	.string "was replaced by items of ancient history.\p"
-    .string "Don't ask me why the DHBW\n"
-    .string "needs this right now.\p"
-    .string "But why not make this our\n"
-    .string "opportunity to learn something new.\p"
-    .string "So folks, let's get going.$"
+	.string "PROF. FARMER: Today we will visit\n"
+	.string "the museum...\p"
+	.string "Yesterday, our temporary\n"
+	.string "collection was replaced by items\p"
+	.string "of ancient history.\p"
+	.string "It now contains historical devices\n"
+	.string "and calculating machines. Let's\p"
+	.string "use this as an\p"
+	.string "opportunity to learn something\n"
+	.string "new.\p"
+	.string "So folks, let's get going.$"
 
 Museum_Text_StudentReceivesMon:
     .string "PROF. FARMER: At the beginning of your\n"

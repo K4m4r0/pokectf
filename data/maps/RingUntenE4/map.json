@@ -17,6 +17,11 @@
       "map": "MAP_NECKARAU",
       "offset": -4,
       "direction": "left"
+    },
+    {
+      "map": "MAP_E4ZU_START1",
+      "offset": 10,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -44,7 +49,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "RingUntenE4_EventScript_Swim",
       "flag": "0"
     },
     {

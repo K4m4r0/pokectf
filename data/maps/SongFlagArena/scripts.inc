@@ -72,7 +72,7 @@ SongFlagArena_Text_KaliIntro:
 	.string "Show me your strength in battle!$"
 
 SongFlagArena_Text_KaliDefeat:
-	.string "KALI:Never before have I seen a \n"
+	.string "KALI: Never before have I seen a \n"
 	.string "TRAINER command POKéMON with \p"
 	.string "more grace than I…\p"
 	.string "In recognition of your prowess,\n"

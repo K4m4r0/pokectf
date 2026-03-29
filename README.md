@@ -1,53 +1,85 @@
-# About `pokeemerald-expansion`
+# Pokémon - Capture the Flag
 
-![Gif that shows debugging functionality that is unique to pokeemerald-expansion such as rerolling Trainer ID, Cheat Start, PC from Debug Menu, Debug PC Fill, Pokémon Sprite Visualizer, Debug Warp to Map, and Battle Debug Menu](https://github.com/user-attachments/assets/cf9dfbee-4c6b-4bca-8e0a-07f116ef891c) ![Gif that shows overworld functionality that is unique to pokeemerald-expansion such as indoor running, BW2 style map popups, overworld followers, DNA Splicers, Gen 1 style fishing, OW Item descriptions, Quick Run from Battle, Use Last Ball, Wild Double Battles, and Catch from EXP](https://github.com/user-attachments/assets/383af243-0904-4d41-bced-721492fbc48e) ![Gif that shows off a number of modern Pokémon battle mechanics happening in the pokeemerald-expansion engine: 2 vs 1 battles, modern Pokémon, items, moves, abilities, fully customizable opponents and partners, Trainer Slides, and generational gimmicks](https://github.com/user-attachments/assets/50c576bc-415e-4d66-a38f-ad712f3316be)
+![PokéCTF Cover](docs/CTF%20DOCS/cover.png)
 
-<!-- If you want to re-record or change these gifs, here are some notes that I used: https://files.catbox.moe/05001g.md -->
+## Overview
 
-**`pokeemerald-expansion`** is a GBA ROM hack base that equips developers with a comprehensive toolkit for creating Pokémon ROM hacks. **`pokeemerald-expansion`** is built on top of [pret's `pokeemerald`](https://github.com/pret/pokeemerald) decompilation project. **It is not a playable Pokémon game on its own.** 
+**PokéCTF** is a Pokémon ROM hack created with **[Pokeemerald Expansion](https://github.com/rh-hideout/pokeemerald-expansion)**.
 
-# [Features](FEATURES.md)
+The project combines the classic Pokémon gameplay formula with a **Capture The Flag (CTF)** learning experience in the context of **cybersecurity**.  
+Instead of focusing purely on battles, players progress through their studies at **DHBW** by solving **cybersecurity-themed riddles, challenges, and flag-based tasks**. By collecting flags and overcoming technical puzzles, the player works toward successfully completing their Cyber Security degree.
 
-**`pokeemerald-expansion`** offers hundreds of features from various [core series Pokémon games](https://bulbapedia.bulbagarden.net/wiki/Core_series), along with popular quality-of-life enhancements designed to streamline development and improve the player experience. A full list of those features can be found in [`FEATURES.md`](FEATURES.md).
+This ROM hack was developed as an **exam project for the course Offensive Security**.
 
-# [Credits](CREDITS.md)
+---
 
- [![](https://img.shields.io/github/all-contributors/rh-hideout/pokeemerald-expansion/upcoming)](CREDITS.md)
+## Concept
 
-If you use **`pokeemerald-expansion`**, please credit **RHH (Rom Hacking Hideout)**. Optionally, include the version number for clarity.
+In **PokéCTF**, the player takes on the role of a Cyber Security student. Throughout the adventure, they encounter challenges inspired by real-world security topics such as:
 
-```
-Based off RHH's pokeemerald-expansion 1.14.2 https://github.com/rh-hideout/pokeemerald-expansion/
-```
+- offensive security
+- reverse engineering
+- steganography
+- logic puzzles
+- technical investigation
+- CTF-style problem solving
 
-Please consider [crediting all contributors](CREDITS.md) involved in the project!
+The goal is to collect flags by solving these tasks and, in doing so, advance through the academic journey.
 
-# Choosing `pokeemerald` or **`pokeemerald-expansion`**
+This is **Capture The Flag in the cybersecurity sense** — not a shooter-style game mode.
 
-- **`pokeemerald-expansion`** supports multiplayer functionality with other games built on **`pokeemerald-expansion`**. It is not compatible with official Pokémon games.
-- If compatibility with official games is important, use [`pokeemerald`](https://github.com/pret/pokeemerald). Otherwise, we recommend using **`pokeemerald-expansion`**.
-- **`pokeemerald-expansion`** incorporates regular updates from `pokeemerald`, including bug fixes and documentation improvements.
+---
 
-# [Getting Started](INSTALL.md)
+## Project Goals
 
-❗❗ **Important**: Do not use GitHub's "Download Zip" option as it will not include commit history. This is necessary if you want to update or merge other feature branches. 
+The main goals of this project are:
 
-If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/) has a [guide to forking and cloning the repository](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub). Then you can follow one of the following guides:
+- to combine gaming with cybersecurity education
+- to present technical concepts in a playful and accessible way
+- to create a unique ROM hack experience centered around puzzles and learning
+- to turn a university project into an interactive adventure
 
-## 📥 [Installing **`pokeemerald-expansion`**](INSTALL.md)
-## 🏗️ [Building **`pokeemerald-expansion`**](INSTALL.md#Building-pokeemerald-expansion)
-## 🚚 [Migrating from **`pokeemerald`**](INSTALL.md#Migrating-from-pokeemerald)
-## 🚀 [Updating **`pokeemerald-expansion`**](INSTALL.md#Updating-pokeemerald-expansion)
+---
 
-# [Documentation](https://rh-hideout.github.io/pokeemerald-expansion/)
+## Credits
 
-For detailed documentation, visit the [pokeemerald-expansion documentation page](https://rh-hideout.github.io/pokeemerald-expansion/).
+A full list of credits can be found here:
 
-# [Contributions](CONTRIBUTING.md)
-If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull request](CONTRIBUTING.md#Pull-Requests), or [request a feature](CONTRIBUTING.md#Feature-Request), our [`CONTRIBUTING.md`](CONTRIBUTING.md) has guides for each.
+**[Credits](docs/CTF%20DOCS/03%20-%20Credits.md)**
 
-# [Community](https://discord.gg/6CzjAG6GZk)
+You can also find the main project repository here:
 
-[![](https://dcbadge.limes.pink/api/server/6CzjAG6GZk)](https://discord.gg/6CzjAG6GZk)
+**[Pokeemerald Expansion on GitHub](https://github.com/rh-hideout/pokeemerald-expansion)**
 
-Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discord.gg/6CzjAG6GZk) to communicate and organize. Most of our discussions take place there, and we welcome anybody to join us!
+---
+
+## Disclaimer
+
+This project was created **exclusively for educational and academic purposes**.
+
+- It is intended to support **learning, training, and teaching** in the field of cybersecurity.
+- It does **not** promote, encourage, or endorse illegal activities of any kind.
+- Any cybersecurity-related themes, mechanics, or challenges included in this project are meant solely for **lawful educational use**.
+
+This is a **non-profit student project** created as part of an academic examination.
+
+Pokémon and related assets, names, and trademarks are the property of **Nintendo, Game Freak, and The Pokémon Company**.  
+This project is an unofficial fan-made work and is **not affiliated with, endorsed by, sponsored by, or associated with Nintendo, Game Freak, or The Pokémon Company** in any way.
+
+Third-party code, frameworks, and assets used by this project remain under their **respective original licenses**, including **GNU GPL v3** where applicable.
+
+---
+
+## Non-Commercial Notice
+
+This project is distributed as a **non-commercial university project**.  
+It was developed as part of a study program and is not intended for commercial use.
+
+---
+
+## Educational Focus
+
+PokéCTF was designed to make cybersecurity topics more approachable by embedding them into an interactive game world.  
+The project aims to motivate students and players to engage with technical challenges in a creative and memorable way.
+
+If you are interested in Pokémon ROM hacking, CTFs, or cybersecurity education, this project brings all three together in one experience.

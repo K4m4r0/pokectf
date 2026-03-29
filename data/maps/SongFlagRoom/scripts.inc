@@ -69,5 +69,5 @@ SongFlagRoom_Text_TerminalAlreadyOpen::
 
 SongFlagRoom_Text_TerminalCorrect::
 	.string "Access granted. \n"
-	.string "Rock removed.$"
+	.string "Blocker removed.$"
 
